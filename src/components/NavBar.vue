@@ -19,7 +19,6 @@ export default {
   data() {
     return {
       navItems: [
-        // TODO: Convert strings to icons
         'person-booth',
         'stream',
         'project-diagram',
