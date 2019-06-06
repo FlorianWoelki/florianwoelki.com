@@ -8,7 +8,7 @@
         v-for="navItem in navItems"
         :key="navItem"
       >
-        {{navItem}}
+        <i :class="'fas fa-' + navItem + ' fa-lg'"></i>
       </v-navbar-item>
     </div>
   </v-navbar>
@@ -20,11 +20,11 @@ export default {
     return {
       navItems: [
         // TODO: Convert strings to icons
-        'Me',
-        'Timeline',
-        'Projects',
-        'Skills',
-        'Contact',
+        'person-booth',
+        'stream',
+        'project-diagram',
+        'tasks',
+        'id-card',
       ],
     };
   },
