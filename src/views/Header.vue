@@ -25,8 +25,47 @@
           short
         />
 
+        <v-space />
+
+        <v-row>
+          <v-col
+            c2
+            o3
+            center
+          >
+            <a
+              href="https://www.linkedin.com/in/florian-woelki/"
+              target="_blank"
+            >
+              <i class="white fab fa-linkedin fa-2x"></i>
+            </a>
+          </v-col>
+          <v-col
+            c2
+            center
+          >
+            <a
+              href="https://github.com/FlorianWoelki"
+              target="_blank"
+            >
+              <i class="white fab fa-github fa-2x"></i>
+            </a>
+          </v-col>
+          <v-col
+            c2
+            center
+          >
+            <a
+              href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+              target="_blank"
+            >
+              <i class="white fab fa-youtube fa-2x"></i>
+            </a>
+          </v-col>
+        </v-row>
+
         <v-space xlarge />
-        <v-space xlarge />
+
         <div class="center">
           <a href="#">
             <i class="white fas fa-arrow-down fa-3x"></i>
