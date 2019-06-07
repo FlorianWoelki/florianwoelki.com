@@ -19,8 +19,8 @@ export default {
   data() {
     return {
       navItems: [
-        'tasks',
         'project-diagram',
+        'tasks',
         'stream',
         'person-booth',
         'id-card',

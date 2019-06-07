@@ -24,6 +24,14 @@
           class="center"
           short
         />
+
+        <v-space xlarge />
+        <v-space xlarge />
+        <div class="center">
+          <a href="#">
+            <i class="white fas fa-arrow-down fa-3x"></i>
+          </a>
+        </div>
       </v-container>
     </v-fullscreen>
   </div>
