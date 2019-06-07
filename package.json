@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-cirrus": "^0.1.91",
+    "vue-cirrus": "^0.1.92",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
