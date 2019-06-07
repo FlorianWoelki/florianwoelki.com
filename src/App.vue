@@ -4,20 +4,20 @@
     <!--<router-view/>-->
     <Header />
     <v-space xlarge />
-    <AboutMe />
+    <Skills />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Header from '@/views/Header.vue';
-import AboutMe from '@/views/AboutMe.vue';
+import Skills from '@/views/Skills.vue';
 
 export default {
   components: {
     NavBar,
     Header,
-    AboutMe,
+    Skills,
   },
 };
 </script>

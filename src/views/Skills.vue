@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <h5>About Me</h5>
+    <h5>Skills</h5>
     <v-divider short />
-    <p>some text</p>
+    <p>Hey there!</p>
   </v-container>
 </template>

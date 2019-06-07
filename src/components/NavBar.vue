@@ -19,10 +19,10 @@ export default {
   data() {
     return {
       navItems: [
-        'person-booth',
-        'stream',
-        'project-diagram',
         'tasks',
+        'project-diagram',
+        'stream',
+        'person-booth',
         'id-card',
       ],
     };
