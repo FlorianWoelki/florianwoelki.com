@@ -37,7 +37,7 @@
               href="https://www.linkedin.com/in/florian-woelki/"
               target="_blank"
             >
-              <i class="white fab fa-linkedin fa-2x"></i>
+              <i class="fab fa-linkedin fa-2x"></i>
             </a>
           </v-col>
           <v-col
@@ -48,7 +48,7 @@
               href="https://github.com/FlorianWoelki"
               target="_blank"
             >
-              <i class="white fab fa-github fa-2x"></i>
+              <i class="fab fa-github fa-2x"></i>
             </a>
           </v-col>
           <v-col
@@ -59,7 +59,7 @@
               href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
               target="_blank"
             >
-              <i class="white fab fa-youtube fa-2x"></i>
+              <i class="fab fa-youtube fa-2x"></i>
             </a>
           </v-col>
         </v-row>
@@ -68,7 +68,7 @@
 
         <div class="center">
           <a href="#">
-            <i class="white fas fa-arrow-down fa-3x"></i>
+            <i class="white fas fa-arrow-down fa-3x infinite alternate hover-grow"></i>
           </a>
         </div>
       </v-container>
@@ -89,5 +89,11 @@ export default {
 }
 .home h6 {
   text-transform: uppercase;
+}
+.home a {
+  color: white;
+}
+.home a:hover {
+  color: #34495e;
 }
 </style>
