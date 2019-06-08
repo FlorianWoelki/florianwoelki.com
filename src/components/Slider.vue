@@ -72,7 +72,7 @@
   width: 20%;
   height: 100%;
   position: absolute;
-  z-index: 200;
+  z-index: 2;
 }
 .container .faders .right {
   right: 0;
