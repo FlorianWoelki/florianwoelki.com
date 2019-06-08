@@ -3,8 +3,10 @@
     <NavBar />
     <!--<router-view/>-->
     <Header />
+
     <v-space xlarge />
     <Projects />
+    <v-space xlarge />
   </div>
 </template>
 

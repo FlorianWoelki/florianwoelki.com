@@ -3,28 +3,22 @@
     <h5>Projects</h5>
     <v-divider short />
 
-    <v-row>
-      <v-col c6>
-        <p>test</p>
-      </v-col>
-      <v-col c6>
-        <p>test</p>
-      </v-col>
-    </v-row>
+    <Project
+      title="Vue Cirrus"
+      :tags="['Vue.js', 'CSS Framework']"
+      description="This is a straightforward Vue.js components for the Cirrus CSS framework."
+      projectLink="https://github.com/FlorianWoelki/vue-cirrus"
+      websiteLink="https://florianwoelki.github.io/vue-cirrus/"
+    />
   </v-container>
 </template>
 
-<style>
-.tag {
-  align-items: center;
-  background-color: rgb(238, 238, 238);
-  color: rgb(34, 34, 34);
-  display: inline-flex;
-  font-size: 85%;
-  line-height: 1.5;
-  min-height: 1.5rem;
-  padding: 0 0.5rem;
-  margin: 0.25rem;
-  border-radius: 2px;
-}
-</style>
+<script>
+import Project from '@/components/Project.vue';
+
+export default {
+  components: {
+    Project,
+  },
+};
+</script>
