@@ -7,8 +7,10 @@
       <v-navbar-item
         v-for="navItem in navItems"
         :key="navItem"
+        :tooltipText="navItem.name"
+        tooltipBottom
       >
-        <i :class="'fas fa-' + navItem + ' fa-lg'"></i>
+        <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>
       </v-navbar-item>
     </div>
   </v-navbar>
@@ -19,11 +21,11 @@ export default {
   data() {
     return {
       navItems: [
-        'project-diagram',
-        'tasks',
-        'stream',
-        'person-booth',
-        'id-card',
+        { name: 'Projects', icon: 'project-diagram' },
+        { name: 'Skills', icon: 'tasks' },
+        { name: 'Timeline', icon: 'stream' },
+        { name: 'About', icon: 'person-booth' },
+        { name: 'Contact', icon: 'id-card' },
       ],
     };
   },
