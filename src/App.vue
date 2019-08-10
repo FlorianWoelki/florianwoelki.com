@@ -8,6 +8,10 @@
     <Projects />
     <v-space xlarge />
 
+    <v-space xlarge />
+    <Skills />
+    <v-space xlarge />
+
     <Footer />
   </div>
 </template>
@@ -17,6 +21,7 @@ import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/views/Header.vue';
 import Projects from '@/views/Projects.vue';
+import Skills from '@/views/Skills.vue';
 
 export default {
   components: {
@@ -24,6 +29,7 @@ export default {
     Header,
     Projects,
     Footer,
+    Skills,
   },
 };
 </script>

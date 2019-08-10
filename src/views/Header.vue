@@ -10,6 +10,8 @@
           height="250"
         >
 
+        <v-space />
+
         <h5 class="center white">Florian Woelki</h5>
 
         <v-divider
