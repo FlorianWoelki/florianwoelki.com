@@ -22,7 +22,7 @@ export default {
     return {
       navItems: [
         { name: 'Projects', icon: 'project-diagram' },
-        { name: 'Skills', icon: 'tasks' },
+        { name: 'Background', icon: 'tasks' },
         { name: 'Timeline', icon: 'stream' },
         { name: 'About', icon: 'person-booth' },
         { name: 'Contact', icon: 'id-card' },

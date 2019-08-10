@@ -9,7 +9,7 @@
     <v-space xlarge />
 
     <v-space xlarge />
-    <Skills />
+    <Background />
     <v-space xlarge />
 
     <Footer />
@@ -21,7 +21,7 @@ import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/views/Header.vue';
 import Projects from '@/views/Projects.vue';
-import Skills from '@/views/Skills.vue';
+import Background from '@/views/Background.vue';
 
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
     Header,
     Projects,
     Footer,
-    Skills,
+    Background,
   },
 };
 </script>
