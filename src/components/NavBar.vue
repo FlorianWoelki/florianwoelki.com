@@ -5,8 +5,8 @@
   >
     <div class="nav-center">
       <v-navbar-item
-        v-for="navItem in navItems"
-        :key="navItem"
+        v-for="(navItem, index) in navItems"
+        :key="index"
         :tooltipText="navItem.name"
         tooltipBottom
       >
