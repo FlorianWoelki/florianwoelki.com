@@ -12,6 +12,9 @@
     <Background />
     <v-space xlarge />
 
+    <section class="padded">
+      <h1>test test test test ets</h1>
+    </section>
     <Footer />
   </div>
 </template>

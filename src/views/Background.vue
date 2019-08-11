@@ -4,7 +4,10 @@
     class="clearfix"
   >
     <div class="row no-padding">
-      <div class="fill-height fill-width">
+      <div
+        class="fill-height fill-width"
+        style="top: 0px; bottom: inherit;"
+      >
         <div class="vertical-align-middle center">
           <div class="content text-center">
             <h3 class="white">Background</h3>
@@ -13,9 +16,36 @@
         </div>
       </div>
 
-      <div class="col-right padded">
-        <div class="content">
+      <div
+        class="col-right padded"
+        style="background-color:black"
+      >
+        <div class="content last-element">
           <h3>test</h3>
+          <v-space
+            xlarge
+            v-for="i in 10"
+            :key="i"
+          />
+          <h3>test</h3>
+          <v-space
+            xlarge
+            v-for="i in 10"
+            :key="i"
+          />
+          <h3>test</h3>
+          <v-space
+            xlarge
+            v-for="i in 10"
+            :key="i"
+          />
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
+          <h3>i am the last element</h3>
         </div>
       </div>
     </div>
@@ -35,12 +65,32 @@ export default {
       } else {
         refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
       }
+
+      const lastElementOffset = refElement.getElementsByClassName('last-element')[0];
+
+      if (scrollTop >= elementOffset) {
+        // scrollTop - lastElementOffset.offsetHeight => 1278 max height
+        if (scrollTop - lastElementOffset.offsetHeight >= 1278) {
+          refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
+          refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
+
+          if (scrollTop - lastElementOffset.offsetHeight >= 1278 + 300) {
+            refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
+          }
+        } else {
+          refElement.getElementsByClassName('fill-height')[0].classList.add('fixed');
+          refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: 0px; bottom: inherit;');
+        }
+      } else {
+        refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
+      }
     };
   },
 };
 </script>
 
 <style>
+/*
 @media screen and (min-width: 992px) {
   #background {
     top: 0;
@@ -50,9 +100,15 @@ export default {
     height: 100vh;
   }
 }
-#background .row {
+*/
+#background {
+  overflow: hidden;
+}
+#background .fill-height.fixed {
+  position: fixed;
+}
+#background, #background .row, #background .row .col-right {
   position: relative;
-  background: #fff;
 }
 .vertical-align-middle {
   position: relative;
