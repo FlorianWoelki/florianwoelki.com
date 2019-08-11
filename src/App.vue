@@ -8,8 +8,6 @@
     <Projects />
     <v-space xlarge />
 
-    <BarChart />
-
     <v-space xlarge />
     <Background />
     <v-space xlarge />
@@ -24,7 +22,6 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
-import BarChart from '@/components/BarChart.vue';
 import Header from '@/views/Header.vue';
 import Projects from '@/views/Projects.vue';
 import Background from '@/views/Background.vue';
@@ -36,7 +33,6 @@ export default {
     Projects,
     Footer,
     Background,
-    BarChart,
   },
 };
 </script>

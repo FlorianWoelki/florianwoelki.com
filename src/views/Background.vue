@@ -18,34 +18,57 @@
 
       <div
         class="col-right padded"
-        style="background-color:black"
+        style="background-color: #292929;"
       >
-        <div class="content last-element">
-          <h3>test</h3>
-          <v-space
-            xlarge
-            v-for="i in 10"
-            :key="i"
-          />
-          <h3>test</h3>
-          <v-space
-            xlarge
-            v-for="i in 10"
-            :key="i"
-          />
-          <h3>test</h3>
-          <v-space
-            xlarge
-            v-for="i in 10"
-            :key="i"
-          />
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
-          <h3>i am the last element</h3>
+        <div class="content content-element">
+          <p class="white light">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptate, nesciunt! Neque, quidem. Nisi, officia.
+            Perferendis dolore laborum corporis voluptatum reprehenderit
+            neque quidem quaerat, ducimus veritatis quos? Ratione eum hic debitis.
+          </p>
+
+          <v-space />
+          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+          <h6 class="white text-center">Web Development</h6>
+          <v-row center>
+            <v-col c10>
+              <HBarChart
+                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
+                :data="[9, 5, 6, 8]"
+                :height="250"
+              />
+            </v-col>
+          </v-row>
+
+          <v-space />
+          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+          <h6 class="white text-center">General Development</h6>
+          <v-row center>
+            <v-col c10>
+              <HBarChart
+                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
+                :data="[9, 5, 6, 8]"
+                :height="250"
+              />
+            </v-col>
+          </v-row>
+
+          <v-space />
+          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+          <h6 class="white text-center">Design</h6>
+          <v-row center>
+            <v-col c10>
+              <HBarChart
+                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
+                :data="[9, 5, 6, 8]"
+                :height="250"
+              />
+            </v-col>
+          </v-row>
         </div>
       </div>
     </div>
@@ -53,7 +76,12 @@
 </template>
 
 <script>
+import HBarChart from '@/components/HBarChart.vue';
+
 export default {
+  components: {
+    HBarChart,
+  },
   mounted() {
     window.onscroll = () => {
       const scrollTop = window.pageYOffset || (document.documentElement
@@ -66,7 +94,7 @@ export default {
         refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
       }
 
-      const lastElementOffset = refElement.getElementsByClassName('last-element')[0];
+      const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
       if (scrollTop >= elementOffset) {
         // scrollTop - lastElementOffset.offsetHeight => 1278 max height
@@ -122,8 +150,8 @@ section {
   width: 100%;
 }
 #background .row .fill-height {
-  background: #feac40;
-  background-image: -webkit-radial-gradient(center center, circle cover, #f7484e, #f7484e);
+  background: #686de0;
+  background-image: -webkit-radial-gradient(center center, circle cover, #686de0, #686de0);
 }
 @media screen and (min-width: 992px) {
   #background .fill-height {
