@@ -36,7 +36,7 @@
             <v-col c10>
               <HBarChart
                 :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[9, 5, 6, 8]"
+                :data="[8, 5, 6, 8]"
                 :height="250"
               />
             </v-col>
@@ -50,7 +50,7 @@
             <v-col c10>
               <HBarChart
                 :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[9, 5, 6, 8]"
+                :data="[8, 5, 6, 8]"
                 :height="250"
               />
             </v-col>
@@ -64,7 +64,7 @@
             <v-col c10>
               <HBarChart
                 :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[9, 5, 6, 8]"
+                :data="[8, 5, 6, 8]"
                 :height="250"
               />
             </v-col>

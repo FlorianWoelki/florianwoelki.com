@@ -47,9 +47,17 @@ export default {
             },
             ticks: {
               suggestedMin: 0,
-              suggestedMax: 10,
+              suggestedMax: 8,
               beginAtZero: true,
               fontColor: 'white',
+              callback: (value) => {
+                if (value === 0) return 'Really Bad';
+                if (value === 2) return 'Beginner';
+                if (value === 4) return 'Almost there';
+                if (value === 6) return 'Good';
+                if (value === 8) return 'Really Good';
+                return '';
+              },
             },
           }],
         },
