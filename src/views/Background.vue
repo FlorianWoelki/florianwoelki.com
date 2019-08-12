@@ -120,6 +120,7 @@
         </div>
       </div>
     </div>
+    <v-space id="bottom-space" xlarge />
   </section>
 </template>
 
@@ -145,12 +146,12 @@ export default {
       const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
       if (scrollTop >= elementOffset) {
-        // scrollTop - lastElementOffset.offsetHeight => 1278 max height
-        if (scrollTop - lastElementOffset.offsetHeight >= 1278) {
+        // scrollTop - lastElementOffset.offsetHeight => 1107 max height
+        if (scrollTop - lastElementOffset.offsetHeight >= 1107) {
           refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
           refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-          if (scrollTop - lastElementOffset.offsetHeight >= 1278 + 300) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1107 + 300) {
             refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
           }
         } else {
