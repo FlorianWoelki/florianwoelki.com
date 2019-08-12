@@ -9,7 +9,30 @@
         applications to fully responsive webapps.
       </p>
 
-      <Project />
+      <v-row center>
+        <v-col c6>
+          <Project />
+        </v-col>
+        <v-col c6>
+          <Project />
+        </v-col>
+      </v-row>
+      <v-row center>
+        <v-col c6>
+          <Project />
+        </v-col>
+        <v-col c6>
+          <Project />
+        </v-col>
+      </v-row>
+      <v-row center>
+        <v-col c6>
+          <Project />
+        </v-col>
+        <v-col c6>
+          <Project />
+        </v-col>
+      </v-row>
     </v-container>
   </section>
 </template>
