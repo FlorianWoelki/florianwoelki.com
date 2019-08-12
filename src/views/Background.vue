@@ -147,11 +147,11 @@ export default {
 
       if (scrollTop >= elementOffset) {
         // scrollTop - lastElementOffset.offsetHeight => 1107 max height
-        if (scrollTop - lastElementOffset.offsetHeight >= 1107) {
+        if (scrollTop - lastElementOffset.offsetHeight >= 2087) {
           refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
           refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-          if (scrollTop - lastElementOffset.offsetHeight >= 1107 + 300) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 2087 + 300) {
             refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
           }
         } else {
