@@ -31,22 +31,25 @@ export default {
       options: {
         scales: {
           yAxes: [{
+            barPercentage: 0.75,
+            categoryPercentage: 0.75,
             ticks: {
               beginAtZero: true,
               fontColor: 'white',
             },
             gridLines: {
-              display: true,
+              display: false,
               color: 'white',
             },
           }],
           xAxes: [{
             gridLines: {
-              display: false,
+              display: true,
               color: 'white',
             },
             ticks: {
               suggestedMin: 0,
+              stepSize: 2,
               suggestedMax: 8,
               beginAtZero: true,
               fontColor: 'white',

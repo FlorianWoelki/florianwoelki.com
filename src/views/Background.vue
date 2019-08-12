@@ -22,49 +22,97 @@
       >
         <div class="content content-element">
           <p class="white light">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptate, nesciunt! Neque, quidem. Nisi, officia.
-            Perferendis dolore laborum corporis voluptatum reprehenderit
-            neque quidem quaerat, ducimus veritatis quos? Ratione eum hic debitis.
+            Learning is the key to everything. Therefore, I love to learn new things
+            in new areas, new programming languages or tools. In the past, I explored
+            a lot of new techniques to create applications to javascript frameworks.
+            I love creating new things and I am really open minded to new things.
           </p>
 
           <v-space />
-          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p class="white light">
+            Below are some frameworks or languages I enjoy using web development.
+          </p>
 
           <h6 class="white text-center">Web Development</h6>
           <v-row center>
             <v-col c10>
               <HBarChart
-                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[8, 5, 6, 8]"
+                :labels="['HTML', 'CSS/SCSS', 'JavaScript', 'React.js', 'Vue.js']"
+                :data="[6, 4, 6, 4, 8]"
                 :height="250"
               />
             </v-col>
           </v-row>
 
-          <v-space />
-          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <v-space xlarge />
+          <p class="white light">
+            Below are some languages I enjoy prototyping ideas or creating software with it.
+          </p>
 
           <h6 class="white text-center">General Development</h6>
           <v-row center>
             <v-col c10>
               <HBarChart
-                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[8, 5, 6, 8]"
+                :labels="['Python', 'Java', 'Swift', 'Go', 'Node.js']"
+                :data="[8, 4, 7, 2, 5, 2]"
                 :height="250"
               />
             </v-col>
           </v-row>
 
-          <v-space />
-          <p class="white light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <v-space xlarge />
+          <p class="white light">
+            Below are some tools I use to sketch out some ideas or new applications.
+          </p>
 
           <h6 class="white text-center">Design</h6>
           <v-row center>
             <v-col c10>
               <HBarChart
-                :labels="['Python', 'Java', 'Swift', 'JavaScript']"
-                :data="[8, 5, 6, 8]"
+                :labels="['Sketch', 'Gimp']"
+                :data="[7, 4]"
+                :height="250"
+              />
+            </v-col>
+          </v-row>
+
+          <v-space xlarge />
+          <p class="white light">
+            Below are some information about my artificial intelligence knowledge.
+          </p>
+
+          <h6 class="white text-center">Artificial Intelligence</h6>
+          <v-row center>
+            <v-col c10>
+              <HBarChart
+                :labels="[
+                  'Business',
+                  'ML',
+                  'DL',
+                  'RL',
+                  'NLP'
+                ]"
+                :data="[7, 6, 5, 2, 3]"
+                :height="250"
+              />
+            </v-col>
+          </v-row>
+
+          <v-space xlarge />
+          <p class="white light">
+            Below are some other things you might want to know.
+          </p>
+
+          <h6 class="white text-center">Misc.</h6>
+          <v-row center>
+            <v-col c10>
+              <HBarChart
+                :labels="[
+                  'English',
+                  'German',
+                  'Math',
+                ]"
+                :data="[6, 8, 4]"
                 :height="250"
               />
             </v-col>
