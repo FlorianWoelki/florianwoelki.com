@@ -1,30 +1,17 @@
 <template>
+  <section class="projects">
+    <v-container>
+      <h3 class="text-center">Some of my Projects</h3>
+      <v-divider class="center" short />
+      <p class="text-center">
+        Below are just some projects that I have worked on in the past.
+        I have worked with a wide range of applications ranging from Java
+        applications to fully responsive webapps.
+      </p>
 
-  <v-container>
-    <h5>Projects</h5>
-    <v-divider short />
-
-    <Project
-      title="Vue Cirrus"
-      :tags="['Vue.js', 'CSS Framework']"
-      description="This is a straightforward Vue.js components for the Cirrus CSS framework."
-      projectLink="https://github.com/FlorianWoelki/vue-cirrus"
-      websiteLink="https://florianwoelki.github.io/vue-cirrus/"
-    />
-    <Project
-      title="Lise"
-      :tags="['iOS', 'Swift 5', 'Framework']"
-      description="An iOS framework for creating easy sidebars."
-      projectLink="https://github.com/FlorianWoelki/lise"
-    />
-    <Project
-      title="Watch Together"
-      :tags="['JavaScript', 'Socket.io', 'Node.js']"
-      description="This is a watch together clone written in Node.js with Socket.io
-       and simple JavaScript."
-      projectLink="https://github.com/FlorianWoelki/watch-together"
-    />
-  </v-container>
+      <Project />
+    </v-container>
+  </section>
 </template>
 
 <script>
