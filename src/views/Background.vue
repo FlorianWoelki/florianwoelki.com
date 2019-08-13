@@ -146,12 +146,12 @@ export default {
       const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
       if (scrollTop >= elementOffset) {
-        // scrollTop - lastElementOffset.offsetHeight => 1107 max height
-        if (scrollTop - lastElementOffset.offsetHeight >= 2087) {
+        // console.log(scrollTop - lastElementOffset.offsetHeight);
+        if (scrollTop - lastElementOffset.offsetHeight >= 1645) {
           refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
           refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-          if (scrollTop - lastElementOffset.offsetHeight >= 2087 + 300) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1645 + 300) {
             refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
           }
         } else {
