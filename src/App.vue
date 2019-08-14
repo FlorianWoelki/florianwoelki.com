@@ -10,10 +10,10 @@
 
     <v-space xlarge />
     <Background />
+    <v-space xlarge />
 
-    <section class="padded">
-      <h1>test test test test ets</h1>
-    </section>
+    <About />
+    <v-space xlarge />
     <Footer />
   </div>
 </template>
@@ -24,6 +24,7 @@ import Footer from '@/components/Footer.vue';
 import Header from '@/views/Header.vue';
 import Projects from '@/views/Projects.vue';
 import Background from '@/views/Background.vue';
+import About from '@/views/About.vue';
 
 export default {
   components: {
@@ -32,6 +33,7 @@ export default {
     Projects,
     Footer,
     Background,
+    About,
   },
 };
 </script>
