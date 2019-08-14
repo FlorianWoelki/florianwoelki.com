@@ -21,6 +21,10 @@
 </template>
 
 <style>
+footer {
+  margin-top: 0px;
+}
+
 footer .spacing {
   margin-left: 1rem;
 }

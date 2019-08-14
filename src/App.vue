@@ -14,6 +14,10 @@
 
     <About />
     <v-space xlarge />
+
+    <v-space xlarge />
+    <Contact />
+
     <Footer />
   </div>
 </template>
@@ -25,6 +29,7 @@ import Header from '@/views/Header.vue';
 import Projects from '@/views/Projects.vue';
 import Background from '@/views/Background.vue';
 import About from '@/views/About.vue';
+import Contact from '@/views/Contact.vue';
 
 export default {
   components: {
@@ -34,6 +39,7 @@ export default {
     Footer,
     Background,
     About,
+    Contact,
   },
 };
 </script>

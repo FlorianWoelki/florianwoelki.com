@@ -132,7 +132,7 @@ export default {
     HBarChart,
   },
   mounted() {
-    window.onscroll = () => {
+    window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || (document.documentElement
         || document.body.parentNode || document.body).scrollTop;
       const refElement = document.getElementById('background');
@@ -161,23 +161,12 @@ export default {
       } else {
         refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
       }
-    };
+    });
   },
 };
 </script>
 
 <style>
-/*
-@media screen and (min-width: 992px) {
-  #background {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-  }
-}
-*/
 #background {
   overflow: hidden;
 }
