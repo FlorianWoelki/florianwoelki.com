@@ -35,21 +35,21 @@
             <v-col class="col-fluid" ignoreScreen>
               <v-link href="https://github.com/FlorianWoelki" blank>
                 <span class="icon">
-                  <i class="fab fa-github"></i>
+                  <i class="fab fa-github fa-lg"></i>
                 </span>
               </v-link>
             </v-col>
             <v-col class="col-fluid" ignoreScreen>
               <v-link href="https://linkedin.com/in/florian-woelki/" blank>
                 <span class="icon">
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-linkedin fa-lg"></i>
                 </span>
               </v-link>
             </v-col>
             <v-col class="col-fluid" ignoreScreen>
               <v-link href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A" blank>
                 <span class="icon">
-                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-youtube fa-lg"></i>
                 </span>
               </v-link>
             </v-col>
@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style>
+#contact .icon:hover {
+  color: #374054;
+}
 #contact .row .level {
   -webkit-box-pack: start;
   justify-content: flex-start;
