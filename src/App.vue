@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <NavBar />
-    <!--<router-view/>-->
+    <NavBar :navItems="navItems" />
     <Header />
 
     <v-space xlarge />
@@ -40,6 +39,21 @@ export default {
     Background,
     About,
     Contact,
+  },
+
+  data() {
+    return {
+      navItems: [],
+    };
+  },
+
+  mounted() {
+    this.navItems = [
+      { name: 'Projects', icon: 'project-diagram' },
+      { name: 'Background', icon: 'tasks' },
+      { name: 'About', icon: 'person-booth' },
+      { name: 'Contact', icon: 'id-card' },
+    ];
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section
-    id="contact"
+    id="Contact"
     class="clearfix"
   >
     <div class="row no-padding">
@@ -66,7 +66,7 @@ export default {
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || (document.documentElement
         || document.body.parentNode || document.body).scrollTop;
-      const refElement = document.getElementById('contact');
+      const refElement = document.getElementById('Contact');
       const elementOffset = refElement.offsetTop;
       if (scrollTop >= elementOffset - 300) {
         refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
@@ -79,15 +79,15 @@ export default {
 </script>
 
 <style>
-#contact .icon:hover {
+#Contact .icon:hover {
   color: #374054;
 }
-#contact .row .level {
+#Contact .row .level {
   -webkit-box-pack: start;
   justify-content: flex-start;
 }
 @media screen and (min-width: 992px) {
-  #contact {
+  #Contact {
     top: 0;
     right: 0;
     left: 0;
@@ -95,27 +95,27 @@ export default {
     height: 100vh;
   }
 }
-#contact .row {
+#Contact .row {
   position: relative;
 }
-#contact .row .fill-height.fill-width {
+#Contact .row .fill-height.fill-width {
   width: 100%;
 }
-#contact .row .fill-height {
+#Contact .row .fill-height {
   background: #686de0;
   background-image: -webkit-radial-gradient(center center, circle cover, #e67e22, #e67e22);
 }
 @media screen and (min-width: 992px) {
-  #contact .fill-height {
+  #Contact .fill-height {
     position: absolute;
     width: 40%;
   }
 }
-#contact .row .col-right {
+#Contact .row .col-right {
   min-height: 100vh;
 }
 @media screen and (min-width: 992px) {
-  #contact .col-right {
+  #Contact .col-right {
     width: 60%;
   }
 }

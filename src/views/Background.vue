@@ -1,6 +1,6 @@
 <template>
   <section
-    id="background"
+    id="Background"
     class="clearfix"
   >
     <div class="row no-padding">
@@ -135,7 +135,7 @@ export default {
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || (document.documentElement
         || document.body.parentNode || document.body).scrollTop;
-      const refElement = document.getElementById('background');
+      const refElement = document.getElementById('Background');
       const elementOffset = refElement.offsetTop;
       if (scrollTop >= elementOffset - 300) {
         refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
@@ -167,13 +167,13 @@ export default {
 </script>
 
 <style>
-#background {
+#Background {
   overflow: hidden;
 }
-#background .fill-height.fixed {
+#Background .fill-height.fixed {
   position: fixed;
 }
-#background, #background .row, #background .row .col-right {
+#Background, #Background .row, #Background .row .col-right {
   position: relative;
 }
 .vertical-align-middle {
@@ -184,15 +184,15 @@ export default {
 section {
   display: block;
 }
-#background .row .fill-height.fill-width {
+#Background .row .fill-height.fill-width {
   width: 100%;
 }
-#background .row .fill-height {
+#Background .row .fill-height {
   background: #686de0;
   background-image: -webkit-radial-gradient(center center, circle cover, #686de0, #686de0);
 }
 @media screen and (min-width: 992px) {
-  #background .fill-height {
+  #Background .fill-height {
     position: absolute;
     width: 40%;
   }
@@ -205,11 +205,11 @@ section {
   transition: all .4s;
   transition-delay: 0s;
 }
-#background .row .col-right {
+#Background .row .col-right {
   min-height: 100vh;
 }
 @media screen and (min-width: 992px) {
-  #background .col-right {
+  #Background .col-right {
     width: 60%;
   }
 }

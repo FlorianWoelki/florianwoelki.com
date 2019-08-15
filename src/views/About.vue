@@ -1,5 +1,5 @@
 <template>
-  <section id="about">
+  <section id="About">
     <v-container>
       <v-row level>
         <v-col c4>
@@ -29,7 +29,7 @@
 </template>
 
 <style>
-#about .avatar {
+#About .avatar {
   width: 100%;
   padding-bottom: 100%;
   /*background: 0 0;*/

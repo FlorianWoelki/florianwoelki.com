@@ -1,5 +1,5 @@
 <template>
-  <section class="projects">
+  <section id="Projects">
     <v-container>
       <h3 class="text-center">Some of my Projects</h3>
       <v-divider class="center" short />

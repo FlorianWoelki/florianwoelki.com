@@ -4,29 +4,31 @@
     dark
   >
     <div class="nav-center">
-      <v-navbar-item
+      <div
         v-for="(navItem, index) in navItems"
-        :key="index"
-        :tooltipText="navItem.name"
-        tooltipBottom
+        :key=index
+        :data-tooltip="navItem.name"
+        class="tooltip tooltip-bottom nav-item"
       >
-        <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>
-      </v-navbar-item>
+        <a @click="scrollTo(navItem.name)">
+          <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>
+        </a>
+      </div>
     </div>
   </v-navbar>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      navItems: [
-        { name: 'Projects', icon: 'project-diagram' },
-        { name: 'Background', icon: 'tasks' },
-        { name: 'About', icon: 'person-booth' },
-        { name: 'Contact', icon: 'id-card' },
-      ],
-    };
+  props: {
+    navItems: {
+      type: Array,
+    },
+  },
+  methods: {
+    scrollTo: (name) => {
+      document.getElementById(name).scrollIntoView({ behavior: 'smooth' });
+    },
   },
 };
 </script>
