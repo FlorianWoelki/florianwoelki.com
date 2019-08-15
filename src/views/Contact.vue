@@ -15,7 +15,44 @@
       <div class="col-right padded">
         <v-container>
           <v-row>
-            <h1>test</h1>
+            <p>
+              If you're looking to expand your network or you want a kickass developer,
+              feel free to contact me wherever you want.
+            </p>
+            <div class="level">
+              <img src="../assets/logo_black.png" width="100">
+              <h5>&nbsp;Florian Woelki</h5>
+            </div>
+            <p class="description">
+              Software Developer
+            </p>
+            <span>
+              <a href="mailto:florianwoelki@gmx.de">florianwoelki@gmx.de</a>
+            </span>
+            <v-space xlarge />
+          </v-row>
+          <v-row fluid>
+            <v-col class="col-fluid" ignoreScreen>
+              <v-link href="https://github.com/FlorianWoelki" blank>
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </v-link>
+            </v-col>
+            <v-col class="col-fluid" ignoreScreen>
+              <v-link href="https://linkedin.com/in/florian-woelki/" blank>
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </v-link>
+            </v-col>
+            <v-col class="col-fluid" ignoreScreen>
+              <v-link href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A" blank>
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </v-link>
+            </v-col>
           </v-row>
         </v-container>
       </div>
@@ -42,6 +79,10 @@ export default {
 </script>
 
 <style>
+#contact .row .level {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
 @media screen and (min-width: 992px) {
   #contact {
     top: 0;
