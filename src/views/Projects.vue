@@ -16,18 +16,50 @@
 
       <v-row center>
         <v-col c6>
-          <Project />
+          <Project
+            title="Vue Cirrus"
+            subtitle="Vue.js CSS component framework"
+            description="I really like the Cirrus CSS framework,
+              but I wondered if there is a Vue.js framework."
+            image="https://i.imgur.com/M1l8Zjy.png"
+            githubLink="https://github.com/FlorianWoelki/vue-cirrus"
+            websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
+          />
         </v-col>
         <v-col c6>
-          <Project />
+          <Project
+            title="Vue Cirrus"
+            subtitle="Vue.js CSS component framework"
+            description="I really like the Cirrus CSS framework,
+              but I wondered if there is a Vue.js framework."
+            image="https://i.imgur.com/M1l8Zjy.png"
+            githubLink="https://github.com/FlorianWoelki/vue-cirrus"
+            websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
+          />
         </v-col>
       </v-row>
       <v-row center>
         <v-col c6>
-          <Project />
+          <Project
+            title="Vue Cirrus"
+            subtitle="Vue.js CSS component framework"
+            description="I really like the Cirrus CSS framework,
+              but I wondered if there is a Vue.js framework."
+            image="https://i.imgur.com/M1l8Zjy.png"
+            githubLink="https://github.com/FlorianWoelki/vue-cirrus"
+            websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
+          />
         </v-col>
         <v-col c6>
-          <Project />
+          <Project
+            title="Vue Cirrus"
+            subtitle="Vue.js CSS component framework"
+            description="I really like the Cirrus CSS framework,
+              but I wondered if there is a Vue.js framework."
+            image="https://i.imgur.com/M1l8Zjy.png"
+            githubLink="https://github.com/FlorianWoelki/vue-cirrus"
+            websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
+          />
         </v-col>
       </v-row>
     </v-container>
