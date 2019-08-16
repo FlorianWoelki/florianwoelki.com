@@ -57,3 +57,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.project .card-image {
+  filter: brightness(75%);
+}
+</style>
