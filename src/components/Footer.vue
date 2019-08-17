@@ -11,12 +11,6 @@
         in <strong>Berlin</strong>
       </span>
     </p>
-    <p>
-      <v-link c class="light">Impressum</v-link>
-      <span class="spacing">
-        <v-link c class="light">Privacy</v-link>
-      </span>
-    </p>
   </v-footer>
 </template>
 
