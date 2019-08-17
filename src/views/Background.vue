@@ -147,11 +147,11 @@ export default {
 
       if (scrollTop >= elementOffset) {
         // console.log(scrollTop - lastElementOffset.offsetHeight);
-        if (scrollTop - lastElementOffset.offsetHeight >= 1645) {
+        if (scrollTop - lastElementOffset.offsetHeight >= 1720) {
           refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
           refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-          if (scrollTop - lastElementOffset.offsetHeight >= 1645 + 300) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1720 + 300) {
             refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
           }
         } else {
@@ -169,9 +169,6 @@ export default {
 <style>
 #Background {
   overflow: hidden;
-}
-#Background .fill-height.fixed {
-  position: fixed;
 }
 #Background, #Background .row, #Background .row .col-right {
   position: relative;
@@ -195,6 +192,9 @@ section {
   #Background .fill-height {
     position: absolute;
     width: 40%;
+  }
+  #Background .fill-height.fixed {
+    position: fixed;
   }
 }
 .fill-height {
@@ -220,6 +220,7 @@ section {
 }
 .col-right {
   position: relative;
+  margin-top: 0 !important;
 }
 .padded {
   padding: 5rem 0 !important;
