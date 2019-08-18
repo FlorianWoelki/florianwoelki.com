@@ -32,41 +32,12 @@
             <v-space xlarge />
           </v-row>
           <v-row fluid>
-            <v-col class="col-fluid" ignoreScreen>
-              <v-link href="https://github.com/FlorianWoelki" blank>
-                <span class="icon">
-                  <i class="fab fa-github fa-lg"></i>
-                </span>
-              </v-link>
-            </v-col>
-            <v-col class="col-fluid" ignoreScreen>
-              <v-link href="https://linkedin.com/in/florian-woelki/" blank>
-                <span class="icon">
-                  <i class="fab fa-linkedin fa-lg"></i>
-                </span>
-              </v-link>
-            </v-col>
-            <v-col class="col-fluid" ignoreScreen>
-              <v-link href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A" blank>
-                <span class="icon">
-                  <i class="fab fa-youtube fa-lg"></i>
-                </span>
-              </v-link>
-            </v-col>
-            <v-col class="col-fluid" ignoreScreen>
-              <v-link href="https://medium.com/@FlorianWoelki" blank>
-                <span class="icon">
-                  <i class="fab fa-medium fa-lg"></i>
-                </span>
-              </v-link>
-            </v-col>
-            <v-col class="col-fluid" ignoreScreen>
-              <v-link href="https://anchor.fm/florian-woelki" blank>
-                <span class="icon">
-                  <i class="fas fa-podcast fa-lg"></i>
-                </span>
-              </v-link>
-            </v-col>
+            <ContactIcon
+              v-for="contactIcon in contactIcons"
+              :key="contactIcon.href"
+              :href="contactIcon.href"
+              :iconClass="contactIcon.icon"
+            />
           </v-row>
         </v-container>
       </div>
@@ -75,7 +46,25 @@
 </template>
 
 <script>
+import ContactIcon from '@/components/ContactIcon.vue';
+
 export default {
+  components: {
+    ContactIcon,
+  },
+
+  data() {
+    return {
+      contactIcons: [
+        { href: 'https://github.com/FlorianWoelki', icon: 'fab fa-github' },
+        { href: 'https://linkedin.com/in/florian-woelki/', icon: 'fab fa-linkedin' },
+        { href: 'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A', icon: 'fab fa-youtube' },
+        { href: 'https://medium.com/@FlorianWoelki', icon: 'fab fa-medium' },
+        { href: 'https://anchor.fm/florian-woelki', icon: 'fas fa-podcast' },
+      ],
+    };
+  },
+
   mounted() {
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || (document.documentElement
