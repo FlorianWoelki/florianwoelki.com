@@ -53,6 +53,20 @@
                 </span>
               </v-link>
             </v-col>
+            <v-col class="col-fluid" ignoreScreen>
+              <v-link href="https://medium.com/@FlorianWoelki" blank>
+                <span class="icon">
+                  <i class="fab fa-medium fa-lg"></i>
+                </span>
+              </v-link>
+            </v-col>
+            <v-col class="col-fluid" ignoreScreen>
+              <v-link href="https://anchor.fm/florian-woelki" blank>
+                <span class="icon">
+                  <i class="fas fa-podcast fa-lg"></i>
+                </span>
+              </v-link>
+            </v-col>
           </v-row>
         </v-container>
       </div>
