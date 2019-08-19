@@ -117,6 +117,32 @@
               />
             </v-col>
           </v-row>
+
+          <v-space xlarge />
+          <p class="white light">
+            Below are some other maybe useful stats about me.
+          </p>
+
+          <v-row class="stats">
+            <v-col c4>
+              <div class="white text-center">
+                <p class="light">Repositories</p>
+                <h3>29</h3>
+              </div>
+            </v-col>
+            <v-col c4>
+              <div class="white text-center">
+                <p class="light">Coffees</p>
+                <h3>729</h3>
+              </div>
+            </v-col>
+            <v-col c4>
+              <div class="white text-center">
+                <p class="light">Organisations</p>
+                <h3>2</h3>
+              </div>
+            </v-col>
+          </v-row>
         </div>
       </div>
     </div>
@@ -166,6 +192,10 @@ export default {
 </script>
 
 <style>
+#Background .stats p,
+#Background .stats h3 {
+  margin: 0;
+}
 #Background {
   overflow: hidden;
 }
