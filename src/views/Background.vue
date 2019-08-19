@@ -120,7 +120,6 @@
         </div>
       </div>
     </div>
-    <v-space id="bottom-space" xlarge />
   </section>
 </template>
 
