@@ -1,48 +1,43 @@
 <template>
-  <section
-    id="Contact"
-    class="clearfix"
-  >
-    <div class="row no-padding">
-      <div class="fill-height fill-width">
-        <div class="vertical-align-middle">
-          <div class="content text-center">
-            <h3 class="white">Contact</h3>
-            <v-divider short class="center" />
-          </div>
+  <div class="row no-padding">
+    <div class="fill-height fill-width">
+      <div class="vertical-align-middle">
+        <div class="content text-center">
+          <h3 class="white">Contact</h3>
+          <v-divider short class="center" />
         </div>
       </div>
-      <div class="col-right padded">
-        <v-container>
-          <v-row>
-            <p>
-              If you're looking to expand your network or you want a kickass developer,
-              feel free to contact me wherever you want.
-            </p>
-            <div class="level">
-              <img src="../assets/logo_black.png" width="100">
-              <h5>&nbsp;Florian Woelki</h5>
-            </div>
-            <p class="description">
-              Software Developer
-            </p>
-            <span>
-              <a href="mailto:florianwoelki@gmx.de">florianwoelki@gmx.de</a>
-            </span>
-            <v-space xlarge />
-          </v-row>
-          <v-row fluid>
-            <ContactIcon
-              v-for="contactIcon in contactIcons"
-              :key="contactIcon.href"
-              :href="contactIcon.href"
-              :iconClass="contactIcon.icon"
-            />
-          </v-row>
-        </v-container>
-      </div>
     </div>
-  </section>
+    <div class="col-right padded">
+      <v-container>
+        <v-row>
+          <p>
+            If you're looking to expand your network or you want a kickass developer,
+            feel free to contact me wherever you want.
+          </p>
+          <div class="level">
+            <img src="../assets/logo_black.png" width="100">
+            <h5>&nbsp;Florian Woelki</h5>
+          </div>
+          <p class="description">
+            Software Developer
+          </p>
+          <span>
+            <a href="mailto:florianwoelki@gmx.de">florianwoelki@gmx.de</a>
+          </span>
+          <v-space xlarge />
+        </v-row>
+        <v-row fluid>
+          <ContactIcon
+            v-for="contactIcon in contactIcons"
+            :key="contactIcon.href"
+            :href="contactIcon.href"
+            :iconClass="contactIcon.icon"
+          />
+        </v-row>
+      </v-container>
+    </div>
+  </div>
 </template>
 
 <script>

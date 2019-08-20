@@ -1,152 +1,147 @@
 <template>
-  <section
-    id="Background"
-    class="clearfix"
-  >
-    <div class="row no-padding">
-      <div
-        class="fill-height fill-width"
-        style="top: 0px; bottom: inherit;"
-      >
-        <div class="vertical-align-middle center">
-          <div class="content text-center">
-            <h3 class="white">Background</h3>
-            <div class="divider divider-short center"></div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-right padded"
-        style="background-color: #292929;"
-      >
-        <div class="content content-element">
-          <p class="white light">
-            Learning is the key to everything. Therefore, I love to learn new things
-            in new areas, new programming languages or tools. In the past, I explored
-            a lot of new techniques to create applications to javascript frameworks.
-            I love creating new things and I am really open minded to new things.
-          </p>
-
-          <v-space />
-          <p class="white light">
-            Below are some frameworks or languages I enjoy using web development.
-          </p>
-
-          <h6 class="white text-center">Web Development</h6>
-          <v-row center>
-            <v-col c10>
-              <HBarChart
-                :labels="['HTML', 'CSS/SCSS', 'JavaScript', 'React.js', 'Vue.js']"
-                :data="[6, 4, 6, 4, 8]"
-                :height="250"
-              />
-            </v-col>
-          </v-row>
-
-          <v-space xlarge />
-          <p class="white light">
-            Below are some languages I enjoy prototyping ideas or creating software with it.
-          </p>
-
-          <h6 class="white text-center">General Development</h6>
-          <v-row center>
-            <v-col c10>
-              <HBarChart
-                :labels="['Python', 'Java', 'Swift', 'Go', 'Node.js']"
-                :data="[8, 4, 7, 2, 5, 2]"
-                :height="250"
-              />
-            </v-col>
-          </v-row>
-
-          <v-space xlarge />
-          <p class="white light">
-            Below are some tools I use to sketch out some ideas or new applications.
-          </p>
-
-          <h6 class="white text-center">Design</h6>
-          <v-row center>
-            <v-col c10>
-              <HBarChart
-                :labels="['Sketch', 'Gimp']"
-                :data="[7, 4]"
-                :height="250"
-              />
-            </v-col>
-          </v-row>
-
-          <v-space xlarge />
-          <p class="white light">
-            Below are some information about my artificial intelligence knowledge.
-          </p>
-
-          <h6 class="white text-center">Artificial Intelligence</h6>
-          <v-row center>
-            <v-col c10>
-              <HBarChart
-                :labels="[
-                  'Business',
-                  'ML',
-                  'DL',
-                  'RL',
-                  'NLP'
-                ]"
-                :data="[7, 6, 5, 2, 3]"
-                :height="250"
-              />
-            </v-col>
-          </v-row>
-
-          <v-space xlarge />
-          <p class="white light">
-            Below are some other things you might want to know.
-          </p>
-
-          <h6 class="white text-center">Misc.</h6>
-          <v-row center>
-            <v-col c10>
-              <HBarChart
-                :labels="[
-                  'English',
-                  'German',
-                  'Math',
-                ]"
-                :data="[6, 8, 4]"
-                :height="250"
-              />
-            </v-col>
-          </v-row>
-
-          <v-space xlarge />
-          <p class="white light">
-            Below are some other maybe useful stats about me.
-          </p>
-
-          <v-row class="stats">
-            <v-col c4>
-              <div class="white text-center">
-                <p class="light">Repositories</p>
-                <h3>29</h3>
-              </div>
-            </v-col>
-            <v-col c4>
-              <div class="white text-center">
-                <p class="light">Coffees</p>
-                <h3>729</h3>
-              </div>
-            </v-col>
-            <v-col c4>
-              <div class="white text-center">
-                <p class="light">Organisations</p>
-                <h3>2</h3>
-              </div>
-            </v-col>
-          </v-row>
+  <div class="row no-padding">
+    <div
+      class="fill-height fill-width"
+      style="top: 0px; bottom: inherit;"
+    >
+      <div class="vertical-align-middle center">
+        <div class="content text-center">
+          <h3 class="white">Background</h3>
+          <div class="divider divider-short center"></div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div
+      class="col-right padded"
+      style="background-color: #292929;"
+    >
+      <div class="content content-element">
+        <p class="white light">
+          Learning is the key to everything. Therefore, I love to learn new things
+          in new areas, new programming languages or tools. In the past, I explored
+          a lot of new techniques to create applications to javascript frameworks.
+          I love creating new things and I am really open minded to new things.
+        </p>
+
+        <v-space />
+        <p class="white light">
+          Below are some frameworks or languages I enjoy using web development.
+        </p>
+
+        <h6 class="white text-center">Web Development</h6>
+        <v-row center>
+          <v-col c10>
+            <HBarChart
+              :labels="['HTML', 'CSS/SCSS', 'JavaScript', 'React.js', 'Vue.js']"
+              :data="[6, 4, 6, 4, 8]"
+              :height="250"
+            />
+          </v-col>
+        </v-row>
+
+        <v-space xlarge />
+        <p class="white light">
+          Below are some languages I enjoy prototyping ideas or creating software with it.
+        </p>
+
+        <h6 class="white text-center">General Development</h6>
+        <v-row center>
+          <v-col c10>
+            <HBarChart
+              :labels="['Python', 'Java', 'Swift', 'Go', 'Node.js']"
+              :data="[8, 4, 7, 2, 5, 2]"
+              :height="250"
+            />
+          </v-col>
+        </v-row>
+
+        <v-space xlarge />
+        <p class="white light">
+          Below are some tools I use to sketch out some ideas or new applications.
+        </p>
+
+        <h6 class="white text-center">Design</h6>
+        <v-row center>
+          <v-col c10>
+            <HBarChart
+              :labels="['Sketch', 'Gimp']"
+              :data="[7, 4]"
+              :height="250"
+            />
+          </v-col>
+        </v-row>
+
+        <v-space xlarge />
+        <p class="white light">
+          Below are some information about my artificial intelligence knowledge.
+        </p>
+
+        <h6 class="white text-center">Artificial Intelligence</h6>
+        <v-row center>
+          <v-col c10>
+            <HBarChart
+              :labels="[
+                'Business',
+                'ML',
+                'DL',
+                'RL',
+                'NLP'
+              ]"
+              :data="[7, 6, 5, 2, 3]"
+              :height="250"
+            />
+          </v-col>
+        </v-row>
+
+        <v-space xlarge />
+        <p class="white light">
+          Below are some other things you might want to know.
+        </p>
+
+        <h6 class="white text-center">Misc.</h6>
+        <v-row center>
+          <v-col c10>
+            <HBarChart
+              :labels="[
+                'English',
+                'German',
+                'Math',
+              ]"
+              :data="[6, 8, 4]"
+              :height="250"
+            />
+          </v-col>
+        </v-row>
+
+        <v-space xlarge />
+        <p class="white light">
+          Below are some other maybe useful stats about me.
+        </p>
+
+        <v-row class="stats">
+          <v-col c4>
+            <div class="white text-center">
+              <p class="light">Repositories</p>
+              <h3>29</h3>
+            </div>
+          </v-col>
+          <v-col c4>
+            <div class="white text-center">
+              <p class="light">Coffees</p>
+              <h3>729</h3>
+            </div>
+          </v-col>
+          <v-col c4>
+            <div class="white text-center">
+              <p class="light">Organisations</p>
+              <h3>2</h3>
+            </div>
+          </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

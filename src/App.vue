@@ -3,21 +3,29 @@
     <NavBar :navItems="navItems" />
     <Header />
 
-    <v-space xlarge />
-    <Projects />
-    <v-space xlarge />
+    <section id="Projects">
+      <v-space xlarge />
+      <Projects />
+      <v-space xlarge />
+    </section>
 
-    <v-space xlarge />
-    <Background />
-    <v-space xlarge />
+    <section id="Background" class="clearfix">
+      <v-space xlarge />
+      <Background />
+      <v-space xlarge />
+    </section>
 
-    <About />
-    <v-space xlarge />
+    <section id="About">
+      <v-space xlarge />
+      <About />
+      <v-space xlarge />
+    </section>
 
-    <v-space xlarge />
-    <Contact />
-
-    <Footer />
+    <section id="Contact" class="clearfix">
+      <v-space xlarge />
+      <Contact />
+      <Footer />
+    </section>
   </div>
 </template>
 
