@@ -65,14 +65,6 @@
             </a>
           </v-col>
         </v-row>
-
-        <v-space xlarge />
-
-        <div class="center">
-          <a href="#">
-            <i class="white fas fa-arrow-down fa-3x infinite alternate hover-grow"></i>
-          </a>
-        </div>
       </v-container>
     </v-fullscreen>
   </div>
