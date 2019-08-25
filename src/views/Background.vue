@@ -123,7 +123,7 @@
           <v-col c4>
             <div class="white text-center">
               <p class="light">Repositories</p>
-              <h3>30</h3>
+              <h3>31</h3>
             </div>
           </v-col>
           <v-col c4>
