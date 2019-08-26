@@ -152,36 +152,41 @@ export default {
     HBarChart,
   },
   mounted() {
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.pageYOffset || (document.documentElement
-        || document.body.parentNode || document.body).scrollTop;
-      const refElement = document.getElementById('Background');
-      const elementOffset = refElement.offsetTop;
-      if (scrollTop >= elementOffset - 300) {
-        refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
-      } else {
-        refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
-      }
+    const width = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
 
-      const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
+    if (width >= 992) {
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || (document.documentElement
+          || document.body.parentNode || document.body).scrollTop;
+        const refElement = document.getElementById('Background');
+        const elementOffset = refElement.offsetTop;
+        if (scrollTop >= elementOffset - 300) {
+          refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
+        } else {
+          refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
+        }
 
-      console.log(scrollTop, elementOffset + 60);
-      if (scrollTop >= elementOffset + 64) {
-        if (scrollTop - lastElementOffset.offsetHeight >= 1720) {
-          refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
-          refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
+        const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
-          if (scrollTop - lastElementOffset.offsetHeight >= 1720 + 300) {
-            refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
+        if (scrollTop >= elementOffset + 64) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1720) {
+            refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
+            refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
+
+            if (scrollTop - lastElementOffset.offsetHeight >= 1720 + 300) {
+              refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
+            }
+          } else {
+            refElement.getElementsByClassName('fill-height')[0].classList.add('fixed');
+            refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: 0px; bottom: inherit;');
           }
         } else {
-          refElement.getElementsByClassName('fill-height')[0].classList.add('fixed');
-          refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: 0px; bottom: inherit;');
+          refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
         }
-      } else {
-        refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
-      }
-    });
+      });
+    }
   },
 };
 </script>

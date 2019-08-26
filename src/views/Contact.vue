@@ -61,17 +61,23 @@ export default {
   },
 
   mounted() {
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.pageYOffset || (document.documentElement
-        || document.body.parentNode || document.body).scrollTop;
-      const refElement = document.getElementById('Contact');
-      const elementOffset = refElement.offsetTop;
-      if (scrollTop >= elementOffset - 300) {
-        refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
-      } else {
-        refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
-      }
-    });
+    const width = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (width >= 992) {
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || (document.documentElement
+          || document.body.parentNode || document.body).scrollTop;
+        const refElement = document.getElementById('Contact');
+        const elementOffset = refElement.offsetTop;
+        if (scrollTop >= elementOffset - 300) {
+          refElement.getElementsByClassName('fill-height')[0].classList.remove('fill-width');
+        } else {
+          refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
+        }
+      });
+    }
   },
 };
 </script>
