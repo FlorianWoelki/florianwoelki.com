@@ -11,7 +11,7 @@
       <div class="content">
         <p>{{ description }}</p>
       </div>
-      <div class="action-bar text-center">
+      <div class="action-bar u-text-center">
         <button class="btn">
           <a :href="githubLink" target="_blank">
             <i class="fab fa-github fa-2x"></i>

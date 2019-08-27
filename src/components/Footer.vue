@@ -2,14 +2,16 @@
   <v-footer
     title="Florian Woelki"
   >
-    <h4 class="white light">Make things happen.</h4>
-    <v-row style="padding-bottom: 0px;">
+    <h4 class="white font-thin">Make things happen.</h4>
+    <v-row style="padding-bottom: 0px;" center>
       Copyright 2019 © Florian Woelki
     </v-row>
-    <v-row style="padding-top: 0px;">
-      Made with
-      <i class="fa fa-heart pulse"></i>
-      in <strong>Berlin</strong>
+    <v-row style="padding-top: 0px;" center>
+      <v-col>
+        Made with
+        <i class="fa fa-heart pulse"></i>
+        in <strong>Berlin</strong>
+      </v-col>
     </v-row>
   </v-footer>
 </template>

@@ -1,13 +1,13 @@
 <template>
-  <div class="row no-padding">
+  <div class="row u-no-padding">
     <div
       class="fill-height fill-width"
       style="top: 0px; bottom: inherit;"
     >
-      <div class="vertical-align-middle center">
-        <div class="content text-center">
+      <div class="vertical-align-middle u-center">
+        <div class="content u-text-center">
           <h3 class="white">Background</h3>
-          <div class="divider divider-short center"></div>
+          <v-divider center style="background-color:white;width:300px" />
         </div>
       </div>
     </div>
@@ -171,11 +171,11 @@ export default {
         const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
         if (scrollTop >= elementOffset + 64) {
-          if (scrollTop - lastElementOffset.offsetHeight >= 1720) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1710) {
             refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
             refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-            if (scrollTop - lastElementOffset.offsetHeight >= 1720 + 300) {
+            if (scrollTop - lastElementOffset.offsetHeight >= 1710 + 300) {
               refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
             }
           } else {

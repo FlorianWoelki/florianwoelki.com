@@ -1,5 +1,5 @@
 <template>
-  <v-col class="col-fluid" ignoreScreen>
+  <v-col class="col-fluid">
     <v-link :href="href" blank>
       <span class="icon">
         <i :class="iconClass + ' fa-lg'"></i>

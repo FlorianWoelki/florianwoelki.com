@@ -5,34 +5,24 @@
         <img
           src="../assets/logo.png"
           alt="logo"
-          class="center"
+          class="u-center"
           width="250"
           height="250"
         >
 
         <v-space />
 
-        <h5 class="center white">Florian Woelki</h5>
+        <h5 class="u-center white">Florian Woelki</h5>
 
-        <v-divider
-          class="center"
-          short
-        />
-        <h6
-          class="center white"
-          style="font-weight: 100;"
-        >Developer</h6>
-        <v-divider
-          class="center"
-          short
-        />
+        <v-divider center style="background-color:white;width:300px" />
+        <h6 class="u-center white font-thin">Developer</h6>
+        <v-divider center style="background-color:white;width:300px" />
 
         <v-space />
 
         <v-row>
           <v-col
-            c2
-            o3
+            c4
             center
           >
             <a
@@ -43,7 +33,7 @@
             </a>
           </v-col>
           <v-col
-            c2
+            c4
             center
           >
             <a
@@ -54,7 +44,7 @@
             </a>
           </v-col>
           <v-col
-            c2
+            c4
             center
           >
             <a
