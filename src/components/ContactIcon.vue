@@ -1,8 +1,8 @@
 <template>
-  <v-col class="col-fluid">
+  <v-col class="col">
     <v-link :href="href" blank>
       <span class="icon">
-        <i :class="iconClass + ' fa-lg'"></i>
+        <i :class="iconClass + ' fa-2x'"></i>
       </span>
     </v-link>
   </v-col>

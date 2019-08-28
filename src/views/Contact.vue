@@ -4,7 +4,7 @@
       <div class="vertical-align-middle">
         <div class="content u-text-center">
           <h3 class="white">Contact</h3>
-          <v-divider center style="background-color:white;width:300px" />
+          <v-divider center short style="background-color:white;" />
         </div>
       </div>
     </div>
@@ -29,15 +29,13 @@
             <v-space xlarge />
           </v-col>
         </v-row>
-        <v-row fluid>
-          <v-col>
-            <ContactIcon
-              v-for="contactIcon in contactIcons"
-              :key="contactIcon.href"
-              :href="contactIcon.href"
-              :iconClass="contactIcon.icon"
-            />
-          </v-col>
+        <v-row>
+          <ContactIcon
+            v-for="contactIcon in contactIcons"
+            :key="contactIcon.href"
+            :href="contactIcon.href"
+            :iconClass="contactIcon.icon"
+          />
         </v-row>
       </v-container>
     </div>

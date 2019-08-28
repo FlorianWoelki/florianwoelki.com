@@ -7,7 +7,7 @@
       <div class="vertical-align-middle u-center">
         <div class="content u-text-center">
           <h3 class="white">Background</h3>
-          <v-divider center style="background-color:white;width:300px" />
+          <v-divider center short style="background-color:white;" />
         </div>
       </div>
     </div>

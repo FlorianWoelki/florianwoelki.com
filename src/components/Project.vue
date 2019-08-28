@@ -11,17 +11,15 @@
       <div class="content">
         <p>{{ description }}</p>
       </div>
-      <div class="action-bar u-text-center">
-        <button class="btn">
-          <a :href="githubLink" target="_blank">
+      <div class="action-bar">
+        <v-row center>
+          <v-btn :href="githubLink" blank link outline>
             <i class="fab fa-github fa-2x"></i>
-          </a>
-        </button>
-        <button class="btn" v-if="websiteLink !== ''">
-          <a :href="websiteLink" target="_blank">
+          </v-btn>
+          <v-btn v-if="websiteLink !== ''" :href="websiteLink" blank link outline>
             <i class="fas fa-globe fa-2x"></i>
-          </a>
-        </button>
+          </v-btn>
+        </v-row>
       </div>
     </div>
   </div>

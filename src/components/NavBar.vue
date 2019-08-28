@@ -8,7 +8,7 @@
         v-for="(navItem, index) in navItems"
         :key=index
         :data-tooltip="navItem.name"
-        class="tooltip tooltip-bottom nav-item"
+        class="tooltip tooltip--bottom nav-item"
       >
         <a @click="scrollTo(navItem.name)">
           <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>

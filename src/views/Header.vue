@@ -14,17 +14,14 @@
 
         <h5 class="u-center white">Florian Woelki</h5>
 
-        <v-divider center style="background-color:white;width:300px" />
-        <h6 class="u-center white font-thin">Developer</h6>
-        <v-divider center style="background-color:white;width:300px" />
+        <v-divider center short style="background-color:white;" />
+        <h6 class="u-center white font-thin">Creator</h6>
+        <v-divider center short style="background-color:white;" />
 
         <v-space />
 
         <v-row>
-          <v-col
-            c4
-            center
-          >
+          <v-col c4 center>
             <a
               href="https://www.linkedin.com/in/florian-woelki/"
               target="_blank"
@@ -32,10 +29,7 @@
               <i class="fab fa-linkedin fa-2x"></i>
             </a>
           </v-col>
-          <v-col
-            c4
-            center
-          >
+          <v-col c4 center>
             <a
               href="https://github.com/FlorianWoelki"
               target="_blank"
@@ -43,10 +37,7 @@
               <i class="fab fa-github fa-2x"></i>
             </a>
           </v-col>
-          <v-col
-            c4
-            center
-          >
+          <v-col c4 center>
             <a
               href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
               target="_blank"
