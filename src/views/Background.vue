@@ -120,19 +120,19 @@
         </p>
 
         <v-row class="stats">
-          <v-col c4>
+          <v-col class="col">
             <div class="white text-center">
               <p class="light">Repositories</p>
               <h3>31</h3>
             </div>
           </v-col>
-          <v-col c4>
+          <v-col class="col">
             <div class="white text-center">
               <p class="light">Coffees</p>
               <h3>729</h3>
             </div>
           </v-col>
-          <v-col c4>
+          <v-col class="col">
             <div class="white text-center">
               <p class="light">Organisations</p>
               <h3>2</h3>
