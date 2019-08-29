@@ -1,53 +1,61 @@
 <template>
   <div class="home">
-    <v-fullscreen link="https://images.pexels.com/photos/7101/wood-coffee-iphone-notebook.jpg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=720&w=1280">
-      <v-container>
-        <img
-          src="../assets/logo.png"
-          alt="logo"
-          class="u-center"
-          width="250"
-          height="250"
-        >
+    <div
+      id="splash-img"
+      class="hero hero-img parallax-img fullscreen"
+    >
+      <div id="hero-body" class="u-center" style="min-width:50%;">
+        <v-container>
+          <img
+            src="../assets/logo.png"
+            alt="logo"
+            class="u-center"
+            width="250"
+            height="250"
+          >
 
-        <v-space />
+          <v-space />
 
-        <h5 class="u-center white">Florian Woelki</h5>
+          <h1 class="u-text-center white">Florian Woelki</h1>
 
-        <v-divider center short style="background-color:white;" />
-        <h6 class="u-center white font-thin">Creator</h6>
-        <v-divider center short style="background-color:white;" />
+          <v-divider center short style="background-color:white;" />
+          <h6 class="u-text-center white font-thin">Creator</h6>
+          <v-divider center short style="background-color:white;" />
 
-        <v-space />
+          <v-space />
 
-        <v-row>
-          <v-col c4 center>
-            <a
-              href="https://www.linkedin.com/in/florian-woelki/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-          </v-col>
-          <v-col c4 center>
-            <a
-              href="https://github.com/FlorianWoelki"
-              target="_blank"
-            >
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-          </v-col>
-          <v-col c4 center>
-            <a
-              href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
-              target="_blank"
-            >
-              <i class="fab fa-youtube fa-2x"></i>
-            </a>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-fullscreen>
+          <v-row center>
+            <v-col class="col">
+              <a
+                href="https://www.linkedin.com/in/florian-woelki/"
+                target="_blank"
+                class="u-text-center"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </v-col>
+            <v-col class="col">
+              <a
+                href="https://github.com/FlorianWoelki"
+                target="_blank"
+                class="u-text-center"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </v-col>
+            <v-col class="col">
+              <a
+                href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+                target="_blank"
+                class="u-text-center"
+              >
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,6 +66,11 @@ export default {
 </script>
 
 <style>
+#splash-img {
+  background: url("https://images.unsplash.com/photo-1508182314998-3bd49473002f?ixlib=rb-0.3.5&s=f8ac09c936bac8105fde945ea267da65&auto=format&fit=crop&w=2560&q=100");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .home h5 {
   margin-top: -5px;
   text-transform: uppercase;
@@ -69,6 +82,6 @@ export default {
   color: white;
 }
 .home a:hover {
-  color: #34495e;
+  color: #5c7fa2;
 }
 </style>
