@@ -1,7 +1,7 @@
 <template>
   <v-col class="col">
     <v-link :href="href" blank>
-      <span class="icon">
+      <span class="icon text-link">
         <i :class="iconClass + ' fa-2x'"></i>
       </span>
     </v-link>
