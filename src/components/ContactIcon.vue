@@ -1,5 +1,5 @@
 <template>
-  <v-col class="col">
+  <v-col fluid>
     <v-link :href="href" blank>
       <span class="icon text-link">
         <i :class="iconClass + ' fa-2x'"></i>

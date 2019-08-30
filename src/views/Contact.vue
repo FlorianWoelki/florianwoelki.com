@@ -3,7 +3,7 @@
     <div class="fill-height fill-width">
       <div class="vertical-align-middle">
         <div class="content u-text-center">
-          <h3 class="white">Contact</h3>
+          <h1 class="white">Contact</h1>
           <v-divider center short style="background-color:white;" />
         </div>
       </div>

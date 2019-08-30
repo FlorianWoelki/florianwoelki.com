@@ -25,7 +25,7 @@
           <v-space />
 
           <v-row center>
-            <v-col class="col">
+            <v-col fluid>
               <a
                 href="https://www.linkedin.com/in/florian-woelki/"
                 target="_blank"
@@ -34,7 +34,7 @@
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </v-col>
-            <v-col class="col">
+            <v-col fluid>
               <a
                 href="https://github.com/FlorianWoelki"
                 target="_blank"
@@ -43,7 +43,7 @@
                 <i class="fab fa-github fa-2x"></i>
               </a>
             </v-col>
-            <v-col class="col">
+            <v-col fluid>
               <a
                 href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
                 target="_blank"

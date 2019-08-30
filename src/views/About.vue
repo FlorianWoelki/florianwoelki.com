@@ -30,7 +30,6 @@
 #About .avatar {
   width: 100%;
   padding-bottom: 100%;
-  /*background: 0 0;*/
   overflow: hidden;
 }
 </style>

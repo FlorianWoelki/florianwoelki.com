@@ -6,7 +6,7 @@
     >
       <div class="vertical-align-middle u-center">
         <div class="content u-text-center">
-          <h3 class="white">Background</h3>
+          <h1 class="white">Background</h1>
           <v-divider center short style="background-color:white;" />
         </div>
       </div>
@@ -120,19 +120,19 @@
         </p>
 
         <v-row class="stats">
-          <v-col class="col">
+          <v-col fluid>
             <div class="white text-center">
               <p class="light">Repositories</p>
               <h3>31</h3>
             </div>
           </v-col>
-          <v-col class="col">
+          <v-col fluid>
             <div class="white text-center">
               <p class="light">Coffees</p>
               <h3>729</h3>
             </div>
           </v-col>
-          <v-col class="col">
+          <v-col fluid>
             <div class="white text-center">
               <p class="light">Organisations</p>
               <h3>2</h3>
