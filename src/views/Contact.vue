@@ -125,4 +125,8 @@ export default {
     width: 60%;
   }
 }
+
+#Contact .description {
+  margin-bottom: 0;
+}
 </style>
