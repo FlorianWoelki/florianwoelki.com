@@ -1,43 +1,41 @@
 <template>
-  <v-container>
-    <h3 class="u-text-center">Some of my Projects</h3>
-    <v-divider center short />
-    <p class="u-text-center">
-      Below are just some projects that I have worked on in the past.
-      I have worked with a wide range of applications ranging from Java
-      applications to fully responsive webapps.
-      <v-row center>
-        <v-link href="https://github.com/FlorianWoelki" blank>
-          All projects on GitHub
-        </v-link>
-      </v-row>
-    </p>
+  <div class="projects">
+    <v-container>
+      <h3 class="u-text-center">Some of my Projects</h3>
+      <v-divider center short />
+      <p class="u-text-center">
+        Below are just some projects that I have worked on in the past.
+        I have worked with a wide range of applications ranging from Java
+        applications to fully responsive webapps.
+        <v-row center>
+          <v-link href="https://github.com/FlorianWoelki" blank>
+            All projects on GitHub
+          </v-link>
+        </v-row>
+      </p>
+    </v-container>
 
-    <v-row center>
-      <v-col c6>
+    <v-row noPadding>
+      <v-col c6 noPadding>
         <Project
           title="Vue Cirrus"
           subtitle="Vue.js CSS component framework"
-          description="I really like the Cirrus CSS framework,
-            but I wondered if there is a Vue.js framework."
           image="https://i.imgur.com/M1l8Zjy.png"
           githubLink="https://github.com/FlorianWoelki/vue-cirrus"
           websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
         />
       </v-col>
-      <v-col c6>
+      <v-col c6 noPadding>
         <Project
           title="Digit Me"
           subtitle="Website for digit recognition"
-          description="This combines a website, which recognizes
-            digits written by the client."
           image="https://i.imgur.com/94FNdNF.png"
           githubLink="https://github.com/FlorianWoelki/digit-me"
         />
       </v-col>
     </v-row>
-    <v-row center>
-      <v-col c6>
+    <v-row>
+      <v-col c6 noPadding>
         <Project
           title="Watch Together"
           subtitle="A simple and clean watch together clone"
@@ -47,7 +45,7 @@
           githubLink="https://github.com/FlorianWoelki/watch-together"
         />
       </v-col>
-      <v-col c6>
+      <v-col c6 noPadding>
         <Project
           title="Lise"
           subtitle="A swifty Sidebar framework"
@@ -58,7 +56,7 @@
         />
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
