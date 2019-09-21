@@ -172,11 +172,11 @@ export default {
         const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
         if (scrollTop >= elementOffset + 64) {
-          if (scrollTop - lastElementOffset.offsetHeight >= 1745) {
+          if (scrollTop - lastElementOffset.offsetHeight >= 1514) {
             refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
             refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
 
-            if (scrollTop - lastElementOffset.offsetHeight >= 1745 + 300) {
+            if (scrollTop - lastElementOffset.offsetHeight >= 1514 + 300) {
               refElement.getElementsByClassName('fill-height')[0].classList.add('fill-width');
             }
           } else {
