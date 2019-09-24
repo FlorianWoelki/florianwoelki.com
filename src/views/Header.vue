@@ -55,6 +55,7 @@
           </v-row>
         </v-container>
       </div>
+      <div id="fade"></div>
     </div>
   </div>
 </template>
@@ -62,10 +63,46 @@
 <script>
 export default {
   name: 'home',
+
+  mounted() {
+    const width = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (width >= 992) {
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || (document.documentElement
+          || document.body.parentNode || document.body).scrollTop;
+        if (scrollTop >= 15) {
+          document.getElementById('fade').classList.add('faded');
+        } else {
+          document.getElementById('fade').classList.remove('faded');
+        }
+      });
+    }
+  },
 };
 </script>
 
 <style>
+#fade.faded {
+  opacity: 1;
+  transition: all 1s;
+}
+#fade {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0001), #fff);
+  bottom: 0;
+  height: 175px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 1s;
+}
+.faded {
+  opacity: .75;
+}
+
 #splash-img {
   background: url('https://www.ubackground.com/_ph/17/56501308.jpg');
   background-size: cover;
