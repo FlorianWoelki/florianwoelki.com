@@ -67,7 +67,7 @@ export default {
 
 <style>
 #splash-img {
-  background: url("https://images.unsplash.com/photo-1508182314998-3bd49473002f?ixlib=rb-0.3.5&s=f8ac09c936bac8105fde945ea267da65&auto=format&fit=crop&w=2560&q=100");
+  background: url('https://www.ubackground.com/_ph/17/56501308.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
