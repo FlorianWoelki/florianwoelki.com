@@ -13,6 +13,15 @@
         in <strong>Berlin</strong>
       </v-col>
     </v-row>
+    <v-divider center short />
+    <v-row center>
+      <v-col>
+        <p style="margin-top: 0px;">
+          Created with
+          <v-link blank href="https://github.com/FlorianWoelki/vue-cirrus">Vue Cirrus</v-link>
+        </p>
+      </v-col>
+    </v-row>
   </v-footer>
 </template>
 
