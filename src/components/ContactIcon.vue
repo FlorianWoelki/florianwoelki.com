@@ -28,6 +28,6 @@ export default {
   color: #595959 !important;
 }
 .icon.text-dark:hover {
-  color: #161616 !important;
+  color: #5c7fa2 !important;
 }
 </style>
