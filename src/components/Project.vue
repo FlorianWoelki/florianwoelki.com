@@ -5,6 +5,9 @@
       <div class="content u-text-center">
         <h3>{{ title }}</h3>
         <p>{{ subtitle }}</p>
+        <v-tag-container center grouped rounded>
+          <slot></slot>
+        </v-tag-container>
         <v-row center>
           <v-col fluid>
             <v-btn center :href="githubLink" blank link>

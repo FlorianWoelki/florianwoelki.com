@@ -23,7 +23,12 @@
           image="https://i.imgur.com/M1l8Zjy.png"
           githubLink="https://github.com/FlorianWoelki/vue-cirrus"
           websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
-        />
+        >
+          <v-tag success>vue.js</v-tag>
+          <v-tag link>css</v-tag>
+          <v-tag warning>javascript</v-tag>
+          <v-tag black>framework</v-tag>
+        </Project>
       </v-col>
       <v-col c6 noPadding>
         <Project
@@ -31,7 +36,12 @@
           subtitle="Website for digit recognition"
           image="https://i.imgur.com/94FNdNF.png"
           githubLink="https://github.com/FlorianWoelki/digit-me"
-        />
+        >
+          <v-tag success>vue.js</v-tag>
+          <v-tag danger>Jupyter Notebook</v-tag>
+          <v-tag info>python</v-tag>
+          <v-tag black>deep learning</v-tag>
+        </Project>
       </v-col>
     </v-row>
     <v-row>
@@ -43,7 +53,11 @@
             WebSockets, JavaScript and material design."
           image="https://i.imgur.com/x8DItYN.png"
           githubLink="https://github.com/FlorianWoelki/watch-together"
-        />
+        >
+          <v-tag warning>node.js</v-tag>
+          <v-tag link>css</v-tag>
+          <v-tag black>material</v-tag>
+        </Project>
       </v-col>
       <v-col c6 noPadding>
         <Project
@@ -53,7 +67,10 @@
             and it helps to create easy sidebars."
           image="https://i.imgur.com/GY3tlJv.png"
           githubLink="https://github.com/FlorianWoelki/lise"
-        />
+        >
+          <v-tag warning>Swift</v-tag>
+          <v-tag black>framework</v-tag>
+        </Project>
       </v-col>
     </v-row>
   </div>
