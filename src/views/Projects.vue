@@ -20,7 +20,7 @@
         <Project
           title="Vue Cirrus"
           subtitle="Vue.js CSS component framework"
-          image="https://i.imgur.com/M1l8Zjy.png"
+          image="https://i.imgur.com/KvB3oUg.png"
           githubLink="https://github.com/FlorianWoelki/vue-cirrus"
           websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
         >
