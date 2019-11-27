@@ -53,6 +53,13 @@
               </a>
             </v-col>
           </v-row>
+
+          <v-space xlarge />
+          <a id="click-to-projects" @click="scrollTo('Projects')">
+            <h3 class="white u-text-center">
+              <i class="fas fa-arrow-down animated pulse"></i>
+            </h3>
+          </a>
         </v-container>
       </div>
       <div id="fade"></div>
@@ -81,10 +88,20 @@ export default {
       });
     }
   },
+
+  methods: {
+    scrollTo: (name) => {
+      document.getElementById(name).scrollIntoView({ behavior: 'smooth' });
+    },
+  },
 };
 </script>
 
 <style>
+#click-to-projects:hover {
+  cursor: pointer;
+}
+
 #fade.faded {
   opacity: 1;
   transition: all 1s;
