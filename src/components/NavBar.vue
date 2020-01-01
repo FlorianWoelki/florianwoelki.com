@@ -3,18 +3,17 @@
     fixed
     dark
   >
-    <div class="nav-center">
-      <div
+    <v-nav-region position="center">
+      <v-navbar-item
         v-for="(navItem, index) in navItems"
-        :key=index
-        :data-tooltip="navItem.name"
-        class="tooltip tooltip--bottom nav-item"
+        :key="index"
+        @click="scrollTo($event, navItem.name)"
+        :tooltipText="navItem.name"
+        tooltipBottom
       >
-        <a @click="scrollTo(navItem.name)">
-          <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>
-        </a>
-      </div>
-    </div>
+        <i :class="'fas fa-' + navItem.icon + ' fa-lg'"></i>
+      </v-navbar-item>
+    </v-nav-region>
   </v-navbar>
 </template>
 
@@ -26,7 +25,8 @@ export default {
     },
   },
   methods: {
-    scrollTo: (name) => {
+    scrollTo: (event, name) => {
+      event.preventDefault();
       document.getElementById(name).scrollIntoView({ behavior: 'smooth' });
     },
   },
