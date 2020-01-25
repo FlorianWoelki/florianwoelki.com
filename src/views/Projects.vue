@@ -2,12 +2,12 @@
   <div class="projects">
     <v-container>
       <h3 class="u-text-center">Some of my Projects</h3>
-      <v-divider center short />
+      <v-divider class="u-center" short />
       <p class="u-text-center">
         Below are just some projects that I have worked on in the past.
         I have worked with a wide range of applications ranging from Java
         applications to fully responsive webapps.
-        <v-row center>
+        <v-row class="u-center">
           <v-link href="https://github.com/FlorianWoelki" blank>
             All projects on GitHub
           </v-link>
@@ -15,8 +15,10 @@
       </p>
     </v-container>
 
-    <v-row noPadding>
-      <v-col c6 noPadding>
+    <v-space xlarge></v-space>
+
+    <v-row class="u-no-padding">
+      <v-col c="6" class="u-no-padding">
         <Project
           title="Vue Cirrus"
           subtitle="Vue.js CSS component framework"
@@ -24,28 +26,28 @@
           githubLink="https://github.com/FlorianWoelki/vue-cirrus"
           websiteLink="https://florianwoelki.github.io/vue-cirrus/#/"
         >
-          <v-tag success>vue.js</v-tag>
-          <v-tag link>css</v-tag>
-          <v-tag warning>javascript</v-tag>
-          <v-tag black>framework</v-tag>
+          <v-tag color="success">vue.js</v-tag>
+          <v-tag color="link">css</v-tag>
+          <v-tag color="warning">javascript</v-tag>
+          <v-tag color="black">framework</v-tag>
         </Project>
       </v-col>
-      <v-col c6 noPadding>
+      <v-col c="6" class="u-no-padding">
         <Project
           title="Digit Me"
           subtitle="Website for digit recognition"
           image="https://i.imgur.com/94FNdNF.png"
           githubLink="https://github.com/FlorianWoelki/digit-me"
         >
-          <v-tag success>vue.js</v-tag>
-          <v-tag danger>Jupyter Notebook</v-tag>
-          <v-tag info>python</v-tag>
-          <v-tag black>deep learning</v-tag>
+          <v-tag color="success">vue.js</v-tag>
+          <v-tag color="danger">Jupyter Notebook</v-tag>
+          <v-tag color="info">python</v-tag>
+          <v-tag color="black">deep learning</v-tag>
         </Project>
       </v-col>
     </v-row>
     <v-row>
-      <v-col c6 noPadding>
+      <v-col c="6" class="u-no-padding">
         <Project
           title="Watch Together"
           subtitle="A simple and clean watch together clone"
@@ -54,12 +56,12 @@
           image="https://i.imgur.com/x8DItYN.png"
           githubLink="https://github.com/FlorianWoelki/watch-together"
         >
-          <v-tag warning>node.js</v-tag>
-          <v-tag link>css</v-tag>
-          <v-tag black>material</v-tag>
+          <v-tag color="warning">node.js</v-tag>
+          <v-tag color="link">css</v-tag>
+          <v-tag color="black">material</v-tag>
         </Project>
       </v-col>
-      <v-col c6 noPadding>
+      <v-col c="6" class="u-no-padding">
         <Project
           title="Lise"
           subtitle="A swifty Sidebar framework"
@@ -68,8 +70,8 @@
           image="https://i.imgur.com/GY3tlJv.png"
           githubLink="https://github.com/FlorianWoelki/lise"
         >
-          <v-tag warning>Swift</v-tag>
-          <v-tag black>framework</v-tag>
+          <v-tag color="warning">Swift</v-tag>
+          <v-tag color="black">framework</v-tag>
         </Project>
       </v-col>
     </v-row>

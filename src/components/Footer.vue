@@ -3,18 +3,18 @@
     title="Florian Woelki"
   >
     <h4 class="white font-thin">Make things happen.</h4>
-    <v-row style="padding-bottom: 0px;" center>
+    <v-row style="padding-bottom: 0px;" class="u-center">
       Copyright 2019 © Florian Woelki
     </v-row>
-    <v-row style="padding-top: 0px;" center>
+    <v-row style="padding-top: 0px;" class="u-center">
       <v-col>
         Made with
         <i class="fa fa-heart pulse"></i>
         in <strong>Berlin</strong>
       </v-col>
     </v-row>
-    <v-divider center short />
-    <v-row center>
+    <v-divider class="u-center" short />
+    <v-row class="u-center">
       <v-col>
         <p style="margin-top: 0px;">
           Created with

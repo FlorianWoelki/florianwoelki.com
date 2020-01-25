@@ -5,17 +5,17 @@
       <div class="content u-text-center">
         <h3>{{ title }}</h3>
         <p>{{ subtitle }}</p>
-        <v-tag-container center grouped rounded>
+        <v-tag-container class="u-center" grouped rounded>
           <slot></slot>
         </v-tag-container>
         <v-row center>
           <v-col fluid>
-            <v-btn center :href="githubLink" blank link>
+            <v-btn class="u-center" :href="githubLink" blank color="link">
               <i class="fab fa-github fa-2x"></i>
             </v-btn>
           </v-col>
           <v-col fluid v-if="websiteLink !== ''">
-            <v-btn center :href="websiteLink" blank link>
+            <v-btn class="u-center" :href="websiteLink" blank color="link">
               <i class="fas fa-globe fa-2x"></i>
             </v-btn>
           </v-col>

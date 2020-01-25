@@ -18,9 +18,9 @@
 
           <h1 class="u-text-center white">Florian Woelki</h1>
 
-          <v-divider center short style="background-color:white;" />
+          <v-divider class="u-center" short />
           <h6 class="u-text-center white font-thin">Creator</h6>
-          <v-divider center short style="background-color:white;" />
+          <v-divider class="u-center" short />
 
           <v-space />
 
@@ -98,6 +98,12 @@ export default {
 </script>
 
 <style>
+.home .divider {
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #click-to-projects:hover {
   cursor: pointer;
 }

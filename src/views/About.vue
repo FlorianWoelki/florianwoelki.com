@@ -1,12 +1,12 @@
 <template>
   <v-container>
     <v-row level>
-      <v-col c4>
+      <v-col c="4">
         <div class="avatar">
           <img src="../assets/profile_picture.png">
         </div>
       </v-col>
-      <v-col c7 o1>
+      <v-col c="7" o="1">
         <v-container>
           <h3>About Me</h3>
           <v-divider short />
