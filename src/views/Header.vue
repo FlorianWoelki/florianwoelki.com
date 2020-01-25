@@ -121,7 +121,7 @@ export default {
 }
 
 #splash-img {
-  background: url('https://www.ubackground.com/_ph/17/56501308.jpg');
+  background: url('../assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
