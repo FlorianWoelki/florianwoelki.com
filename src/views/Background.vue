@@ -29,13 +29,13 @@
           Below are some frameworks or languages I enjoy using web development.
         </p>
 
-        <h6 class="white text-center">Web Development</h6>
-        <v-row center>
-          <v-col c10>
+        <h6 class="white">Web Development</h6>
+        <v-row>
+          <v-col c="12">
             <HBarChart
               :labels="['HTML', 'CSS/SCSS', 'JavaScript', 'React.js', 'Vue.js']"
               :data="[6, 4, 6, 4, 7]"
-              :height="250"
+              :height="350"
             />
           </v-col>
         </v-row>
@@ -45,13 +45,13 @@
           Below are some languages I enjoy prototyping ideas or creating software with it.
         </p>
 
-        <h6 class="white text-center">General Development</h6>
-        <v-row center>
-          <v-col c10>
+        <h6 class="white">General Development</h6>
+        <v-row>
+          <v-col c="12">
             <HBarChart
               :labels="['Python', 'Java', 'Swift', 'Go', 'Node.js']"
               :data="[7, 4, 7, 2, 5, 2]"
-              :height="250"
+              :height="350"
             />
           </v-col>
         </v-row>
@@ -61,13 +61,13 @@
           Below are some tools I use to sketch out some ideas or new applications.
         </p>
 
-        <h6 class="white text-center">Design</h6>
-        <v-row center>
-          <v-col c10>
+        <h6 class="white">Design</h6>
+        <v-row>
+          <v-col c="12">
             <HBarChart
               :labels="['Sketch', 'Gimp']"
               :data="[8, 4]"
-              :height="250"
+              :height="350"
             />
           </v-col>
         </v-row>
@@ -77,9 +77,9 @@
           Below are some information about my artificial intelligence knowledge.
         </p>
 
-        <h6 class="white text-center">Artificial Intelligence</h6>
-        <v-row center>
-          <v-col c10>
+        <h6 class="white">Artificial Intelligence</h6>
+        <v-row>
+          <v-col c="12">
             <HBarChart
               :labels="[
                 'Business',
@@ -89,7 +89,7 @@
                 'NLP'
               ]"
               :data="[7, 6, 5, 2, 3]"
-              :height="250"
+              :height="350"
             />
           </v-col>
         </v-row>
@@ -100,8 +100,8 @@
         </p>
 
         <h6 class="white text-center">Misc.</h6>
-        <v-row center>
-          <v-col c10>
+        <v-row>
+          <v-col c="12">
             <HBarChart
               :labels="[
                 'English',
@@ -110,7 +110,7 @@
                 'Math',
               ]"
               :data="[6, 8, 1, 4]"
-              :height="250"
+              :height="350"
             />
           </v-col>
         </v-row>
