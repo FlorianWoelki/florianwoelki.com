@@ -4,7 +4,7 @@
       <div class="vertical-align-middle">
         <div class="content u-text-center">
           <h1 class="white">Contact</h1>
-          <v-divider center short style="background-color:white;" />
+          <v-divider class="u-center" short />
         </div>
       </div>
     </div>
