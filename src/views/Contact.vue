@@ -29,7 +29,7 @@
             <v-space xlarge />
           </v-col>
         </v-row>
-        <v-row center>
+        <v-row class="u-center">
           <ContactIcon
             v-for="contactIcon in contactIcons"
             :key="contactIcon.href"
