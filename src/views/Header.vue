@@ -1,30 +1,28 @@
 <template>
   <div class="home">
-    <div
-      id="splash-img"
-      class="hero hero-img parallax-img fullscreen"
-    >
-      <div id="hero-body" class="u-center" style="min-width:50%;">
+    <v-parallax customBody fullscreen class="u-center">
+      <v-container>
+        <v-space class="u-hide-tablet" xlarge></v-space>
+        <img
+          src="../assets/logo.png"
+          alt="logo"
+          class="u-center"
+          width="250"
+          height="250"
+        >
+
+        <v-space />
+
+        <h1 class="u-text-center white">Florian Woelki</h1>
+
+        <v-divider class="u-center" short />
+        <h6 class="u-text-center white font-thin">Creator</h6>
+        <v-divider class="u-center" short />
+
+        <v-space />
+
         <v-container>
-          <img
-            src="../assets/logo.png"
-            alt="logo"
-            class="u-center"
-            width="250"
-            height="250"
-          >
-
-          <v-space />
-
-          <h1 class="u-text-center white">Florian Woelki</h1>
-
-          <v-divider class="u-center" short />
-          <h6 class="u-text-center white font-thin">Creator</h6>
-          <v-divider class="u-center" short />
-
-          <v-space />
-
-          <v-row center>
+          <v-row class="u-center" noWrap>
             <v-col fluid>
               <a
                 href="https://www.linkedin.com/in/florian-woelki/"
@@ -53,17 +51,17 @@
               </a>
             </v-col>
           </v-row>
-
-          <v-space xlarge />
-          <a id="click-to-projects" @click="scrollTo('Projects')">
-            <h3 class="white u-text-center">
-              <i class="fas fa-arrow-down animated pulse"></i>
-            </h3>
-          </a>
         </v-container>
-      </div>
-      <div id="fade"></div>
-    </div>
+
+        <v-space xlarge />
+        <a id="click-to-projects" @click="scrollTo('Projects')">
+          <h3 class="white u-text-center">
+            <i class="fas fa-arrow-down animated pulse"></i>
+          </h3>
+        </a>
+      </v-container>
+    </v-parallax>
+    <div id="fade"></div>
   </div>
 </template>
 
@@ -127,9 +125,7 @@ export default {
 }
 
 #splash-img {
-  background: url('../assets/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('../assets/background.jpg') !important;
 }
 .home h5 {
   margin-top: -5px;
