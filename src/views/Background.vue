@@ -171,7 +171,7 @@ export default {
 
         const lastElementOffset = refElement.getElementsByClassName('content-element')[0];
 
-        if (scrollTop >= elementOffset + 61) {
+        if (scrollTop >= elementOffset + 61.1) {
           if (scrollTop - lastElementOffset.offsetHeight >= 1627) {
             refElement.getElementsByClassName('fill-height')[0].classList.remove('fixed');
             refElement.getElementsByClassName('fill-height')[0].setAttribute('style', 'top: inherit; bottom: 0px;');
