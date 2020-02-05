@@ -17,8 +17,8 @@
 
     <v-space xlarge></v-space>
 
-    <v-row class="u-no-padding">
-      <v-col c="6" class="u-no-padding">
+    <v-row class="u-center">
+      <v-col c="3">
         <Project
           title="Vue Cirrus"
           subtitle="Vue.js CSS component framework"
@@ -32,7 +32,7 @@
           <v-tag color="black">framework</v-tag>
         </Project>
       </v-col>
-      <v-col c="6" class="u-no-padding">
+      <v-col c="3">
         <Project
           title="Digit Me"
           subtitle="Website for digit recognition"
@@ -46,8 +46,8 @@
         </Project>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col c="6" class="u-no-padding">
+    <v-row class="u-center">
+      <v-col c="3">
         <Project
           title="Watch Together"
           subtitle="A simple and clean watch together clone"
@@ -61,7 +61,7 @@
           <v-tag color="black">material</v-tag>
         </Project>
       </v-col>
-      <v-col c="6" class="u-no-padding">
+      <v-col c="3">
         <Project
           title="Lise"
           subtitle="A swifty Sidebar framework"

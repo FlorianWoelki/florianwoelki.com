@@ -1,4 +1,32 @@
 <template>
+  <div class="project">
+    <v-card equalHeight>
+      <v-card-image :image="image">
+        <v-card-title>{{ title }}</v-card-title>
+        <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
+      </v-card-image>
+      <v-card-content>
+        <v-space></v-space>
+        <v-tag-container rounded grouped class="u-center">
+          <slot></slot>
+        </v-tag-container>
+
+        <v-row class="u-text-center">
+          <v-col fluid>
+            <v-btn class="u-center" :href="githubLink" blank color="link">
+              <i class="fab fa-github fa-lg"></i>
+            </v-btn>
+          </v-col>
+          <v-col fluid v-if="websiteLink !== ''">
+            <v-btn class="u-center" :href="websiteLink" blank color="link">
+              <i class="fas fa-globe fa-lg"></i>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-card-content>
+    </v-card>
+  </div>
+<!--
   <div class="wrapper">
     <img :src="image" alt="image">
     <div class="overlay">
@@ -23,6 +51,7 @@
       </div>
     </div>
   </div>
+  -->
 </template>
 
 <script>
@@ -53,7 +82,7 @@ export default {
 </script>
 
 <style>
-.wrapper {
+/*.wrapper {
   width: 100%;
   margin: 0;
   position: relative;
@@ -89,5 +118,5 @@ export default {
 }
 .wrapper:hover .overlay {
   opacity: 1;
-}
+}*/
 </style>
