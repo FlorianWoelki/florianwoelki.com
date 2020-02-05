@@ -87,3 +87,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.projects .divider {
+  margin-top: 5px;
+}
+</style>
