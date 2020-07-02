@@ -1,7 +1,10 @@
 <template>
   <div class="container mt-4">
-    <div class="pos-absolute">
+    <div class="absolute t-2 r-4">
       <TriangleSVG />
+    </div>
+    <div class="absolute b-4 l-4">
+      <TriangleSVG is-right />
     </div>
     <h1 class="bb-1">
       Bucket List
