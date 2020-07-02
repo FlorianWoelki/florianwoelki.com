@@ -1,5 +1,8 @@
 <template>
   <div class="container mt-4">
+    <div class="pos-absolute">
+      <TriangleSVG />
+    </div>
     <h1 class="bb-1">
       Bucket List
     </h1>
@@ -40,13 +43,18 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import TriangleSVG from '@/components/TriangleSVG.vue';
 
 interface Bucket {
   name: string;
   done: boolean;
 }
 
-@Component
+@Component({
+  components: {
+    TriangleSVG,
+  },
+})
 export default class BucketList extends Vue {
   private list: Array<Bucket> = [
     {
