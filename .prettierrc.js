@@ -1,5 +1,1 @@
-module.exports = {
-  printWidth: 100,
-  semi: true,
-  singleQuote: true,
-};
+module.exports = { printWidth: 100, semi: true, singleQuote: true, trailingComma: 'all' };

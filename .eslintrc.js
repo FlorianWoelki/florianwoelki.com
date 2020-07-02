@@ -3,7 +3,13 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['prettier', 'plugin:vue/essential', '@vue/airbnb', '@vue/typescript/recommended'],
+  extends: [
+    'prettier',
+    'plugin:vue/essential',
+    '@vue/airbnb',
+    '@vue/typescript/recommended',
+    'plugin:vue/strongly-recommended',
+  ],
   parserOptions: {
     ecmaVersion: 2020,
   },
