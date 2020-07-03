@@ -6,11 +6,10 @@
     <div class="absolute b-4 l-4 xs-hide">
       <TriangleSVG is-right />
     </div>
-    <h1 class="bb-1">
+    <h1 class="bb-1 inline-block underline-red">
       Bucket List
     </h1>
-    <div class="bb-1 bc-gray-400 mw-20" />
-    <div class="row mt-2 p-0">
+    <div class="row mt-1 p-0">
       <div
         v-for="columnIndex in 3"
         :key="columnIndex"
