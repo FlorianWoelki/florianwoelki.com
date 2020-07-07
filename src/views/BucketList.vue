@@ -1,43 +1,46 @@
 <template>
-  <div class="container mt-4">
-    <div class="absolute t-2 r-4 xs-hide">
+  <div class="relative">
+    <div class="translate-l-full absolute top-0 right-0 xs-hide">
       <TriangleSVG />
     </div>
-    <div class="absolute b-4 l-4 xs-hide">
+    <div class="translate-r-full absolute bottom-0 left-0 xs-hide">
       <TriangleSVG is-right />
     </div>
-    <h1 class="bb-1 inline-block underline-red">
-      Bucket List
-    </h1>
-    <div class="row mt-1 p-0">
-      <div
-        v-for="columnIndex in 3"
-        :key="columnIndex"
-        class="col-4 p-0"
-      >
-        <p
-          v-for="
-            (bucket, index) in list.slice(
-              (columnIndex - 1) * Math.round(list.length / 3),
-              Math.round(list.length / 3) * columnIndex
-            )
-          "
-          :key="bucket.name"
-          class="font-18"
+    <div class="container mt-4">
+      <h1 class="bb-1 inline-block underline-red">
+        Bucket List
+      </h1>
+      <div class="row mt-1 p-0">
+        <div
+          v-for="columnIndex in 3"
+          :key="columnIndex"
+          class="col-4 p-0"
         >
-          <span class="text-red-500 font-bold">
-            {{
-              (index + 1 - Math.round(list.length / 3)) + Math.round(list.length / 3) * columnIndex
-            }}
-          </span>
-          <del v-if="bucket.done">{{ bucket.name }}</del>
-          <span
-            v-else
-            class="font-bold"
+          <p
+            v-for="
+              (bucket, index) in list.slice(
+                (columnIndex - 1) * Math.round(list.length / 3),
+                Math.round(list.length / 3) * columnIndex
+              )
+            "
+            :key="bucket.name"
+            class="font-18"
           >
-            {{ bucket.name }}
-          </span>
-        </p>
+            <span class="text-red-500 font-bold">
+              {{
+                (index + 1 - Math.round(list.length / 3))
+                  + Math.round(list.length / 3) * columnIndex
+              }}
+            </span>
+            <del v-if="bucket.done">{{ bucket.name }}</del>
+            <span
+              v-else
+              class="font-bold"
+            >
+              {{ bucket.name }}
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
