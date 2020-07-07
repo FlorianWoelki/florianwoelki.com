@@ -118,6 +118,10 @@ export default class BucketList extends Vue {
       name: 'Write a bestselling book',
       done: false,
     },
+    {
+      name: 'Drive a Tesla',
+      done: false,
+    },
   ];
 }
 </script>
