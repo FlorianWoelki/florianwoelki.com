@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
     "core-js": "^3.6.5",
+    "purgecss": "^2.3.0",
     "tailwindcss": "^1.5.2",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
