@@ -1,33 +1,21 @@
 <template>
-  <div>
-    <div class="bg-gray-200 relative">
-      <div class="container pt-16 pb-16">
-        <div class="translate-l-full absolute top-2 right-4 xs-hide">
-          <TriangleSVG is-right />
-        </div>
-        <div class="translate-r-full absolute bottom-2 left-0 xs-hide">
-          <TriangleSVG is-right />
-        </div>
-        <h1 class="mt-0 mb-1 font-bold">
-          Florian Woelki
-        </h1>
-        <p class="font-24 line-height-30">
-          Softwaredeveloper, Innovator, Creator
-        </p>
+  <div class="py-16 bg-gray-100 overflow-x-hidden">
+    <div class="relative container mx-auto px-24">
+      <div class="hidden md:block absolute bottom-0 left-0 translate-l-full">
+        <TriangleSVG is-right />
       </div>
-    </div>
-
-    <div class="bg-gray-200 pt-3 pb-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <StatsBox show-border />
-          </div>
-          <div class="col-6">
-            <StatsBox />
-          </div>
-        </div>
+      <div class="hidden md:block absolute top-0 right-0 translate-r-full">
+        <TriangleSVG is-right />
       </div>
+      <h1 class="text-6xl">
+        test
+      </h1>
+      <button
+        class="text-sm shadow sm:shadow-none block w-full sm:w-auto rounded-lg bg-indigo-500
+        uppercase text-white tracking-wide font-semibold px-6 py-4"
+      >
+        GET THINGS DONE
+      </button>
     </div>
   </div>
 </template>
@@ -35,21 +23,11 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import TriangleSVG from '@/components/TriangleSVG.vue';
-import StatsBox from '@/components/StatsBox.vue';
 
 @Component({
-  components: { TriangleSVG, StatsBox },
+  components: {
+    TriangleSVG,
+  },
 })
 export default class Home extends Vue {}
 </script>
-
-<style lang="scss">
-.translate-r-full {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.translate-l-full {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-</style>
