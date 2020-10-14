@@ -34,37 +34,27 @@
 
     <div class="container grid grid-cols-2 px-16 mx-auto">
       <div>
-        <h2 class="mt-16 mb-4 text-3xl font-bold tracking-widest text-gray-800 uppercase">
+        <Title class="mt-16">
           About
-        </h2>
+        </Title>
 
         <div class="ml-4">
-          <div class="px-2 py-1 mb-4 border-l-4 border-gray-800">
-            <p class="text-lg font-semibold tracking-wide text-gray-800 uppercase">
-              Florian Woelki
-            </p>
-            <p class="text-gray-700">
-              Fullstack Softwareengineer
-            </p>
-          </div>
+          <Heading title="Florian Woelki">
+            Fullstack Softwareengineer
+          </Heading>
           <p class="leading-7 text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit cumque reprehenderit doloribus iure dicta dolores autem, eligendi tempore et.
           </p>
         </div>
 
-        <h2 class="mt-10 mb-4 text-3xl font-bold tracking-widest text-gray-800 uppercase">
+        <Title class="mt-10">
           Skills
-        </h2>
+        </Title>
 
         <div class="ml-4">
-          <div class="px-2 py-1 mb-4 border-l-4 border-gray-800">
-            <p class="text-lg font-semibold tracking-wide text-gray-800 uppercase">
-              Languages
-            </p>
-            <p class="text-gray-700">
-              Fullstack Softwareengineer
-            </p>
-          </div>
+          <Heading title="Langugages">
+            FullStack Softwareengineer
+          </Heading>
 
           <div class="flex items-center space-x-1">
             <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
@@ -75,11 +65,10 @@
             </div>
           </div>
 
-          <div class="px-2 py-1 mt-8 mb-4 border-l-4 border-gray-800">
-            <p class="text-lg font-semibold tracking-wide text-gray-800 uppercase">
-              Frameworks / Technologies
-            </p>
-          </div>
+          <Heading
+            title="Frameworks / Technologies"
+            class="mt-8"
+          />
 
           <div class="flex items-center space-x-1">
             <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
@@ -97,7 +86,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import Title from '@/components/Title.vue';
+import Heading from '@/components/Heading.vue';
 
-@Component
+@Component({
+  components: {
+    Title,
+    Heading,
+  },
+})
 export default class Home extends Vue {}
 </script>
