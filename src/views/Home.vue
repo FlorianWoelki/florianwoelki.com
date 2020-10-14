@@ -85,11 +85,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue, Options } from 'vue-class-component';
 import Title from '@/components/Title.vue';
 import Heading from '@/components/Heading.vue';
 
-@Component({
+@Options({
   components: {
     Title,
     Heading,

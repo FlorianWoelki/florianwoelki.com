@@ -10,11 +10,14 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 
-@Component
-export default class Heading extends Vue {
-  @Prop({ type: String, required: true })
-  private title!: string;
-}
+export default defineComponent({
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
+});
 </script>

@@ -5,10 +5,10 @@ module.exports = {
   },
   extends: [
     'prettier',
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
     '@vue/airbnb',
     '@vue/typescript/recommended',
-    'plugin:vue/strongly-recommended',
+    'plugin:vue/vue3-strongly-recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,

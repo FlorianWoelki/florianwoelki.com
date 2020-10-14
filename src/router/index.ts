@@ -1,24 +1,16 @@
-import Vue from 'vue';
-import VueRouter, { RouteConfig } from 'vue-router';
+import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import BucketList from '../views/BucketList.vue';
 
-Vue.use(VueRouter);
-
-const routes: Array<RouteConfig> = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: Home,
   },
-  {
-    path: '/bucketlist',
-    name: 'Bucketlist',
-    component: BucketList,
-  },
 ];
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHashHistory(),
   routes,
 });
 
