@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 py-1 mb-4 border-l-4 border-gray-800">
+  <div class="px-4 py-1 mb-4 border-l-4 border-gray-800">
     <p class="text-lg font-semibold tracking-wide text-gray-800 uppercase">
       {{ title }}
     </p>

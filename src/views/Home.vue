@@ -140,7 +140,7 @@
           <Heading title="T-Systems International">
             Fullstack Softwarearchitect
           </Heading>
-          <ul class="ml-8 leading-7 text-gray-700 list-disc">
+          <ul class="ml-10 leading-7 text-gray-700 list-disc">
             <li>TBA</li>
           </ul>
         </div>
