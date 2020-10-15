@@ -124,6 +124,10 @@
           <Heading title="HfTL Dual">
             B.S. Computer Science
           </Heading>
+          <p class="leading-7 text-gray-700">
+            Bachelorthesis:
+            <i>Bluetooth Low Energy: A comparison between different machine learning algorithms with a variable object configuration in indoor areas.</i>
+          </p>
         </div>
 
         <Title class="mt-16">
