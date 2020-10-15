@@ -83,30 +83,50 @@
 
         <div class="ml-4">
           <Heading title="Langugages">
-            FullStack Softwareengineer
+            Listed in descending order.
           </Heading>
 
-          <div class="flex items-center space-x-1">
-            <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
-              Java
-            </div>
-            <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
-              TypeScript
-            </div>
+          <div class="flex flex-wrap items-center">
+            <Tag>JavaScript (ES6)</Tag>
+            <Tag>TypeScript</Tag>
+            <Tag>Python</Tag>
+            <Tag>Java</Tag>
+            <Tag>Kotlin</Tag>
+            <Tag>CSS/SASS</Tag>
+            <Tag>SQL</Tag>
+            <Tag>Scala</Tag>
+            <Tag>Go</Tag>
+            <Tag>Dart</Tag>
           </div>
 
           <Heading
             title="Frameworks / Technologies"
             class="mt-8"
-          />
+          >
+            Not listed in any order.
+          </Heading>
 
-          <div class="flex items-center space-x-1">
-            <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
-              Java
-            </div>
-            <div class="px-3 py-1 text-gray-600 bg-gray-200 rounded-lg">
-              TypeScript
-            </div>
+          <div class="flex flex-wrap items-center">
+            <Tag>Vue</Tag>
+            <Tag>Nuxt</Tag>
+            <Tag>GraphQL</Tag>
+            <Tag>TailwindCSS</Tag>
+            <Tag>Redis</Tag>
+            <Tag>PostgreSQL</Tag>
+            <Tag>Angular</Tag>
+            <Tag>jQuery</Tag>
+            <Tag>Nginx</Tag>
+            <Tag>Kafka</Tag>
+            <Tag>Git</Tag>
+            <Tag>React</Tag>
+            <Tag>Node.js</Tag>
+            <Tag>Docker</Tag>
+            <Tag>Jenkins</Tag>
+            <Tag>Spring Boot</Tag>
+            <Tag>MySQL</Tag>
+            <Tag>MongoDB</Tag>
+            <Tag>Electron</Tag>
+            <Tag>Firebase</Tag>
           </div>
         </div>
 
@@ -153,11 +173,13 @@
 import { Vue, Options } from 'vue-class-component';
 import Title from '@/components/Title.vue';
 import Heading from '@/components/Heading.vue';
+import Tag from '@/components/Tag.vue';
 
 @Options({
   components: {
     Title,
     Heading,
+    Tag,
   },
 })
 export default class Home extends Vue {}
