@@ -133,6 +133,17 @@
         <Title class="mt-16">
           Work Experience
         </Title>
+        <div class="ml-4">
+          <div class="mb-2 text-lg text-gray-900">
+            October 2017 - Present
+          </div>
+          <Heading title="T-Systems International">
+            Fullstack Softwarearchitect
+          </Heading>
+          <ul class="ml-8 leading-7 text-gray-700 list-disc">
+            <li>TBA</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
