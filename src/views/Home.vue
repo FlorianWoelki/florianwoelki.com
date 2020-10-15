@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-gray-100">
+  <div class="h-full pb-32 bg-gray-100">
     <div class="py-32 bg-gray-800">
       <div class="container px-16 mx-auto">
         <div class="flex flex-col flex-wrap md:flex-row lg:items-center">
@@ -82,7 +82,7 @@
         </Title>
 
         <div class="ml-4">
-          <Heading title="Langugages">
+          <Heading title="Languages">
             Listed in descending order.
           </Heading>
 
@@ -127,12 +127,79 @@
             <Tag>MongoDB</Tag>
             <Tag>Electron</Tag>
             <Tag>Firebase</Tag>
+            <Tag>Tensorflow</Tag>
+            <Tag>Scikit-learn</Tag>
+            <Tag>Jupyter Notebook</Tag>
+            <Tag>Pandas/Numpy/Matplotlib</Tag>
           </div>
         </div>
 
         <Title class="mt-16">
           Personal Projects
         </Title>
+
+        <div class="ml-4">
+          <Heading title="VGQL">
+            <a href="https://github.com/FlorianWoelki/vgql">github.com/FlorianWoelki/vgql</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
+            you can easily generate projects with the lovely preset of the Vue.js framework
+            and GraphQL. The CLI will setup everything you need for this fullstack application.
+          </p>
+
+          <Heading
+            title="Pneumonia Detection"
+            class="mt-8"
+          >
+            <a href="https://github.com/FlorianWoelki/pneumonia_detection">github.com/FlorianWoelki/pneumonia_detection</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            A jupyter notebook that contains a exploratory analysis and transfer learning
+            convulutional neural network detecting if a xray scan has pneumonia or not.
+            Furthermore, I submitted this notebook to the official Kaggle competition.
+          </p>
+
+          <Heading
+            title="Vue Cirrus"
+            class="mt-8"
+          >
+            <a href="https://github.com/FlorianWoelki/vue-cirrus">github.com/FlorianWoelki/vue-cirrus</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            A Vue component library for the Cirrus CSS framework. It is really simple to use
+            and lightweight as well.
+          </p>
+
+          <Heading
+            title="Daycademy"
+            class="mt-8"
+          >
+            <a href="https://github.com/daycademy">github.com/daycademy</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            Daycademy is a completly free to use german academy for learning how to code.
+            On this self built end to end platform I teach how to code with interactive
+            coding trainings and quizes.
+          </p>
+
+          <Heading
+            title="YouTube Account"
+            class="mt-8"
+          >
+            <a href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber">Code mit FloW</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            In addition to the academy I have created a german speaking YouTube channel
+            for teaching how to code. These professional created videos are in the academy
+            available as well.
+          </p>
+        </div>
       </div>
 
       <div>
