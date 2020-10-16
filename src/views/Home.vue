@@ -233,7 +233,10 @@
             Fullstack Softwarearchitect
           </Heading>
           <ul class="ml-10 leading-7 text-gray-700 list-disc">
-            <li>TBA</li>
+            <li>Full-stack development on situational awareness dashboards using Angular/Vue, Spring and Scala/Java</li>
+            <li>Implemented RESTful API with SpringBoot secured with JWT authentication</li>
+            <li>Full-stack development on a real time indoor tracking service including UWB, LTE and BLE using Angular and Java with SpringBoot</li>
+            <li>...</li>
           </ul>
         </div>
       </div>
