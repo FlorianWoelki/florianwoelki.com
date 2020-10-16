@@ -28,7 +28,12 @@
                     d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
                   />
                 </svg>
-                <span>florianwoelki@gmx.de</span>
+                <a
+                  href="mailto:florianwoelki@gmx.de"
+                  class="transition duration-300 ease-in-out hover:text-gray-500"
+                >
+                  <span>florianwoelki@gmx.de</span>
+                </a>
               </li>
               <li class="flex items-center space-x-2">
                 <svg
