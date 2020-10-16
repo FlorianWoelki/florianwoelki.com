@@ -3,16 +3,16 @@
     <div class="py-32 bg-gray-800">
       <div class="container px-16 mx-auto">
         <div class="flex flex-col flex-wrap md:flex-row lg:items-center">
-          <div class="pr-8 md:w-4/6">
+          <div class="pr-8 text-center md:w-4/6 sm:text-left">
             <h1 class="mb-2 text-3xl font-semibold leading-none tracking-wider text-white uppercase md:text-4xl lg:text-5xl">
               Florian Woelki
             </h1>
             <h2 class="text-lg tracking-wide text-gray-500 uppercase md:text-2xl">
-              Computer Science Major
+              Undergraduate Computer Science Major
             </h2>
           </div>
-          <div class="md:w-2/6">
-            <ul class="space-y-4 text-lg text-gray-400">
+          <div class="mt-4 md:w-2/6 sm:mt-0">
+            <ul class="space-y-1 text-lg text-gray-400 md:space-y-4">
               <li class="flex items-center space-x-2">
                 <svg
                   class="w-6 h-6"
@@ -62,13 +62,13 @@
       </div>
     </div>
 
-    <div class="container grid grid-cols-2 gap-12 px-16 mx-auto mt-16">
+    <div class="container px-16 mx-auto mt-16 break-words md:grid md:grid-cols-2 md:gap-12">
       <div>
         <Title>
           About
         </Title>
 
-        <div class="ml-4">
+        <div class="md:ml-4">
           <Heading title="Florian Woelki">
             Fullstack Softwareengineer
           </Heading>
@@ -81,7 +81,7 @@
           Skills
         </Title>
 
-        <div class="ml-4">
+        <div class="md:ml-4">
           <Heading title="Languages">
             Listed in descending order.
           </Heading>
@@ -138,7 +138,7 @@
           Personal Projects
         </Title>
 
-        <div class="ml-4">
+        <div class="md:ml-4">
           <Heading title="VGQL">
             <a href="https://github.com/FlorianWoelki/vgql">github.com/FlorianWoelki/vgql</a>
           </Heading>
@@ -202,9 +202,9 @@
         </div>
       </div>
 
-      <div>
+      <div class="mt-16 md:mt-0">
         <Title>Education</Title>
-        <div class="ml-4">
+        <div class="md:ml-4">
           <div class="mb-2 text-lg text-gray-900">
             2017 - 2020
           </div>
