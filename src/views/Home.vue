@@ -259,6 +259,19 @@
             <li>Full-stack development on situational awareness dashboards using Angular/Vue, Spring and Scala/Java</li>
             <li>Implemented RESTful API with SpringBoot secured with JWT authentication</li>
             <li>Full-stack development on a real time indoor tracking service including UWB, LTE and BLE using Angular and Java with SpringBoot</li>
+            <li>Android app development with Kotlin for pairing a BLE beacon with a specific QR-Code</li>
+            <li>...</li>
+          </ul>
+
+          <div class="mt-8 mb-2 text-lg text-gray-900">
+            October 2019 - Present
+          </div>
+          <Heading title="Company Consulting Team">
+            IT Consultant
+          </Heading>
+          <ul class="ml-10 leading-7 text-gray-700 list-disc">
+            <li>Front-end inhouse work for a fully functional HR-Tool with Vue and TypeScript</li>
+            <li>Full-stack inhouse work for fully functional end to end polling tool written in Vue, TypeScript and Node.js</li>
             <li>...</li>
           </ul>
         </div>
