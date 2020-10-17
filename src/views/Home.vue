@@ -67,6 +67,29 @@
       </div>
     </div>
 
+    <div class="py-16 bg-gradient-to-r from-teal-400 to-blue-500">
+      <div class="container px-16 mx-auto ">
+        <h3 class="text-2xl text-center text-white">
+          Download my resumé in other formats.
+        </h3>
+
+        <div class="flex items-center justify-center mt-4 space-x-2">
+          <button
+            type="button"
+            class="px-8 py-2 font-medium leading-7 text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-md focus:outline-none hover:bg-white hover:text-gray-900"
+          >
+            PDF
+          </button>
+          <button
+            type="button"
+            class="px-8 py-2 font-medium leading-7 text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-md focus:outline-none hover:bg-white hover:text-gray-900"
+          >
+            Text
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="container px-16 mx-auto mt-16 break-words md:grid md:grid-cols-2 md:gap-12">
       <div>
         <Title>
