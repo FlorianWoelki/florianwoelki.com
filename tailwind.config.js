@@ -1,10 +1,17 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './public/**/*.html',
+      './src/**/*.vue',
+    ],
+  },
   theme: {
     fontFamily: {
-      sans: ['Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
   },
   variants: {},
   plugins: [],
