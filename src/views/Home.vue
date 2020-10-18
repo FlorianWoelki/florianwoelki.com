@@ -3,7 +3,7 @@
     <div class="py-32 bg-gray-800">
       <div class="container px-16 mx-auto">
         <div class="flex flex-col flex-wrap md:flex-row lg:items-center">
-          <div class="pr-8 text-center md:w-4/6 sm:text-left">
+          <div class="text-center md:w-4/6 sm:text-left sm:pr-8">
             <h1 class="mb-2 text-3xl font-semibold leading-none tracking-wider text-white uppercase md:text-4xl lg:text-5xl">
               Florian Woelki
             </h1>
