@@ -13,7 +13,7 @@
           </div>
           <div class="mt-4 md:w-2/6 sm:mt-0">
             <ul class="space-y-1 text-lg text-gray-400 md:space-y-4">
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center justify-center space-x-2 sm:justify-start">
                 <svg
                   class="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
                   <span>florianwoelki@gmx.de</span>
                 </a>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center justify-center space-x-2 sm:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="w-6 h-6"
