@@ -272,7 +272,8 @@
           <ul class="ml-10 leading-7 text-gray-700 list-disc">
             <li>Front-end inhouse work for a fully functional HR-Tool with Vue and TypeScript</li>
             <li>Full-stack inhouse work for fully functional end to end polling tool written in Vue, TypeScript and Node.js</li>
-            <li>...</li>
+            <li>Front-end project for a customer by developing a contact form for a real estate company</li>
+            <li>Data Science project for a customer by merging and analyzing different data sources in Python</li>
           </ul>
         </div>
       </div>
