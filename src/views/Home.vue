@@ -227,6 +227,33 @@
             for teaching how to code. These professional created videos are in the academy
             available as well.
           </p>
+
+          <Heading
+            title="First published Game"
+            class="mt-8"
+          >
+            <a href="https://gamejolt.com/games/way-to-love/135095">Way To Love</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            This is my first ever published game. The main goal of this game is to
+            finish the jump and run with two characters that are mirrored. The game
+            was written in Java with LibGDX.
+          </p>
+
+          <Heading
+            title="Competition Game #59"
+            class="mt-8"
+          >
+            <a href="https://gamejolt.com/games/way-to-love/135095">Revenge of the Clowns</a>
+          </Heading>
+
+          <p class="leading-7 text-gray-700">
+            I've developed this game for the Beansjam event, where you need to develop
+            a game with predefined themes. The goal is to throw or kill all the clowns from
+            the plattform and level yourself up with powerups and upgrades. This game was written
+            in pure Java without any additional library.
+          </p>
         </div>
       </div>
 
