@@ -169,7 +169,10 @@
 
         <div class="md:ml-4">
           <Heading title="VGQL">
-            <a href="https://github.com/FlorianWoelki/vgql">github.com/FlorianWoelki/vgql</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://github.com/FlorianWoelki/vgql"
+            >github.com/FlorianWoelki/vgql</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -182,7 +185,10 @@
             title="Pneumonia Detection"
             class="mt-8"
           >
-            <a href="https://github.com/FlorianWoelki/pneumonia_detection">github.com/FlorianWoelki/pneumonia_detection</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://github.com/FlorianWoelki/pneumonia_detection"
+            >github.com/FlorianWoelki/pneumonia_detection</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -195,7 +201,10 @@
             title="Vue Cirrus"
             class="mt-8"
           >
-            <a href="https://github.com/FlorianWoelki/vue-cirrus">github.com/FlorianWoelki/vue-cirrus</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://github.com/FlorianWoelki/vue-cirrus"
+            >github.com/FlorianWoelki/vue-cirrus</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -207,7 +216,10 @@
             title="Daycademy"
             class="mt-8"
           >
-            <a href="https://github.com/daycademy">github.com/daycademy</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://github.com/daycademy"
+            >github.com/daycademy</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -220,7 +232,10 @@
             title="YouTube Account"
             class="mt-8"
           >
-            <a href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber">Code mit FloW</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+            >Code mit FloW</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -233,7 +248,10 @@
             title="First published Game"
             class="mt-8"
           >
-            <a href="https://gamejolt.com/games/way-to-love/135095">Way To Love</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://gamejolt.com/games/way-to-love/135095"
+            >Way To Love</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
@@ -246,7 +264,10 @@
             title="Competition Game #59"
             class="mt-8"
           >
-            <a href="https://gamejolt.com/games/way-to-love/135095">Revenge of the Clowns</a>
+            <a
+              class="transition duration-300 ease-in-out hover:text-gray-500"
+              href="https://gamejolt.com/games/way-to-love/135095"
+            >Revenge of the Clowns</a>
           </Heading>
 
           <p class="leading-7 text-gray-700">
