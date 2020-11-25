@@ -117,13 +117,13 @@
           <div class="flex flex-wrap items-center">
             <Tag>JavaScript (ES6)</Tag>
             <Tag>TypeScript</Tag>
+            <Tag>Go</Tag>
             <Tag>Python</Tag>
             <Tag>Java</Tag>
-            <Tag>Kotlin</Tag>
             <Tag>CSS/SASS</Tag>
             <Tag>SQL</Tag>
+            <Tag>Kotlin</Tag>
             <Tag>Scala</Tag>
-            <Tag>Go</Tag>
             <Tag>Dart</Tag>
           </div>
 
@@ -138,6 +138,7 @@
             <Tag>Vue</Tag>
             <Tag>Nuxt</Tag>
             <Tag>GraphQL</Tag>
+            <Tag>gRPC</Tag>
             <Tag>TailwindCSS</Tag>
             <Tag>Redis</Tag>
             <Tag>PostgreSQL</Tag>
