@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <div class="py-16 bg-gradient-to-r from-teal-400 to-blue-500">
+    <div class="py-16 bg-gradient-to-r from-indigo-400 to-blue-500">
       <div class="container px-16 mx-auto ">
         <h3 class="text-2xl text-center text-white">
           Download my resumé in other formats.
