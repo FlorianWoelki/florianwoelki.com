@@ -12,7 +12,7 @@
     "autoprefixer": "^9.8.5",
     "core-js": "^3.6.5",
     "purgecss": "^2.3.0",
-    "tailwindcss": "^1.5.2",
+    "tailwindcss": "^2.0.1",
     "vue": "^3.0.0-0",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0"
