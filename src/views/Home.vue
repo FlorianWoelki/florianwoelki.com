@@ -326,6 +326,15 @@
           </ul>
         </div>
       </div>
+
+      <p class="ml-4 text-gray-600">
+        Originally designed by
+        <a
+          class="text-indigo-600"
+          href="https://www.stanleylim.me/resume/"
+          target="_blank"
+        >Stanley Lim</a>
+      </p>
     </div>
   </div>
 </template>
