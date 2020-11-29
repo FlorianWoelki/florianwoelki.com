@@ -115,31 +115,14 @@
             Frameworks / Technologies
           </h4>
           <div class="flex flex-wrap items-center mt-1">
-            <Tag>Vue</Tag>
-            <Tag>Nuxt</Tag>
-            <Tag>GraphQL</Tag>
-            <Tag>gRPC</Tag>
-            <Tag>TailwindCSS</Tag>
-            <Tag>Redis</Tag>
-            <Tag>PostgreSQL</Tag>
-            <Tag>Angular</Tag>
-            <Tag>jQuery</Tag>
-            <Tag>Nginx</Tag>
-            <Tag>Kafka</Tag>
-            <Tag>Git</Tag>
-            <Tag>React</Tag>
-            <Tag>Node.js</Tag>
-            <Tag>Docker</Tag>
-            <Tag>Jenkins</Tag>
-            <Tag>Spring Boot</Tag>
-            <Tag>MySQL</Tag>
-            <Tag>MongoDB</Tag>
-            <Tag>Electron</Tag>
-            <Tag>Firebase</Tag>
-            <Tag>Tensorflow</Tag>
-            <Tag>Scikit-learn</Tag>
-            <Tag>Jupyter Notebook</Tag>
-            <Tag>Pandas/Numpy/Matplotlib</Tag>
+            <Tag
+              v-for="(technology, index) in technologies"
+              :key="index"
+              @click="setClickedFilter(technology)"
+              :selected="clickedFilter === technology"
+            >
+              {{ technology }}
+            </Tag>
           </div>
         </div>
 
@@ -305,6 +288,10 @@ import Project from '@/components/Project.vue';
     return {
       clickedFilter: '',
       languages: ['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart'],
+      technologies: ['Vue', 'Nuxt', 'GraphQL', 'gRPC', 'TailwindCSS', 'Redis', 'PostgreSQL', 'Angular',
+        'jQuery', 'Nginx', 'Kafka', 'Git', 'React', 'Node.js', 'Docker', 'Jenkins', 'Spring Boot',
+        'MySQL', 'MongoDB', 'Electron', 'Firebase', 'Tensorflow', 'Scikit-learn', 'Jupyter Notebook',
+        'Pandas/Numpy/Matplotlib'],
     };
   },
   components: {
