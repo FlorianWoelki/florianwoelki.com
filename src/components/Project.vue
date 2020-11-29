@@ -12,16 +12,30 @@
   <p class="mt-2 leading-7 text-gray-500">
     <slot />
   </p>
+
+  <div class="flex flex-wrap items-center mt-1">
+    <Tag
+      v-for="tag in tags"
+      :key="tag"
+    >
+      {{ tag }}
+    </Tag>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Tag from './Tag.vue';
 
 export default defineComponent({
+  components: {
+    Tag,
+  },
   props: {
     title: String,
     linkTitle: String,
     link: String,
+    tags: Array,
   },
 });
 </script>
