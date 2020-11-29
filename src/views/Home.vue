@@ -102,16 +102,14 @@
             Languages
           </h4>
           <div class="flex flex-wrap items-center mt-1">
-            <Tag>JavaScript (ES6)</Tag>
-            <Tag>TypeScript</Tag>
-            <Tag>Go</Tag>
-            <Tag>Python</Tag>
-            <Tag>Java</Tag>
-            <Tag>CSS/SASS</Tag>
-            <Tag>SQL</Tag>
-            <Tag>Kotlin</Tag>
-            <Tag>Scala</Tag>
-            <Tag>Dart</Tag>
+            <Tag
+              v-for="(language, index) in languages"
+              :key="index"
+              @click="setClickedFilter(language)"
+              :selected="clickedFilter === language"
+            >
+              {{ language }}
+            </Tag>
           </div>
           <h4 class="mt-8 text-gray-500 uppercase">
             Frameworks / Technologies
@@ -209,96 +207,89 @@
           Personal <span class="block text-6xl font-bold">Projects</span>
         </h1>
 
-        <div>
-          <Project
-            title="VGQL"
-            link="https://github.com/FlorianWoelki/vgql"
-            link-title="github.com/FlorianWoelki/vgql"
-            :tags="['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js']"
-          >
-            A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
-            you can easily generate projects with the lovely preset of the Vue.js framework
-            and GraphQL. The CLI will setup everything you need for this fullstack application.
-          </Project>
-        </div>
+        <Project
+          title="VGQL"
+          link="https://github.com/FlorianWoelki/vgql"
+          link-title="github.com/FlorianWoelki/vgql"
+          :tags="['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js']"
+          :clicked-filter="clickedFilter"
+        >
+          A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
+          you can easily generate projects with the lovely preset of the Vue.js framework
+          and GraphQL. The CLI will setup everything you need for this fullstack application.
+        </Project>
 
-        <div>
-          <Project
-            title="Pneumonia Detection"
-            link="https://github.com/FlorianWoelki/pneumonia_detection"
-            link-title="github.com/FlorianWoelki/pneumonia_detection"
-            :tags="['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git']"
-          >
-            A jupyter notebook that contains a exploratory analysis and transfer learning
-            convulutional neural network detecting if a xray scan has pneumonia or not.
-            Furthermore, I submitted this notebook to the official Kaggle competition.
-          </Project>
-        </div>
+        <Project
+          title="Pneumonia Detection"
+          link="https://github.com/FlorianWoelki/pneumonia_detection"
+          link-title="github.com/FlorianWoelki/pneumonia_detection"
+          :tags="['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git']"
+          :clicked-filter="clickedFilter"
+        >
+          A jupyter notebook that contains a exploratory analysis and transfer learning
+          convulutional neural network detecting if a xray scan has pneumonia or not.
+          Furthermore, I submitted this notebook to the official Kaggle competition.
+        </Project>
 
-        <div>
-          <Project
-            title="Vue Cirrus"
-            link="https://github.com/FlorianWoelki/vue-cirrus"
-            link-title="github.com/FlorianWoelki/vue-cirrus"
-            :tags="['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git']"
-          >
-            A Vue component library for the Cirrus CSS framework. It is really simple to use
-            and lightweight as well.
-          </Project>
-        </div>
+        <Project
+          title="Vue Cirrus"
+          link="https://github.com/FlorianWoelki/vue-cirrus"
+          link-title="github.com/FlorianWoelki/vue-cirrus"
+          :tags="['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git']"
+          :clicked-filter="clickedFilter"
+        >
+          A Vue component library for the Cirrus CSS framework. It is really simple to use
+          and lightweight as well.
+        </Project>
 
-        <div>
-          <Project
-            title="Daycademy"
-            link="https://github.com/daycademy"
-            link-title="github.com/daycademy"
-            :tags="['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS']"
-          >
-            Daycademy is a completly free to use german academy for learning how to code.
-            On this self built end to end platform I teach how to code with interactive
-            coding trainings and quizes..
-          </Project>
-        </div>
+        <Project
+          title="Daycademy"
+          link="https://github.com/daycademy"
+          link-title="github.com/daycademy"
+          :tags="['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS']"
+          :clicked-filter="clickedFilter"
+        >
+          Daycademy is a completly free to use german academy for learning how to code.
+          On this self built end to end platform I teach how to code with interactive
+          coding trainings and quizes..
+        </Project>
 
-        <div>
-          <Project
-            title="YouTube Account"
-            link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
-            link-title="Code mit FloW"
-            :tags="['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS']"
-          >
-            In addition to the academy I have created a german speaking YouTube channel
-            for teaching how to code. These professional created videos are in the academy
-            available as well.
-          </Project>
-        </div>
+        <Project
+          title="YouTube Account"
+          link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+          link-title="Code mit FloW"
+          :tags="['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS']"
+          :clicked-filter="clickedFilter"
+        >
+          In addition to the academy I have created a german speaking YouTube channel
+          for teaching how to code. These professional created videos are in the academy
+          available as well.
+        </Project>
 
-        <div>
-          <Project
-            title="First published Game"
-            link="https://gamejolt.com/games/way-to-love/135095"
-            link-title="Way To Love"
-            :tags="['Java']"
-          >
-            This is my first ever published game. The main goal of this game is to
-            finish the jump and run with two characters that are mirrored. The game
-            was written in Java with LibGDX.
-          </Project>
-        </div>
+        <Project
+          title="First published Game"
+          link="https://gamejolt.com/games/way-to-love/135095"
+          link-title="Way To Love"
+          :tags="['Java']"
+          :clicked-filter="clickedFilter"
+        >
+          This is my first ever published game. The main goal of this game is to
+          finish the jump and run with two characters that are mirrored. The game
+          was written in Java with LibGDX.
+        </Project>
 
-        <div>
-          <Project
-            title="Competition Game #59"
-            link="https://flowy.itch.io/revenge-of-the-clowns"
-            link-title="Revenge of the Clowns"
-            :tags="['Java']"
-          >
-            I've developed this game for the Beansjam event, where you need to develop
-            a game with predefined themes. The goal is to throw or kill all the clowns from
-            the plattform and level yourself up with powerups and upgrades. This game was written
-            in pure Java without any additional library.
-          </Project>
-        </div>
+        <Project
+          title="Competition Game #59"
+          link="https://flowy.itch.io/revenge-of-the-clowns"
+          link-title="Revenge of the Clowns"
+          :tags="['Java']"
+          :clicked-filter="clickedFilter"
+        >
+          I've developed this game for the Beansjam event, where you need to develop
+          a game with predefined themes. The goal is to throw or kill all the clowns from
+          the plattform and level yourself up with powerups and upgrades. This game was written
+          in pure Java without any additional library.
+        </Project>
       </div>
     </div>
   </div>
@@ -310,10 +301,26 @@ import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
 
 @Options({
+  data() {
+    return {
+      clickedFilter: '',
+      languages: ['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart'],
+    };
+  },
   components: {
     Tag,
     Project,
   },
+  methods: {
+    setClickedFilter(criterium: string): void {
+      if (this.clickedFilter === criterium) {
+        this.clickedFilter = '';
+      } else {
+        this.clickedFilter = criterium;
+      }
+    },
+  },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+}
 </script>
