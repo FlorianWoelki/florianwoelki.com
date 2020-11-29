@@ -82,7 +82,7 @@
 
         <!-- ABOUT -->
         <div>
-          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
+          <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
             About
           </h3>
           <h4 class="-mt-1 text-gray-500 uppercase">
@@ -95,7 +95,7 @@
 
         <!-- SKILLS -->
         <div>
-          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
+          <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
             Skills
           </h3>
           <h4 class="-mt-1 text-gray-500 uppercase">
@@ -147,7 +147,7 @@
 
         <!-- EDUCATION -->
         <div>
-          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
+          <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
             Education
           </h3>
           <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
@@ -163,8 +163,8 @@
 
         <!-- WORK EXPERIENCE -->
         <div>
-          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
-            WORK EXPERIENCE
+          <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
+            Work Experience
           </h3>
           <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
             <span>T-Systems International</span>
