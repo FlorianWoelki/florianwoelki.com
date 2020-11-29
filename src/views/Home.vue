@@ -144,6 +144,63 @@
             <Tag>Pandas/Numpy/Matplotlib</Tag>
           </div>
         </div>
+
+        <!-- EDUCATION -->
+        <div>
+          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
+            Education
+          </h3>
+          <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
+            HfTL DUAL B.S. Computer Science
+            <span class="font-normal text-gray-400">2017 - 2020</span>
+          </h4>
+
+          <p class="mt-2 leading-7 text-gray-500">
+            Bachelorthesis:
+            <span class="italic">Bluetooth Low Energy Proximity: A comparison between different machine learning algorithms with a variable object configuration in indoor areas.</span>
+          </p>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div>
+          <h3 class="text-xl font-semibold tracking-wide text-gray-800 uppercase">
+            WORK EXPERIENCE
+          </h3>
+          <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
+            <span>T-Systems International</span>
+            <span class="font-normal text-gray-400">2017 - Present</span>
+          </h4>
+          <h4 class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase">
+            Fullstack Softwarearchitect
+          </h4>
+
+          <p class="mt-2 leading-7 text-gray-500">
+            <ul class="ml-4 leading-7 text-gray-500 list-disc">
+              <li>Full-stack development on situational awareness dashboards using Angular/Vue, Spring and Scala/Java</li>
+              <li>Implemented RESTful API with SpringBoot secured with JWT authentication</li>
+              <li>Full-stack development on a real time indoor tracking service including UWB, LTE and BLE using Angular and Java with SpringBoot</li>
+              <li>Android app development with Kotlin for pairing a BLE beacon with a specific QR-Code</li>
+              <li>...</li>
+            </ul>
+          </p>
+
+          <h4 class="flex items-center justify-between mt-8 text-gray-500 uppercase">
+            <span>Company Consulting Team</span>
+            <span class="font-normal text-gray-400">2019 - Present</span>
+          </h4>
+          <h4 class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase">
+            IT Consultant
+          </h4>
+
+          <p class="mt-2 leading-7 text-gray-500">
+            <ul class="ml-4 leading-7 text-gray-500 list-disc">
+              <li>Front-end inhouse work for a fully functional HR-Tool with Vue and TypeScript</li>
+              <li>Full-stack inhouse work for fully functional end to end polling tool written in Vue, TypeScript and Node.js</li>
+              <li>Front-end project for a customer by developing a contact form for a real estate company</li>
+              <li>Data Science project for a customer by merging and analyzing different data sources in Python</li>
+            </ul>
+          </p>
+        </div>
       </div>
 
       <div>
