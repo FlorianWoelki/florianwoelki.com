@@ -283,7 +283,7 @@
         <div>
           <Project
             title="Competition Game #59"
-            link="https://gamejolt.com/games/way-to-love/135095"
+            link="https://flowy.itch.io/revenge-of-the-clowns"
             link-title="Revenge of the Clowns"
           >
             I've developed this game for the Beansjam event, where you need to develop
