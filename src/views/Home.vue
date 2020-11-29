@@ -203,8 +203,95 @@
         </div>
       </div>
 
-      <div>
-        <h1>Projects</h1>
+      <!-- PERSONAL PROJECTS -->
+      <div class="container px-16 py-16 mx-auto space-y-12 break-words">
+        <h1 class="text-5xl font-light text-gray-800 uppercase">
+          Personal <span class="block text-6xl font-bold">Projects</span>
+        </h1>
+
+        <div>
+          <Project
+            title="VGQL"
+            link="https://github.com/FlorianWoelki/vgql"
+            link-title="github.com/FlorianWoelki/vgql"
+          >
+            A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
+            you can easily generate projects with the lovely preset of the Vue.js framework
+            and GraphQL. The CLI will setup everything you need for this fullstack application.
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="Pneumonia Detection"
+            link="https://github.com/FlorianWoelki/pneumonia_detection"
+            link-title="github.com/FlorianWoelki/pneumonia_detection"
+          >
+            A jupyter notebook that contains a exploratory analysis and transfer learning
+            convulutional neural network detecting if a xray scan has pneumonia or not.
+            Furthermore, I submitted this notebook to the official Kaggle competition.
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="Vue Cirrus"
+            link="https://github.com/FlorianWoelki/vue-cirrus"
+            link-title="github.com/FlorianWoelki/vue-cirrus"
+          >
+            A Vue component library for the Cirrus CSS framework. It is really simple to use
+            and lightweight as well.
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="Daycademy"
+            link="https://github.com/daycademy"
+            link-title="github.com/daycademy"
+          >
+            Daycademy is a completly free to use german academy for learning how to code.
+            On this self built end to end platform I teach how to code with interactive
+            coding trainings and quizes..
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="YouTube Account"
+            link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+            link-title="Code mit FloW"
+          >
+            In addition to the academy I have created a german speaking YouTube channel
+            for teaching how to code. These professional created videos are in the academy
+            available as well.
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="First published Game"
+            link="https://gamejolt.com/games/way-to-love/135095"
+            link-title="Way To Love"
+          >
+            This is my first ever published game. The main goal of this game is to
+            finish the jump and run with two characters that are mirrored. The game
+            was written in Java with LibGDX.
+          </Project>
+        </div>
+
+        <div>
+          <Project
+            title="Competition Game #59"
+            link="https://gamejolt.com/games/way-to-love/135095"
+            link-title="Revenge of the Clowns"
+          >
+            I've developed this game for the Beansjam event, where you need to develop
+            a game with predefined themes. The goal is to throw or kill all the clowns from
+            the plattform and level yourself up with powerups and upgrades. This game was written
+            in pure Java without any additional library.
+          </Project>
+        </div>
       </div>
     </div>
   </div>
@@ -213,10 +300,12 @@
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component';
 import Tag from '@/components/Tag.vue';
+import Project from '@/components/Project.vue';
 
 @Options({
   components: {
     Tag,
+    Project,
   },
 })
 export default class Home extends Vue {}
