@@ -6,7 +6,7 @@
     <a
       :href="link"
       target="_blank"
-      class="flex items-center justify-between -mt-1 text-gray-500"
+      class="flex items-center justify-between -mt-1 text-gray-500 transition duration-300 ease-in-out hover:text-gray-600"
     >
       {{ linkTitle }}
     </a>
