@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { computed, defineComponent } from 'vue';
 import Tag from './Tag.vue';
 
 export default defineComponent({
@@ -34,16 +34,32 @@ export default defineComponent({
     Tag,
   },
   props: {
-    title: String,
-    linkTitle: String,
-    link: String,
-    tags: Array,
-    clickedFilter: String,
-  },
-  computed: {
-    filteredTags(): string[] {
-      return this.tags?.filter((tag: any) => tag.toLowerCase() === this.clickedFilter?.toLowerCase()) as string[];
+    title: {
+      type: String,
+      required: true,
     },
+    linkTitle: {
+      type: String,
+      required: true,
+    },
+    link: {
+      type: String,
+      required: true,
+    },
+    tags: {
+      type: Array,
+      required: true,
+    },
+    clickedFilter: {
+      type: String,
+      default: '',
+    },
+  },
+  setup(props) {
+    const filteredTags = computed(() => (props.tags as string[]).filter((tag: string) => tag.toLowerCase() === props.clickedFilter.toLowerCase()));
+    return {
+      filteredTags,
+    };
   },
 });
 </script>

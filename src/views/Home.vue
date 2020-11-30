@@ -286,35 +286,37 @@
 </template>
 
 <script lang="ts">
-import { Vue, Options } from 'vue-class-component';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
+import { defineComponent, ref } from 'vue';
 
-@Options({
-  data() {
-    return {
-      clickedFilter: '',
-      languages: ['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart'],
-      technologies: ['Vue', 'Nuxt', 'GraphQL', 'gRPC', 'TailwindCSS', 'Redis', 'PostgreSQL', 'Angular',
-        'jQuery', 'Nginx', 'Kafka', 'Git', 'React', 'Node.js', 'Docker', 'Jenkins', 'Spring Boot',
-        'MySQL', 'MongoDB', 'Electron', 'Firebase', 'Tensorflow', 'Scikit-learn', 'Jupyter Notebook',
-        'Pandas/Numpy/Matplotlib'],
-    };
-  },
+export default defineComponent({
   components: {
     Tag,
     Project,
   },
-  methods: {
-    setClickedFilter(criterium: string): void {
-      if (this.clickedFilter === criterium) {
-        this.clickedFilter = '';
+  setup() {
+    const clickedFilter = ref('');
+    const languages = ref(['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart']);
+    const technologies = ref(['Vue', 'Nuxt', 'GraphQL', 'gRPC', 'TailwindCSS', 'Redis', 'PostgreSQL', 'Angular',
+      'jQuery', 'Nginx', 'Kafka', 'Git', 'React', 'Node.js', 'Docker', 'Jenkins', 'Spring Boot',
+      'MySQL', 'MongoDB', 'Electron', 'Firebase', 'Tensorflow', 'Scikit-learn', 'Jupyter Notebook',
+      'Pandas/Numpy/Matplotlib']);
+
+    const setClickedFilter = (criterium: string): void => {
+      if (clickedFilter.value === criterium) {
+        clickedFilter.value = '';
       } else {
-        this.clickedFilter = criterium;
+        clickedFilter.value = criterium;
       }
-    },
+    };
+
+    return {
+      clickedFilter,
+      languages,
+      technologies,
+      setClickedFilter,
+    };
   },
-})
-export default class Home extends Vue {
-}
+});
 </script>
