@@ -46,6 +46,7 @@
               <a
                 href="https://github.com/FlorianWoelki"
                 target="_blank"
+                class="transition duration-300 ease-in-out hover:text-gray-500"
               >/FlorianWoelki</a>
             </div>
             <div class="flex items-center space-x-2">
@@ -63,6 +64,7 @@
               <a
                 href="https://www.linkedin.com/in/florian-woelki/"
                 target="_blank"
+                class="transition duration-300 ease-in-out hover:text-gray-500"
               >/FlorianWoelki</a>
             </div>
             <div class="flex items-center space-x-1">
@@ -77,6 +79,7 @@
               <a
                 href="mailto:florianwoelki@gmx.de"
                 target="_blank"
+                class="transition duration-300 ease-in-out hover:text-gray-500"
               >FlorianWoelki@gmx.de</a>
             </div>
           </div>
