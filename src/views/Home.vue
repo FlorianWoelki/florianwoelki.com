@@ -279,6 +279,19 @@
             the plattform and level yourself up with powerups and upgrades. This game was written
             in pure Java without any additional library.
           </Project>
+
+          <Project
+            title="Fake Graph"
+            link="https://github.com/daycademy/fake-graph"
+            link-title="github.com/daycademy/fake-graph"
+            :tags="['Node.js', 'GraphQL', 'TypeScript', 'JavaScript (ES6)']"
+            :clicked-filter="clickedFilter"
+          >
+            I've developed this game for the Beansjam event, where you need to develop
+            a game with predefined themes. The goal is to throw or kill all the clowns from
+            the plattform and level yourself up with powerups and upgrades. This game was written
+            in pure Java without any additional library.
+          </Project>
         </div>
       </div>
     </div>
