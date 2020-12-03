@@ -4,15 +4,15 @@
       <div class="container px-16 py-16 mx-auto break-words bg-gray-100">
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
-          <div class="flex items-center justify-between">
+          <div class="xl:flex xl:items-center xl:justify-between">
             <h1 class="text-5xl font-light text-gray-800 uppercase">
               Florian <span class="block text-6xl font-bold">Woelki</span>
             </h1>
-            <div class="space-y-2 text-center">
+            <div class="mt-8 space-y-2 xl:text-center xl:mt-0">
               <p class="text-gray-400">
                 Download resumé
               </p>
-              <div class="flex items-center justify-between space-x-2">
+              <div class="flex items-center space-x-2 xl:justify-between">
                 <button
                   type="button"
                   class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent border border-gray-300 rounded-md focus:outline-none hover:bg-gray-300 hover:text-white"
@@ -30,7 +30,7 @@
           </div>
 
           <!-- SOCIALS -->
-          <div class="grid grid-cols-3 text-gray-400">
+          <div class="grid grid-cols-2 gap-2 text-gray-400 xl:grid-cols-3 xl:gap-0">
             <div class="flex items-center space-x-2">
               <div>
                 <svg
