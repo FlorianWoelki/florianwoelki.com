@@ -18,6 +18,22 @@ enum ProjectTag {
   Redis = 'Redis',
   PostgreSQL = 'PostgreSQL',
   Angular = 'Angular',
+  SQL = 'SQL',
+  Kotlin = 'Kotlin',
+  Scala = 'Scala',
+  Dart = 'Dart',
+  JQuery = 'jQuery',
+  Nginx = 'Nginx',
+  Kafka = 'Kafka',
+  React = 'React',
+  MySQL = 'MySQL',
+  Docker = 'Docker',
+  Jenkins = 'Jenkins',
+  SpringBoot = 'SpringBoot',
+  MongoDB = 'MongoDB',
+  Electron = 'Electron',
+  Firebase = 'Firebase',
+  Scikitlearn = 'Scikit-learn',
 }
 
 export default ProjectTag;

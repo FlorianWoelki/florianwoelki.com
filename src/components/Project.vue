@@ -18,6 +18,8 @@
       <Tag
         v-for="tag in tags"
         :key="tag"
+        :selected="selectedTag === tag"
+        @click="$emit('click-tag', tag)"
       >
         {{ tag }}
       </Tag>
@@ -50,6 +52,7 @@ export default defineComponent({
       type: Array,
       required: true,
     },
+    selectedTag: String,
   },
 });
 </script>

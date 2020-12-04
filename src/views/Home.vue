@@ -207,6 +207,8 @@
               :link="project.link"
               :link-title="project.linkTitle"
               :tags="project.tags"
+              @click-tag="setClickedFilter($event)"
+              :selected-tag="clickedFilter"
             >
               {{ project.description }}
             </Project>
@@ -239,11 +241,11 @@ export default defineComponent({
   },
   setup() {
     const clickedFilter = ref('');
-    const languages = ref(['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart']);
-    const technologies = ref(['Vue', 'Nuxt', 'GraphQL', 'gRPC', 'TailwindCSS', 'Redis', 'PostgreSQL', 'Angular',
-      'jQuery', 'Nginx', 'Kafka', 'Git', 'React', 'Node.js', 'Docker', 'Jenkins', 'Spring Boot',
-      'MySQL', 'MongoDB', 'Electron', 'Firebase', 'Tensorflow', 'Scikit-learn', 'Jupyter Notebook',
-      'Pandas/Numpy/Matplotlib']);
+    const languages = ref([ProjectTag.JavaScript, ProjectTag.TypeScript, ProjectTag.Go, ProjectTag.Python, ProjectTag.Java, ProjectTag.CSS, ProjectTag.SQL, ProjectTag.Kotlin, ProjectTag.Scala, ProjectTag.Dart]);
+    const technologies = ref([ProjectTag.Vue, ProjectTag.Nuxt, ProjectTag.GraphQL, ProjectTag.GRPC, ProjectTag.Tailwind, ProjectTag.Redis, ProjectTag.PostgreSQL, ProjectTag.Angular,
+      ProjectTag.JQuery, ProjectTag.Nginx, ProjectTag.Kafka, ProjectTag.Git, ProjectTag.React, ProjectTag.Node, ProjectTag.Docker, ProjectTag.Jenkins, ProjectTag.SpringBoot,
+      ProjectTag.MySQL, ProjectTag.MongoDB, ProjectTag.Electron, ProjectTag.Firebase, ProjectTag.Tensorflow, ProjectTag.Scikitlearn, ProjectTag.Jupyter,
+      ProjectTag.PythonLibs]);
 
     const setClickedFilter = (criterium: string): void => {
       if (clickedFilter.value === criterium) {
