@@ -20,6 +20,15 @@ export default [
               Furthermore, I submitted this notebook to the official Kaggle competition.`,
   },
   {
+    title: 'Lungcure',
+    link: 'https://github.com/FlorianWoelki/lungcure',
+    linkTitle: 'github.com/FlorianWoelki/lungcure',
+    tags: ['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git', 'JavaScript (ES6)', 'CSS/SASS'],
+    description: `A fullstack project develop together with different contributors. This project
+              includes a fullstack web application where you can classify different lung diseases
+              with a stripe paywall integration.`,
+  },
+  {
     title: 'Vue Cirrus',
     link: 'https://github.com/FlorianWoelki/vue-cirrus',
     linkTitle: 'github.com/FlorianWoelki/vue-cirrus',
