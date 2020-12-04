@@ -229,6 +229,7 @@ import {
 } from 'vue';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
+import { ProjectModel } from '@/models/Project';
 
 export default defineComponent({
   components: {
@@ -236,7 +237,7 @@ export default defineComponent({
     Project,
   },
   setup() {
-    const projects = [
+    const projects: ProjectModel[] = [
       {
         title: 'VGQL',
         link: 'https://github.com/FlorianWoelki/vgql',
