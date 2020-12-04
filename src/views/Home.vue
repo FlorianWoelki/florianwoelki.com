@@ -217,67 +217,6 @@
           >
             No projects found :(
           </p>
-
-          <!--
-            <Project
-              title="VGQL"
-              link="https://github.com/FlorianWoelki/vgql"
-              link-title="github.com/FlorianWoelki/vgql"
-              :tags="['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js']"
-              :clicked-filter="clickedFilter"
-            >
-              A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
-              you can easily generate projects with the lovely preset of the Vue.js framework
-              and GraphQL. The CLI will setup everything you need for this fullstack application.
-            </Project>
-
-            <Project
-              title="Pneumonia Detection"
-              link="https://github.com/FlorianWoelki/pneumonia_detection"
-              link-title="github.com/FlorianWoelki/pneumonia_detection"
-              :tags="['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git']"
-              :clicked-filter="clickedFilter"
-            >
-              A jupyter notebook that contains a exploratory analysis and transfer learning
-              convulutional neural network detecting if a xray scan has pneumonia or not.
-              Furthermore, I submitted this notebook to the official Kaggle competition.
-            </Project>
-
-            <Project
-              title="Vue Cirrus"
-              link="https://github.com/FlorianWoelki/vue-cirrus"
-              link-title="github.com/FlorianWoelki/vue-cirrus"
-              :tags="['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git']"
-              :clicked-filter="clickedFilter"
-            >
-              A Vue component library for the Cirrus CSS framework. It is really simple to use
-              and lightweight as well.
-            </Project>
-
-            <Project
-              title="Daycademy"
-              link="https://github.com/daycademy"
-              link-title="github.com/daycademy"
-              :tags="['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS']"
-              :clicked-filter="clickedFilter"
-            >
-              Daycademy is a completly free to use german academy for learning how to code.
-              On this self built end to end platform I teach how to code with interactive
-              coding trainings and quizes..
-            </Project>
-
-            <Project
-              title="YouTube Account"
-              link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
-              link-title="Code mit FloW"
-              :tags="['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS']"
-              :clicked-filter="clickedFilter"
-            >
-              In addition to the academy I have created a german speaking YouTube channel
-              for teaching how to code. These professional created videos are in the academy
-              available as well.
-            </Project>
-            -->
         </div>
       </div>
     </div>
@@ -298,6 +237,50 @@ export default defineComponent({
   },
   setup() {
     const projects = [
+      {
+        title: 'VGQL',
+        link: 'https://github.com/FlorianWoelki/vgql',
+        linkTitle: 'github.com/FlorianWoelki/vgql',
+        tags: ['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js'],
+        description: `A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
+              you can easily generate projects with the lovely preset of the Vue.js framework
+              and GraphQL. The CLI will setup everything you need for this fullstack application.`,
+      },
+      {
+        title: 'Pneumonia Detection',
+        link: 'https://github.com/FlorianWoelki/pneumonia_detection',
+        linkTitle: 'github.com/FlorianWoelki/pneumonia_detection',
+        tags: ['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git'],
+        description: `A jupyter notebook that contains a exploratory analysis and transfer learning
+              convulutional neural network detecting if a xray scan has pneumonia or not.
+              Furthermore, I submitted this notebook to the official Kaggle competition.`,
+      },
+      {
+        title: 'Vue Cirrus',
+        link: 'https://github.com/FlorianWoelki/vue-cirrus',
+        linkTitle: 'github.com/FlorianWoelki/vue-cirrus',
+        tags: ['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git'],
+        description: `A Vue component library for the Cirrus CSS framework. It is really simple to use
+              and lightweight as well.`,
+      },
+      {
+        title: 'Daycademy',
+        link: 'https://github.com/daycademy',
+        linkTitle: 'github.com/daycademy',
+        tags: ['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS'],
+        description: `Daycademy is a completly free to use german academy for learning how to code.
+              On this self built end to end platform I teach how to code with interactive
+              coding trainings and quizes.`,
+      },
+      {
+        title: 'YouTube Account',
+        link: 'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber',
+        linkTitle: 'Code mit FloW',
+        tags: ['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS'],
+        description: `In addition to the academy I have created a german speaking YouTube channel
+              for teaching how to code. These professional created videos are in the academy
+              available as well.`,
+      },
       {
         title: 'First published Game',
         link: 'https://gamejolt.com/games/way-to-love/135095',
