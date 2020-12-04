@@ -20,4 +20,4 @@ enum ProjectTag {
   Angular = 'Angular',
 }
 
-export default ProjectType;
+export default ProjectTag;

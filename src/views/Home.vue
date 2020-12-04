@@ -225,11 +225,10 @@
 
 <script lang="ts">
 import {
-  defineComponent, ref, onMounted, computed,
+  defineComponent, ref, computed,
 } from 'vue';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
-import { ProjectModel } from '@/models/Project';
 import projects from '@/projects';
 import ProjectTag from '../models/ProjectTag';
 
