@@ -1,5 +1,5 @@
 <template>
-  <div v-show="filteredTags.length !== 0 || clickedFilter === ''">
+  <div>
     <h2 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
       {{ title }}
     </h2>
@@ -50,16 +50,6 @@ export default defineComponent({
       type: Array,
       required: true,
     },
-    clickedFilter: {
-      type: String,
-      default: '',
-    },
-  },
-  setup(props) {
-    const filteredTags = computed(() => (props.tags as string[]).filter((tag: string) => tag.toLowerCase() === props.clickedFilter.toLowerCase()));
-    return {
-      filteredTags,
-    };
   },
 });
 </script>

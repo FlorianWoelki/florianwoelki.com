@@ -196,102 +196,88 @@
             Personal <span class="block text-6xl font-bold">Projects</span>
           </h1>
 
-          <Project
-            title="VGQL"
-            link="https://github.com/FlorianWoelki/vgql"
-            link-title="github.com/FlorianWoelki/vgql"
-            :tags="['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js']"
-            :clicked-filter="clickedFilter"
+          <div
+            v-if="filteredProjects.length !== 0"
+            class="space-y-12"
           >
-            A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
-            you can easily generate projects with the lovely preset of the Vue.js framework
-            and GraphQL. The CLI will setup everything you need for this fullstack application.
-          </Project>
+            <Project
+              v-for="(project, index) in filteredProjects"
+              :key="index"
+              :title="project.title"
+              :link="project.link"
+              :link-title="project.linkTitle"
+              :tags="project.tags"
+            >
+              {{ project.description }}
+            </Project>
+          </div>
+          <p
+            v-else
+            class="mt-2 leading-7 text-gray-500"
+          >
+            No projects found :(
+          </p>
 
-          <Project
-            title="Pneumonia Detection"
-            link="https://github.com/FlorianWoelki/pneumonia_detection"
-            link-title="github.com/FlorianWoelki/pneumonia_detection"
-            :tags="['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git']"
-            :clicked-filter="clickedFilter"
-          >
-            A jupyter notebook that contains a exploratory analysis and transfer learning
-            convulutional neural network detecting if a xray scan has pneumonia or not.
-            Furthermore, I submitted this notebook to the official Kaggle competition.
-          </Project>
+          <!--
+            <Project
+              title="VGQL"
+              link="https://github.com/FlorianWoelki/vgql"
+              link-title="github.com/FlorianWoelki/vgql"
+              :tags="['GraphQL', 'TypeScript', 'Vue', 'Git', 'Node.js']"
+              :clicked-filter="clickedFilter"
+            >
+              A custom made Vue GraphQL CLI written in TypeScript. With the help of this CLI
+              you can easily generate projects with the lovely preset of the Vue.js framework
+              and GraphQL. The CLI will setup everything you need for this fullstack application.
+            </Project>
 
-          <Project
-            title="Vue Cirrus"
-            link="https://github.com/FlorianWoelki/vue-cirrus"
-            link-title="github.com/FlorianWoelki/vue-cirrus"
-            :tags="['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git']"
-            :clicked-filter="clickedFilter"
-          >
-            A Vue component library for the Cirrus CSS framework. It is really simple to use
-            and lightweight as well.
-          </Project>
+            <Project
+              title="Pneumonia Detection"
+              link="https://github.com/FlorianWoelki/pneumonia_detection"
+              link-title="github.com/FlorianWoelki/pneumonia_detection"
+              :tags="['Python', 'Pandas/Numpy/Matplotlib', 'Jupyter Notebook', 'Tensorflow', 'Git']"
+              :clicked-filter="clickedFilter"
+            >
+              A jupyter notebook that contains a exploratory analysis and transfer learning
+              convulutional neural network detecting if a xray scan has pneumonia or not.
+              Furthermore, I submitted this notebook to the official Kaggle competition.
+            </Project>
 
-          <Project
-            title="Daycademy"
-            link="https://github.com/daycademy"
-            link-title="github.com/daycademy"
-            :tags="['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS']"
-            :clicked-filter="clickedFilter"
-          >
-            Daycademy is a completly free to use german academy for learning how to code.
-            On this self built end to end platform I teach how to code with interactive
-            coding trainings and quizes..
-          </Project>
+            <Project
+              title="Vue Cirrus"
+              link="https://github.com/FlorianWoelki/vue-cirrus"
+              link-title="github.com/FlorianWoelki/vue-cirrus"
+              :tags="['Vue', 'JavaScript (ES6)', 'CSS/SASS', 'Git']"
+              :clicked-filter="clickedFilter"
+            >
+              A Vue component library for the Cirrus CSS framework. It is really simple to use
+              and lightweight as well.
+            </Project>
 
-          <Project
-            title="YouTube Account"
-            link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
-            link-title="Code mit FloW"
-            :tags="['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS']"
-            :clicked-filter="clickedFilter"
-          >
-            In addition to the academy I have created a german speaking YouTube channel
-            for teaching how to code. These professional created videos are in the academy
-            available as well.
-          </Project>
+            <Project
+              title="Daycademy"
+              link="https://github.com/daycademy"
+              link-title="github.com/daycademy"
+              :tags="['TypeScript', 'JavaScript (ES6)', 'CSS/SASS', 'Git', 'GraphQL', 'Node.js', 'TailwindCSS']"
+              :clicked-filter="clickedFilter"
+            >
+              Daycademy is a completly free to use german academy for learning how to code.
+              On this self built end to end platform I teach how to code with interactive
+              coding trainings and quizes..
+            </Project>
 
-          <Project
-            title="First published Game"
-            link="https://gamejolt.com/games/way-to-love/135095"
-            link-title="Way To Love"
-            :tags="['Java']"
-            :clicked-filter="clickedFilter"
-          >
-            This is my first ever published game. The main goal of this game is to
-            finish the jump and run with two characters that are mirrored. The game
-            was written in Java with LibGDX.
-          </Project>
-
-          <Project
-            title="Competition Game #59"
-            link="https://flowy.itch.io/revenge-of-the-clowns"
-            link-title="Revenge of the Clowns"
-            :tags="['Java']"
-            :clicked-filter="clickedFilter"
-          >
-            I've developed this game for the Beansjam event, where you need to develop
-            a game with predefined themes. The goal is to throw or kill all the clowns from
-            the plattform and level yourself up with powerups and upgrades. This game was written
-            in pure Java without any additional library.
-          </Project>
-
-          <Project
-            title="Fake Graph"
-            link="https://github.com/daycademy/fake-graph"
-            link-title="github.com/daycademy/fake-graph"
-            :tags="['Node.js', 'GraphQL', 'TypeScript', 'JavaScript (ES6)']"
-            :clicked-filter="clickedFilter"
-          >
-            Fake Graph is a backend sitting on a custom server where you can send GraphQL queries,
-            mutations or subscriptions and it will respond with some fake data. This project was
-            originally inspired by jsonplaceholder fake backend. Fake Graph will be used in a course
-            for Daycademy for learning GraphQL.
-          </Project>
+            <Project
+              title="YouTube Account"
+              link="https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber"
+              link-title="Code mit FloW"
+              :tags="['Go', 'Python', 'JavaScript (ES6)', 'GraphQL', 'Vue', 'Nuxt', 'TailwindCSS']"
+              :clicked-filter="clickedFilter"
+            >
+              In addition to the academy I have created a german speaking YouTube channel
+              for teaching how to code. These professional created videos are in the academy
+              available as well.
+            </Project>
+            -->
         </div>
       </div>
     </div>
@@ -299,9 +285,11 @@
 </template>
 
 <script lang="ts">
+import {
+  defineComponent, ref, onMounted, computed,
+} from 'vue';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
-import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   components: {
@@ -309,6 +297,38 @@ export default defineComponent({
     Project,
   },
   setup() {
+    const projects = [
+      {
+        title: 'First published Game',
+        link: 'https://gamejolt.com/games/way-to-love/135095',
+        linkTitle: 'Way To Love',
+        tags: ['Java'],
+        description: `This is my first ever published game. The main goal of this game is to
+              finish the jump and run with two characters that are mirrored. The game
+              was written in Java with LibGDX.`,
+      },
+      {
+        title: 'Competition Game #59',
+        link: 'https://flowy.itch.io/revenge-of-the-clowns',
+        linkTitle: 'Revenge of the Clowns',
+        tags: ['Java'],
+        description: `I've developed this game for the Beansjam event, where you need to develop
+              a game with predefined themes. The goal is to throw or kill all the clowns from
+              the plattform and level yourself up with powerups and upgrades. This game was written
+              in pure Java without any additional library.`,
+      },
+      {
+        title: 'Fake Graph',
+        link: 'https://github.com/daycademy/fake-graph',
+        linkTitle: 'github.com/daycademy/fake-graph',
+        tags: ['Node.js', 'GraphQL', 'TypeScript', 'JavaScript (ES6)'],
+        description: `Fake Graph is a backend sitting on a custom server where you can send GraphQL queries,
+              mutations or subscriptions and it will respond with some fake data. This project was
+              originally inspired by jsonplaceholder fake backend. Fake Graph will be used in a course
+              for Daycademy for learning GraphQL.`,
+      },
+    ];
+
     const clickedFilter = ref('');
     const languages = ref(['JavaScript (ES6)', 'TypeScript', 'Go', 'Python', 'Java', 'CSS/SASS', 'SQL', 'Kotlin', 'Scala', 'Dart']);
     const technologies = ref(['Vue', 'Nuxt', 'GraphQL', 'gRPC', 'TailwindCSS', 'Redis', 'PostgreSQL', 'Angular',
@@ -324,11 +344,20 @@ export default defineComponent({
       }
     };
 
+    const filteredProjects = computed(() => {
+      if (!clickedFilter.value) {
+        return projects;
+      }
+      return projects.filter((project) => project.tags.includes(clickedFilter.value));
+    });
+
     return {
       clickedFilter,
       languages,
       technologies,
       setClickedFilter,
+      projects,
+      filteredProjects,
     };
   },
 });
