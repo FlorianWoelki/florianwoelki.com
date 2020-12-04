@@ -28,10 +28,11 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
 import Tag from './Tag.vue';
 
 export default defineComponent({
+  emits: ['click-tag'],
   components: {
     Tag,
   },
@@ -52,7 +53,10 @@ export default defineComponent({
       type: Array,
       required: true,
     },
-    selectedTag: String,
+    selectedTag: {
+      type: String,
+      default: '',
+    },
   },
 });
 </script>
