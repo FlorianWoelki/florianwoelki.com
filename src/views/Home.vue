@@ -231,6 +231,7 @@ import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
 import { ProjectModel } from '@/models/Project';
 import projects from '@/projects';
+import ProjectTag from '../models/ProjectTag';
 
 export default defineComponent({
   components: {
@@ -257,7 +258,7 @@ export default defineComponent({
       if (!clickedFilter.value) {
         return projects;
       }
-      return projects.filter((project) => project.tags.includes(clickedFilter.value));
+      return projects.filter((project) => project.tags.includes(clickedFilter.value as ProjectTag));
     });
 
     return {
