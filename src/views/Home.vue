@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <div class="h-screen lg:grid lg:grid-cols-2 lg:gap-12">
+    <div class="h-screen lg:grid lg:grid-cols-2">
       <div class="container px-16 py-16 mx-auto break-words bg-gray-100">
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
@@ -190,35 +190,39 @@
       </div>
 
       <!-- PERSONAL PROJECTS -->
-      <div class="container px-16 py-16 mx-auto break-words">
-        <div class="max-w-2xl mr-auto space-y-12">
-          <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
-            Personal <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
-          </h1>
+      <div>
+        <div
+          class="container px-16 pt-16 mx-auto break-words"
+          :class="filteredProjects.length === 0 ? 'pb-0' : 'pb-16'"
+        >
+          <div class="max-w-2xl mr-auto space-y-12">
+            <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
+              Personal <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
+            </h1>
 
-          <div
-            v-if="filteredProjects.length !== 0"
-            class="space-y-12"
-          >
-            <Project
-              v-for="(project, index) in filteredProjects"
-              :key="index"
-              :title="project.title"
-              :link="project.link"
-              :link-title="project.linkTitle"
-              :tags="project.tags"
-              @click-tag="setClickedFilter($event)"
-              :selected-tag="clickedFilter"
-            >
-              {{ project.description }}
-            </Project>
+            <div class="space-y-12">
+              <Project
+                v-for="(project, index) in filteredProjects"
+                :key="index"
+                :title="project.title"
+                :link="project.link"
+                :link-title="project.linkTitle"
+                :tags="project.tags"
+                @click-tag="setClickedFilter($event)"
+                :selected-tag="clickedFilter"
+              >
+                {{ project.description }}
+              </Project>
+            </div>
           </div>
-          <p
-            v-else
-            class="mt-2 leading-7 text-gray-500"
-          >
+        </div>
+        <div v-if="filteredProjects.length === 0">
+          <LottieAnimation
+            path="animations/error.json"
+          />
+          <h5 class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t">
             No projects found :(
-          </p>
+          </h5>
         </div>
       </div>
     </div>
@@ -229,6 +233,7 @@
 import {
   defineComponent, ref, computed,
 } from 'vue';
+import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
 import projects from '@/projects';
@@ -238,6 +243,7 @@ export default defineComponent({
   components: {
     Tag,
     Project,
+    LottieAnimation,
   },
   setup() {
     const hasClickedFilter = ref(false);
