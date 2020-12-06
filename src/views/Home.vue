@@ -112,7 +112,7 @@
                 @click="setClickedFilter(language)"
                 :selected="clickedFilter === language"
               >
-                {{ language }}
+                <span :class="{ 'animate-pulse': index === 0 && !hasClickedFilter }">{{ language }}</span>
               </Tag>
             </div>
             <h4 class="mt-8 text-gray-500 uppercase">
@@ -240,6 +240,8 @@ export default defineComponent({
     Project,
   },
   setup() {
+    const hasClickedFilter = ref(false);
+
     const clickedFilter = ref('');
     const languages = ref([ProjectTag.JavaScript, ProjectTag.TypeScript, ProjectTag.Go, ProjectTag.Python, ProjectTag.Java, ProjectTag.CSS, ProjectTag.SQL, ProjectTag.Kotlin, ProjectTag.Scala, ProjectTag.Dart]);
     const technologies = ref([ProjectTag.Vue, ProjectTag.Nuxt, ProjectTag.GraphQL, ProjectTag.GRPC, ProjectTag.Tailwind, ProjectTag.Redis, ProjectTag.PostgreSQL, ProjectTag.Angular,
@@ -248,6 +250,10 @@ export default defineComponent({
       ProjectTag.PythonLibs]);
 
     const setClickedFilter = (criterium: string): void => {
+      if (!hasClickedFilter.value) {
+        hasClickedFilter.value = true;
+      }
+
       if (clickedFilter.value === criterium) {
         clickedFilter.value = '';
       } else {
@@ -269,6 +275,7 @@ export default defineComponent({
       setClickedFilter,
       projects,
       filteredProjects,
+      hasClickedFilter,
     };
   },
 });
