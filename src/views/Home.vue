@@ -1,12 +1,12 @@
 <template>
   <div class="h-full">
-    <div class="grid h-screen grid-cols-2 gap-12">
+    <div class="h-screen lg:grid lg:grid-cols-2 lg:gap-12">
       <div class="container px-16 py-16 mx-auto break-words bg-gray-100">
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
           <div class="xl:flex xl:items-center xl:justify-between">
-            <h1 class="text-5xl font-light text-gray-800 uppercase">
-              Florian <span class="block text-6xl font-bold">Woelki</span>
+            <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
+              Florian <span class="block text-5xl font-bold lg:text-6xl">Woelki</span>
             </h1>
             <div class="mt-8 space-y-2 xl:text-center xl:mt-0">
               <p class="text-gray-400">
@@ -192,8 +192,8 @@
       <!-- PERSONAL PROJECTS -->
       <div class="container px-16 py-16 mx-auto break-words">
         <div class="max-w-2xl mr-auto space-y-12">
-          <h1 class="text-5xl font-light text-gray-800 uppercase">
-            Personal <span class="block text-6xl font-bold">Projects</span>
+          <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
+            Personal <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
           </h1>
 
           <div
