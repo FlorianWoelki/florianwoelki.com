@@ -34,6 +34,7 @@ enum ProjectTag {
   Electron = 'Electron',
   Firebase = 'Firebase',
   Scikitlearn = 'Scikit-learn',
+  Vim = 'Vim',
 }
 
 export default ProjectTag;

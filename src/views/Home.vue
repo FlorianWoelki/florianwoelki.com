@@ -253,7 +253,7 @@ export default defineComponent({
     const technologies = ref([ProjectTag.Vue, ProjectTag.Nuxt, ProjectTag.GraphQL, ProjectTag.GRPC, ProjectTag.Tailwind, ProjectTag.Redis, ProjectTag.PostgreSQL, ProjectTag.Angular,
       ProjectTag.JQuery, ProjectTag.Nginx, ProjectTag.Kafka, ProjectTag.Git, ProjectTag.React, ProjectTag.Node, ProjectTag.Docker, ProjectTag.Jenkins, ProjectTag.SpringBoot,
       ProjectTag.MySQL, ProjectTag.MongoDB, ProjectTag.Electron, ProjectTag.Firebase, ProjectTag.Tensorflow, ProjectTag.Scikitlearn, ProjectTag.Jupyter,
-      ProjectTag.PythonLibs]);
+      ProjectTag.PythonLibs, ProjectTag.Vim]);
 
     const setClickedFilter = (criterium: string): void => {
       if (!hasClickedFilter.value) {
