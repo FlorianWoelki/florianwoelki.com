@@ -11,12 +11,14 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "core-js": "^3.6.5",
     "lottie-vuejs": "^0.4.0",
+    "marked": "^1.2.7",
     "purgecss": "^2.3.0",
     "vue": "^3.0.0-0",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
+    "@types/marked": "^1.2.1",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -37,7 +39,7 @@
     "postcss": "^7.0.35",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "typescript": "~3.9.3",
     "vue-cli-plugin-vue-next": "~0.1.4"
   }
