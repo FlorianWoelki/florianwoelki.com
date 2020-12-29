@@ -3,7 +3,7 @@
     id="app"
     class="antialiased"
   >
-    <div class="absolute top-0 left-0 mt-4 ml-16">
+    <div class="px-8 py-4 md:px-16">
       <ul class="space-x-6 text-gray-500">
         <li
           v-for="(item, index) in items"
@@ -13,7 +13,7 @@
         >
           <router-link
             :to="item.link"
-            class="hover:text-gray-800"
+            class="transition duration-300 ease-in-out hover:text-gray-800"
             @click="activeItemIndex = index"
           >
             {{ item.name }}

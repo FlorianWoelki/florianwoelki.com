@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-4xl px-8 py-16 mx-auto break-words md:px-16">
+  <div class="container max-w-4xl px-8 py-8 mx-auto break-words lg:py-16 md:px-16">
     <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
       December 29, 2020
     </div>
