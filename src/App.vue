@@ -3,7 +3,7 @@
     id="app"
     class="antialiased"
   >
-    <div class="px-8 py-4 md:px-16">
+    <div class="px-8 py-4 shadow md:px-16">
       <ul class="space-x-6 text-gray-500">
         <li
           v-for="(item, index) in items"
