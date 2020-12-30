@@ -1,13 +1,13 @@
 import { nextTick } from 'vue';
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
+import Resume from '../views/Resume.vue';
 import Year2020 from '../views/Year2020.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'Resume',
+    component: Resume,
     meta: {
       title: 'Resumé - Florian Woelki',
     },
