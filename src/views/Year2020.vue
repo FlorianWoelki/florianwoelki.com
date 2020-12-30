@@ -48,9 +48,11 @@ In this small post, I will close this year for myself.
 
 The year was full of surprises and downfalls. All in all the year went pretty solid but I could improve on some things.
 
-* More livestreaming
+* More livestreaming on [YouTube](https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A)
 * Creating the company and releasing [Daycademy](https://daycademy.de/)
-* 
+* Releasing top tier free courses on [YouTube](https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A) and [Daycademy](https://daycademy.de/)
+* Creating more content on social media platforms
+* Reading 12 books in 12 months
 
 Let's hope into 2021!`;
 
@@ -64,7 +66,7 @@ Let's hope into 2021!`;
 });
 </script>
 
-<style>
+<style lang="postcss">
 .markdown {
   @apply text-lg text-gray-700;
 }
@@ -78,7 +80,7 @@ Let's hope into 2021!`;
   @apply font-bold text-gray-800;
 }
 .markdown a {
-  @apply font-semibold text-gray-800;
+  @apply font-semibold text-gray-800 underline;
 }
 .markdown h2 {
   @apply text-xl font-bold mb-2 mt-10 text-gray-800;
