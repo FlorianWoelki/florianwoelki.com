@@ -16,9 +16,23 @@
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
 import marked from 'marked';
+/* eslint-disable-next-line */
+// @ts-ignore
+import youtubeStatsImage from '@/assets/2020/youtube_stats.png';
 
 export default defineComponent({
   setup() {
+    const imageMap = {
+      youtubeStats: youtubeStatsImage,
+    } as Record<string, string>;
+
+    const renderer = {
+      image(href: string, title: string, text: string): string {
+        return `<img class="w-full" alt="${text}" src="${imageMap[href]}">`;
+      },
+    } as marked.Renderer;
+    marked.use({ renderer });
+
     const title = '2020 Year Review';
     const input = `This year 2020 was full of surprises and ups and downs. I felt this year like a surfer, always on the next wave.
 I was really excited to hop into the year 2020, but somehow things didn't go well or go really well.
@@ -37,24 +51,57 @@ In this small post, I will close this year for myself.
 * **Livestreaming —** I engaged with the viewers in four total livestreams. This isn't a lot, but this will change in 2021.
 
 ## Personal
+2020 was a pretty testing like year where I tried to test a lot of things and experience new things.
+Honestly, I am not satisfied enough with the experiences had this year. But I will try to change this next year
+by building new things or simply trying new things.
 
-## Business
+### Health and Fitness
+Even if this year was a *i will stay inside* year I've used my body and my brain to experiment with a diet and with
+home training. I personally really enjoy lifting weights at home because you can adjust your training dynamically. For instance,
+you can focus on do on the one day a really intense workout and on the other day a more like fast workout with lighter weights but
+more reps. In the gym, it is really hard to do this. Therefore I cancelled my membership at the gym.
+
+## Career
+Right now I am a simple Softwarearchitect at T-Systems International GmbH. But besides that I try to build things in my freetime
+and educate the world about the future and programming.
+
+I have some plans for the year 2021 like starting a podcast or writing more often. I will try to handle all of that in the upcoming
+year. So it could be fun ;)
 
 ### Daycademy
 
 ### YouTube
+![alt text](youtubeStats)
+
+## Education
+This year I've finished my Bachelor Degree in Computer Science. Honestly, I've learned more at work than in university. Therefore,
+I will ask myself in the next year, if a Masters Degree in Computer Science is really useful. I might ask myself, if it is fullfilling
+and if it does make sense. Or is it more useful to earn a lot of experience at work and earn certificates about specific technologies.
+
+Besides the degree, I learned some new frameworks and languages like Golang. You can build amazing microservices with Golang and the
+language specific frameworks like Gorilla or gRPC. In this year I started a new project where I rebuild Instagram with a Golang microservices
+backend and a simple Vue.js frontend. I will try to finish this project this year.
+
+In addition, I've read some books, but not a lot. I will try to change this the coming year. Also I tried to read Sci-fi books which
+are really interesting because you might learn new things and strengthen your creativity about the future. Everything is possible.
+
+Furthermore, I learned a lot about playing piano. This skill has nothing to do with programming or software development and is therefore
+a really nice hobby I would like to do more often.
 
 ## Looking ahead to 2021
-
 The year was full of surprises and downfalls. All in all the year went pretty solid but I could improve on some things.
 
-* More livestreaming on [YouTube](https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A)
-* Creating the company and releasing [Daycademy](https://daycademy.de/)
-* Releasing top tier free courses on [YouTube](https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A) and [Daycademy](https://daycademy.de/)
-* Creating more content on social media platforms
+I will try to achieve these things in the next year:
+* Try to livestream once a month on YouTube.
+* Creating the company and releasing Daycademy.
+* Releasing minimum of three top tier free courses on YouTube and Daycademy.
+* Creating more content for simple advertising of Daycademy on social media platforms
+* Starting a podcast and write more often
 * Reading 12 books in 12 months
+* Finishing all unfinished projects on GitHub
+* Contribute to at least five open source projects
 
-Let's hope into 2021!`;
+Let's jump into 2021!`;
 
     const compiledMarkdown = computed(() => marked(input));
 
