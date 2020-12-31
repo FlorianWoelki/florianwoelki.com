@@ -1,5 +1,5 @@
 import { nextTick } from 'vue';
-import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router';
+import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router';
 import Resume from '../views/Resume.vue';
 import Year2020 from '../views/Year2020.vue';
 
@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 
