@@ -27,6 +27,9 @@ export default defineComponent({
     } as Record<string, string>;
 
     const renderer = {
+      link(href: string, title: string, text: string): string {
+        return `<a href="${href}" target="_blank">${text}</a>`;
+      },
       image(href: string, title: string, text: string): string {
         return `<img class="w-full" alt="${text}" src="${imageMap[href]}">`;
       },
