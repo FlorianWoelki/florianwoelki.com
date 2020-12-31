@@ -31,7 +31,7 @@ export default defineComponent({
         return `<a href="${href}" target="_blank">${text}</a>`;
       },
       image(href: string, title: string, text: string): string {
-        return `<img class="w-full" alt="${text}" src="${imageMap[href]}">`;
+        return `<img class="w-full mt-4" alt="${text}" src="${imageMap[href]}">`;
       },
     } as marked.Renderer;
     marked.use({ renderer });
