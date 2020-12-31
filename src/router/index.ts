@@ -11,6 +11,15 @@ const routes: Array<RouteRecordRaw> = [
     meta: {
       title: 'Resumé - Florian Woelki',
     },
+    beforeEnter(_to, _from, next) {
+      if (sessionStorage.getItem('redirect') !== null) {
+        const { redirect } = sessionStorage;
+        delete sessionStorage.redirect;
+        next(redirect);
+      } else {
+        next();
+      }
+    },
   },
   {
     path: '/2020',

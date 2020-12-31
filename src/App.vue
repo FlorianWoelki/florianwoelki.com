@@ -50,12 +50,6 @@ export default defineComponent({
       });
     });
 
-    if (sessionStorage.redirect) {
-      const { redirect } = sessionStorage;
-      delete sessionStorage.redirect;
-      router.push(redirect);
-    }
-
     return {
       activeItemIndex,
       items,
