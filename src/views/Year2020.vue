@@ -54,9 +54,9 @@ In this small post, I will close this year for myself.
 * **Livestreaming —** I engaged with the viewers in four total livestreams. This isn't a lot, but this will change in 2021.
 
 # Personal
-2020 was a pretty testing like year where I tried to test a lot of things and experience new things.
-Honestly, I am not satisfied enough with the experiences had this year. But I will try to change this next year
-by building new things or simply trying new things.
+2020 was pretty testing like year where I tried to test a lot of things and experience new things.
+Honestly, I am not satisfied enough with the experiences had this year.
+But I will try to change this next year by building new things or simply trying new things.
 
 Besides that, I think I wasted a lot of time on the phone and watching social media or playing useless stuff.
 I will try to reduce the time spent on useless stuff like social media or playing in the upcoming year.
@@ -64,34 +64,34 @@ I will try to reduce the time spent on useless stuff like social media or playin
 ## Health and Fitness
 Even if this year was a *i will stay inside* year I've used my body and my brain to experiment with a diet and with
 home training. I personally really enjoy lifting weights at home because you can adjust your training dynamically. For instance,
-you can focus on do on the one day a really intense workout and on the other day a more like fast workout with lighter weights but
-more reps. In the gym, it is really hard to do this. Therefore I cancelled my membership at the gym.
+you can focus on doing on the one day a really intense workout and on the other day a more fast workout with lighter weights but
+more reps. In the gym, it is really hard to do this. Therefore I canceled my membership at the gym.
 
-In addition to my fitness that totally improved this year, I learned a lot about diet, our body and how food effects the brain. I've
-read some books about food and their nutrient. I really did not think that it would interest me, but I am more interest in brain health
-and health in general then ever before.
+In addition to my fitness that totally improved this year, I learned a lot about diet, our body, and how food affects the brain. I've
+read some books about food and their nutrient. I really did not think that it would interest me, but I am more interested in brain health
+and health in general than ever before.
 
 ## Education
-This year I've finished my Bachelor Degree in Computer Science. Honestly, I've learned more at work than in university. Therefore,
-I will ask myself in the next year, if a Masters Degree in Computer Science is really useful. I might ask myself, if it is fullfilling
+This year I've finished my Bachelor Degree in Computer Science. Honestly, I've learned more at work than at university. Therefore,
+I will ask myself in the next year if a Master's Degree in Computer Science is really useful. I might ask myself, if it is fulfilling
 and if it does make sense. Or is it more useful to earn a lot of experience at work and earn certificates about specific technologies.
-Furthermore, I've learned a lot about the math behind Machine and Deep Learning. In the upcoming year I will try to do a follup up with
-the math of Machine Learning, which reflects my interests as well. Maybe there is some combination about Health/Nutrition and Machine Learning.
+Furthermore, I've learned a lot about the math behind Machine and Deep Learning. In the upcoming year, I will try to do a follow-up with
+the math of Machine Learning, which reflects my interests as well. Maybe there is some combination of Health/Nutrition and Machine Learning.
 
 Besides the degree, I learned some new frameworks and languages like Golang. You can build amazing microservices with Golang and the
-language specific frameworks like Gorilla or gRPC. In this year I started a new project where I rebuild Instagram with a Golang microservices
+language-specific frameworks like Gorilla or gRPC. This year I started a new project where I rebuild Instagram with a Golang microservices
 backend and a simple Vue.js frontend. I will try to finish this project this year.
 
-In addition, I've read some books, but not a lot. I will try to change this the coming year. Also I tried to read Sci-fi books which
+In addition, I've read some books, but not a lot. I will try to change this in the coming year. Also, I tried to read Sci-fi books which
 are really interesting because you might learn new things and strengthen your creativity about the future. Everything is possible.
 
-Furthermore, I learned a lot about playing piano. This skill has nothing to do with programming or software development and is therefore
+Furthermore, I learned a lot about playing the piano. This skill has nothing to do with programming or software development and is therefore
 a really nice hobby I would like to do more often.
 
 ## Open Source contribution
-I really contributed a lot to personal and private projects on GitHub. However I am not happy with the contribution in public open source
+I really contributed a lot to personal and private projects on GitHub. However, I am not happy with the contribution in public open source
 repositories at all. I will try to focus more on that in the upcoming year. On GitHub I had 3.611 commits in 2020 and created over 15 projects.
-Furthermore, I started a lot of projects without even finishing it. I will try to finish them and therefore clean up my profile this year.
+Furthermore, I started a lot of projects without even finishing them. I will try to finish them and therefore clean up my profile this year.
 
 ## Personal Plans for 2021
 Here is a small list of my personal plans for the upcoming year:
@@ -100,15 +100,15 @@ Here is a small list of my personal plans for the upcoming year:
 * Contribute to at least five open source projects
 * Read more scientific papers about Health and Machine Learning
 * Regular journaling about work stuff
-* Reduce social media and phone addiction to minimal 1-2 hours a day
+* Reduce social media and phone addiction to a minimal 1-2 hours a day
 
 # Business
-There were a lot of changes in this year, because I actually got my first fulltime job as a Softwarearchitect.
-Furthermore, I came up with a lot of business oppurtunities I will try to tackle this year. I had a lot of ideas which I will try to
+There were a lot of changes this year because I actually got my first full-time job as a Softwarearchitect.
+Furthermore, I came up with a lot of business opportunities I will try to tackle this year. I had a lot of ideas which I will try to
 create this year.
 
 ## Career
-Right now I am a simple Softwarearchitect at T-Systems International GmbH. But besides that I try to build things in my freetime
+Right now I am a simple Softwarearchitect at T-Systems International GmbH. But besides that, I try to build things in my free time
 and educate the world about the future and programming.
 
 I have some plans for the year 2021 like starting a podcast or writing more often. I will try to handle all of that in the upcoming
@@ -117,23 +117,23 @@ year. So it could be fun ;)
 ### Daycademy
 This year was a *redesign and create* year for Daycademy. I came up with the ideas this year and I made a lot of good progress.
 Right now, the academy is kind of in a release stadium and I am working towards it in the upcoming year. However, there were some
-fundamental changes about the design and the development. I redesigned the academy and the landing page from scratch and now I am pretty
+fundamental changes to the design and the development. I redesigned the academy and the landing page from scratch and now I am pretty
 happy with the result.
 
 Furthermore, there were a lot of technical challenges for me. For instance, the idea of having a sandbox environment for executing code
 in the browser was tough. I had to create a lot of bash scripts and think about a clever solution. Same thing for the backend. The challenge
-in the backend was to actually create a efficient and scalable infrastructure. Right now, I am not happy with it, but I will try to work it out
+in the backend was to actually create an efficient and scalable infrastructure. Right now, I am not happy with it, but I will try to work it out
 in 2021.
 
 Here are some contribution stats on GitHub:
-* Started mid March
+* Started mid-March
 * Created 13 repositories
 * 2.067 commits
 
 ### YouTube
-2020 was a really good year in terms of numbers of my YouTube channel. I really couldn't believe that I would ever have 1000 subscribers
+2020 was a really good year in terms of the numbers of my YouTube channel. I really couldn't believe that I would ever have 1000 subscribers
 on a YouTube channel. This was a magic number for me and I am really proud of it because I created educational videos constantly. In addition,
-I've found my style of editing videos, which was a tough process of trial and error. Below you can see this year YouTube stats.
+I've found my style of editing videos, which was a tough process of trial and error. Below you can see this year's YouTube stats.
 ![alt text](youtubeStats)
 
 In 2021 I will try to create more and better videos. I will level up my editing skills.
@@ -144,22 +144,22 @@ The three most popular videos of 2020 were:
 2. [Second Vue.js course video](https://www.youtube.com/watch?v=Zm5tliqRMZk) *(8.078 views)*
 3. [What is variance and standard deviation](https://www.youtube.com/watch?v=6x1VJAHMNYg) *(7.006 views)*
 
-So far, I am pretty happy how the YouTube channel evolves and I am seeing this as a hobby.
+So far, I am pretty happy with how the YouTube channel evolves and I am seeing this as a hobby.
 
 ## Financial
-I learned a lot about investing and economics in this year. However, I personally think that you cannot know enough in investing and econmics.
-Therefore, I will try to level up my game in econmics this year by attending to courses or reading books and learning about some economics.
-Personally, I think econmics is a interesting topic to learn more about.
+I learned a lot about investing and economics this year. However, I personally think that you cannot know enough about investing and economics.
+Therefore, I will try to level up my game in economics this year by attending courses or reading books and learning about some economics.
+Personally, I think economics is an interesting topic to learn more about.
 In addition, I will raise my investments per month to even save more money in stocks.
 
-I have no real business related financial plans or goals. All I know is that I want to reinvest in the company I will create to create even more
-and better products for the world. There are too much useless overpaid products in the market.
+I have no real business-related financial plans or goals. All I know is that I want to reinvest in the company I will create to create even more
+and better products for the world. There are too many useless overpaid products on the market.
 
 ## Business Plans for 2021
-Here is a small list of my business related plans for the upcoming year:
+Here is a small list of my business-related plans for the upcoming year:
 * Try to livestream once a month on YouTube.
 * Creating the company and releasing Daycademy.
-* Releasing minimum of three top tier free courses on YouTube and Daycademy.
+* Releasing a minimum of three top-tier free courses on YouTube and Daycademy.
 * Creating more content for simple advertising of Daycademy on social media platforms
 * Starting a podcast and write more often
 * Finish up the AI video course with videos about neural networks
