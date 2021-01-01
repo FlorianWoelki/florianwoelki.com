@@ -93,6 +93,11 @@ I really contributed a lot to personal and private projects on GitHub. However, 
 repositories at all. I will try to focus more on that in the upcoming year. On GitHub I had 3.611 commits in 2020 and created over 15 projects.
 Furthermore, I started a lot of projects without even finishing them. I will try to finish them and therefore clean up my profile this year.
 
+Projects I want to finish in 2021:
+* [Flex Vis](https://github.com/FlorianWoelki/flex-vis) *An old project that is kind of finished.*
+* [VGQL](https://github.com/FlorianWoelki/vgql) *A CLI for generating Vue.js in the frontend and GraphQL in the backend projects.*
+* [Insta Clone](https://github.com/FlorianWoelki/insta-clone) *A scalable Instagram clone written in Golang and Vue.js.*
+
 ## Personal Plans for 2021
 Here is a small list of my personal plans for the upcoming year:
 * Reading 12 books in 12 months
