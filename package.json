@@ -11,7 +11,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "core-js": "^3.6.5",
     "lottie-vuejs": "^0.4.0",
-    "marked": "^1.2.7",
+    "marked": "^2.0.0",
     "purgecss": "^2.3.0",
     "vue": "^3.0.0-0",
     "vue-class-component": "^8.0.0-0",
