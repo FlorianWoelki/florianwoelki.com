@@ -29,7 +29,7 @@ const router = createRouter({
 
 router.afterEach((to) => {
   nextTick(() => {
-    document.title = to.meta.title || 'Florian Woelki';
+    document.title = (to.meta.title as string) || 'Florian Woelki';
   });
 });
 
