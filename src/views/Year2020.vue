@@ -1,6 +1,10 @@
 <template>
-  <div class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16">
-    <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">December 29, 2020</div>
+  <div
+    class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16"
+  >
+    <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
+      December 29, 2020
+    </div>
     <h1 class="mt-1 mb-6 text-3xl font-extrabold leading-tight text-black">
       {{ title }}
     </h1>

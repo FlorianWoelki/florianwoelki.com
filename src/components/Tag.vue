@@ -1,7 +1,10 @@
 <template>
   <div
     class="px-3 py-1 mt-1 mr-1 text-sm bg-gray-200 rounded-lg cursor-pointer"
-    :class="{ 'bg-blue-200 text-blue-700': selected, 'text-gray-600': !selected }"
+    :class="{
+      'bg-blue-200 text-blue-700': selected,
+      'text-gray-600': !selected,
+    }"
   >
     <slot />
   </div>

@@ -6,7 +6,8 @@
           <!-- HEADER -->
           <div class="xl:flex xl:items-center xl:justify-between">
             <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
-              Florian <span class="block text-5xl font-bold lg:text-6xl">Woelki</span>
+              Florian
+              <span class="block text-5xl font-bold lg:text-6xl">Woelki</span>
             </h1>
             <div class="mt-8 space-y-2 xl:text-center xl:mt-0">
               <p class="text-gray-400">Download resumé</p>
@@ -28,7 +29,9 @@
           </div>
 
           <!-- SOCIALS -->
-          <div class="grid grid-cols-2 gap-2 text-gray-400 xl:grid-cols-3 xl:gap-0">
+          <div
+            class="grid grid-cols-2 gap-2 text-gray-400 xl:grid-cols-3 xl:gap-0"
+          >
             <div class="flex items-center space-x-2">
               <div>
                 <svg
@@ -82,7 +85,9 @@
                   <path
                     d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
                   />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
                 </svg>
               </div>
               <a
@@ -96,18 +101,27 @@
 
           <!-- ABOUT -->
           <div>
-            <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">About</h3>
+            <h3
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+            >
+              About
+            </h3>
             <h4 class="-mt-1 text-gray-500 uppercase">Fullstack Engineer</h4>
             <p class="mt-2 leading-7 text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt deserunt
-              quia laudantium aut quos aperiam, animi doloribus similique quidem voluptatem!
-              Necessitatibus enim eaque nostrum possimus quo provident consectetur ut.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Deleniti, nesciunt deserunt quia laudantium aut quos aperiam,
+              animi doloribus similique quidem voluptatem! Necessitatibus enim
+              eaque nostrum possimus quo provident consectetur ut.
             </p>
           </div>
 
           <!-- SKILLS -->
           <div>
-            <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">Skills</h3>
+            <h3
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+            >
+              Skills
+            </h3>
             <h4 class="-mt-1 text-gray-500 uppercase">Languages</h4>
             <div class="flex flex-wrap items-center mt-1">
               <Tag
@@ -116,12 +130,15 @@
                 @click="setClickedFilter(language)"
                 :selected="clickedFilter === language"
               >
-                <span :class="{ 'animate-pulse': index === 0 && !hasClickedFilter }">{{
-                  language
-                }}</span>
+                <span
+                  :class="{ 'animate-pulse': index === 0 && !hasClickedFilter }"
+                  >{{ language }}</span
+                >
               </Tag>
             </div>
-            <h4 class="mt-8 text-gray-500 uppercase">Frameworks / Technologies</h4>
+            <h4 class="mt-8 text-gray-500 uppercase">
+              Frameworks / Technologies
+            </h4>
             <div class="flex flex-wrap items-center mt-1">
               <Tag
                 v-for="(technology, index) in technologies"
@@ -136,77 +153,99 @@
 
           <!-- EDUCATION -->
           <div>
-            <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">Education</h3>
-            <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
+            <h3
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+            >
+              Education
+            </h3>
+            <h4
+              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+            >
               HfTL DUAL B.S. Computer Science
               <span class="font-normal text-gray-400">2017 - 2020</span>
             </h4>
 
             <p class="mt-2 leading-7 text-gray-500">
               Bachelorthesis:
-              <span class="italic"
-                >Bluetooth Low Energy Proximity: A comparison between different machine learning
-                algorithms with a variable object configuration in indoor areas.</span
-              >
+              <span class="italic">
+                Bluetooth Low Energy Proximity: A comparison between different
+                machine learning algorithms with a variable object configuration
+                in indoor areas.
+              </span>
             </p>
           </div>
 
           <!-- WORK EXPERIENCE -->
           <div>
-            <h3 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
+            <h3
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+            >
               Work Experience
             </h3>
-            <h4 class="flex items-center justify-between -mt-1 text-gray-500 uppercase">
+            <h4
+              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+            >
               <span>T-Systems International</span>
               <span class="font-normal text-gray-400">2017 - Present</span>
             </h4>
-            <h4 class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase">
+            <h4
+              class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase"
+            >
               Fullstack Softwarearchitect
             </h4>
 
             <div class="mt-2 leading-7 text-gray-500">
               <ul class="ml-4 leading-7 text-gray-500 list-disc">
                 <li>
-                  Full-stack development on situational awareness dashboards using Angular/Vue,
-                  Spring and Scala/Java
-                </li>
-                <li>Implemented RESTful API with SpringBoot secured with JWT authentication</li>
-                <li>
-                  Full-stack development on a real time indoor tracking service including UWB, LTE
-                  and BLE using Angular and Java with SpringBoot
+                  Full-stack development on situational awareness dashboards
+                  using Angular/Vue, Spring and Scala/Java
                 </li>
                 <li>
-                  Android app development with Kotlin for pairing a BLE beacon with a specific
-                  QR-Code
+                  Implemented RESTful API with SpringBoot secured with JWT
+                  authentication
+                </li>
+                <li>
+                  Full-stack development on a real time indoor tracking service
+                  including UWB, LTE and BLE using Angular and Java with
+                  SpringBoot
+                </li>
+                <li>
+                  Android app development with Kotlin for pairing a BLE beacon
+                  with a specific QR-Code
                 </li>
                 <li>...</li>
               </ul>
             </div>
 
-            <h4 class="flex items-center justify-between mt-8 text-gray-500 uppercase">
+            <h4
+              class="flex items-center justify-between mt-8 text-gray-500 uppercase"
+            >
               <span>Company Consulting Team</span>
               <span class="font-normal text-gray-400">2019 - Present</span>
             </h4>
-            <h4 class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase">
+            <h4
+              class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase"
+            >
               IT Consultant
             </h4>
 
             <div class="mt-2 leading-7 text-gray-500">
               <ul class="ml-4 leading-7 text-gray-500 list-disc">
                 <li>
-                  Front-end inhouse work for a fully functional HR-Tool with Vue and TypeScript
+                  Front-end inhouse work for a fully functional HR-Tool with Vue
+                  and TypeScript
                 </li>
                 <li>
-                  Full-stack inhouse work for fully functional end to end polling tool written in
-                  Vue, TypeScript and Node.js
+                  Full-stack inhouse work for fully functional end to end
+                  polling tool written in Vue, TypeScript and Node.js
                 </li>
                 <li>
-                  Front-end project for a customer by developing a contact form for a real estate
-                  company
+                  Front-end project for a customer by developing a contact form
+                  for a real estate company
                 </li>
                 <li>
-                  Data Science project for a customer by merging and analyzing different data
-                  sources in Python
+                  Data Science project for a customer by merging and analyzing
+                  different data sources in Python
                 </li>
               </ul>
             </div>
@@ -222,7 +261,8 @@
         >
           <div class="max-w-2xl mr-auto space-y-12">
             <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
-              Personal <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
+              Personal
+              <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
             </h1>
 
             <div class="space-y-12">
@@ -243,7 +283,9 @@
         </div>
         <div v-if="filteredProjects.length === 0">
           <LottieAnimation path="animations/error.json" />
-          <h5 class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t">
+          <h5
+            class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t"
+          >
             No projects found :(
           </h5>
         </div>
@@ -327,7 +369,9 @@ export default defineComponent({
       if (!clickedFilter.value) {
         return projects;
       }
-      return projects.filter((project) => project.tags.includes(clickedFilter.value as ProjectTag));
+      return projects.filter((project) =>
+        project.tags.includes(clickedFilter.value as ProjectTag),
+      );
     });
 
     return {
