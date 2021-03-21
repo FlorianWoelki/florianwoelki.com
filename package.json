@@ -10,7 +10,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "core-js": "^3.6.5",
-    "lottie-vuejs": "^0.4.0",
+    "lottie-vuejs": "^0.1.0",
     "marked": "^2.0.0",
     "purgecss": "^2.3.0",
     "vue": "^3.0.0-0",
