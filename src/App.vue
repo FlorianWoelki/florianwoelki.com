@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="app"
-    class="antialiased"
-  >
+  <div id="app" class="antialiased">
     <div class="px-8 py-4 shadow md:px-16">
       <ul class="space-x-6 text-gray-500">
         <li
@@ -26,9 +23,7 @@
 </template>
 
 <script lang="ts">
-import {
-  defineComponent, onMounted, ref,
-} from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 export default defineComponent({

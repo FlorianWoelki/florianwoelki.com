@@ -1,15 +1,10 @@
 <template>
   <div class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16">
-    <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
-      December 29, 2020
-    </div>
+    <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">December 29, 2020</div>
     <h1 class="mt-1 mb-6 text-3xl font-extrabold leading-tight text-black">
       {{ title }}
     </h1>
-    <div
-      class="markdown"
-      v-html="compiledMarkdown"
-    />
+    <div class="markdown" v-html="compiledMarkdown" />
   </div>
 </template>
 
@@ -188,7 +183,8 @@ Let's jump into the cold water of 2021!`;
 .markdown > * + * {
   @apply mt-6;
 }
-.markdown li > p + p, .markdown li + li {
+.markdown li > p + p,
+.markdown li + li {
   @apply mt-4;
 }
 .markdown strong {

@@ -6,4 +6,4 @@ export type ProjectModel = {
   linkTitle: string;
   tags: ProjectType[];
   description: string;
-}
+};
