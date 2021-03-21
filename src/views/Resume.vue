@@ -250,6 +250,36 @@
               </ul>
             </div>
           </div>
+
+          <!-- Hackathons -->
+          <div>
+            <h3
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+            >
+              Hackathons
+            </h3>
+            <h4
+              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+            >
+              <span>STARTHACK Hackathon</span>
+              <span class="font-normal text-gray-400">
+                19.03.2021 - 21.03.2021
+              </span>
+            </h4>
+
+            <div class="mt-2 leading-7 text-gray-500">
+              <ul class="ml-4 leading-7 text-gray-500 list-disc">
+                <li>The first hackathon I participated in</li>
+                <li>
+                  Product: We set up an interactive map where citizens can
+                  submit Proposals for improvements in infrastructure. These
+                  proposals can be voted on by other citizens to understand
+                  their needs and priorities.
+                </li>
+                <li>Techstack: Vue.js, Vuetify</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
