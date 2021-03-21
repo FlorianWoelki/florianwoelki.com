@@ -1,1 +1,1 @@
-declare module 'lottie-vuejs/src/LottieAnimation.vue'
+declare module 'lottie-vuejs/src/LottieAnimation.vue';
