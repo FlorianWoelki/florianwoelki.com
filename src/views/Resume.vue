@@ -269,7 +269,10 @@
 
             <div class="mt-2 leading-7 text-gray-500">
               <ul class="ml-4 leading-7 text-gray-500 list-disc">
-                <li>The first hackathon I participated in</li>
+                <li>
+                  The first hackathon I participated in and won the with the
+                  project the challenge 'Most sustainable Hack'
+                </li>
                 <li>
                   Product: We set up an interactive map where citizens can
                   submit Proposals for improvements in infrastructure. These
