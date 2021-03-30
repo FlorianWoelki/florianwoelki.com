@@ -96,8 +96,9 @@
                 href="mailto:florianwoelki@gmx.de"
                 target="_blank"
                 class="transition duration-300 ease-in-out hover:text-gray-500"
-                >FlorianWoelki@gmx.de</a
               >
+                FlorianWoelki@gmx.de
+              </a>
             </div>
           </div>
 
@@ -110,10 +111,10 @@
             </h3>
             <h4 class="-mt-1 text-gray-500 uppercase">Fullstack Engineer</h4>
             <p class="mt-2 leading-7 text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Deleniti, nesciunt deserunt quia laudantium aut quos aperiam,
-              animi doloribus similique quidem voluptatem! Necessitatibus enim
-              eaque nostrum possimus quo provident consectetur ut.
+              I am a passionate fullstack Softwaredeveloper who is in love with
+              building complex architectures and software. I like to be in
+              uncomfortable situations and I am trying to learn every day
+              something new from others or on my own.
             </p>
           </div>
 
