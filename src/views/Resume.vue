@@ -50,8 +50,9 @@
                 href="https://github.com/FlorianWoelki"
                 target="_blank"
                 class="transition duration-300 ease-in-out hover:text-gray-500"
-                >/FlorianWoelki</a
               >
+                /FlorianWoelki
+              </a>
             </div>
             <div class="flex items-center space-x-2">
               <div>
@@ -71,8 +72,9 @@
                 href="https://www.linkedin.com/in/florian-woelki/"
                 target="_blank"
                 class="transition duration-300 ease-in-out hover:text-gray-500"
-                >/FlorianWoelki</a
               >
+                /FlorianWoelki
+              </a>
             </div>
             <div class="flex items-center space-x-1">
               <div>
@@ -132,8 +134,9 @@
               >
                 <span
                   :class="{ 'animate-pulse': index === 0 && !hasClickedFilter }"
-                  >{{ language }}</span
                 >
+                  {{ language }}
+                </span>
               </Tag>
             </div>
             <h4 class="mt-8 text-gray-500 uppercase">
