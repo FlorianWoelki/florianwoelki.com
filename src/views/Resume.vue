@@ -265,7 +265,17 @@
             <h4
               class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
             >
-              <span>STARTHACK Hackathon</span>
+              <span>
+                STARTHACK Hackathon
+                <i class="normal-case">
+                  <a
+                    href="https://github.com/FlorianWoelki/portfolio/tree/master/src/assets/certificates/starthack-2021.pdf"
+                    target="_blank"
+                  >
+                    Certificate
+                  </a>
+                </i>
+              </span>
               <span class="font-normal text-gray-400">
                 19.03.2021 - 21.03.2021
               </span>
