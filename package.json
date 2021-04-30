@@ -11,13 +11,12 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "lottie-vuejs": "^0.1.0",
-    "lottie-web": "^5.7.6",
-    "marked": "^2.0.0",
+    "lottie-vuejs": "^0.4.0",
+    "lottie-web": "^5.7.8",
+    "marked": "^2.0.3",
     "purgecss": "^2.3.0",
-    "vue": "^3.0.0-0",
-    "vue-class-component": "^8.0.0-0",
-    "vue-router": "^4.0.0-0"
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6"
   },
   "devDependencies": {
     "@types/marked": "^1.2.1",
@@ -37,7 +36,6 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-alpha.0",
-    "node-sass": "^4.12.0",
     "postcss": "^7.0.35",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
