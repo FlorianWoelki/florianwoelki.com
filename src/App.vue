@@ -34,6 +34,7 @@ export default defineComponent({
     const items = [
       { name: 'Portfolio', link: '/' },
       { name: '2020 Review', link: '/2020' },
+      { name: 'List 100', link: '/list100' },
     ];
 
     const activeItemIndex = ref(0);
