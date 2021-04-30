@@ -70,5 +70,25 @@
   {
     "name": "Live in another country",
     "done": false
+  },
+  {
+    "name": "Build my own home",
+    "done": false
+  },
+  {
+    "name": "Speak at TED",
+    "done": false
+  },
+  {
+    "name": "Create my own programming language",
+    "done": false
+  },
+  {
+    "name": "Create an salad from my own garden",
+    "done": false
+  },
+  {
+    "name": "Visit Island",
+    "done": false
   }
 ]
