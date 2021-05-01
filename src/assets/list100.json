@@ -90,5 +90,17 @@
   {
     "name": "Visit Island",
     "done": false
+  },
+  {
+    "name": "Jump out of a plane",
+    "done": false
+  },
+  {
+    "name": "Create at least 10 paid courses",
+    "done": false
+  },
+  {
+    "name": "Take a hot-air balloon ride",
+    "done": false
   }
 ]
