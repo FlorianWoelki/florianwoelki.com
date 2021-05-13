@@ -81,8 +81,7 @@ export default [
   },
   {
     title: 'YouTube Account',
-    link:
-      'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber',
+    link: 'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber',
     linkTitle: 'Code mit FloW',
     tags: [
       ProjectType.Go,
