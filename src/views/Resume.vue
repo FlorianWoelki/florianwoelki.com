@@ -420,25 +420,14 @@
 
             <div class="mt-2 leading-7 text-gray-500">
               <ul class="ml-4 leading-7 text-gray-500 list-disc">
-                <li>
+                <li v-for="(talk, index) in talks" :key="index">
                   <a
                     class="underline hover:text-gray-400"
-                    href="https://youtu.be/m9kapfxwYOA"
+                    :href="talk.link"
                     target="_blank"
                   >
-                    What is artificial intelligence talk at a consulting group
-                    <span class="text-sm">(20.12.2019)</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="underline hover:text-gray-400"
-                    href="https://youtu.be/m9kapfxwYOA"
-                    target="_blank"
-                  >
-                    ClubHouse talk about what artificial intelligence really is
-                    and where it might be in the future
-                    <span class="text-sm">(12.05.2021)</span>
+                    {{ talk.name }}
+                    <span class="text-sm">({{ talk.date }})</span>
                   </a>
                 </li>
               </ul>
@@ -502,6 +491,7 @@ import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
 import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
 import projects from '@/projects';
+import talks from '@/assets/talks.json';
 import ProjectTag from '../models/ProjectTag';
 
 export default defineComponent({
@@ -577,6 +567,7 @@ export default defineComponent({
     });
 
     return {
+      talks,
       clickedFilter,
       languages,
       technologies,
