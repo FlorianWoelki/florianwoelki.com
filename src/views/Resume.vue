@@ -25,6 +25,7 @@
                     ease-in-out
                     bg-transparent
                     border border-gray-300
+                    bg-gray-200
                     rounded-md
                     focus:outline-none
                     hover:bg-gray-300
@@ -46,6 +47,7 @@
                     ease-in-out
                     bg-transparent
                     border border-gray-300
+                    bg-gray-200
                     rounded-md
                     focus:outline-none
                     hover:bg-gray-300
