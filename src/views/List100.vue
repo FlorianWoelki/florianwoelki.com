@@ -1,13 +1,30 @@
 <template>
   <div
-    class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16"
+    class="
+      container
+      max-w-4xl
+      px-8
+      pt-8
+      pb-32
+      mx-auto
+      break-words
+      lg:pt-16
+      md:px-16
+    "
   >
     <h1 class="inline-block text-3xl border-b">List 100 - Bucket List</h1>
     <p class="mt-4">
       Things I want to do before I die. <i>(Progress as of April 30, 2021)</i>
     </p>
     <div
-      class="grid grid-cols-1 mt-6 space-y-2 sm:gap-4 sm:grid-cols-3 sm:space-y-0"
+      class="
+        grid grid-cols-1
+        mt-6
+        space-y-2
+        sm:gap-4
+        sm:grid-cols-3
+        sm:space-y-0
+      "
     >
       <div v-for="columnIndex in 3" :key="columnIndex" class="space-y-2">
         <p

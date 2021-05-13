@@ -14,13 +14,43 @@
               <div class="flex items-center space-x-2 xl:justify-between">
                 <button
                   type="button"
-                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent border border-gray-300 rounded-md focus:outline-none hover:bg-gray-300 hover:text-white"
+                  class="
+                    px-6
+                    py-2
+                    font-medium
+                    leading-7
+                    text-gray-400
+                    transition
+                    duration-300
+                    ease-in-out
+                    bg-transparent
+                    border border-gray-300
+                    rounded-md
+                    focus:outline-none
+                    hover:bg-gray-300
+                    hover:text-white
+                  "
                 >
                   PDF
                 </button>
                 <button
                   type="button"
-                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent border border-gray-300 rounded-md focus:outline-none hover:bg-gray-300 hover:text-white"
+                  class="
+                    px-6
+                    py-2
+                    font-medium
+                    leading-7
+                    text-gray-400
+                    transition
+                    duration-300
+                    ease-in-out
+                    bg-transparent
+                    border border-gray-300
+                    rounded-md
+                    focus:outline-none
+                    hover:bg-gray-300
+                    hover:text-white
+                  "
                 >
                   Text
                 </button>
@@ -105,7 +135,13 @@
           <!-- ABOUT -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               About
             </h3>
@@ -121,7 +157,13 @@
           <!-- SKILLS -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               Skills
             </h3>
@@ -158,12 +200,25 @@
           <!-- EDUCATION -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               Education
             </h3>
             <h4
-              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                -mt-1
+                text-gray-500
+                uppercase
+              "
             >
               HfTL DUAL B.S. Computer Science
               <span class="font-normal text-gray-400">2017 - 2020</span>
@@ -182,18 +237,39 @@
           <!-- WORK EXPERIENCE -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               Work Experience
             </h3>
             <h4
-              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                -mt-1
+                text-gray-500
+                uppercase
+              "
             >
               <span>T-Systems International</span>
               <span class="font-normal text-gray-400">2017 - Present</span>
             </h4>
             <h4
-              class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                -mt-1
+                italic
+                text-gray-500
+                uppercase
+              "
             >
               Fullstack Softwarearchitect
             </h4>
@@ -222,13 +298,28 @@
             </div>
 
             <h4
-              class="flex items-center justify-between mt-8 text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                mt-8
+                text-gray-500
+                uppercase
+              "
             >
               <span>Company Consulting Team</span>
               <span class="font-normal text-gray-400">2019 - Present</span>
             </h4>
             <h4
-              class="flex items-center justify-between -mt-1 italic text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                -mt-1
+                italic
+                text-gray-500
+                uppercase
+              "
             >
               IT Consultant
             </h4>
@@ -258,12 +349,25 @@
           <!-- Hackathons -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               Hackathons
             </h3>
             <h4
-              class="flex items-center justify-between -mt-1 text-gray-500 uppercase"
+              class="
+                flex
+                items-center
+                justify-between
+                -mt-1
+                text-gray-500
+                uppercase
+              "
             >
               <span>
                 STARTHACK Hackathon
@@ -301,7 +405,13 @@
           <!-- Talks -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="
+                text-2xl
+                font-semibold
+                tracking-wide
+                text-gray-800
+                uppercase
+              "
             >
               Talks
             </h3>
@@ -366,7 +476,15 @@
         <div v-if="filteredProjects.length === 0">
           <LottieAnimation path="animations/error.json" />
           <h5
-            class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t"
+            class="
+              p-4
+              pb-16
+              mx-8
+              text-3xl
+              leading-7
+              text-center text-gray-300
+              border-t
+            "
           >
             No projects found :(
           </h5>

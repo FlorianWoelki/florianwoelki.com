@@ -1,6 +1,16 @@
 <template>
   <div
-    class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16"
+    class="
+      container
+      max-w-4xl
+      px-8
+      pt-8
+      pb-32
+      mx-auto
+      break-words
+      lg:pt-16
+      md:px-16
+    "
   >
     <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
       December 29, 2020
