@@ -1,0 +1,13 @@
+[
+  {
+    "name": "STARTHACK Hackathon",
+    "from": "19.03.2021",
+    "to": "21.03.2021",
+    "certificate": "https://github.com/FlorianWoelki/portfolio/tree/master/src/assets/certificates/starthack-2021.pdf",
+    "descriptions": [
+      "The first hackathon I participated in and won the with the project the challenge 'Most sustainable Hack",
+      "Product: We set up an interactive map where citizens can submit Proposals for improvements in infrastructure. These proposals can be voted on by other citizens to understand their needs and priorities.",
+      "Techstack: Vue.js, Vuetify"
+    ]
+  }
+]

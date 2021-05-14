@@ -361,46 +361,41 @@
             >
               Hackathons
             </h3>
-            <h4
-              class="
-                flex
-                items-center
-                justify-between
-                -mt-1
-                text-gray-500
-                uppercase
-              "
-            >
-              <span>
-                STARTHACK Hackathon
-                <i class="normal-case">
-                  <a
-                    href="https://github.com/FlorianWoelki/portfolio/tree/master/src/assets/certificates/starthack-2021.pdf"
-                    target="_blank"
+            <div v-for="(hackathon, index) in hackathons" :key="index">
+              <h4
+                class="
+                  flex
+                  items-center
+                  justify-between
+                  -mt-1
+                  text-gray-500
+                  uppercase
+                "
+              >
+                <span>
+                  {{ hackathon.name }}
+                  <i class="normal-case">
+                    <a :href="hackathon.certificate" target="_blank">
+                      Certificate
+                    </a>
+                  </i>
+                </span>
+                <span class="font-normal text-gray-400">
+                  {{ hackathon.from }} - {{ hackathon.to }}
+                </span>
+              </h4>
+              <div class="mt-2 leading-7 text-gray-500">
+                <ul class="ml-4 leading-7 text-gray-500 list-disc">
+                  <li
+                    v-for="(
+                      description, descriptionIndex
+                    ) in hackathon.descriptions"
+                    :key="descriptionIndex"
                   >
-                    Certificate
-                  </a>
-                </i>
-              </span>
-              <span class="font-normal text-gray-400">
-                19.03.2021 - 21.03.2021
-              </span>
-            </h4>
-
-            <div class="mt-2 leading-7 text-gray-500">
-              <ul class="ml-4 leading-7 text-gray-500 list-disc">
-                <li>
-                  The first hackathon I participated in and won the with the
-                  project the challenge 'Most sustainable Hack'
-                </li>
-                <li>
-                  Product: We set up an interactive map where citizens can
-                  submit Proposals for improvements in infrastructure. These
-                  proposals can be voted on by other citizens to understand
-                  their needs and priorities.
-                </li>
-                <li>Techstack: Vue.js, Vuetify</li>
-              </ul>
+                    {{ description }}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -492,6 +487,7 @@ import Tag from '@/components/Tag.vue';
 import Project from '@/components/Project.vue';
 import projects from '@/projects';
 import talks from '@/assets/talks.json';
+import hackathons from '@/assets/hackathons.json';
 import ProjectTag from '../models/ProjectTag';
 
 export default defineComponent({
@@ -567,6 +563,7 @@ export default defineComponent({
     });
 
     return {
+      hackathons,
       talks,
       clickedFilter,
       languages,
