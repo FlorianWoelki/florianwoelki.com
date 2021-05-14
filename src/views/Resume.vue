@@ -295,6 +295,10 @@
                   Android app development with Kotlin for pairing a BLE beacon
                   with a specific QR-Code
                 </li>
+                <li>
+                  Designing a micro frontend architecture with the help of
+                  Vue.js and Web Components
+                </li>
                 <li>...</li>
               </ul>
             </div>
