@@ -214,16 +214,15 @@
             </h3>
             <h4
               class="
-                flex
                 items-center
                 justify-between
-                -mt-1
                 text-gray-500
                 uppercase
+                md:flex
               "
             >
               HfTL DUAL B.S. Computer Science
-              <span class="font-normal text-gray-400">2017 - 2020</span>
+              <div class="font-normal text-gray-400">2017 - 2020</div>
             </h4>
 
             <p class="mt-2 leading-7 text-gray-500">
@@ -251,28 +250,17 @@
             </h3>
             <h4
               class="
-                flex
                 items-center
                 justify-between
-                -mt-1
                 text-gray-500
                 uppercase
+                md:flex
               "
             >
-              <span>T-Systems International</span>
-              <span class="font-normal text-gray-400">2017 - Present</span>
+              <div>T-Systems International</div>
+              <div class="font-normal text-gray-400">2017 - Present</div>
             </h4>
-            <h4
-              class="
-                flex
-                items-center
-                justify-between
-                -mt-1
-                italic
-                text-gray-500
-                uppercase
-              "
-            >
+            <h4 class="mt-2 italic text-gray-500 uppercase">
               Fullstack Softwarearchitect
             </h4>
 
@@ -305,30 +293,18 @@
 
             <h4
               class="
-                flex
                 items-center
                 justify-between
                 mt-8
                 text-gray-500
                 uppercase
+                md:flex
               "
             >
-              <span>Company Consulting Team</span>
-              <span class="font-normal text-gray-400">2019 - Present</span>
+              <div>Company Consulting Team</div>
+              <div class="font-normal text-gray-400">2019 - Present</div>
             </h4>
-            <h4
-              class="
-                flex
-                items-center
-                justify-between
-                -mt-1
-                italic
-                text-gray-500
-                uppercase
-              "
-            >
-              IT Consultant
-            </h4>
+            <h4 class="mt-2 italic text-gray-500 uppercase">IT Consultant</h4>
 
             <div class="mt-2 leading-7 text-gray-500">
               <ul class="ml-4 leading-7 text-gray-500 list-disc">
@@ -368,25 +344,25 @@
             <div v-for="(hackathon, index) in hackathons" :key="index">
               <h4
                 class="
-                  flex
                   items-center
                   justify-between
                   -mt-1
                   text-gray-500
                   uppercase
+                  md:flex
                 "
               >
-                <span>
+                <div>
                   {{ hackathon.name }}
                   <i class="normal-case">
                     <a :href="hackathon.certificate" target="_blank">
                       Certificate
                     </a>
                   </i>
-                </span>
-                <span class="font-normal text-gray-400">
+                </div>
+                <div class="font-normal text-gray-400">
                   {{ hackathon.from }} - {{ hackathon.to }}
-                </span>
+                </div>
               </h4>
               <div class="mt-2 leading-7 text-gray-500">
                 <ul class="ml-4 leading-7 text-gray-500 list-disc">
