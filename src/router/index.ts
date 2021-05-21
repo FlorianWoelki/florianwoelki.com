@@ -29,6 +29,13 @@ const routes: Array<RouteRecordRaw> = [
       title: '2020 Year Review - Florian Woelki',
     },
   },
+  {
+    path: '/dlr-slides',
+    redirect: () => {
+      window.location.href = 'https://florianwoelki.github.io/dlr-slides/';
+      return '/redirecting';
+    },
+  },
 ];
 
 const router = createRouter({
