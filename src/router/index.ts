@@ -32,7 +32,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/dlr-slides',
     redirect: () => {
-      window.location.href = 'https://florianwoelki.github.io/dlr-slides/';
+      window.location.href = 'https://florianwoelki-dlr-slides.vercel.app/';
       return '/redirecting';
     },
   },
