@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
     <div class="h-screen lg:grid lg:grid-cols-2">
-      <div class="container px-16 py-16 mx-auto break-words bg-gray-100">
+      <div class="container px-16 py-16 mx-auto break-words lg:bg-gray-100">
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
           <div class="xl:flex xl:items-center xl:justify-between">
