@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full">
+  <div ref="pdfContent" class="h-full">
     <div class="h-screen lg:grid lg:grid-cols-2">
       <div class="container px-16 py-16 mx-auto break-words lg:bg-gray-100">
         <div class="max-w-2xl ml-auto space-y-12">
@@ -31,6 +31,7 @@
                     hover:bg-gray-300
                     hover:text-white
                   "
+                  @click="downloadPDF"
                 >
                   PDF
                 </button>
@@ -542,7 +543,16 @@ export default defineComponent({
       );
     });
 
+    const pdfContent = ref<HTMLElement | null>(null);
+
+    const downloadPDF = (): void => {
+      if (pdfContent.value) {
+      }
+    };
+
     return {
+      pdfContent,
+      downloadPDF,
       hackathons,
       talks,
       clickedFilter,

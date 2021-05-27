@@ -2,6 +2,21 @@
 node_modules
 /dist
 
+# LaTeX files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.fmt
+*.toc
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+
 # local env files
 .env.local
 .env.*.local
