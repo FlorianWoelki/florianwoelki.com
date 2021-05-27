@@ -12,8 +12,9 @@
             <div class="mt-8 space-y-2 xl:text-center xl:mt-0">
               <p class="text-gray-400">Download resumé</p>
               <div class="flex items-center space-x-2 xl:justify-between">
-                <button
-                  type="button"
+                <a
+                  href="https://github.com/FlorianWoelki/portfolio/raw/master/pdf/main.pdf"
+                  target="_blank"
                   class="
                     px-6
                     py-2
@@ -30,11 +31,11 @@
                     focus:outline-none
                     hover:bg-gray-300
                     hover:text-white
+                    border-none
                   "
-                  @click="downloadPDF"
                 >
                   PDF
-                </button>
+                </a>
                 <button
                   type="button"
                   class="
@@ -545,14 +546,8 @@ export default defineComponent({
 
     const pdfContent = ref<HTMLElement | null>(null);
 
-    const downloadPDF = (): void => {
-      if (pdfContent.value) {
-      }
-    };
-
     return {
       pdfContent,
-      downloadPDF,
       hackathons,
       talks,
       clickedFilter,
