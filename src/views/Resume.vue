@@ -304,7 +304,7 @@
               "
             >
               <div>Company Consulting Team</div>
-              <div class="font-normal text-gray-400">2019 - Present</div>
+              <div class="font-normal text-gray-400">2019 - 2021</div>
             </h4>
             <h4 class="mt-2 italic text-gray-500 uppercase">IT Consultant</h4>
 
