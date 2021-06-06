@@ -18,6 +18,9 @@
 
 \usepackage{geometry}
 
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
 \geometry{
 	paper=a4paper,
 	top=1.75cm,
