@@ -16,6 +16,9 @@ node_modules
 *.cb2
 .*.lb
 *.fdb_latexmk
+# Ignore german LaTeX files
+main_german.tex
+main_german.pdf
 
 # local env files
 .env.local
