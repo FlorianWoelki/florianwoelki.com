@@ -130,4 +130,21 @@ export default [
               originally inspired by jsonplaceholder fake backend. Fake Graph will be used in a course
               for Daycademy for learning GraphQL.`,
   },
+  {
+    title: 'Bryng',
+    link: 'https://github.com/bryng-app',
+    linkTitle: 'github.com/bryng-app',
+    tags: [
+      ProjectType.GraphQL,
+      ProjectType.Swift,
+      ProjectType.Vue,
+      ProjectType.JavaScript,
+      ProjectType.Python,
+      ProjectType.Node,
+    ],
+    description: `Bryng was a small startup idea that I have while wondering why there is no app
+              for having a service with freelance workers buying your groceries and bringing them to your home.
+              The startup never came to life because somehow I have abandoned this project, but 
+              you can see the beginnings with Swift, GraphQL and Vue.`,
+  },
 ] as ProjectModel[];
