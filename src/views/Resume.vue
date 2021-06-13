@@ -15,46 +15,13 @@
                 <a
                   href="https://github.com/FlorianWoelki/portfolio/raw/master/pdf/main.pdf"
                   target="_blank"
-                  class="
-                    px-6
-                    py-2
-                    font-medium
-                    leading-7
-                    text-gray-400
-                    transition
-                    duration-300
-                    ease-in-out
-                    bg-transparent
-                    border border-gray-300
-                    bg-gray-200
-                    rounded-md
-                    focus:outline-none
-                    hover:bg-gray-300
-                    hover:text-white
-                    border-none
-                  "
+                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent bg-gray-200 border border-gray-300 border-none rounded-md  focus:outline-none hover:bg-gray-300 hover:text-white"
                 >
                   PDF
                 </a>
                 <button
                   type="button"
-                  class="
-                    px-6
-                    py-2
-                    font-medium
-                    leading-7
-                    text-gray-400
-                    transition
-                    duration-300
-                    ease-in-out
-                    bg-transparent
-                    border border-gray-300
-                    bg-gray-200
-                    rounded-md
-                    focus:outline-none
-                    hover:bg-gray-300
-                    hover:text-white
-                  "
+                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent bg-gray-200 border border-gray-300 rounded-md  focus:outline-none hover:bg-gray-300 hover:text-white"
                 >
                   Text
                 </button>
@@ -139,13 +106,7 @@
           <!-- ABOUT -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               About
             </h3>
@@ -161,13 +122,7 @@
           <!-- SKILLS -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               Skills
             </h3>
@@ -204,24 +159,12 @@
           <!-- EDUCATION -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               Education
             </h3>
             <h4
-              class="
-                items-center
-                justify-between
-                text-gray-500
-                uppercase
-                md:flex
-              "
+              class="items-center justify-between text-gray-500 uppercase  md:flex"
             >
               HfTL DUAL B.S. Computer Science
               <div class="font-normal text-gray-400">2017 - 2020</div>
@@ -240,24 +183,12 @@
           <!-- WORK EXPERIENCE -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               Work Experience
             </h3>
             <h4
-              class="
-                items-center
-                justify-between
-                text-gray-500
-                uppercase
-                md:flex
-              "
+              class="items-center justify-between text-gray-500 uppercase  md:flex"
             >
               <div>T-Systems International</div>
               <div class="font-normal text-gray-400">2017 - Present</div>
@@ -294,14 +225,7 @@
             </div>
 
             <h4
-              class="
-                items-center
-                justify-between
-                mt-8
-                text-gray-500
-                uppercase
-                md:flex
-              "
+              class="items-center justify-between mt-8 text-gray-500 uppercase  md:flex"
             >
               <div>Company Consulting Team</div>
               <div class="font-normal text-gray-400">2019 - 2021</div>
@@ -333,26 +257,13 @@
           <!-- Hackathons -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               Hackathons
             </h3>
             <div v-for="(hackathon, index) in hackathons" :key="index">
               <h4
-                class="
-                  items-center
-                  justify-between
-                  -mt-1
-                  text-gray-500
-                  uppercase
-                  md:flex
-                "
+                class="items-center justify-between -mt-1 text-gray-500 uppercase  md:flex"
               >
                 <div>
                   {{ hackathon.name }}
@@ -384,13 +295,7 @@
           <!-- Talks -->
           <div>
             <h3
-              class="
-                text-2xl
-                font-semibold
-                tracking-wide
-                text-gray-800
-                uppercase
-              "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
             >
               Talks
             </h3>
@@ -444,15 +349,7 @@
         <div v-if="filteredProjects.length === 0">
           <LottieAnimation path="animations/error.json" />
           <h5
-            class="
-              p-4
-              pb-16
-              mx-8
-              text-3xl
-              leading-7
-              text-center text-gray-300
-              border-t
-            "
+            class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t "
           >
             No projects found :(
           </h5>
