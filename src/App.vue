@@ -1,16 +1,22 @@
 <template>
-  <div id="app" class="antialiased">
-    <div class="px-8 py-4 shadow md:px-16">
-      <ul class="space-x-6 text-gray-500">
+  <div id="app" class="antialiased dark:bg-gray-900">
+    <div
+      class="flex justify-between px-8 py-4 shadow md:px-16 dark:bg-gray-700"
+    >
+      <ul class="space-x-6 text-gray-500 dark:text-gray-400">
         <li
           v-for="(item, index) in items"
           :key="item"
           class="inline-block"
-          :class="index === activeItemIndex ? 'text-gray-900' : undefined"
+          :class="
+            index === activeItemIndex
+              ? 'text-gray-900 dark:text-white'
+              : undefined
+          "
         >
           <router-link
             :to="item.link"
-            class="transition duration-300 ease-in-out hover:text-gray-800"
+            class="transition duration-300 ease-in-out hover:text-gray-800 dark:hover:text-gray-100"
             @click="activeItemIndex = index"
           >
             {{ item.name }}
@@ -18,6 +24,7 @@
         </li>
       </ul>
     </div>
+
     <router-view />
   </div>
 </template>
@@ -43,6 +50,17 @@ export default defineComponent({
       router.isReady().then(() => {
         const activeRoute = items.filter((item) => item.link === route.path)[0];
         activeItemIndex.value = items.indexOf(activeRoute);
+
+        // setup dark mode with the help of local storage
+        if (
+          localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
       });
     });
 
