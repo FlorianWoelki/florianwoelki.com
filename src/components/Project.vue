@@ -1,16 +1,18 @@
 <template>
   <div>
-    <h2 class="text-2xl font-semibold tracking-wide text-gray-800 uppercase">
+    <h2
+      class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
+    >
       {{ title }}
     </h2>
     <a
       :href="link"
       target="_blank"
-      class="flex items-center justify-between -mt-1 text-gray-500 break-all transition duration-300 ease-in-out  hover:text-gray-600"
+      class="flex items-center justify-between -mt-1 text-gray-500 break-all transition duration-300 ease-in-out hover:text-gray-600"
     >
       {{ linkTitle }}
     </a>
-    <p class="mt-2 leading-7 text-gray-500">
+    <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
       <slot />
     </p>
 

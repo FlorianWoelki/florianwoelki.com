@@ -1,11 +1,15 @@
 <template>
   <div ref="pdfContent" class="h-full">
     <div class="h-screen lg:grid lg:grid-cols-2">
-      <div class="container px-16 py-16 mx-auto break-words lg:bg-gray-100">
+      <div
+        class="container px-16 py-16 mx-auto break-words lg:bg-gray-100 lg:dark:bg-gray-800"
+      >
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
           <div class="xl:flex xl:items-center xl:justify-between">
-            <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
+            <h1
+              class="text-4xl font-light text-gray-800 uppercase lg:text-5xl dark:text-gray-200"
+            >
               Florian
               <span class="block text-5xl font-bold lg:text-6xl">Woelki</span>
             </h1>
@@ -15,14 +19,11 @@
                 <a
                   href="https://github.com/FlorianWoelki/portfolio/raw/master/pdf/main.pdf"
                   target="_blank"
-                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent bg-gray-200 border border-gray-300 rounded-md  focus:outline-none hover:bg-gray-300 hover:text-white"
+                  class="resume-btn"
                 >
                   PDF
                 </a>
-                <a
-                  href="#"
-                  class="px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent bg-gray-200 border border-gray-300 rounded-md  focus:outline-none hover:bg-gray-300 hover:text-white"
-                >
+                <a href="#" class="resume-btn">
                   Text
                 </a>
               </div>
@@ -31,7 +32,7 @@
 
           <!-- SOCIALS -->
           <div
-            class="grid grid-cols-2 gap-2 text-gray-400 xl:grid-cols-3 xl:gap-0"
+            class="grid grid-cols-2 gap-2 text-gray-400 xl:grid-cols-3 xl:gap-0 dark:text-gray-500"
           >
             <div class="flex items-center space-x-2">
               <div>
@@ -50,7 +51,7 @@
               <a
                 href="https://github.com/FlorianWoelki"
                 target="_blank"
-                class="transition duration-300 ease-in-out hover:text-gray-500"
+                class="transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400"
               >
                 /FlorianWoelki
               </a>
@@ -72,7 +73,7 @@
               <a
                 href="https://www.linkedin.com/in/florian-woelki/"
                 target="_blank"
-                class="transition duration-300 ease-in-out hover:text-gray-500"
+                class="transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400"
               >
                 /FlorianWoelki
               </a>
@@ -96,7 +97,7 @@
               <a
                 href="mailto:florianwoelki@gmx.de"
                 target="_blank"
-                class="transition duration-300 ease-in-out hover:text-gray-500"
+                class="transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400"
               >
                 FlorianWoelki@gmx.de
               </a>
@@ -106,12 +107,14 @@
           <!-- ABOUT -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
             >
               About
             </h3>
-            <h4 class="-mt-1 text-gray-500 uppercase">Fullstack Engineer</h4>
-            <p class="mt-2 leading-7 text-gray-500">
+            <h4 class="-mt-1 text-gray-500 uppercase dark:text-gray-300">
+              Fullstack Engineer
+            </h4>
+            <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
               I am a passionate fullstack Softwaredeveloper who is in love with
               building complex architectures and software. I like to be in
               uncomfortable situations and I am trying to learn every day
@@ -122,11 +125,13 @@
           <!-- SKILLS -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               Skills
             </h3>
-            <h4 class="-mt-1 text-gray-500 uppercase">Languages</h4>
+            <h4 class="-mt-1 text-gray-500 uppercase dark:text-gray-400">
+              Languages
+            </h4>
             <div class="flex flex-wrap items-center mt-1">
               <Tag
                 v-for="(language, index) in languages"
@@ -141,7 +146,7 @@
                 </span>
               </Tag>
             </div>
-            <h4 class="mt-8 text-gray-500 uppercase">
+            <h4 class="mt-8 text-gray-500 uppercase dark:text-gray-400">
               Frameworks / Technologies
             </h4>
             <div class="flex flex-wrap items-center mt-1">
@@ -159,18 +164,18 @@
           <!-- EDUCATION -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               Education
             </h3>
             <h4
-              class="items-center justify-between text-gray-500 uppercase  md:flex"
+              class="items-center justify-between text-gray-500 uppercase md:flex dark:text-gray-400"
             >
               HfTL DUAL B.S. Computer Science
               <div class="font-normal text-gray-400">2017 - 2020</div>
             </h4>
 
-            <p class="mt-2 leading-7 text-gray-500">
+            <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
               Bachelorthesis:
               <span class="italic">
                 Bluetooth Low Energy Proximity: A comparison between different
@@ -183,22 +188,22 @@
           <!-- WORK EXPERIENCE -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               Work Experience
             </h3>
             <h4
-              class="items-center justify-between text-gray-500 uppercase  md:flex"
+              class="items-center justify-between text-gray-500 uppercase md:flex dark:text-gray-400"
             >
               <div>T-Systems International</div>
               <div class="font-normal text-gray-400">2017 - Present</div>
             </h4>
-            <h4 class="mt-2 italic text-gray-500 uppercase">
+            <h4 class="mt-2 italic text-gray-500 uppercase dark:text-gray-400">
               Fullstack Softwarearchitect
             </h4>
 
-            <div class="mt-2 leading-7 text-gray-500">
-              <ul class="ml-4 leading-7 text-gray-500 list-disc">
+            <div class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              <ul class="ml-4 leading-7 list-disc">
                 <li>
                   Full-stack development on situational awareness dashboards
                   using Angular/Vue, Spring and Scala/Java
@@ -225,15 +230,17 @@
             </div>
 
             <h4
-              class="items-center justify-between mt-8 text-gray-500 uppercase  md:flex"
+              class="items-center justify-between mt-8 text-gray-500 uppercase md:flex dark:text-gray-400"
             >
               <div>Company Consulting Team</div>
               <div class="font-normal text-gray-400">2019 - 2021</div>
             </h4>
-            <h4 class="mt-2 italic text-gray-500 uppercase">IT Consultant</h4>
+            <h4 class="mt-2 italic text-gray-500 uppercase dark:text-gray-400">
+              IT Consultant
+            </h4>
 
-            <div class="mt-2 leading-7 text-gray-500">
-              <ul class="ml-4 leading-7 text-gray-500 list-disc">
+            <div class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              <ul class="ml-4 leading-7 list-disc">
                 <li>
                   Front-end inhouse work for a fully functional HR-Tool with Vue
                   and TypeScript
@@ -257,13 +264,13 @@
           <!-- Hackathons -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               Hackathons
             </h3>
             <div v-for="(hackathon, index) in hackathons" :key="index">
               <h4
-                class="items-center justify-between -mt-1 text-gray-500 uppercase  md:flex"
+                class="items-center justify-between -mt-1 text-gray-500 uppercase md:flex dark:text-gray-400"
               >
                 <div>
                   {{ hackathon.name }}
@@ -277,12 +284,11 @@
                   {{ hackathon.from }} - {{ hackathon.to }}
                 </div>
               </h4>
-              <div class="mt-2 leading-7 text-gray-500">
-                <ul class="ml-4 leading-7 text-gray-500 list-disc">
+              <div class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+                <ul class="ml-4 leading-7 list-disc">
                   <li
-                    v-for="(
-                      description, descriptionIndex
-                    ) in hackathon.descriptions"
+                    v-for="(description,
+                    descriptionIndex) in hackathon.descriptions"
                     :key="descriptionIndex"
                   >
                     {{ description }}
@@ -295,13 +301,13 @@
           <!-- Talks -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase "
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               Talks
             </h3>
 
-            <div class="mt-2 leading-7 text-gray-500">
-              <ul class="ml-4 leading-7 text-gray-500 list-disc">
+            <div class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              <ul class="ml-4 leading-7 list-disc">
                 <li v-for="(talk, index) in talks" :key="index">
                   <a
                     class="underline hover:text-gray-400"
@@ -321,11 +327,13 @@
       <!-- PERSONAL PROJECTS -->
       <div>
         <div
-          class="container px-16 pt-16 mx-auto break-words"
+          class="container px-16 pt-16 mx-auto break-words dark:bg-gray-900"
           :class="filteredProjects.length === 0 ? 'pb-0' : 'pb-16'"
         >
           <div class="max-w-2xl mr-auto space-y-12">
-            <h1 class="text-4xl font-light text-gray-800 uppercase lg:text-5xl">
+            <h1
+              class="text-4xl font-light text-gray-800 uppercase lg:text-5xl dark:text-gray-300"
+            >
               Personal
               <span class="block text-5xl font-bold lg:text-6xl">Projects</span>
             </h1>
@@ -349,7 +357,7 @@
         <div v-if="filteredProjects.length === 0">
           <LottieAnimation path="animations/error.json" />
           <h5
-            class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t "
+            class="p-4 pb-16 mx-8 text-3xl leading-7 text-center text-gray-300 border-t dark:text-gray-600"
           >
             No projects found :(
           </h5>
@@ -458,3 +466,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="postcss">
+.resume-btn {
+  @apply px-6 py-2 font-medium leading-7 text-gray-400 transition duration-300 ease-in-out bg-transparent bg-gray-200 border border-gray-300 rounded-md focus:outline-none hover:bg-gray-300 hover:text-white dark:bg-gray-900 dark:border-gray-800 dark:text-gray-400 dark:hover:bg-gray-700;
+}
+</style>
