@@ -1,11 +1,13 @@
 <template>
   <div
-    class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words  lg:pt-16 md:px-16"
+    class="container max-w-4xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16"
   >
     <div class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
       December 29, 2020
     </div>
-    <h1 class="mt-1 mb-6 text-3xl font-extrabold leading-tight text-black">
+    <h1
+      class="mt-1 mb-6 text-3xl font-extrabold leading-tight text-black dark:text-gray-300"
+    >
       {{ title }}
     </h1>
     <div class="markdown" v-html="compiledMarkdown" />
@@ -53,7 +55,7 @@ export default defineComponent({
 
 <style lang="postcss">
 .markdown {
-  @apply text-lg text-gray-700;
+  @apply text-lg text-gray-700 dark:text-gray-400;
 }
 .markdown > * + * {
   @apply mt-6;
@@ -63,19 +65,19 @@ export default defineComponent({
   @apply mt-4;
 }
 .markdown strong {
-  @apply font-bold text-gray-800;
+  @apply font-bold text-gray-800 dark:text-gray-400;
 }
 .markdown a {
-  @apply font-semibold text-gray-800 underline;
+  @apply font-semibold text-gray-800 underline dark:text-gray-400;
 }
 .markdown h1 {
-  @apply text-2xl font-bold mb-2 mt-10 text-gray-800;
+  @apply text-2xl font-bold mb-2 mt-10 text-gray-800 dark:text-gray-400;
 }
 .markdown h2 {
-  @apply text-xl font-bold mb-2 mt-10 text-gray-800;
+  @apply text-xl font-bold mb-2 mt-10 text-gray-800 dark:text-gray-400;
 }
 .markdown h3 {
-  @apply leading-5 text-lg font-bold text-gray-800 mt-8 -mb-2;
+  @apply leading-5 text-lg font-bold text-gray-800 mt-8 -mb-2 dark:text-gray-400;
 }
 .markdown ul {
   @apply pl-10 list-disc;
