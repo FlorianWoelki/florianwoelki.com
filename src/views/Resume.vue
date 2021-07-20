@@ -171,10 +171,31 @@
             <h4
               class="items-center justify-between text-gray-500 uppercase md:flex dark:text-gray-400"
             >
+              <span>
+                Udacity: Intro to self-driving cars
+                <a
+                  target="_blank"
+                  href="https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/intro-self-driving-cars.pdf"
+                  class="italic normal-case"
+                >
+                  Certificate
+                </a>
+              </span>
+              <div class="font-normal text-gray-400">2021 - 2021</div>
+            </h4>
+            <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              Discovering the fundamentals of self-driving cars. Sharpen Python
+              skills, apply C++, apply matrices, probability and calculus in
+              code, and touch on computer vision and machine learning. The
+              essentials of self-driving cars.
+            </p>
+
+            <h4
+              class="items-center justify-between mt-8 text-gray-500 uppercase md:flex dark:text-gray-400"
+            >
               HfTL DUAL B.S. Computer Science
               <div class="font-normal text-gray-400">2017 - 2020</div>
             </h4>
-
             <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
               Bachelorthesis:
               <span class="italic">
