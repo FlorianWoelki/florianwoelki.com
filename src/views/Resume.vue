@@ -246,7 +246,7 @@
                   Designing a micro frontend architecture with the help of
                   Vue.js and Web Components
                 </li>
-                <li>...</li>
+                <li class="italic">TBD</li>
               </ul>
             </div>
 
