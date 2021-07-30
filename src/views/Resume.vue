@@ -172,6 +172,28 @@
               class="items-center justify-between text-gray-500 uppercase md:flex dark:text-gray-400"
             >
               <span>
+                Udacity: AI Programming with Python
+                <a
+                  target="_blank"
+                  href="https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/ai-programming-with-python.pdf"
+                  class="italic normal-case"
+                >
+                  Certificate
+                </a>
+              </span>
+              <div class="font-normal text-gray-400">2021 - 2021</div>
+            </h4>
+            <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              Discovering the world of AI with the help of data and Python.
+              Learned Python, NumPy, PyTorch, math (calculus and linear
+              algebra), and the key techniques of neural networks (gradient
+              descent and backpropagation).
+            </p>
+
+            <h4
+              class="items-center justify-between mt-8 text-gray-500 uppercase md:flex dark:text-gray-400"
+            >
+              <span>
                 Udacity: Intro to self-driving cars
                 <a
                   target="_blank"
