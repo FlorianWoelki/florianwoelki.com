@@ -172,6 +172,28 @@
               class="items-center justify-between text-gray-500 uppercase md:flex dark:text-gray-400"
             >
               <span>
+                Udacity: Data Engineering
+                <a
+                  target="_blank"
+                  href="https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/data-engineering.pdf"
+                  class="italic normal-case"
+                >
+                  Certificate
+                </a>
+              </span>
+              <div class="font-normal text-gray-400">2021 - 2021</div>
+            </h4>
+            <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
+              Design data models, build data warehouses and data lakes, automate
+              data pipelines, and work with massive datasets. At the end of this
+              program, I've built a capstone project that includes all of these
+              skills.
+            </p>
+
+            <h4
+              class="items-center justify-between mt-8 text-gray-500 uppercase md:flex dark:text-gray-400"
+            >
+              <span>
                 Udacity: AI Programming with Python
                 <a
                   target="_blank"
