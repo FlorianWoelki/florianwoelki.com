@@ -81,7 +81,8 @@ export default [
   },
   {
     title: 'YouTube Account',
-    link: 'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber',
+    link:
+      'https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A?view_as=subscriber',
     linkTitle: 'Code mit FloW',
     tags: [
       ProjectType.Go,
@@ -146,5 +147,14 @@ export default [
               for having a service with freelance workers buying your groceries and bringing them to your home.
               The startup never came to life because somehow I have abandoned this project, but 
               you can see the beginnings with Swift, GraphQL and Vue.`,
+  },
+  {
+    title: 'Obsidian Icon Folder',
+    link: 'https://github.com/FlorianWoelki/obsidian-icon-folder',
+    linkTitle: 'github.com/FlorianWoelki/obsidian-icon-folder',
+    tags: [ProjectType.TypeScript, ProjectType.JavaScript, ProjectType.Node],
+    description: `Obsidian Icon Folder enables the user to have icons for their Obsidian Workspace. Obsidian
+              is a Markdown Editor that is based on privacy and enables the user to have files locally. This
+              repository is a plugin of this editor.`,
   },
 ] as ProjectModel[];
