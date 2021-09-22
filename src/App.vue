@@ -1,14 +1,17 @@
 <template>
   <div id="app" class="antialiased dark:bg-gray-900">
     <div class="px-8 py-4 shadow md:px-16">
-      <div class="py-8 text-3xl text-gray-500">
+      <div class="py-8 text-3xl text-gray-500 dark:text-gray-300">
         <p>
-          Hey! <span class="font-bold text-black">I'm Florian Woelki.</span>
+          Hey!
+          <span class="font-bold text-black dark:text-white">
+            I'm Florian Woelki
+          </span>
         </p>
         <p>T-Shaped Fullstack Softwareengineer</p>
       </div>
 
-      <div class="flex justify-between dark:bg-gray-700">
+      <div class="flex justify-between">
         <ul class="space-x-6 text-gray-500 dark:text-gray-400">
           <li
             v-for="(item, index) in items"
