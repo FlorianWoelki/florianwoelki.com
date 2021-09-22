@@ -106,9 +106,9 @@
               Fullstack Engineer
             </h4>
             <p class="mt-2 leading-7 text-gray-500 dark:text-gray-400">
-              I am a passionate fullstack Softwaredeveloper who is in love with
-              building complex architectures and software. I like to be in
-              uncomfortable situations and I am trying to learn every day
+              I am a passionate T-Shaped fullstack Softwaredeveloper who is in
+              love with building complex architectures and software. I like to
+              be in uncomfortable situations and I am trying to learn every day
               something new from others or on my own.
             </p>
           </div>
@@ -449,11 +449,9 @@ export default defineComponent({
       ProjectTag.Go,
       ProjectTag.Python,
       ProjectTag.Java,
-      ProjectTag.CSS,
+      ProjectTag.Swift,
       ProjectTag.SQL,
-      ProjectTag.Kotlin,
-      ProjectTag.Scala,
-      ProjectTag.Dart,
+      ProjectTag.Solidity,
     ]);
     const technologies = ref([
       ProjectTag.Vue,
@@ -482,6 +480,7 @@ export default defineComponent({
       ProjectTag.Jupyter,
       ProjectTag.PythonLibs,
       ProjectTag.Vim,
+      ProjectTag.Blockchain,
     ]);
 
     const setClickedFilter = (criterium: string): void => {

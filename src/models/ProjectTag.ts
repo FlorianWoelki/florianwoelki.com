@@ -36,6 +36,8 @@ enum ProjectTag {
   Scikitlearn = 'Scikit-learn',
   Vim = 'Vim',
   Swift = 'Swift',
+  Blockchain = 'Blockchain',
+  Solidity = 'Solidity',
 }
 
 export default ProjectTag;

@@ -12,7 +12,9 @@
       </div>
 
       <div class="flex justify-between">
-        <ul class="space-x-6 text-gray-500 dark:text-gray-400">
+        <ul
+          class="space-x-6 tracking-wider text-gray-500 uppercase dark:text-gray-400"
+        >
           <li
             v-for="(item, index) in items"
             :key="item"
