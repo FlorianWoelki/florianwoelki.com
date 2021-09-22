@@ -40,10 +40,6 @@
     "done": false
   },
   {
-    "name": "Buy the family a house",
-    "done": false
-  },
-  {
     "name": "Drive a Tesla",
     "done": true
   },
@@ -84,7 +80,7 @@
     "done": false
   },
   {
-    "name": "Create an salad from my own garden",
+    "name": "Create a salad from my own garden",
     "done": false
   },
   {
