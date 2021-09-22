@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="antialiased dark:bg-gray-900">
-    <div class="px-8 py-4 shadow md:px-16">
-      <div class="py-8 text-3xl text-gray-500 dark:text-gray-300">
+    <div class="px-16 py-4 shadow md:px-16">
+      <div
+        class="container pt-8 pb-10 mx-auto text-3xl text-gray-500 dark:text-gray-300"
+      >
         <p>
           Hey!
           <span class="font-bold text-black dark:text-white">
@@ -11,7 +13,7 @@
         <p>T-Shaped Fullstack Softwareengineer</p>
       </div>
 
-      <div class="flex justify-between">
+      <div class="container flex justify-between mx-auto">
         <ul
           class="space-x-6 tracking-wider text-gray-500 uppercase dark:text-gray-400"
         >
