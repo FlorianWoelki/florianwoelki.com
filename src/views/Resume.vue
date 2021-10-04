@@ -96,7 +96,7 @@
           <!-- ABOUT -->
           <div>
             <h3
-              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase"
+              class="text-2xl font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-300"
             >
               About
             </h3>
