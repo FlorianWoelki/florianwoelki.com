@@ -1,9 +1,7 @@
 <template>
-  <div ref="pdfContent" class="h-full">
+  <div ref="pdfContent" class="z-0 h-full">
     <div class="h-screen lg:grid lg:grid-cols-2">
-      <div
-        class="container px-16 py-16 mx-auto break-words lg:bg-gray-100 lg:dark:bg-gray-800"
-      >
+      <div class="container px-16 py-16 mx-auto break-words">
         <div class="max-w-2xl ml-auto space-y-12">
           <!-- HEADER -->
           <div class="xl:flex xl:items-center xl:justify-between">
@@ -383,7 +381,7 @@
       <!-- PERSONAL PROJECTS -->
       <div>
         <div
-          class="container px-16 pt-16 mx-auto break-words dark:bg-gray-900"
+          class="container px-16 pt-16 mx-auto break-words"
           :class="filteredProjects.length === 0 ? 'pb-0' : 'pb-16'"
         >
           <div class="max-w-2xl mr-auto space-y-12">
