@@ -95,7 +95,8 @@ export default defineComponent({
     const isLightmode = ref<boolean>(false);
 
     const items = [
-      { name: 'Portfolio', link: '/' },
+      { name: 'Blog', link: '/' },
+      { name: 'Portfolio', link: '/portfolio' },
       { name: '2020 Review', link: '/2020' },
       { name: 'List 100', link: '/list100' },
     ];

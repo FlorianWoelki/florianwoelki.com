@@ -1,5 +1,6 @@
 import { nextTick } from 'vue';
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router';
+import Blog from '../views/Blog.vue';
 import Resume from '../views/Resume.vue';
 import Year2020 from '../views/Year2020.vue';
 import List100 from '../views/List100.vue';
@@ -7,10 +8,18 @@ import List100 from '../views/List100.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Resume',
+    name: 'Blog',
+    component: Blog,
+    meta: {
+      title: 'Blog - Florian Woelki',
+    },
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
     component: Resume,
     meta: {
-      title: 'Resumé - Florian Woelki',
+      title: 'Portfolio - Florian Woelki',
     },
   },
   {
