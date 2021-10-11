@@ -11,6 +11,9 @@
           </span>
         </p>
         <p>T-Shaped Fullstack Softwareengineer</p>
+        <p class="text-lg text-gray-400">
+          with special interest in Go, TypeScript, and data (blockchain and ai)
+        </p>
       </div>
 
       <div class="container flex justify-between mx-auto">
