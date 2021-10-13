@@ -7,8 +7,6 @@
 </template>
 
 <script lang="ts">
-/* eslint-disable-next-line */
-// @ts-ignore
 import MarkdownFile from '@/content/test.md';
 
 export default defineComponent({
