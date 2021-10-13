@@ -9,6 +9,8 @@
     "autoprefixer": "^10.3.7",
     "nuxt3": "^3.0.0-27235451.ece0e01",
     "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.16"
-  }
+    "tailwindcss": "^2.2.16",
+    "vite-plugin-md2vue": "^1.1.0"
+  },
+  "dependencies": {}
 }

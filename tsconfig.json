@@ -8,5 +8,5 @@
     "resolveJsonModule": true,
     "types": ["node"]
   },
-  "exclude": ["./postcss.config.js"]
+  "exclude": ["./postcss.config.js", "./tailwind.config.js"]
 }
