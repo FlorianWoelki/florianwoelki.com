@@ -3733,7 +3733,7 @@ number-is-nan@^1.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt3@^3.0.0-27235451.ece0e01:
+nuxt3@^3.0.0-27237089.3e38eb8:
   version "3.0.0-27237089.3e38eb8"
   resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27237089.3e38eb8.tgz#995ac7858b8f089529aaa000eb66155005239b66"
   integrity sha512-qT2ppTDulmQ7Nn58pxFaIBcABtljOTFQHlMCaxmVOr09/2VsfHat6LWQT4TnLbYPmUx2mrploUd/kVZs4oXMBA==
@@ -5025,7 +5025,7 @@ table@^6.7.2:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwindcss@^2.2.16:
+tailwindcss@^2.2.17:
   version "2.2.17"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.17.tgz#c6332731f9ff1b6628ff589c95c38685347775e3"
   integrity sha512-WgRpn+Pxn7eWqlruxnxEbL9ByVRWi3iC10z4b6dW0zSdnkPVC4hPMSWLQkkW8GCyBIv/vbJ0bxIi9dVrl4CfoA==
