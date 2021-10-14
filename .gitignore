@@ -7,3 +7,21 @@ nuxt.d.ts
 .DS_Store
 
 .vercel
+
+# LaTeX files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.fmt
+*.toc
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+# Ignore german LaTeX files
+main_german.tex
+main_german.pdf

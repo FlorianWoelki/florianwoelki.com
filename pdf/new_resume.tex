@@ -1,0 +1,194 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://florianwoelki.com/}{\Large Florian Woelki}}
+  \href{https://github.com/FlorianWoelki}{\faicon{github}}
+  \href{https://www.linkedin.com/in/florian-woelki/}{\faicon{linkedin-square}}
+  \href{https://www.youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A}{\faicon{youtube-play}}
+  & Email : \href{mailto:florianwoelki@gmx.de}{florianwoelki@gmx.de}\\
+  \href{https://florianwoelki.com/}{https://www.florianwoelki.com} & Mobile : +49 1515 8364185\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dual Study on Hochschule für Telekommunikation Leipzig}{Leipzig, Germany}
+      {Bachelor of Science in Computer Science (Thesis about Machine Learning and BLE Proximity)}{2017 - 2020}
+    \resumeSubheading
+      {Allgemeine Hochschulreife on Melanchthon Gymnasium}{Berlin, Germany}
+      {Awarded 3rd place in the Informatikbiber competition}{2011-2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Deutsche Telekom}{Berlin, Germany}
+      {Fullstack Softwarearchitect}{2017 - Present}
+      \resumeItemListStart
+        \resumeItem{From Monolith to Microservices}
+          {The customer wanted to migrate from a full monolith application to a microservice architecture. A micro frontend and backend architecture allows the developers to freely add and scale their services. I had a major impact and responsibility of designing a micro frontend and backend architecture for easy scaling, maintaining, and monitoring.
+          (\textit{Webpack, TypeScript, Java, Hibernate, SQL, Lit, Vue})}
+        \resumeItem{Situational Awareness Dashboard}
+          {Designing and developing a situational awareness dashboard with realtime functionality and efficient calculation of further events and KPIs.
+          (\textit{Java, SpringBoot, Scala, Angular, TypeScript})}
+        \resumeItem{Real time Indoor Tracking}
+          {Fullstack development on a real time asset indoor tracking service including UWB, LTE, and BLE.
+          (\textit{Java, SpringBoot, Scala, Angular})}
+        \resumeItem{Pairing Android App}
+          {Designing and developing an android app that allows to pair a Bluetooth Low Energy Beacon with a QR-Code.
+          (\textit{Kotlin, SQL})}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Company Consulting Team}{Berlin, Germany}
+      {IT Consultant}{2019 - 2021}
+      \resumeItemListStart
+        \resumeItem{Inhouse HR-Tool}
+          {Designing and developing a fully functional HR-Tool to see all employees, their skills, and experience.
+          (\textit{Vue, TypeScript, C})}
+        \resumeItem{Inhouse Polling Tool}
+          {Fullstack developed polling tool for voting directly in real time in meetings allowing to make easier decisions.
+          (\textit{Vue, TypeScript, Node.js})}
+        \resumeItem{Landing Page}
+          {Developing a landing page for a real estate company to attract and maintain customers.
+          (\textit{React, TypeScript, Tailwind})}
+        \resumeItem{Merging and Analyzing Data}
+          {Data Science project I was involved in merging and analyzing different data sources.
+          (\textit{Python})}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://www.todover.com/}{Todover}}
+      {A fully functional weekly planer web application for easier managing your tasks and deadlines.
+      \textit{(Vue, TypeScript, Node.js, Postgres, Prisma, GraphQL)}}
+    \resumeSubItem{\href{https://github.com/FlorianWoelki/insta-clone}{Insta-Clone}}
+      {Scalable instagram clone powered by microservices.
+      \textit{(React, TypeScript, Go, gRPC)}}
+    \resumeSubItem{\href{https://github.com/FlorianWoelki/vue-cirrus}{Vue Cirrus}}
+      {Open Source Vue component library for the Cirrus CSS framework.
+      \textit{(Vue, JavaScript, CSS)}}
+    \resumeSubItem{\href{https://github.com/daycademy/fake-graph}{Fake Graph}}
+      {A fake GraphQL server for practicing using GraphQL.
+      \textit{(GraphQL, TypeScript, TypeORM)}}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {TypeScript, Javascript, Go, SQL, C++, Java, Scala, Swift, Solidity}
+    \resumeSubItem{Technologies}
+      {AWS, React, Vue, Angular, Blockchain, SpringBoot, Node.js, Electron, Docker}
+  \resumeSubHeadingListEnd
+
+
+%--------CERTIFICIATIONS, TALKS, AND AWARDS------------
+\section{Certifications, Talks, and Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{STARTHACK Hackathon}
+      {Won the first price on a challenge. Final product was a interactive map where residents of Switzerland could post infrastruc-ture improvements.}
+    \resumeSubItem{\href{https://florianwoelki-dlr-slides.vercel.app/}{Talk: Applications of GPT-3}}
+      {Invited by DLR to give a keynote presentation regarding the applications in software development of the language model GPT-3.}
+    \resumeSubItem{\href{https://youtu.be/cZ--7TzyzfM}{Talk: What does the future of artificial intelligence look like?}}
+      {ClubHouse conversation about the future of artificial intelligence.}
+    \resumeSubItem{\href{https://youtu.be/m9kapfxwYOA}{Talk: What is artificial intelligence?}}
+      {Twenty minute talk about what artificial intelligence is and is not.}
+    \resumeSubItem{\href{https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/data-engineering.pdf}{Udacity Data Engineering}}
+      {Design data models, build data warehouses, data lakes, and automate data pipelines.}
+    \resumeSubItem{\href{https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/intro-self-driving-cars.pdf}{Udacity Intro Self-Driving Cars}}
+      {Fundamentals of self-driving cars, Python, apply C++, and computer vision.}
+  \resumeSubHeadingListEnd
+\end{document}
