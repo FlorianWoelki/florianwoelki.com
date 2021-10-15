@@ -3,10 +3,14 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "autoprefixer": "^10.3.7",
+    "husky": "^7.0.0",
     "nuxt3": "^3.0.0-27237303.6acfdcd",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17"
