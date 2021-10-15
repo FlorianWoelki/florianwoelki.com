@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed flex items-center justify-between w-full px-8 py-4">
+  <div
+    class="fixed flex items-center justify-between w-full px-8 py-4 bg-gray-900"
+  >
     <ul class="flex space-x-6">
       <li
         v-for="(item, index) in items"
