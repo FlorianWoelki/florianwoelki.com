@@ -5,12 +5,6 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import Navbar from '../components/Navbar.vue';
-
-export default defineComponent({
-  components: {
-    Navbar,
-  },
-});
 </script>

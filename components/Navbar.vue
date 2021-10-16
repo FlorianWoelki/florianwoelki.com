@@ -53,22 +53,16 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 interface NavbarItem {
   title: string;
   link: string;
 }
 
-export default defineComponent({
-  setup() {
-    const items: NavbarItem[] = [
-      { title: 'Blog', link: '/' },
-      { title: 'Resume', link: '/resume' },
-      { title: 'Contact', link: '/contact' },
-      { title: 'Projects', link: '/projects' },
-    ];
-
-    return { items };
-  },
-});
+const items: NavbarItem[] = [
+  { title: 'Blog', link: '/' },
+  { title: 'Resume', link: '/resume' },
+  { title: 'Contact', link: '/contact' },
+  { title: 'Projects', link: '/projects' },
+];
 </script>
