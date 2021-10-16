@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt3';
+import svgLoader from 'vite-svg-loader';
 import md2vue from './vite/md2vue';
 
 export default defineNuxtConfig({
@@ -14,6 +15,6 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    plugins: [md2vue()],
+    plugins: [md2vue(), svgLoader()],
   },
 });
