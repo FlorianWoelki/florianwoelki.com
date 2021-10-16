@@ -11,13 +11,20 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
-    <div>
-      <div className="posts">
+    <>
+      <div className="flex flex-col items-center justify-center space-y-2 bg-gray-900 py-28">
+        <h1 className="text-4xl font-bold text-white">Florian Woelki</h1>
+        <h2 className="text-xl text-gray-100">
+          T-Shaped Fullstack Softwareengineer
+        </h2>
+      </div>
+
+      <div>
         {posts.map((post, index) => (
           <Post key={index} post={post}></Post>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
