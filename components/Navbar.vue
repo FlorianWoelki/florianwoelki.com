@@ -65,6 +65,7 @@ export default defineComponent({
       { title: 'Blog', link: '/' },
       { title: 'Resume', link: '/resume' },
       { title: 'Contact', link: '/contact' },
+      { title: 'Projects', link: '/projects' },
     ];
 
     return { items };
