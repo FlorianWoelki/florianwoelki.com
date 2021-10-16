@@ -12,7 +12,7 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center space-y-2 bg-gray-900 py-28">
+      <div className="flex flex-col items-center justify-center py-32 space-y-2 bg-gray-900">
         <h1 className="text-4xl font-bold text-white">Florian Woelki</h1>
         <h2 className="text-xl text-gray-100">
           T-Shaped Fullstack Softwareengineer
