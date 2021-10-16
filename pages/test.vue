@@ -6,14 +6,8 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import MarkdownFile from '@/content/test.md';
-
-export default defineComponent({
-  components: {
-    MarkdownFile,
-  },
-});
 </script>
 
 <style lang="postcss">
