@@ -1,0 +1,31 @@
+.markdown {
+  @apply text-lg text-gray-700;
+}
+.markdown > * + * {
+  @apply mt-6;
+}
+.markdown li > p + p,
+.markdown li + li {
+  @apply mt-4;
+}
+.markdown strong {
+  @apply font-bold text-gray-800;
+}
+.markdown a {
+  @apply font-semibold text-gray-800 underline;
+}
+.markdown h1 {
+  @apply mt-10 mb-2 text-2xl font-bold text-gray-800;
+}
+.markdown h2 {
+  @apply mt-10 mb-2 text-xl font-bold text-gray-800;
+}
+.markdown h3 {
+  @apply mt-8 -mb-2 text-lg font-bold leading-5 text-gray-800;
+}
+.markdown ul {
+  @apply pl-10 list-disc;
+}
+.markdown ol {
+  @apply pl-10 list-decimal;
+}
