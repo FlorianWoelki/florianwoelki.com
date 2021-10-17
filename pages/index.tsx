@@ -19,10 +19,13 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         </h2>
       </div>
 
-      <div>
-        {posts.map((post, index) => (
-          <Post key={index} post={post}></Post>
-        ))}
+      <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-16 md:px-16">
+        <h1 className="mb-6 text-xl text-gray-400">Latest Blogs</h1>
+        <div className="grid grid-cols-2 gap-y-16">
+          {posts.map((post, index) => (
+            <Post key={index} post={post}></Post>
+          ))}
+        </div>
       </div>
     </>
   );

@@ -14,18 +14,18 @@ interface PostProps {
 
 const Post: NextPage<PostProps> = ({ post }) => {
   return (
-    <div className="card">
-      {post.frontmatter.cover_image && (
-        <img src={post.frontmatter.cover_image} alt="cover-image" />
-      )}
-      <div>Posted on {post.frontmatter.date}</div>
-
-      <h1>{post.frontmatter.title}</h1>
-      <p>{post.frontmatter.excerpt}</p>
-
+    <div className="space-y-2">
       <Link href={`/blog/${post.slug}`}>
-        <button>Read more</button>
+        <h2 className="text-2xl font-bold tracking-tight cursor-pointer">
+          {post.frontmatter.title}
+        </h2>
       </Link>
+      <p className="text-gray-500">{post.frontmatter.excerpt}</p>
+
+      <div className="space-x-4 text-sm text-gray-400">
+        <span>{post.frontmatter.date}</span>
+        <span>4 mins read</span>
+      </div>
     </div>
   );
 };
