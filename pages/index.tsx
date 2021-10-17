@@ -41,9 +41,9 @@ export const getStaticProps: GetStaticProps = async () => {
       path.join('content', filename),
       'utf-8',
     );
-    const { data: frontmatter } = matter(markdownWithMeta);
+    const { data: frontmatter, content } = matter(markdownWithMeta);
 
-    return { slug, frontmatter };
+    return { slug, frontmatter, content };
   });
 
   return {
