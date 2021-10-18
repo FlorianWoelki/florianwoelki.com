@@ -15,7 +15,7 @@ interface BlogPostProps {
 }
 
 const BlogPost: NextPage<BlogPostProps> = ({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, date },
   content,
 }) => {
   return (

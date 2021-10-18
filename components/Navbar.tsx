@@ -26,7 +26,10 @@ export const Navbar: NextPage = () => {
           <li
             key={index}
             className={`transition duration-100 ease-in-out hover:text-gray-400 ${
-              router.pathname === item.link ? 'text-white' : 'text-gray-300'
+              router.pathname === item.link ||
+              router.pathname.includes(item.link)
+                ? 'text-white'
+                : 'text-gray-300'
             }`}
           >
             <Link href={item.link} passHref>
