@@ -27,7 +27,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
         </a>
       </Link>
       <h1 className="mt-4 text-4xl font-bold tracking-tight">{title}</h1>
-      <p className="mt-1 mb-16 text-gray-600">Posted on {date}</p>
+      <p className="mt-1 mb-16 text-gray-500">Posted on {date}</p>
 
       <div
         className={styles.markdown}

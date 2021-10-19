@@ -14,7 +14,7 @@ const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
     <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
 
-      <div className="grid grid-cols-2 mt-12 gap-y-12">
+      <div className="grid grid-cols-2 gap-12 mt-12">
         {posts.map((post, index) => (
           <div key={index}>
             <Post post={post}></Post>

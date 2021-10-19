@@ -59,7 +59,7 @@ const Post: NextPage<PostProps> = ({ post, color }) => {
             <p className="text-gray-500">{post.frontmatter.excerpt}</p>
           </div>
 
-          <div className="space-x-4 text-sm text-gray-400">
+          <div className="flex items-center justify-between text-sm text-gray-400">
             <span>{post.frontmatter.date}</span>
             <span>
               {readingTime} {readingTime === 1 ? 'min' : 'mins'} read

@@ -29,3 +29,7 @@
 .markdown ol {
   @apply pl-10 list-decimal;
 }
+
+.markdown code {
+  @apply px-2 py-1 text-white bg-gray-900 rounded-lg;
+}
