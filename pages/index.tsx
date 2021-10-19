@@ -3,14 +3,19 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Post, { PostData } from '../components/Post';
+import Post, { PostColor, PostData } from '../components/Post';
 import { sortByDate } from '../utils';
+import ChevronRightIcon from '../icons/chevron-right.svg';
 
 interface HomeProps {
   posts: PostData[];
 }
 
 const Home: NextPage<HomeProps> = ({ posts }) => {
+  const latestThreeBlogs = posts.slice(0, 3);
+
+  const blogArticleColorMapping: PostColor[] = ['red', 'yellow', 'green'];
+
   return (
     <>
       <div className="flex flex-col items-center justify-center py-40 space-y-2 bg-gray-900">
@@ -26,12 +31,19 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             Latest Blogs
           </h3>
           <div className="grid grid-cols-3 mb-8 gap-x-10">
-            {posts.map((post, index) => (
-              <Post key={index} post={post}></Post>
+            {latestThreeBlogs.map((post, index) => (
+              <Post
+                key={index}
+                post={post}
+                color={blogArticleColorMapping[index]}
+              ></Post>
             ))}
           </div>
           <Link href="/blog" passHref>
-            <a className="text-gray-500">To all blog articles</a>
+            <a className="flex items-center space-x-1 text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
+              <span>To all blog articles</span>
+              <ChevronRightIcon className="w-4 h-4" />
+            </a>
           </Link>
         </div>
 
@@ -39,6 +51,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <h3 className="mb-6 text-3xl font-bold text-gray-900">
             Latest Videos
           </h3>
+          <p>Coming Soon</p>
         </div>
       </div>
     </>
