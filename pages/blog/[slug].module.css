@@ -31,5 +31,5 @@
 }
 
 .markdown pre code {
-  @apply rounded-xl;
+  @apply text-base rounded-xl;
 }
