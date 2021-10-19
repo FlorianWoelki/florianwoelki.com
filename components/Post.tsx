@@ -13,7 +13,7 @@ export type PostColor = 'green' | 'yellow' | 'red';
 
 interface PostProps {
   post: PostData;
-  color: PostColor;
+  color?: PostColor;
 }
 
 const Post: NextPage<PostProps> = ({ post, color }) => {
@@ -35,15 +35,18 @@ const Post: NextPage<PostProps> = ({ post, color }) => {
       'from-blueGray-500 to-emerald-500': color === 'green',
       'from-amber-500 to-red-500': color === 'red',
       'from-lime-500 to-yellow-500': color === 'yellow',
+      'p-1': color,
     },
-    'p-1 cursor-pointer rounded-xl bg-gradient-to-tr',
+    'cursor-pointer rounded-xl bg-gradient-to-tr',
   );
 
   return (
     <Link href={`/blog/${post.slug}`} passHref>
       <a className="transition duration-300 ease-in-out transform hover:scale-105">
         <div className={colorClasses}>
-          <div className="p-6 space-y-2 bg-white rounded-lg">
+          <div
+            className={`space-y-2 bg-white rounded-lg ${color ? 'p-6' : ''}`}
+          >
             <h2 className="inline text-xl font-bold tracking-tight">
               {post.frontmatter.title}
             </h2>
