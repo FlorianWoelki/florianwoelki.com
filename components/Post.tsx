@@ -41,7 +41,7 @@ const Post: NextPage<PostProps> = ({ post, color }) => {
 
   return (
     <Link href={`/blog/${post.slug}`} passHref>
-      <a>
+      <a className="transition duration-300 ease-in-out transform hover:scale-105">
         <div className={colorClasses}>
           <div className="p-6 space-y-2 bg-white rounded-lg">
             <h2 className="inline text-xl font-bold tracking-tight">
