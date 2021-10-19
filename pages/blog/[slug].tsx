@@ -6,6 +6,8 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 
 import ChevronLeftIcon from '../../icons/chevron-left.svg';
+// @ts-ignore
+import darkStyle from 'highlight.js/styles/atom-one-dark.css';
 import styles from './[slug].module.css';
 
 interface BlogPostProps {
@@ -18,6 +20,23 @@ const BlogPost: NextPage<BlogPostProps> = ({
   frontmatter: { title, date },
   content,
 }) => {
+  marked.setOptions({
+    renderer: new marked.Renderer(),
+    highlight: (code, lang) => {
+      const hljs = require('highlight.js');
+      const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+      return hljs.highlight(code, { language }).value;
+    },
+    langPrefix: 'hljs language-',
+    pedantic: false,
+    gfm: true,
+    breaks: false,
+    sanitize: false,
+    smartLists: true,
+    smartypants: false,
+    xhtml: false,
+  });
+
   return (
     <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <Link href="/blog" passHref>
@@ -31,6 +50,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
 
       <div
         className={styles.markdown}
+        style={darkStyle}
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
     </div>
