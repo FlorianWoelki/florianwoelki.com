@@ -13,7 +13,10 @@ export const Navbar: NextPage = () => {
   const items: NavbarItem[] = [
     { title: 'About', link: '/about' },
     { title: 'Blog', link: '/' },
-    { title: 'Resume', link: '/resume' },
+    {
+      title: 'Resume',
+      link: 'https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/new_resume.pdf',
+    },
     { title: 'Contact', link: '/contact' },
     { title: 'Projects', link: '/projects' },
   ];
