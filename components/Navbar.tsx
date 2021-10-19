@@ -9,7 +9,7 @@ interface NavbarItem {
   link: string;
 }
 
-export const Navbar: NextPage = () => {
+const Navbar: NextPage = () => {
   const items: NavbarItem[] = [
     { title: 'Home', link: '/' },
     { title: 'Blog', link: '/blog' },
@@ -59,3 +59,5 @@ export const Navbar: NextPage = () => {
     </div>
   );
 };
+
+export default Navbar;
