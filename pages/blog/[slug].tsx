@@ -21,8 +21,9 @@ const BlogPost: NextPage<BlogPostProps> = ({
   return (
     <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <Link href="/" passHref>
-        <a className="inline-block">
-          <ChevronLeftIcon className="w-5 h-5 text-gray-400" />
+        <a className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
+          <ChevronLeftIcon className="w-4 h-4" />
+          <span>Go back</span>
         </a>
       </Link>
       <h1 className="mt-4 text-4xl font-bold tracking-tight">{title}</h1>

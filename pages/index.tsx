@@ -40,7 +40,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             ))}
           </div>
           <Link href="/blog" passHref>
-            <a className="flex items-center space-x-1 text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
+            <a className="flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
               <span>To all blog articles</span>
               <ChevronRightIcon className="w-4 h-4" />
             </a>
