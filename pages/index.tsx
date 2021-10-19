@@ -30,7 +30,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <h3 className="mb-6 text-3xl font-bold text-gray-900">
             Latest Blogs
           </h3>
-          <div className="grid grid-cols-3 mb-8 gap-x-10">
+          <div className="flex flex-col gap-10 mb-6 md:flex-row">
             {latestThreeBlogs.map((post, index) => (
               <Post
                 key={index}
