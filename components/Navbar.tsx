@@ -23,7 +23,7 @@ const Navbar: NextPage = () => {
   const router = useRouter();
 
   return (
-    <div className="fixed w-full py-4 bg-gray-900">
+    <div className="sticky top-0 z-10 w-full py-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
       <div className="container flex items-center justify-between max-w-6xl px-8 mx-auto md:px-16">
         <ul className="flex space-x-6">
           {items.map((item, index) => (
