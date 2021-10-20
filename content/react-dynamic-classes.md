@@ -40,11 +40,35 @@ const classes = (
   dynamic: Record<string, boolean>,
   classes: string = '',
 ): string => {
-  return Object.entries(dynamic)
-    .filter((entry) => entry[1])
-    .map((entry) => entry[0])
-    .join(' ')
-    .concat(' ')
-    .concat(classes);
+  return Object.entries(dynamic) // 1.
+    .filter((entry) => entry[1]) // 2.
+    .map((entry) => entry[0]) // 3.
+    .join(' ') // 4.
+    .concat(' ') // 5.
+    .concat(classes); // 5.
 };
+```
+
+Here is a simple step by step explaination of this function:
+1. It get the key-value pairs of the Object with `Object.entries` (`entry[0]` are the classes in a string and `entry[1]` is the condition)
+2. It will filter all the true key value pairs
+3. It will map the key value pairs to just the strings as a return value
+4. It will join the result array, which includes all the classes where the condition is true
+5. It will concat the permant classes to this result string
+
+You would use this function like this, where you declare all the conditional classes in one object as the first argument and the permanent classes as the second argument.
+
+```ts
+const colorClasses = classes(
+  {
+    'text-green-500 bg-green-500': color === 'green',
+    'text-red-500 bg-red-500': color === 'red',
+    'text-yellow-500 bg-yellow-500': color === 'yellow',
+  },
+  'rounded-xl cursor-pointer',
+);
+
+return (
+  <div className={colorClasses}></div>
+);
 ```

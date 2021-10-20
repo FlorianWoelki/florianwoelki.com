@@ -6,7 +6,7 @@
 }
 .markdown li > p + p,
 .markdown li + li {
-  @apply mt-4;
+  @apply mt-2;
 }
 .markdown strong {
   @apply font-bold text-gray-800;
@@ -32,4 +32,9 @@
 
 .markdown pre code {
   @apply text-base rounded-xl;
+}
+
+.markdown p code,
+.markdown li code {
+  @apply px-2 py-1 text-base text-white bg-gray-800 rounded;
 }
