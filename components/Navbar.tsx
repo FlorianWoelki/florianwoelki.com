@@ -23,17 +23,17 @@ const Navbar: NextPage = () => {
   const router = useRouter();
 
   return (
-    <div className="sticky top-0 z-10 w-full py-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
+    <div className="fixed top-0 z-10 w-full py-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
       <div className="container flex items-center justify-between max-w-6xl px-8 mx-auto md:px-16">
         <ul className="flex space-x-6">
           {items.map((item, index) => (
             <li
               key={index}
-              className={`transition duration-100 ease-in-out hover:text-gray-400 ${
+              className={`transition duration-100 ease-in-out hover:text-gray-500 ${
                 router.pathname === item.link ||
                 router.pathname.includes(item.link)
-                  ? 'text-white'
-                  : 'text-gray-300'
+                  ? 'text-black'
+                  : 'text-gray-700'
               }`}
             >
               <Link href={item.link} passHref>
@@ -44,12 +44,12 @@ const Navbar: NextPage = () => {
         </ul>
 
         <ul className="flex space-x-6">
-          <li className="text-gray-300 transition duration-100 ease-in-out hover:text-gray-400">
+          <li className="text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
             <a href="#" target="_blank" className="block">
               <GithubIcon className="w-5 h-5" />
             </a>
           </li>
-          <li className="text-gray-300 transition duration-100 ease-in-out hover:text-gray-400">
+          <li className="text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
             <a href="#" target="_blank" className="block">
               <LinkedinIcon className="w-5 h-5" />
             </a>

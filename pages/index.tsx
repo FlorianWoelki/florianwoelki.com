@@ -18,9 +18,11 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center py-40 space-y-2">
-        <h1 className="text-4xl font-bold">Florian Woelki</h1>
-        <h2 className="text-xl">T-Shaped Fullstack Softwareengineer</h2>
+      <div className="flex flex-col items-center justify-center space-y-2 shadow-inner py-36 bg-gradient-to-t from-warmGray-100 via-warmGray-50 to-white">
+        <h1 className="text-4xl font-bold text-warmGray-800">Florian Woelki</h1>
+        <h2 className="text-xl text-warmGray-600">
+          T-Shaped Fullstack Softwareengineer
+        </h2>
       </div>
 
       <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto space-y-16 break-words lg:pt-16 md:px-16">
