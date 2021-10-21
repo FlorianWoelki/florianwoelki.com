@@ -6,8 +6,10 @@ import matter from 'gray-matter';
 import Post, { PostColor, PostData } from '../components/Post';
 import { sortByDate } from '../utils';
 import ChevronRightIcon from '../icons/chevron-right.svg';
-import GithubIcon from '../icons/github.svg';
-import LinkedinIcon from '../icons/linkedin.svg';
+import { Canvas } from '@react-three/fiber';
+import { Physics } from '@react-three/cannon';
+import PhyPlane from '../components/threejs/PhyPlane';
+import PhyBox from '../components/threejs/PhyBox';
 
 interface HomeProps {
   posts: PostData[];
@@ -18,10 +20,12 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
   const blogArticleColorMapping: PostColor[] = ['red', 'yellow', 'green'];
 
+  const randomHeight = Math.random() * 7 + 5;
+
   return (
     <>
       <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-16 break-words md:px-16">
-        <div className="grid grid-cols-2 mb-20 space-y-4 mt-28">
+        <div className="grid items-center grid-cols-2 mb-20 space-y-4 mt-28">
           <div className="space-y-2">
             <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
             <h2 className="text-xl text-gray-800">
@@ -30,28 +34,46 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             </h2>
           </div>
 
-          <ul className="flex flex-col justify-self-end">
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                className="flex items-center space-x-2"
-              >
-                <span>/FlorianWoelki</span>
-                <GithubIcon className="w-5 h-5" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                className="flex items-center space-x-2"
-              >
-                <span>/FlorianWoelki</span>
-                <LinkedinIcon className="w-5 h-5" />
-              </a>
-            </li>
-          </ul>
+          <Canvas
+            style={{ height: 250, width: '100%' }}
+            camera={{ position: [0, 0, 0], near: 0.8, far: 1000 }}
+            className="justify-self-center"
+          >
+            <Physics gravity={[0, -10, 0]}>
+              <PhyPlane
+                color="white"
+                position={[0, -2, 0]}
+                rotation={[-Math.PI / 2, 0, 0]}
+              />
+              <PhyPlane color="white" position={[0, 0, -10]} />
+              <PhyPlane
+                color="white"
+                position={[-6, 0, -10]}
+                rotation={[0, 0, 0]}
+              />
+              <PhyPlane
+                color="white"
+                position={[6, 0, -10]}
+                rotation={[0, 0, 0]}
+              />
+
+              <PhyBox position={[0, randomHeight - 3, -5]} />
+              {[...Array(10)].map((_, i) => (
+                <PhyBox
+                  key={i}
+                  position={[
+                    Math.random() * (Math.random() * -2 + 1),
+                    randomHeight + 5 * i,
+                    -5,
+                  ]}
+                />
+              ))}
+            </Physics>
+
+            <ambientLight intensity={1000} />
+
+            <pointLight intensity={2} position={[5, 0, 5]} />
+          </Canvas>
         </div>
 
         <div>
