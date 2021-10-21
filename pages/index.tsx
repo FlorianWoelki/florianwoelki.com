@@ -6,6 +6,8 @@ import matter from 'gray-matter';
 import Post, { PostColor, PostData } from '../components/Post';
 import { sortByDate } from '../utils';
 import ChevronRightIcon from '../icons/chevron-right.svg';
+import GithubIcon from '../icons/github.svg';
+import LinkedinIcon from '../icons/linkedin.svg';
 
 interface HomeProps {
   posts: PostData[];
@@ -18,14 +20,40 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center space-y-2 shadow-inner py-36 bg-gradient-to-tr from-blue-100 via-warmGray-50 to-amber-100">
-        <h1 className="text-5xl font-bold text-warmGray-900">Florian Woelki</h1>
-        <h2 className="text-xl text-warmGray-500">
-          T-Shaped Fullstack Softwareengineer
-        </h2>
-      </div>
+      <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-16 break-words md:px-16">
+        <div className="grid grid-cols-2 mb-20 space-y-4 mt-28">
+          <div className="space-y-2">
+            <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
+            <h2 className="text-xl text-gray-800">
+              <span>Fullstack Softwareengineer with special interest</span>
+              <span>in AI, Blockchain, and data</span>
+            </h2>
+          </div>
 
-      <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto space-y-16 break-words lg:pt-16 md:px-16">
+          <ul className="flex flex-col justify-self-end">
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                className="flex items-center space-x-2"
+              >
+                <span>/FlorianWoelki</span>
+                <GithubIcon className="w-5 h-5" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                className="flex items-center space-x-2"
+              >
+                <span>/FlorianWoelki</span>
+                <LinkedinIcon className="w-5 h-5" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div>
           <h3 className="mb-6 text-3xl font-bold text-gray-900">
             Latest Blogs

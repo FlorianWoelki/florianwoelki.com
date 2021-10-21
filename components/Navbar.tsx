@@ -44,12 +44,12 @@ const Navbar: NextPage = () => {
         </ul>
 
         <ul className="flex space-x-6">
-          <li className="text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
+          <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
             <a href="#" target="_blank" className="block">
               <GithubIcon className="w-5 h-5" />
             </a>
           </li>
-          <li className="text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
+          <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
             <a href="#" target="_blank" className="block">
               <LinkedinIcon className="w-5 h-5" />
             </a>
