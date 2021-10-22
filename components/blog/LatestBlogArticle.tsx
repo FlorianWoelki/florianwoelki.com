@@ -1,26 +1,21 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import React from 'react';
+import { getReadingTime } from './BlogArticle';
+import { BlogArticleData } from './BlogArticleData';
 
-export interface PostData {
-  slug: string;
-  content: string;
-  frontmatter: {
-    [key: string]: string;
-  };
+export type LatestBlogArticleColor = 'green' | 'yellow' | 'red';
+
+interface LatestBlogArticleProps {
+  post: BlogArticleData;
+  color?: LatestBlogArticleColor;
 }
 
-export type PostColor = 'green' | 'yellow' | 'red';
-
-interface PostProps {
-  post: PostData;
-  color?: PostColor;
-}
-
-const Post: NextPage<PostProps> = ({ post, color }) => {
-  const wpm = 225;
-  const words = post.content.trim().split(/\s+/).length;
-  const readingTime = Math.ceil(words / wpm);
+const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
+  post,
+  color,
+}) => {
+  const readingTime = getReadingTime(post.content);
 
   const classes = (
     dynamic: Record<string, boolean>,
@@ -71,4 +66,4 @@ const Post: NextPage<PostProps> = ({ post, color }) => {
   );
 };
 
-export default Post;
+export default LatestBlogArticle;

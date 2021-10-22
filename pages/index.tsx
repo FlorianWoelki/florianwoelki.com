@@ -3,22 +3,29 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Post, { PostColor, PostData } from '../components/Post';
+import LatestBlogArticle, {
+  LatestBlogArticleColor,
+} from '../components/blog/LatestBlogArticle';
 import { sortByDate } from '../utils';
 import ChevronRightIcon from '../icons/chevron-right.svg';
 import { Canvas } from '@react-three/fiber';
 import { Physics } from '@react-three/cannon';
 import PhyPlane from '../components/threejs/PhyPlane';
 import PhyBox from '../components/threejs/PhyBox';
+import { BlogArticleData } from '../components/blog/BlogArticleData';
 
 interface HomeProps {
-  posts: PostData[];
+  posts: BlogArticleData[];
 }
 
 const Home: NextPage<HomeProps> = ({ posts }) => {
   const latestThreeBlogs = posts.slice(0, 3);
 
-  const blogArticleColorMapping: PostColor[] = ['red', 'yellow', 'green'];
+  const blogArticleColorMapping: LatestBlogArticleColor[] = [
+    'red',
+    'yellow',
+    'green',
+  ];
 
   const randomHeight = Math.random() * 7 + 5;
 
@@ -82,11 +89,11 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           </h3>
           <div className="flex flex-col gap-10 mb-6 md:flex-row">
             {latestThreeBlogs.map((post, index) => (
-              <Post
+              <LatestBlogArticle
                 key={index}
                 post={post}
                 color={blogArticleColorMapping[index]}
-              ></Post>
+              ></LatestBlogArticle>
             ))}
           </div>
           <Link href="/blog" passHref>
