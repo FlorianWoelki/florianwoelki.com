@@ -7,12 +7,13 @@ import LinkedinIcon from '../icons/linkedin.svg';
 interface NavbarItem {
   title: string;
   link: string;
+  extraChecks?: string[];
 }
 
 const Navbar: NextPage = () => {
   const items: NavbarItem[] = [
     { title: 'Home', link: '/' },
-    { title: 'Blog', link: '/blog' },
+    { title: 'Blog', link: '/blog', extraChecks: ['/blog/[slug]'] },
     {
       title: 'Resume',
       link: 'https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/new_resume.pdf',
@@ -30,8 +31,8 @@ const Navbar: NextPage = () => {
             <li
               key={index}
               className={`transition duration-100 ease-in-out hover:text-gray-500 ${
-                router.pathname === item.link ||
-                router.pathname.includes(item.link)
+                router.route === item.link ||
+                item.extraChecks?.includes(router.route)
                   ? 'text-black'
                   : 'text-gray-700'
               }`}
