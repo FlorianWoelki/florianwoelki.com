@@ -12,7 +12,7 @@ interface BlogProps {
 
 const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
   return (
-    <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
+    <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
 
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
