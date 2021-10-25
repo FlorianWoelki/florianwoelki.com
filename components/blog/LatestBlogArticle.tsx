@@ -34,7 +34,7 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
       'from-blueGray-500 to-emerald-500': color === 'green',
       'from-amber-500 to-red-500': color === 'red',
       'from-lime-500 to-yellow-500': color === 'yellow',
-      'p-1 w-full md:w-1/3': color !== undefined,
+      'p-1 w-full lg:w-1/3': color !== undefined,
     },
     'cursor-pointer rounded-xl bg-gradient-to-tr transition duration-300 ease-in-out transform hover:scale-105',
   );

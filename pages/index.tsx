@@ -32,7 +32,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-16 break-words md:px-16">
-        <div className="grid items-center grid-cols-2 mb-20 space-y-4 mt-28">
+        <div className="mb-20 space-y-4 text-center md:text-left md:grid md:items-center md:grid-cols-2 mt-28">
           <div className="space-y-2">
             <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
             <h2 className="text-xl text-gray-800">
@@ -87,7 +87,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <h3 className="mb-6 text-3xl font-bold text-gray-900">
             Latest Blogs
           </h3>
-          <div className="flex flex-col gap-10 mb-6 md:flex-row">
+          <div className="flex flex-col gap-10 mb-6 lg:flex-row">
             {latestThreeBlogs.map((post, index) => (
               <LatestBlogArticle
                 key={index}
