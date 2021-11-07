@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import React from 'react';
+import { classes } from '../../utils';
 import { getReadingTime } from './BlogArticle';
 import { BlogArticleData } from './BlogArticleData';
 
@@ -16,18 +17,6 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
   color,
 }) => {
   const readingTime = getReadingTime(post.content);
-
-  const classes = (
-    dynamic: Record<string, boolean>,
-    classes: string = '',
-  ): string => {
-    return Object.entries(dynamic)
-      .filter((entry) => entry[1])
-      .map((entry) => entry[0])
-      .join(' ')
-      .concat(' ')
-      .concat(classes);
-  };
 
   const colorClasses = classes(
     {

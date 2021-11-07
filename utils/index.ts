@@ -1,8 +1,20 @@
-import { PostData } from '../components/Post';
+import { BlogArticleData } from '../components/blog/BlogArticleData';
 
-export const sortByDate = (a: PostData, b: PostData): number => {
+export const sortByDate = (a: BlogArticleData, b: BlogArticleData): number => {
   return (
     new Date(b.frontmatter.date).getDate() -
     new Date(a.frontmatter.date).getDate()
   );
+};
+
+export const classes = (
+  dynamic: Record<string, boolean>,
+  classes: string = '',
+): string => {
+  return Object.entries(dynamic)
+    .filter((entry) => entry[1])
+    .map((entry) => entry[0])
+    .join(' ')
+    .concat(' ')
+    .concat(classes);
 };
