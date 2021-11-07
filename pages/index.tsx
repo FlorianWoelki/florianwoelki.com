@@ -36,8 +36,11 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <div className="space-y-2">
             <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
             <h2 className="text-xl text-gray-800">
-              <span>Fullstack Softwareengineer with special interest</span>
-              <span>in AI, Blockchain, and data</span>
+              <span>
+                Fullstack Softwareengineer with special interest
+                <br />
+                in AI, Blockchain, and data
+              </span>
             </h2>
           </div>
 

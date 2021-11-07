@@ -17,6 +17,7 @@ interface NavbarItem {
 const Navbar: NextPage = () => {
   const items: NavbarItem[] = [
     { title: 'Home', link: '/' },
+    { title: 'Now', link: '/now' },
     { title: 'Blog', link: '/blog', extraChecks: ['/blog/[slug]'] },
     {
       title: 'Resume',
