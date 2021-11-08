@@ -6,7 +6,7 @@ import projects, {
   TechnologyTag,
 } from '../components/projects';
 import Tag from '../components/Tag';
-import GithubIcon from '../icons/github.svg';
+import ChevronRightIcon from '../icons/chevron-right.svg';
 
 const ProjectsPage: NextPage = (): JSX.Element => {
   const programmingLanguageTags = Object.values(ProgrammingLanguageTag).filter(
@@ -29,6 +29,11 @@ const ProjectsPage: NextPage = (): JSX.Element => {
       setFilter(tag);
     }
   };
+
+  const filteredProjects = () =>
+    filter
+      ? projects.filter((project) => project.tags.includes(filter))
+      : projects;
 
   return (
     <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
@@ -53,7 +58,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
       </ul>
 
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
-        {projects.map((project, index) => (
+        {filteredProjects().map((project, index) => (
           <li key={index} className="pt-10">
             <div className="grid space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
               <ul className="flex flex-wrap mt-4 xl:mt-0">
@@ -78,7 +83,8 @@ const ProjectsPage: NextPage = (): JSX.Element => {
                       target="_blank"
                       className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700"
                     >
-                      <GithubIcon className="w-5 h-5" />
+                      <span>More information</span>
+                      <ChevronRightIcon className="w-4 h-4"></ChevronRightIcon>
                     </a>
                   </Link>
                 </div>
