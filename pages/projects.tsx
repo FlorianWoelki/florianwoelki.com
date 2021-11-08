@@ -1,36 +1,12 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 import { useState } from 'react';
+import projects, {
+  ProgrammingLanguageTag,
+  TechnologyTag,
+} from '../components/projects';
 import Tag from '../components/Tag';
-
-enum ProgrammingLanguageTag {
-  JavaScript,
-  TypeScript,
-  Go,
-  Python,
-  Java,
-  Swift,
-  SQL,
-  Solidity,
-}
-
-enum TechnologyTag {
-  Vue,
-  Nuxt,
-  GraphQL,
-  gRPC,
-  Tailwind,
-  Redis,
-  PostgreSQL,
-  React,
-  Node,
-  Docker,
-  SpringBoot,
-  MySQL,
-  MongoDB,
-  Tensorflow,
-  Scikitlearn,
-  Blockchain,
-}
+import GithubIcon from '../icons/github.svg';
 
 const ProjectsPage: NextPage = (): JSX.Element => {
   const programmingLanguageTags = Object.values(ProgrammingLanguageTag).filter(
@@ -41,11 +17,11 @@ const ProjectsPage: NextPage = (): JSX.Element => {
   );
 
   const [filter, setFilter] = useState<
-    string | TechnologyTag | ProgrammingLanguageTag | null
+    string | typeof TechnologyTag | typeof ProgrammingLanguageTag | null
   >(null);
 
   const setFilterTag = (
-    tag: string | TechnologyTag | ProgrammingLanguageTag | null,
+    tag: string | typeof TechnologyTag | typeof ProgrammingLanguageTag | null,
   ): void => {
     if (filter === tag) {
       setFilter(null);
@@ -75,7 +51,42 @@ const ProjectsPage: NextPage = (): JSX.Element => {
           </li>
         ))}
       </ul>
-      Filter: {filter}
+
+      <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
+        {projects.map((project, index) => (
+          <li key={index} className="pt-10">
+            <div className="grid space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <ul className="flex flex-wrap mt-4 xl:mt-0">
+                {project.tags.map((tag) => (
+                  <li key={tag.toString()}>
+                    <Tag selected={tag === filter}>{tag}</Tag>
+                  </li>
+                ))}
+              </ul>
+              <div className="row-start-1 space-y-5 xl:col-span-3 xl:row-start-auto">
+                <div className="space-y-6">
+                  <h2 className="text-2xl font-bold tracking-tight">
+                    {project.title}
+                  </h2>
+                  <div className="text-base text-gray-500 max-w-none">
+                    <p>{project.description}</p>
+                  </div>
+                </div>
+                <div className="text-base font-medium">
+                  <Link href={project.link} passHref>
+                    <a
+                      target="_blank"
+                      className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700"
+                    >
+                      <GithubIcon className="w-5 h-5" />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
