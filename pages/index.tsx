@@ -8,11 +8,8 @@ import LatestBlogArticle, {
 } from '../components/blog/LatestBlogArticle';
 import { sortByDate } from '../utils';
 import ChevronRightIcon from '../icons/chevron-right.svg';
-import { Canvas } from '@react-three/fiber';
-import { Physics } from '@react-three/cannon';
-import PhyPlane from '../components/threejs/PhyPlane';
-import PhyBox from '../components/threejs/PhyBox';
 import { BlogArticleData } from '../components/blog/BlogArticleData';
+import CountUpBubble from '../components/CountUpBubble';
 
 interface HomeProps {
   posts: BlogArticleData[];
@@ -44,46 +41,19 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             </h2>
           </div>
 
-          <Canvas
-            style={{ height: 250, width: '100%' }}
-            camera={{ position: [0, 0, 0], near: 0.8, far: 1000 }}
-            className="justify-self-center"
-          >
-            <Physics gravity={[0, -10, 0]}>
-              <PhyPlane
-                color="white"
-                position={[0, -2, 0]}
-                rotation={[-Math.PI / 2, 0, 0]}
-              />
-              <PhyPlane color="white" position={[0, 0, -10]} />
-              <PhyPlane
-                color="white"
-                position={[-6, 0, -10]}
-                rotation={[0, 0, 0]}
-              />
-              <PhyPlane
-                color="white"
-                position={[6, 0, -10]}
-                rotation={[0, 0, 0]}
-              />
-
-              <PhyBox position={[0, randomHeight - 3, -5]} />
-              {[...Array(10)].map((_, i) => (
-                <PhyBox
-                  key={i}
-                  position={[
-                    Math.random() * (Math.random() * -2 + 1),
-                    randomHeight + 5 * i,
-                    -5,
-                  ]}
-                />
-              ))}
-            </Physics>
-
-            <ambientLight intensity={1000} />
-
-            <pointLight intensity={2} position={[5, 0, 5]} />
-          </Canvas>
+          <div className="flex items-center justify-between">
+            <CountUpBubble
+              title="YouTube Views"
+              amount={300000}
+              color="green"
+            />
+            <CountUpBubble title="Repositories" amount={42} color="blue" />
+            <CountUpBubble
+              title="Years of Experience"
+              amount={4}
+              color="purple"
+            />
+          </div>
         </div>
 
         <div>

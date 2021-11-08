@@ -10,16 +10,13 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
-    "@react-three/cannon": "^4.0.1",
-    "@react-three/drei": "^7.17.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.3.1",
     "marked": "^3.0.7",
     "next": "^12.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-three-fiber": "^6.0.13",
-    "three": "^0.133.1"
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
@@ -27,7 +24,6 @@
     "@svgr/webpack": "^5.5.0",
     "@types/marked": "^3.0.1",
     "@types/react": "17.0.30",
-    "@types/three": "^0.133.1",
     "autoprefixer": "^10.3.7",
     "eslint": "^8.0.1",
     "eslint-config-next": "11.1.2",
