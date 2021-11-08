@@ -30,14 +30,6 @@ const Navbar: NextPage = () => {
 
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
-  const defaultStyles = '';
-  const transitionStyles = {
-    entering: {},
-    entered: {},
-    exiting: {},
-    exited: {},
-  };
-
   return (
     <div className="fixed top-0 z-10 w-full py-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
       <div className="container flex items-center justify-between max-w-6xl px-8 mx-auto md:px-16">
@@ -62,7 +54,7 @@ const Navbar: NextPage = () => {
                 router.route === item.link ||
                 item.extraChecks?.includes(router.route)
                   ? 'text-black'
-                  : 'text-gray-700'
+                  : 'text-gray-500'
               }`}
             >
               <Link href={item.link} passHref>
@@ -104,7 +96,7 @@ const Navbar: NextPage = () => {
                 router.route === item.link ||
                 item.extraChecks?.includes(router.route)
                   ? 'text-black'
-                  : 'text-gray-700'
+                  : 'text-gray-500'
               }
               onClick={() => setMenuOpen(false)}
             >
