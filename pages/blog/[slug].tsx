@@ -41,6 +41,18 @@ const BlogPost: NextPage<BlogPostProps> = ({
     smartypants: false,
     xhtml: false,
   });
+  marked.use({
+    renderer: {
+      image(
+        this: any,
+        href: string | null,
+        _: string | null,
+        text: string,
+      ): string {
+        return `<div class="flex flex-col mt-2"><img src="${href}" alt="${text}" class="mx-auto"><p class="text-gray-400 italic text-sm mx-auto">${text}</p></div>`;
+      },
+    },
+  });
 
   return (
     <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
