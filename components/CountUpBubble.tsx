@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 import CountUp from 'react-countup';
 import { classes } from '../utils';
 
@@ -8,12 +9,14 @@ interface CountUpBubbleProps {
   amount: number;
   title: string;
   color: CountUpBubbleColor;
+  link: string;
 }
 
 const CountUpBubble: NextPage<CountUpBubbleProps> = ({
   amount,
   title,
   color,
+  link,
 }): JSX.Element => {
   const colorClasses = classes(
     {
@@ -25,7 +28,7 @@ const CountUpBubble: NextPage<CountUpBubbleProps> = ({
   );
 
   return (
-    <div className={colorClasses}>
+    <a href={link} target="_blank" className={colorClasses}>
       <div className="flex flex-col items-center justify-center w-full h-full bg-white rounded-full">
         <CountUp
           className="text-2xl"
@@ -36,7 +39,7 @@ const CountUpBubble: NextPage<CountUpBubbleProps> = ({
         />
         <p className="text-sm text-gray-500">{title}</p>
       </div>
-    </div>
+    </a>
   );
 };
 

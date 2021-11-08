@@ -43,12 +43,19 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
           <div className="flex items-center justify-between">
             <CountUpBubble
+              link="https://www.youtube.com/c/CodemitFloW"
               title="YouTube Views"
               amount={300000}
               color="green"
             />
-            <CountUpBubble title="Repositories" amount={42} color="blue" />
             <CountUpBubble
+              link="https://github.com/FlorianWoelki?tab=repositories"
+              title="Repositories"
+              amount={42}
+              color="blue"
+            />
+            <CountUpBubble
+              link="https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/new_resume.pdf"
               title="Years of Experience"
               amount={4}
               color="purple"
