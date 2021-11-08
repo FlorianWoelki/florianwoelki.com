@@ -2,8 +2,8 @@ import { BlogArticleData } from '../components/blog/BlogArticleData';
 
 export const sortByDate = (a: BlogArticleData, b: BlogArticleData): number => {
   return (
-    new Date(b.frontmatter.date).getDate() -
-    new Date(a.frontmatter.date).getDate()
+    new Date(b.frontmatter.date).getMilliseconds() -
+    new Date(a.frontmatter.date).getMilliseconds()
   );
 };
 
