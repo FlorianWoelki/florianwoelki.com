@@ -29,7 +29,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-16 break-words md:px-16">
-        <div className="mb-20 space-y-4 text-center md:text-left md:grid md:items-center md:grid-cols-2 mt-28">
+        <div className="mb-20 space-y-12 text-center lg:text-left lg:grid lg:items-center lg:grid-cols-2 mt-28 lg:space-y-0">
           <div className="space-y-2">
             <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
             <h2 className="text-xl text-gray-800">
@@ -41,7 +41,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             </h2>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <CountUpBubble
               link="https://www.youtube.com/c/CodemitFloW"
               title="YouTube Views"
