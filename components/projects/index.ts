@@ -38,6 +38,15 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'raylib-collision',
+    link: 'https://github.com/FlorianWoelki/raylib-collision',
+    linkTitle: 'github.com/FlorianWoelki/raylib-collision',
+    tags: [ProgrammingLanguageTag.Go],
+    description: `raylib-collision is a simple Go library for the raylib library for simplifying collision
+                detection and handling. There are a lot of predefined functions for easier collision
+                detection with the raylib library`,
+  },
+  {
     title: 'VGQL',
     link: 'https://github.com/FlorianWoelki/vgql',
     linkTitle: 'github.com/FlorianWoelki/vgql',

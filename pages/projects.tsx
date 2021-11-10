@@ -6,7 +6,6 @@ import projects, {
   TechnologyTag,
 } from '../components/projects';
 import Tag from '../components/Tag';
-import ChevronRightIcon from '../icons/chevron-right.svg';
 
 const ProjectsPage: NextPage = (): JSX.Element => {
   const programmingLanguageTags = Object.values(ProgrammingLanguageTag).filter(
@@ -83,8 +82,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
                       target="_blank"
                       className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700"
                     >
-                      <span>More information</span>
-                      <ChevronRightIcon className="w-4 h-4"></ChevronRightIcon>
+                      <span>{project.linkTitle}</span>
                     </a>
                   </Link>
                 </div>
