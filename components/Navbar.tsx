@@ -21,7 +21,7 @@ const Navbar: NextPage = () => {
     { title: 'Blog', link: '/blog', extraChecks: ['/blog/[slug]'] },
     {
       title: 'Resume',
-      link: 'https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/new_resume.pdf',
+      link: 'https://github.com/FlorianWoelki/florianwoelki.com/raw/main/pdf/new_resume.pdf',
     },
     { title: 'Projects', link: '/projects' },
     { title: 'List 100', link: '/list100' },

@@ -59,7 +59,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
         {filteredProjects().map((project, index) => (
           <li key={index} className="pt-10">
-            <div className="grid space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+            <div className="grid space-y-2 xl:gap-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
               <ul className="flex flex-wrap mt-4 xl:mt-0">
                 {project.tags.map((tag) => (
                   <li key={tag.toString()}>
