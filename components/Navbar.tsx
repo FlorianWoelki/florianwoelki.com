@@ -66,12 +66,20 @@ const Navbar: NextPage = () => {
 
         <ul className="flex space-x-6">
           <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
-            <a href="#" target="_blank" className="block">
+            <a
+              href="https://github.com/FlorianWoelki/"
+              target="_blank"
+              className="block"
+            >
               <GithubIcon className="w-5 h-5" />
             </a>
           </li>
           <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
-            <a href="#" target="_blank" className="block">
+            <a
+              href="https://www.linkedin.com/in/florian-woelki/"
+              target="_blank"
+              className="block"
+            >
               <LinkedinIcon className="w-5 h-5" />
             </a>
           </li>
