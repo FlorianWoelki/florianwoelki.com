@@ -50,11 +50,11 @@ const Navbar: NextPage = () => {
           {items.map((item, index) => (
             <li
               key={index}
-              className={`transition duration-100 ease-in-out hover:text-gray-500 ${
+              className={`transition duration-100 ease-in-out ${
                 router.route === item.link ||
                 item.extraChecks?.includes(router.route)
                   ? 'text-black'
-                  : 'text-gray-500'
+                  : 'text-gray-500 hover:text-gray-400'
               }`}
             >
               <Link href={item.link} passHref>
