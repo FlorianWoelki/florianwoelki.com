@@ -1,10 +1,5 @@
-import { BlogArticleData } from '../components/blog/BlogArticleData';
-
-export const sortByDate = (a: BlogArticleData, b: BlogArticleData): number => {
-  return (
-    new Date(b.frontmatter.date).getMilliseconds() -
-    new Date(a.frontmatter.date).getMilliseconds()
-  );
+export const sortByDate = (a: string, b: string): number => {
+  return new Date(b).getTime() - new Date(a).getTime();
 };
 
 export const classes = (

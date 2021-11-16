@@ -28,6 +28,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
   const talkColorMapping: TalkColor[] = ['green', 'blue', 'yellow'];
 
+  const sortedTalks = talks.sort((a, b) => sortByDate(a.date, b.date));
+
   return (
     <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-20 break-words md:px-16">
       <div className="space-y-12 text-center lg:text-left lg:grid lg:items-center lg:grid-cols-2 mt-28 lg:space-y-0">
@@ -91,7 +93,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
       <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">My Talks</h3>
         <div className="flex flex-col gap-10 mb-6 lg:flex-row">
-          {talks.map((talk, i) => (
+          {sortedTalks.map((talk, i) => (
             <Talk
               key={talk.title}
               title={talk.title}
@@ -124,7 +126,9 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      posts: posts.sort((a, b) =>
+        sortByDate(a.frontmatter.date, b.frontmatter.date),
+      ),
     },
   };
 };
