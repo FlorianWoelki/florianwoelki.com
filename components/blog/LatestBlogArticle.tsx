@@ -47,7 +47,7 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
           <div className="space-y-2">
             <ul className="flex">
               {post.frontmatter.tags.map((tag) => (
-                <li>
+                <li key={tag}>
                   <Tag selected={false}>{tag}</Tag>
                 </li>
               ))}

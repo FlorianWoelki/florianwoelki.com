@@ -155,7 +155,7 @@ export const getStaticProps: GetStaticProps<BlogPostProps> = async (
     );
     const { data: frontmatter, content } = matter(markdownWithMeta);
 
-    return { slug, frontmatter, content };
+    return { slug, frontmatter, content } as BlogArticleData;
   });
 
   let previousPost: BlogArticleData | null = null;
