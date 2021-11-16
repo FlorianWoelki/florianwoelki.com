@@ -1,17 +1,20 @@
 [
   {
-    "name": "What is artificial intelligence talk at a consulting group",
-    "date": "20.12.2019",
+    "title": "What is Artificial Intelligence?",
+    "description": "In this talk I've presented my idea of what artificial intelligence really is at a consulting group.",
+    "date": "December 20 2019",
     "link": "https://youtu.be/m9kapfxwYOA"
   },
   {
-    "name": "ClubHouse talk about what artificial intelligence really is and where it might be in the future",
-    "date": "12.05.2021",
+    "title": "Future of Artificial Intelligence",
+    "description": "In this ClubHouse talk I've talked about what artificial intelligence is, where it might be in the future, and how it can affect different industries.",
+    "date": "May 12 2021",
     "link": "https://youtu.be/cZ--7TzyzfM"
   },
   {
-    "name": "Talk about use cases and applications of GPT-3 at the Deutsches Zentrum für Luft- und Raumfahrt (DLR)",
-    "date": "27.05.2021",
+    "title": "Use Cases of GPT-3",
+    "description": "This talk is about use cases and applications of GPT-3 in perspective of a Softwareengineer at the Deutsches Zentrum für Luft- und Raumfahrt (DLR)",
+    "date": "May 27 2021",
     "link": "http://florianwoelki-dlr-slides.vercel.app/"
   }
 ]
