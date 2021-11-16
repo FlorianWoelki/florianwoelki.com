@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import React from 'react';
 import { classes } from '../../utils';
+import Tag from '../Tag';
 import { getReadingTime } from './BlogArticle';
 import { BlogArticleData } from './BlogArticleData';
 
@@ -43,11 +44,20 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
             <p className="text-gray-500">{post.frontmatter.excerpt}</p>
           </div>
 
-          <div className="flex items-center justify-between text-sm text-gray-400">
-            <span>{post.frontmatter.date}</span>
-            <span>
-              {readingTime} {readingTime === 1 ? 'min' : 'mins'} read
-            </span>
+          <div className="space-y-2">
+            <ul className="flex">
+              {post.frontmatter.tags.map((tag) => (
+                <li>
+                  <Tag selected={false}>{tag}</Tag>
+                </li>
+              ))}
+            </ul>
+            <div className="flex items-center justify-between text-sm text-gray-400">
+              <span>{post.frontmatter.date}</span>
+              <span>
+                {readingTime} {readingTime === 1 ? 'min' : 'mins'} read
+              </span>
+            </div>
           </div>
         </div>
       </a>

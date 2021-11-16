@@ -2,6 +2,9 @@ export interface BlogArticleData {
   slug: string;
   content: string;
   frontmatter: {
-    [key: string]: string;
+    title: string;
+    date: string;
+    tags: string[];
+    excerpt: string;
   };
 }

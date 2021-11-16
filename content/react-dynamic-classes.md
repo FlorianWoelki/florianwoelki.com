@@ -1,6 +1,7 @@
 ---
 title: 'React Dynamic Classes like in Vue.js'
 date: 'October 19 2021'
+tags: ['React', 'TypeScript']
 excerpt: 'This blog article explores a small function that allows dynamic class binding like Vue.js. At the moment, there is not a good and solid way to add dynamic class binding to your React component. However, this small function lets you add this behavior with ease.'
 ---
 
