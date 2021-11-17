@@ -5,18 +5,47 @@ import { GetStaticProps, NextPage } from 'next';
 import { sortByDate } from '../../utils';
 import BlogArticle from '../../components/blog/BlogArticle';
 import { BlogArticleData } from '../../components/blog/BlogArticleData';
+import { useState } from 'react';
+import Tag from '../../components/Tag';
 
 interface BlogProps {
   posts: BlogArticleData[];
 }
 
 const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
+  const [filter, setFilter] = useState<string | null>(null);
+
+  const setFilterTag = (tag: string): void => {
+    if (filter === tag) {
+      setFilter(null);
+    } else {
+      setFilter(tag);
+    }
+  };
+
+  const tags = Array.from(
+    new Set(posts.flatMap((post) => post.frontmatter.tags)),
+  );
+
+  const filteredBlogArticles = (): BlogArticleData[] =>
+    filter
+      ? posts.filter((post) => post.frontmatter.tags.includes(filter))
+      : posts;
+
   return (
     <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
+      <p className="mt-6 mb-1 text-sm text-gray-500">Filter by tags:</p>
+      <ul className="flex flex-wrap">
+        {tags.map((tag, index) => (
+          <li key={index} onClick={() => setFilterTag(tag)}>
+            <Tag selected={tag === filter}>{tag}</Tag>
+          </li>
+        ))}
+      </ul>
 
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
-        {posts.map((post, index) => (
+        {filteredBlogArticles().map((post, index) => (
           <li key={index} className="pt-10">
             <BlogArticle post={post}></BlogArticle>
           </li>
