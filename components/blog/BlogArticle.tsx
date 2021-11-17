@@ -28,8 +28,8 @@ const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
           </dd>
         </dl>
         <ul className="flex">
-          {post.frontmatter.tags.map((tag: string) => (
-            <li>
+          {post.frontmatter.tags.map((tag: string, i) => (
+            <li key={i}>
               <Tag selected={false}>{tag}</Tag>
             </li>
           ))}
