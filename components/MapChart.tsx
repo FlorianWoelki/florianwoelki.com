@@ -2,9 +2,9 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  IGeographies,
   Sphere,
   Graticule,
-  // @ts-ignore
 } from 'react-simple-maps';
 
 const geoUrl =
@@ -30,9 +30,8 @@ const MapChart = (): JSX.Element => {
       <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
       <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
       <Geographies geography={geoUrl}>
-        {({ geographies }: any) =>
-          geographies.map((geo: any) => {
-            console.log(geo);
+        {({ geographies }: IGeographies) =>
+          geographies.map((geo) => {
             return (
               <Geography
                 key={geo.rsmKey}
