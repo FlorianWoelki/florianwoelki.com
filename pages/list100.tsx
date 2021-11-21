@@ -1,12 +1,13 @@
 import { NextPage } from 'next';
 import list100 from '../assets/list100.json';
+import MapChart from '../components/MapChart';
 
 const List100Page: NextPage = (): JSX.Element => {
   return (
     <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
-      <h1 className="mt-4 text-4xl font-bold tracking-tight">
+      <h2 className="mt-4 text-4xl font-bold tracking-tight">
         List 100 - Bucket List
-      </h1>
+      </h2>
 
       <p className="mt-10">
         Things I want to do before I die. <i>(Progress as of April 30, 2021)</i>
@@ -50,6 +51,16 @@ const List100Page: NextPage = (): JSX.Element => {
             ))}
         </div>
       </ul>
+
+      <h2 className="mt-12 text-4xl font-bold tracking-tight">
+        Countries I have visited
+      </h2>
+
+      <p className="mt-10">
+        Countries I have visited. <i>(Progress as of April 30, 2021)</i>
+      </p>
+
+      <MapChart></MapChart>
     </div>
   );
 };
