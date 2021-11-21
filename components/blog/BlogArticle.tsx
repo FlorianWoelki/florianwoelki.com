@@ -15,6 +15,23 @@ interface BlogArticleProps {
   post: BlogArticleData;
 }
 
+interface TagListProps {
+  post: BlogArticleData;
+  className: string;
+}
+
+const TagList: NextPage<TagListProps> = ({ className, post }): JSX.Element => {
+  return (
+    <ul className={className}>
+      {post.frontmatter.tags.map((tag: string, i) => (
+        <li key={i}>
+          <Tag selected={false}>{tag}</Tag>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
   return (
     <article className="grid space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
@@ -27,13 +44,7 @@ const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
             </time>
           </dd>
         </dl>
-        <ul className="flex">
-          {post.frontmatter.tags.map((tag: string, i) => (
-            <li key={i}>
-              <Tag selected={false}>{tag}</Tag>
-            </li>
-          ))}
-        </ul>
+        <TagList className="hidden xl:flex" post={post} />
       </div>
       <div className="space-y-5 xl:col-span-3">
         <div className="space-y-6">
@@ -46,6 +57,9 @@ const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
             <p>{post.frontmatter.excerpt}</p>
           </div>
         </div>
+
+        <TagList className="flex xl:hidden" post={post} />
+
         <div className="text-base font-medium">
           <Link href={`/blog/${post.slug}`} passHref>
             <a className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700">
