@@ -67,7 +67,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
             <div className="grid space-y-2 xl:gap-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
               <ul className="flex flex-wrap mt-4 xl:mt-0">
                 {project.tags.map((tag) => (
-                  <li key={tag.toString()}>
+                  <li key={tag.toString()} onClick={() => setFilterTag(tag)}>
                     <Tag selected={tag === filter}>{tag}</Tag>
                   </li>
                 ))}
