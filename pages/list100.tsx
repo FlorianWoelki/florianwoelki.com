@@ -10,7 +10,8 @@ const List100Page: NextPage = (): JSX.Element => {
       </h2>
 
       <p className="mt-10">
-        Things I want to do before I die. <i>(Progress as of April 30, 2021)</i>
+        Things I want to do before I die.{' '}
+        <i>(Progress as of December 02, 2021)</i>
       </p>
 
       <ul className="grid grid-cols-1 mt-6 space-y-1 sm:grid-cols-2 sm:gap-4 sm:space-y-0">

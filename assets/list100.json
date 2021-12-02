@@ -1,6 +1,6 @@
 [
   {
-    "name": "Successful YouTube channel (min 100k)",
+    "name": "Successful YouTube channel (min 10k)",
     "done": false
   },
   {
@@ -16,6 +16,10 @@
     "done": false
   },
   {
+    "name": "Work at DigitalOcean",
+    "done": false
+  },
+  {
     "name": "Get a 6 figure income under 30",
     "done": false
   },
@@ -24,15 +28,15 @@
     "done": false
   },
   {
-    "name": "Exit an useful and helpful StartUp",
+    "name": "Exit a useful and helpful StartUp",
     "done": false
   },
   {
-    "name": "Build an useful tool for the education system",
+    "name": "Build a useful tool for the education system",
     "done": false
   },
   {
-    "name": "Fall in love",
+    "name": "Marry the love of my life",
     "done": false
   },
   {
@@ -97,6 +101,14 @@
   },
   {
     "name": "Take a hot-air balloon ride",
+    "done": false
+  },
+  {
+    "name": "Publish a paid game",
+    "done": false
+  },
+  {
+    "name": "Visit all seven continents (2/7)",
     "done": false
   }
 ]
