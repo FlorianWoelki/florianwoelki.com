@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import projects, {
   ProgrammingLanguageTag,
   TechnologyTag,
@@ -8,11 +8,13 @@ import projects, {
 import Tag from '../components/Tag';
 
 const ProjectsPage: NextPage = (): JSX.Element => {
-  const programmingLanguageTags = Object.values(ProgrammingLanguageTag).filter(
-    (v) => isNaN(Number(v)),
+  const programmingLanguageTags = useCallback(
+    () => Object.values(ProgrammingLanguageTag).filter((v) => isNaN(Number(v))),
+    [],
   );
-  const technologyTags = Object.values(TechnologyTag).filter((v) =>
-    isNaN(Number(v)),
+  const technologyTags = useCallback(
+    () => Object.values(TechnologyTag).filter((v) => isNaN(Number(v))),
+    [],
   );
 
   const [filter, setFilter] = useState<
@@ -29,10 +31,13 @@ const ProjectsPage: NextPage = (): JSX.Element => {
     }
   };
 
-  const filteredProjects = () =>
-    filter
-      ? projects.filter((project) => project.tags.includes(filter))
-      : projects;
+  const filteredProjects = useMemo(
+    () =>
+      filter
+        ? projects.filter((project) => project.tags.includes(filter))
+        : projects,
+    [filter],
+  );
 
   return (
     <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
@@ -41,7 +46,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
         Filter by programming languages:
       </p>
       <ul className="flex flex-wrap">
-        {programmingLanguageTags.map((tag, index) => (
+        {programmingLanguageTags().map((tag, index) => (
           <li key={index} onClick={() => setFilterTag(tag)}>
             <Tag selected={tag === filter}>{tag}</Tag>
           </li>
@@ -49,7 +54,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
       </ul>
       <p className="mt-4 mb-1 text-sm text-gray-500">Filter by technologies:</p>
       <ul className="flex flex-wrap">
-        {technologyTags.map((tag, index) => (
+        {technologyTags().map((tag, index) => (
           <li key={index} onClick={() => setFilterTag(tag)}>
             <Tag selected={tag === filter}>{tag}</Tag>
           </li>
@@ -57,7 +62,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
       </ul>
 
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
-        {filteredProjects().map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <li key={index} className="pt-10">
             <div className="grid space-y-2 xl:gap-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
               <ul className="flex flex-wrap mt-4 xl:mt-0">
