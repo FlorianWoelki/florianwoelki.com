@@ -57,3 +57,5 @@ yarn-error.log*
 *.mtc1
 *.out
 *.synctex.gz
+*.fdb_latexmk
+*.fls
