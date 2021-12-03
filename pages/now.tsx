@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 
 const NowPage: NextPage = (): JSX.Element => {
   return (
@@ -44,6 +45,21 @@ const NowPage: NextPage = (): JSX.Element => {
 
       <div className="space-y-4 text-lg text-gray-700">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+          Creating a custom programming language
+        </h2>
+        <p>
+          This is a list item of my{' '}
+          <Link href="/list100" passHref>
+            <a className="underline">List 100</a>
+          </Link>{' '}
+          an I am developing this (for now) interpreter programming language
+          with Go. It should be a simple and easy to use language with pointer
+          features and python like syntax.
+        </p>
+      </div>
+
+      <div className="space-y-4 text-lg text-gray-700">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
           Publishing other projects
         </h2>
         <p>
@@ -53,7 +69,7 @@ const NowPage: NextPage = (): JSX.Element => {
         </p>
       </div>
 
-      <p>Last update: 13 November 2021</p>
+      <p>Last update: 03 December 2021</p>
     </div>
   );
 };
