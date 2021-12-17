@@ -50,6 +50,7 @@ const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
             <BlogArticle
               post={post}
               onClickTag={(tag) => setFilterTag(tag)}
+              selectedTag={filter}
             ></BlogArticle>
           </li>
         ))}
