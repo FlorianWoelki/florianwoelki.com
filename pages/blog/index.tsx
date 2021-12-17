@@ -47,7 +47,10 @@ const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
       <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
         {filteredBlogArticles().map((post, index) => (
           <li key={index} className="pt-10">
-            <BlogArticle post={post}></BlogArticle>
+            <BlogArticle
+              post={post}
+              onClickTag={(tag) => setFilterTag(tag)}
+            ></BlogArticle>
           </li>
         ))}
       </ul>

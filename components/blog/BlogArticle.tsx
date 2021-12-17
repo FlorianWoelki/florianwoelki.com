@@ -13,18 +13,24 @@ export const getReadingTime = (content: string): number => {
 
 interface BlogArticleProps {
   post: BlogArticleData;
+  onClickTag?: (tag: string) => void;
 }
 
 interface TagListProps {
   post: BlogArticleData;
   className: string;
+  onClickTag?: (tag: string) => void;
 }
 
-const TagList: NextPage<TagListProps> = ({ className, post }): JSX.Element => {
+const TagList: NextPage<TagListProps> = ({
+  className,
+  post,
+  onClickTag,
+}): JSX.Element => {
   return (
     <ul className={className}>
       {post.frontmatter.tags.map((tag: string, i) => (
-        <li key={i}>
+        <li key={i} onClick={() => (onClickTag ? onClickTag(tag) : () => {})}>
           <Tag selected={false}>{tag}</Tag>
         </li>
       ))}
@@ -32,7 +38,10 @@ const TagList: NextPage<TagListProps> = ({ className, post }): JSX.Element => {
   );
 };
 
-const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
+const BlogArticle: NextPage<BlogArticleProps> = ({
+  post,
+  onClickTag,
+}): JSX.Element => {
   return (
     <article className="grid space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
       <div className="space-y-2">
@@ -44,7 +53,11 @@ const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
             </time>
           </dd>
         </dl>
-        <TagList className="hidden xl:flex" post={post} />
+        <TagList
+          className="hidden xl:flex"
+          post={post}
+          onClickTag={onClickTag}
+        />
       </div>
       <div className="space-y-5 xl:col-span-3">
         <div className="space-y-6">
@@ -58,7 +71,11 @@ const BlogArticle: NextPage<BlogArticleProps> = ({ post }): JSX.Element => {
           </div>
         </div>
 
-        <TagList className="flex xl:hidden" post={post} />
+        <TagList
+          className="flex xl:hidden"
+          post={post}
+          onClickTag={onClickTag}
+        />
 
         <div className="text-base font-medium">
           <Link href={`/blog/${post.slug}`} passHref>
