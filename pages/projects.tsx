@@ -4,6 +4,7 @@ import { useCallback, useMemo, useState } from 'react';
 import projects, {
   ProgrammingLanguageTag,
   TechnologyTag,
+  TypeTag,
 } from '../components/projects';
 import Tag from '../components/Tag';
 
@@ -16,13 +17,26 @@ const ProjectsPage: NextPage = (): JSX.Element => {
     () => Object.values(TechnologyTag).filter((v) => isNaN(Number(v))),
     [],
   );
+  const typeTags = useCallback(
+    () => Object.values(TypeTag).filter((v) => isNaN(Number(v))),
+    [],
+  );
 
   const [filter, setFilter] = useState<
-    string | typeof TechnologyTag | typeof ProgrammingLanguageTag | null
+    | string
+    | typeof TechnologyTag
+    | typeof ProgrammingLanguageTag
+    | typeof TypeTag
+    | null
   >(null);
 
   const setFilterTag = (
-    tag: string | typeof TechnologyTag | typeof ProgrammingLanguageTag | null,
+    tag:
+      | string
+      | typeof TechnologyTag
+      | typeof ProgrammingLanguageTag
+      | typeof TypeTag
+      | null,
   ): void => {
     if (filter === tag) {
       setFilter(null);
@@ -42,7 +56,15 @@ const ProjectsPage: NextPage = (): JSX.Element => {
   return (
     <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Projects</h1>
-      <p className="mt-6 mb-1 text-sm text-gray-500">
+      <p className="mt-6 mb-1 text-sm text-gray-500">Filter by Type:</p>
+      <ul className="flex flex-wrap">
+        {typeTags().map((tag, index) => (
+          <li key={index} onClick={() => setFilterTag(tag)}>
+            <Tag selected={tag === filter}>{tag}</Tag>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 mb-1 text-sm text-gray-500">
         Filter by programming languages:
       </p>
       <ul className="flex flex-wrap">

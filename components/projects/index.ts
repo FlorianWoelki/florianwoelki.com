@@ -2,9 +2,21 @@ interface ProjectModel {
   title: string;
   link: string;
   linkTitle: string;
-  tags: (string | typeof ProgrammingLanguageTag | typeof TechnologyTag)[];
+  tags: (
+    | string
+    | typeof ProgrammingLanguageTag
+    | typeof TechnologyTag
+    | typeof TypeTag
+  )[];
   description: string;
 }
+
+export const TypeTag = {
+  Game: 'Game',
+  DataScience: 'Data Science/AI',
+  Backend: 'Backend',
+  Frontend: 'Frontend',
+};
 
 export const ProgrammingLanguageTag = {
   JavaScript: 'JavaScript',
@@ -42,7 +54,7 @@ export default [
     title: 'raylib-collision',
     link: 'https://github.com/FlorianWoelki/raylib-collision',
     linkTitle: 'github.com/FlorianWoelki/raylib-collision',
-    tags: [ProgrammingLanguageTag.Go],
+    tags: [TypeTag.Game, ProgrammingLanguageTag.Go],
     description: `raylib-collision is a simple Go library for the raylib library for simplifying collision
                 detection and handling. There are a lot of predefined functions for easier collision
                 detection with the raylib library`,
@@ -65,7 +77,11 @@ export default [
     title: 'Pneumonia Detection',
     link: 'https://github.com/FlorianWoelki/pneumonia_detection',
     linkTitle: 'github.com/FlorianWoelki/pneumonia_detection',
-    tags: [ProgrammingLanguageTag.Python, TechnologyTag.Tensorflow],
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+    ],
     description: `A jupyter notebook that contains a exploratory analysis and transfer learning
                 convulutional neural network detecting if a xray scan has pneumonia or not.
                 Furthermore, I submitted this notebook to the official Kaggle competition.`,
@@ -75,6 +91,7 @@ export default [
     link: 'https://github.com/FlorianWoelki/lungcure',
     linkTitle: 'github.com/FlorianWoelki/lungcure',
     tags: [
+      TypeTag.DataScience,
       ProgrammingLanguageTag.Python,
       ProgrammingLanguageTag.JavaScript,
       TechnologyTag.Tensorflow,
@@ -87,7 +104,11 @@ export default [
     title: 'Vue Cirrus',
     link: 'https://github.com/FlorianWoelki/vue-cirrus',
     linkTitle: 'github.com/FlorianWoelki/vue-cirrus',
-    tags: [ProgrammingLanguageTag.JavaScript, TechnologyTag.Vue],
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.Vue,
+    ],
     description: `A Vue component library for the Cirrus CSS framework. It is really simple to use
                 and lightweight as well.`,
   },
@@ -96,6 +117,8 @@ export default [
     link: 'https://github.com/daycademy',
     linkTitle: 'github.com/daycademy',
     tags: [
+      TypeTag.Frontend,
+      TypeTag.Backend,
       ProgrammingLanguageTag.TypeScript,
       ProgrammingLanguageTag.JavaScript,
       TechnologyTag.GraphQL,
@@ -127,7 +150,7 @@ export default [
     title: 'First published Game',
     link: 'https://gamejolt.com/games/way-to-love/135095',
     linkTitle: 'Way To Love',
-    tags: [ProgrammingLanguageTag.Java],
+    tags: [TypeTag.Game, ProgrammingLanguageTag.Java],
     description: `This is my first ever published game. The main goal of this game is to
                 finish the jump and run with two characters that are mirrored. The game
                 was written in Java with LibGDX.`,
@@ -136,7 +159,7 @@ export default [
     title: 'Competition Game #59',
     link: 'https://flowy.itch.io/revenge-of-the-clowns',
     linkTitle: 'Revenge of the Clowns',
-    tags: [ProgrammingLanguageTag.Java],
+    tags: [TypeTag.Game, ProgrammingLanguageTag.Java],
     description: `I've developed this game for the Beansjam event, where you need to develop
                 a game with predefined themes. The goal is to throw or kill all the clowns from
                 the plattform and level yourself up with powerups and upgrades. This game was written
@@ -147,6 +170,7 @@ export default [
     link: 'https://github.com/daycademy/fake-graph',
     linkTitle: 'github.com/daycademy/fake-graph',
     tags: [
+      TypeTag.Backend,
       ProgrammingLanguageTag.TypeScript,
       ProgrammingLanguageTag.JavaScript,
       TechnologyTag.Node,
@@ -162,6 +186,8 @@ export default [
     link: 'https://github.com/bryng-app',
     linkTitle: 'github.com/bryng-app',
     tags: [
+      TypeTag.Frontend,
+      TypeTag.Backend,
       ProgrammingLanguageTag.Swift,
       ProgrammingLanguageTag.JavaScript,
       ProgrammingLanguageTag.Python,
@@ -179,6 +205,7 @@ export default [
     link: 'https://github.com/FlorianWoelki/obsidian-icon-folder',
     linkTitle: 'github.com/FlorianWoelki/obsidian-icon-folder',
     tags: [
+      TypeTag.Frontend,
       ProgrammingLanguageTag.TypeScript,
       ProgrammingLanguageTag.JavaScript,
       TechnologyTag.Node,
@@ -192,6 +219,7 @@ export default [
     link: 'https://github.com/FlorianWoelki/scode',
     linkTitle: 'github.com/FlorianWoelki/scode',
     tags: [
+      TypeTag.Frontend,
       ProgrammingLanguageTag.TypeScript,
       ProgrammingLanguageTag.JavaScript,
       TechnologyTag.IndexedDB,
