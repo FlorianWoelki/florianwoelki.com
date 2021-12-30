@@ -34,6 +34,7 @@ export const TechnologyTag = {
   Tensorflow: 'Tensorflow',
   Scikitlearn: 'Scikitlearn',
   Blockchain: 'Blockchain',
+  IndexedDB: 'IndexedDB',
 };
 
 export default [
@@ -185,5 +186,20 @@ export default [
     description: `Obsidian Icon Folder enables the user to have icons for their Obsidian Workspace. Obsidian
                 is a Markdown Editor that is based on privacy and enables the user to have files locally. This
                 repository is a plugin of this editor.`,
+  },
+  {
+    title: 'Scode',
+    link: 'https://github.com/FlorianWoelki/scode',
+    linkTitle: 'github.com/FlorianWoelki/scode',
+    tags: [
+      ProgrammingLanguageTag.TypeScript,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.IndexedDB,
+      TechnologyTag.Vue,
+      TechnologyTag.Tailwind,
+    ],
+    description: `Scode is a prototype for creating a simple markdown parser. The project's goal was to
+                create a snippet manager for your code snippets. With the help of this snippet manager, you can
+                have your code snippets (using monaco editor) and add markdown simultaneously.`,
   },
 ] as ProjectModel[];
