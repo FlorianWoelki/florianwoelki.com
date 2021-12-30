@@ -28,7 +28,7 @@ const CountUpBubble: NextPage<CountUpBubbleProps> = ({
   );
 
   return (
-    <a href={link} target="_blank" className={colorClasses}>
+    <a href={link} rel="noreferrer" target="_blank" className={colorClasses}>
       <div className="flex flex-col items-center justify-center w-full h-full bg-white rounded-full">
         <CountUp
           className="text-2xl"

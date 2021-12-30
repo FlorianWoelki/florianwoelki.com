@@ -68,6 +68,7 @@ const Navbar: NextPage = () => {
           <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
             <a
               href="https://github.com/FlorianWoelki/"
+              rel="noreferrer"
               target="_blank"
               className="block"
             >
@@ -77,6 +78,7 @@ const Navbar: NextPage = () => {
           <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
             <a
               href="https://www.linkedin.com/in/florian-woelki/"
+              rel="noreferrer"
               target="_blank"
               className="block"
             >

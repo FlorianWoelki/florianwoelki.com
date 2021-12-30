@@ -28,7 +28,7 @@ const Talk: NextPage<TalkProps> = ({
   );
 
   return (
-    <a href={link} className={colorClasses} target="_blank">
+    <a href={link} rel="noreferrer" className={colorClasses} target="_blank">
       <div
         className={`space-y-2 bg-white rounded-lg ${
           color ? 'p-6 flex flex-col justify-between h-full' : ''

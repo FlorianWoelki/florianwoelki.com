@@ -14,8 +14,8 @@ const NowPage: NextPage = (): JSX.Element => {
         </h2>
         <p>
           Right now, I am trying to create a roguolike platformer game in Go
-          with the help of Raylib. This is a side project and I don't think that
-          I will finish it this year.
+          with the help of Raylib. This is a side project and I do not think
+          that I will finish it this year.
         </p>
         <p>
           The reason being is, that I try to improve my knowledge about the
