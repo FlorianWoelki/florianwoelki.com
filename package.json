@@ -12,7 +12,7 @@
     "@headlessui/react": "^1.4.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.3.1",
-    "marked": "^3.0.7",
+    "marked": "^4.0.8",
     "next": "^12.0.1",
     "react": "17.0.2",
     "react-countup": "^6.1.0",
@@ -20,18 +20,18 @@
     "react-simple-maps": "^2.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
-    "@commitlint/config-conventional": "^13.2.0",
-    "@svgr/webpack": "^5.5.0",
-    "@types/marked": "^3.0.1",
-    "@types/react": "17.0.30",
-    "autoprefixer": "^10.3.7",
-    "eslint": "^8.0.1",
-    "eslint-config-next": "11.1.2",
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@svgr/webpack": "^6.1.2",
+    "@types/marked": "^4.0.1",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.1",
+    "eslint": "^8.6.0",
+    "eslint-config-next": "12.0.7",
     "husky": "^7.0.2",
     "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.17",
-    "typescript": "4.4.4"
+    "tailwindcss": "^3.0.11",
+    "typescript": "4.5.4"
   },
   "husky": {
     "hooks": {
