@@ -21,7 +21,7 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
 
   const colorClasses = classes(
     {
-      'from-blueGray-500 to-emerald-500': color === 'green',
+      'from-blue-500 to-emerald-500': color === 'green',
       'from-amber-500 to-red-500': color === 'red',
       'from-lime-500 to-yellow-500': color === 'yellow',
       'p-1 w-full lg:w-1/3': color !== undefined,
