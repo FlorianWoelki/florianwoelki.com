@@ -110,5 +110,9 @@
   {
     "name": "Visit all seven continents (2/7)",
     "done": false
+  },
+  {
+    "name": "Compose a song on the piano",
+    "done": false
   }
 ]
