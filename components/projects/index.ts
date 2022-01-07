@@ -51,6 +51,24 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'Insta Clone',
+    link: 'https://github.com/FlorianWoelki/insta-clone',
+    linkTitle: 'github.com/FlorianWoelki/insta-clone',
+    tags: [
+      TypeTag.Frontend,
+      TypeTag.Backend,
+      ProgrammingLanguageTag.TypeScript,
+      ProgrammingLanguageTag.Go,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.React,
+      TechnologyTag.PostgreSQL,
+      TechnologyTag.Tailwind,
+      TechnologyTag.gRPC,
+      TechnologyTag.Docker,
+    ],
+    description: `A scalable Instagram clone written in React and powered by powerful microservices written in Golang (WIP).`,
+  },
+  {
     title: 'raylib-collision',
     link: 'https://github.com/FlorianWoelki/raylib-collision',
     linkTitle: 'github.com/FlorianWoelki/raylib-collision',
@@ -124,6 +142,7 @@ export default [
       TechnologyTag.GraphQL,
       TechnologyTag.Node,
       TechnologyTag.Tailwind,
+      TechnologyTag.Docker,
     ],
     description: `Daycademy is a completly free to use german academy for learning how to code.
                 On this self built end to end platform I teach how to code with interactive
@@ -229,5 +248,152 @@ export default [
     description: `Scode is a prototype for creating a simple markdown parser. The project's goal was to
                 create a snippet manager for your code snippets. With the help of this snippet manager, you can
                 have your code snippets (using monaco editor) and add markdown simultaneously.`,
+  },
+  {
+    title: 'YACSS',
+    link: 'https://github.com/FlorianWoelki/YACSS',
+    linkTitle: 'github.com/FlorianWoelki/YACSS',
+    tags: [TypeTag.Frontend, ProgrammingLanguageTag.JavaScript],
+    description: `Yet another CSS framework for the modern utility web. This framework contains a lot of
+                utility classes to make things easier. This project is archived and not maintained anymore.`,
+  },
+  {
+    title: 'Aerial Cactus CNN',
+    link: 'https://github.com/FlorianWoelki/aerial_cactus_cnn',
+    linkTitle: 'github.com/FlorianWoelki/aerial_cactus_cnn',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+      TechnologyTag.Scikitlearn,
+    ],
+    description: `This jupyter notebook contains the code for building a CNN with Tensorflow for an aerial cactus
+                classification competition.`,
+  },
+  {
+    title: 'MNIST Fashion CNN',
+    link: 'https://github.com/FlorianWoelki/mnist_fashion_cnn',
+    linkTitle: 'github.com/FlorianWoelki/mnist_fashion_cnn',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+    ],
+    description: `This jupyter notebook contains the code for a classic classification problem based on the mnist
+                fashion dataset. I've used a CNN to build the machine learning model.`,
+  },
+  {
+    title: 'Titanic Classification',
+    link: 'https://github.com/FlorianWoelki/titanic_classification',
+    linkTitle: 'github.com/FlorianWoelki/titanic_classification',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+    ],
+    description: `A classic binary classification problem based on the titanic dataset. I've used Tensorflow to build
+                a densed neural network to predict how many passengers survived.`,
+  },
+  {
+    title: 'Neural Network Weed Detection',
+    link: 'https://github.com/FlorianWoelki/neural-network-weed-detection',
+    linkTitle: 'github.com/FlorianWoelki/neural-network-weed-detection',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+    ],
+    description: `This jupyter notebook contains a simple custom made neural network with two hidden layers. It can detect
+                weed on images.`,
+  },
+  {
+    title: 'Fashion MNIST GAN',
+    link: 'https://github.com/FlorianWoelki/fashion_mnist_gan',
+    linkTitle: 'github.com/FlorianWoelki/fashion_mnist_gan',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Tensorflow,
+    ],
+    description: `This repository was my first try with GANs. This GAN will generate clothes and it was trained on the fashion
+                MNIST dataset which is a pretty popular one for a classification problem.`,
+  },
+  {
+    title: 'Fraud Detection',
+    link: 'https://github.com/FlorianWoelki/fraud_detection',
+    linkTitle: 'github.com/FlorianWoelki/fraud_detection',
+    tags: [
+      TypeTag.DataScience,
+      ProgrammingLanguageTag.Python,
+      TechnologyTag.Scikitlearn,
+    ],
+    description: `This jupyter notebook was built for a kaggle challenge on fraud detection. I've used simple logistic regression
+                to see what is possible for fraud detection.`,
+  },
+  {
+    title: 'Digit Me',
+    link: 'https://github.com/FlorianWoelki/digit-me',
+    linkTitle: 'github.com/FlorianWoelki/digit-me',
+    tags: [
+      TypeTag.DataScience,
+      TypeTag.Backend,
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.Python,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.Vue,
+    ],
+    description: `Digit Me is a online digit recognizer. It was trained in Python with Tensorflow and the frontend was built with JavaScript
+                and Vue.js. For the backend I've used Python as well in combination with Flask.`,
+  },
+  {
+    title: 'Watch Together Clone',
+    link: 'https://github.com/FlorianWoelki/watch-together',
+    linkTitle: 'github.com/FlorianWoelki/watch-together',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.Docker,
+    ],
+    description: `Watch Together is a simple and made with material design Watch2Gether clone.`,
+  },
+  {
+    title: 'Nong',
+    link: 'https://github.com/FlorianWoelki/Nong',
+    linkTitle: 'github.com/FlorianWoelki/Nong',
+    tags: [TypeTag.DataScience, ProgrammingLanguageTag.Java],
+    description: `Nong is a pong game which is played by a neural network. You can see the training progress live while the AI tries to play Pong.`,
+  },
+  {
+    title: 'Flow Lang',
+    link: 'https://github.com/FlorianWoelki/Flow-Lang',
+    linkTitle: 'github.com/FlorianWoelki/Flow-Lang',
+    tags: [TypeTag.Backend, ProgrammingLanguageTag.Java],
+    description: `This was my first attempt building a custom made programming language. The purpose of that language was to improve the learning experience
+                of programming for beginners.`,
+  },
+  {
+    title: 'TwoDEngine',
+    link: 'https://github.com/FlorianWoelki/TwoDEngine',
+    linkTitle: 'github.com/FlorianWoelki/TwoDEngine',
+    tags: [TypeTag.Game, ProgrammingLanguageTag.Java],
+    description: `This was my first custom 2D engine written in pure Java. It has features like lights, shadows, sfx system, or gfx system.`,
+  },
+  {
+    title: 'Commu',
+    link: 'https://github.com/FlorianWoelki/Commu',
+    linkTitle: 'github.com/FlorianWoelki/Commu',
+    tags: [TypeTag.Backend, ProgrammingLanguageTag.Java],
+    description: `Commu is a basic chat client with a custom made packet system. The goal of the project was to learn basic networking principles.`,
+  },
+  {
+    title: `Rec RTS (Working Title)`,
+    link: 'https://github.com/FlorianWoelki/rec-rts',
+    linkTitle: 'github.com/FlorianWoelki/rec-rts',
+    tags: [
+      TypeTag.Game,
+      ProgrammingLanguageTag.JavaScript,
+      ProgrammingLanguageTag.TypeScript,
+    ],
+    description: `This is a simple browser game. The main goal was to built a real time strategy game in the browser with pure JavaScript.`,
   },
 ] as ProjectModel[];
