@@ -58,7 +58,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             color="blue"
           />
           <CountUpBubble
-            link="https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/new_resume.pdf"
+            link="https://github.com/FlorianWoelki/florianwoelki.com/raw/master/pdf/resume.pdf"
             title="Years of Experience"
             amount={4}
             color="purple"
