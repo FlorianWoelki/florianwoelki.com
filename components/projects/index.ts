@@ -51,6 +51,14 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'kira',
+    link: 'https://github.com/FlorianWoelki/kira',
+    linkTitle: 'github.com/FlorianWoelki/kira',
+    tags: [TypeTag.Backend, ProgrammingLanguageTag.Go, TechnologyTag.Docker],
+    description: `A remote docker based sandbox code execution engine written in Go. The goal of this project was to create
+                an environment for running code of various programming languages.`,
+  },
+  {
     title: 'Insta Clone',
     link: 'https://github.com/FlorianWoelki/insta-clone',
     linkTitle: 'github.com/FlorianWoelki/insta-clone',
