@@ -80,7 +80,15 @@
     "done": false
   },
   {
-    "name": "Create my own programming language",
+    "name": "Create my own interpreted programming language",
+    "done": false
+  },
+  {
+    "name": "Create my own compiled programming language",
+    "done": false
+  },
+  {
+    "name": "Compose a song on the piano",
     "done": false
   },
   {
