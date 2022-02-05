@@ -31,17 +31,17 @@ const Navbar: NextPage = () => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <div className="fixed top-0 z-10 w-full py-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 firefox:bg-opacity-90">
-      <div className="container flex items-center justify-between max-w-6xl px-8 mx-auto md:px-16">
+    <div className="fixed top-0 z-10 w-full border-b border-gray-100 bg-white bg-opacity-30 py-4 backdrop-blur-lg backdrop-filter firefox:bg-opacity-90">
+      <div className="container mx-auto flex max-w-6xl items-center justify-between px-8 md:px-16">
         {/* Small screens icon */}
         <div
           className="text-gray-700 md:hidden"
           onClick={() => setMenuOpen((isMenuOpen) => !isMenuOpen)}
         >
           {isMenuOpen ? (
-            <XIcon className="w-5 h-5"></XIcon>
+            <XIcon className="h-5 w-5"></XIcon>
           ) : (
-            <MenuIcon className="w-5 h-5"></MenuIcon>
+            <MenuIcon className="h-5 w-5"></MenuIcon>
           )}
         </div>
 
@@ -72,7 +72,7 @@ const Navbar: NextPage = () => {
               target="_blank"
               className="block"
             >
-              <GithubIcon className="w-5 h-5" />
+              <GithubIcon className="h-5 w-5" />
             </a>
           </li>
           <li className="text-gray-500 transition duration-100 ease-in-out hover:text-gray-400">
@@ -82,7 +82,7 @@ const Navbar: NextPage = () => {
               target="_blank"
               className="block"
             >
-              <LinkedinIcon className="w-5 h-5" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
           </li>
         </ul>
@@ -98,7 +98,7 @@ const Navbar: NextPage = () => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <ul className="absolute inset-x-0 top-0 px-8 py-6 mx-2 space-y-4 bg-white rounded shadow mt-14 md:hidden">
+        <ul className="absolute inset-x-0 top-0 mx-2 mt-14 space-y-4 rounded bg-white px-8 py-6 shadow md:hidden">
           {items.map((item, index) => (
             <li
               key={index}

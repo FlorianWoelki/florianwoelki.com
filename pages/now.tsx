@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NowPage: NextPage = (): JSX.Element => {
   return (
-    <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto space-y-10 break-words lg:pt-32 md:px-16">
+    <div className="container mx-auto max-w-6xl space-y-10 break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Now</h1>
 
       <p className="text-lg text-gray-700">What I am doing now.</p>

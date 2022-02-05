@@ -4,7 +4,7 @@ import MapChart from '../components/MapChart';
 
 const List100Page: NextPage = (): JSX.Element => {
   return (
-    <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
+    <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
       <h2 className="mt-4 text-4xl font-bold tracking-tight">
         List 100 - Bucket List
       </h2>
@@ -14,7 +14,7 @@ const List100Page: NextPage = (): JSX.Element => {
         <i>(Progress as of December 02, 2021)</i>
       </p>
 
-      <ul className="grid grid-cols-1 mt-6 space-y-1 sm:grid-cols-2 sm:gap-4 sm:space-y-0">
+      <ul className="mt-6 grid grid-cols-1 space-y-1 sm:grid-cols-2 sm:gap-4 sm:space-y-0">
         <div className="space-y-1">
           {list100.slice(0, list100.length / 2).map((bucket, index) => (
             <li key={index} className="space-x-2">

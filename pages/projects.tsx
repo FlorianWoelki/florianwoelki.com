@@ -54,7 +54,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
   );
 
   return (
-    <div className="container max-w-6xl px-8 pt-24 pb-32 mx-auto break-words lg:pt-32 md:px-16">
+    <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
       <h1 className="mt-4 text-4xl font-bold tracking-tight">Projects</h1>
       <p className="mt-6 mb-1 text-sm text-gray-500">Filter by Type:</p>
       <ul className="flex flex-wrap">
@@ -83,11 +83,11 @@ const ProjectsPage: NextPage = (): JSX.Element => {
         ))}
       </ul>
 
-      <ul className="mt-10 space-y-10 border-t border-gray-200 divide-y divide-gray-200">
+      <ul className="mt-10 space-y-10 divide-y divide-gray-200 border-t border-gray-200">
         {filteredProjects.map((project, index) => (
           <li key={index} className="pt-10">
-            <div className="grid space-y-2 xl:gap-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-              <ul className="flex flex-wrap mt-4 xl:mt-0">
+            <div className="grid space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:gap-4 xl:space-y-0">
+              <ul className="mt-4 flex flex-wrap xl:mt-0">
                 {project.tags.map((tag) => (
                   <li key={tag.toString()} onClick={() => setFilterTag(tag)}>
                     <Tag selected={tag === filter}>{tag}</Tag>
@@ -99,7 +99,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
                   <h2 className="text-2xl font-bold tracking-tight">
                     {project.title}
                   </h2>
-                  <div className="text-base text-gray-500 max-w-none">
+                  <div className="max-w-none text-base text-gray-500">
                     <p>{project.description}</p>
                   </div>
                 </div>

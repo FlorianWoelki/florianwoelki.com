@@ -24,17 +24,17 @@
   @apply mt-8 -mb-2 text-lg font-bold leading-5 text-gray-800;
 }
 .markdown ul {
-  @apply pl-10 list-disc;
+  @apply list-disc pl-10;
 }
 .markdown ol {
-  @apply pl-10 list-decimal;
+  @apply list-decimal pl-10;
 }
 
 .markdown pre code {
-  @apply text-base rounded-xl;
+  @apply rounded-xl text-base;
 }
 
 .markdown p code,
 .markdown li code {
-  @apply px-2 py-1 text-base text-white bg-gray-800 rounded;
+  @apply rounded bg-gray-800 px-2 py-1 text-base text-white;
 }

@@ -55,10 +55,10 @@ const BlogPost: NextPage<BlogPostProps> = ({
   });
 
   return (
-    <div className="container max-w-6xl px-8 pt-8 pb-32 mx-auto break-words lg:pt-32 md:px-16">
+    <div className="container mx-auto max-w-6xl break-words px-8 pt-8 pb-32 md:px-16 lg:pt-32">
       <Link href="/blog" passHref>
         <a className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
-          <ChevronLeftIcon className="w-4 h-4" />
+          <ChevronLeftIcon className="h-4 w-4" />
           <span>Go back</span>
         </a>
       </Link>
@@ -71,9 +71,9 @@ const BlogPost: NextPage<BlogPostProps> = ({
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
 
-      <div className="grid grid-cols-2 py-4 mt-24 text-center divide-x rounded shadow">
+      <div className="mt-24 grid grid-cols-2 divide-x rounded py-4 text-center shadow">
         <div className="px-12 py-4">
-          <p className="mb-4 tracking-wide text-gray-400 uppercase">
+          <p className="mb-4 uppercase tracking-wide text-gray-400">
             Next Article
           </p>
           {nextPost ? (
@@ -92,7 +92,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
           )}
         </div>
         <div className="px-12 py-4">
-          <p className="mb-4 tracking-wide text-gray-400 uppercase text">
+          <p className="text mb-4 uppercase tracking-wide text-gray-400">
             Previous Article
           </p>
           {previousPost ? (

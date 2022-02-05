@@ -33,8 +33,8 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
     <Link href={`/blog/${post.slug}`} passHref>
       <a className={colorClasses}>
         <div
-          className={`space-y-2 bg-white rounded-lg ${
-            color ? 'p-6 flex flex-col justify-between h-full' : ''
+          className={`space-y-2 rounded-lg bg-white ${
+            color ? 'flex h-full flex-col justify-between p-6' : ''
           }`}
         >
           <div className="flex flex-col space-y-2">

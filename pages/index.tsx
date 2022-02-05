@@ -31,8 +31,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   const sortedTalks = talks.sort((a, b) => sortByDate(a.date, b.date));
 
   return (
-    <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-20 break-words md:px-16">
-      <div className="space-y-12 text-center lg:text-left lg:grid lg:items-center lg:grid-cols-2 mt-28 lg:space-y-0">
+    <div className="container mx-auto max-w-6xl space-y-20 break-words px-8 pb-32 md:px-16">
+      <div className="mt-28 space-y-12 text-center lg:grid lg:grid-cols-2 lg:items-center lg:space-y-0 lg:text-left">
         <div className="space-y-2">
           <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>
           <h2 className="text-xl text-gray-800">
@@ -68,7 +68,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
       <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">Latest Blogs</h3>
-        <div className="flex flex-col gap-10 mb-6 lg:flex-row">
+        <div className="mb-6 flex flex-col gap-10 lg:flex-row">
           {latestThreeBlogs.map((post, index) => (
             <LatestBlogArticle
               key={index}
@@ -80,7 +80,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         <Link href="/blog" passHref>
           <a className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
             <span>To all blog articles</span>
-            <ChevronRightIcon className="w-4 h-4" />
+            <ChevronRightIcon className="h-4 w-4" />
           </a>
         </Link>
       </div>
@@ -92,7 +92,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 
       <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">My Talks</h3>
-        <div className="flex flex-col gap-10 mb-6 lg:flex-row">
+        <div className="mb-6 flex flex-col gap-10 lg:flex-row">
           {sortedTalks.map((talk, i) => (
             <Talk
               key={talk.title}

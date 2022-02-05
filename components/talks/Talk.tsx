@@ -30,8 +30,8 @@ const Talk: NextPage<TalkProps> = ({
   return (
     <a href={link} rel="noreferrer" className={colorClasses} target="_blank">
       <div
-        className={`space-y-2 bg-white rounded-lg ${
-          color ? 'p-6 flex flex-col justify-between h-full' : ''
+        className={`space-y-2 rounded-lg bg-white ${
+          color ? 'flex h-full flex-col justify-between p-6' : ''
         }`}
       >
         <div className="flex flex-col space-y-2">
