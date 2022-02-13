@@ -71,7 +71,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
 
-      <div className="mt-24 grid grid-cols-2 divide-x rounded py-4 text-center shadow">
+      <div className="mt-24 grid divide-x rounded py-4 text-center shadow md:grid-cols-2">
         <div className="px-12 py-4">
           <p className="mb-4 uppercase tracking-wide text-gray-400">
             Next Article
