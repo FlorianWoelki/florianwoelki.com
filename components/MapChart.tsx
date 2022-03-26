@@ -15,6 +15,7 @@ const visitedCountries = [
   'France',
   'Italy',
   'Germany',
+  'Switzerland',
   'United States of America',
   'United Kingdom',
 ];
