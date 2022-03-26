@@ -27,6 +27,7 @@ export const ProgrammingLanguageTag = {
   Swift: 'Swift',
   SQL: 'SQL',
   Solidity: 'Solidity',
+  Dart: 'Dart',
 };
 
 export const TechnologyTag = {
@@ -47,9 +48,22 @@ export const TechnologyTag = {
   Scikitlearn: 'Scikitlearn',
   Blockchain: 'Blockchain',
   IndexedDB: 'IndexedDB',
+  Flutter: 'Flutter',
 };
 
 export default [
+  {
+    title: 'Course POC',
+    link: 'https://github.com/FlorianWoelki/course-poc',
+    linkTitle: 'github.com/FlorianWoelki/course-poc',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.Dart,
+      TechnologyTag.Flutter,
+    ],
+    description: `This project consists of an easy proof of concept for designing a flutter app that consists of a course page,
+                animations, and an interactive and beautiful design.`,
+  },
   {
     title: 'kira',
     link: 'https://github.com/FlorianWoelki/kira',
