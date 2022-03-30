@@ -49,6 +49,7 @@ export const TechnologyTag = {
   Blockchain: 'Blockchain',
   IndexedDB: 'IndexedDB',
   Flutter: 'Flutter',
+  Firebase: 'Firebase',
 };
 
 export default [
@@ -60,9 +61,10 @@ export default [
       TypeTag.Frontend,
       ProgrammingLanguageTag.Dart,
       TechnologyTag.Flutter,
+      TechnologyTag.Firebase,
     ],
     description: `This project consists of an easy proof of concept for designing a flutter app that consists of a course page,
-                animations, and an interactive and beautiful design.`,
+                animations, and an interactive and beautiful design. In addition, this app integrates Firebase, FirebaseAuth, and FirebaseStorage.`,
   },
   {
     title: 'kira',
