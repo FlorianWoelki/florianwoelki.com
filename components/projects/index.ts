@@ -50,9 +50,26 @@ export const TechnologyTag = {
   IndexedDB: 'IndexedDB',
   Flutter: 'Flutter',
   Firebase: 'Firebase',
+  Electron: 'Electron',
 };
 
 export default [
+  {
+    title: 'uwrite',
+    link: 'https://github.com/FlorianWoelki/uwrite',
+    linkTitle: 'github.com/FlorianWoelki/uwrite',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.JavaScript,
+      ProgrammingLanguageTag.TypeScript,
+      TechnologyTag.IndexedDB,
+      TechnologyTag.React,
+      TechnologyTag.Tailwind,
+      TechnologyTag.Electron,
+    ],
+    description: `uwrite is described as a online editor to take notes and capture code snippets with focus, VIM, and LaTeX.
+                This editor has a IndexedDb to efficiently store all the taken notes and code snippets locally.`,
+  },
   {
     title: 'Course POC',
     link: 'https://github.com/FlorianWoelki/course-poc',
