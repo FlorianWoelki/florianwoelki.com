@@ -16,6 +16,7 @@ export const TypeTag = {
   DataScience: 'Data Science/AI',
   Backend: 'Backend',
   Frontend: 'Frontend',
+  Mobile: 'Mobile',
 };
 
 export const ProgrammingLanguageTag = {
@@ -60,7 +61,8 @@ export default [
     link: 'https://github.com/FlorianWoelki/go-board-game',
     linkTitle: 'github.com/FlorianWoelki/go-board-game',
     tags: [
-      TypeTag.Frontend,
+      TypeTag.Mobile,
+      TypeTag.Game,
       ProgrammingLanguageTag.JavaScript,
       ProgrammingLanguageTag.TypeScript,
       TechnologyTag.ReactNative,
@@ -89,7 +91,7 @@ export default [
     link: 'https://github.com/FlorianWoelki/course-poc',
     linkTitle: 'github.com/FlorianWoelki/course-poc',
     tags: [
-      TypeTag.Frontend,
+      TypeTag.Mobile,
       ProgrammingLanguageTag.Dart,
       TechnologyTag.Flutter,
       TechnologyTag.Firebase,
