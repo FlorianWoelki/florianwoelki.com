@@ -39,6 +39,7 @@ export const TechnologyTag = {
   Redis: 'Redis',
   PostgreSQL: 'PostgreSQL',
   React: 'React',
+  ReactNative: 'React Native',
   Node: 'Node',
   Docker: 'Docker',
   SpringBoot: 'SpringBoot',
@@ -54,6 +55,19 @@ export const TechnologyTag = {
 };
 
 export default [
+  {
+    title: 'Go Board Game',
+    link: 'https://github.com/FlorianWoelki/go-board-game',
+    linkTitle: 'github.com/FlorianWoelki/go-board-game',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.JavaScript,
+      ProgrammingLanguageTag.TypeScript,
+      TechnologyTag.ReactNative,
+    ],
+    description: `Because I am a big fan of Go, I wanted to have a mobile game which is perfectly suited for playing Go with
+                a friend or with an AI. Therefore, I've tried to recreate this game in react native.`,
+  },
   {
     title: 'uwrite',
     link: 'https://github.com/FlorianWoelki/uwrite',
