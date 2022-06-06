@@ -8,10 +8,6 @@
     "done": false
   },
   {
-    "name": "Work in Silicon Valley",
-    "done": false
-  },
-  {
     "name": "Work at Spotify",
     "done": false
   },
@@ -42,6 +38,10 @@
   {
     "name": "Drive a Tesla",
     "done": true
+  },
+  {
+    "name": "Drive a Nio",
+    "done": false
   },
   {
     "name": "Get a Golden Retriever as a Dog",
@@ -84,15 +84,11 @@
     "done": false
   },
   {
-    "name": "Compose a song on the piano",
-    "done": false
-  },
-  {
     "name": "Create a salad from my own garden",
     "done": false
   },
   {
-    "name": "Visit Island",
+    "name": "Visit an Island",
     "done": false
   },
   {
@@ -117,6 +113,14 @@
   },
   {
     "name": "Compose a song on the piano",
+    "done": true
+  },
+  {
+    "name": "Eat Sushi in Japan",
+    "done": false
+  },
+  {
+    "name": "Fall in love",
     "done": true
   }
 ]
