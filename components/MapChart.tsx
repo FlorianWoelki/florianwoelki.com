@@ -7,16 +7,14 @@ import {
   Graticule,
 } from 'react-simple-maps';
 
-const geoUrl =
-  'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
-
 const visitedCountries = [
   'Spain',
+  'Portugal',
   'France',
   'Italy',
   'Germany',
   'Switzerland',
-  'United States of America',
+  'United States',
   'United Kingdom',
 ];
 
@@ -30,7 +28,7 @@ const MapChart = (): JSX.Element => {
     >
       <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
       <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
-      <Geographies geography={geoUrl}>
+      <Geographies geography="/features.json">
         {({ geographies }: IGeographies) =>
           geographies.map((geo) => {
             return (
@@ -38,7 +36,7 @@ const MapChart = (): JSX.Element => {
                 key={geo.rsmKey}
                 geography={geo}
                 fill={
-                  visitedCountries.includes(geo.properties.NAME)
+                  visitedCountries.includes(geo.properties.name)
                     ? '#EF4444'
                     : '#E5E7EB'
                 }

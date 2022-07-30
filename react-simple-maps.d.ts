@@ -9,7 +9,7 @@ declare module 'react-simple-maps' {
     svgPath: string;
     rsmKey: string;
     properties: {
-      NAME: string;
+      name: string;
     };
   }
 
