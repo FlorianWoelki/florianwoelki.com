@@ -57,6 +57,20 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'Hotel Room Booking Chatbot',
+    link: 'https://github.com/FlorianWoelki/hotel-room-booking-chatbot',
+    linkTitle: 'github.com/FlorianWoelki/hotel-room-booking-chatbot',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.JavaScript,
+      ProgrammingLanguageTag.TypeScript,
+      TechnologyTag.React,
+      TechnologyTag.Tailwind,
+    ],
+    description: `This frontend application represents a simple Chatbot which role is to guide the user through
+                the hotel room booking process. The chatbot is really easy to use and scalable in any way.`,
+  },
+  {
     title: 'Go Board Game',
     link: 'https://github.com/FlorianWoelki/go-board-game',
     linkTitle: 'github.com/FlorianWoelki/go-board-game',
