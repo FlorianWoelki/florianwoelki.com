@@ -57,6 +57,19 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'Obsidian Symbols Prettifier',
+    link: 'https://github.com/FlorianWoelki/obsidian-symbols-prettifier',
+    linkTitle: 'github.com/FlorianWoelki/obsidian-symbols-prettifier',
+    tags: [
+      TypeTag.Frontend,
+      ProgrammingLanguageTag.TypeScript,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.Node,
+    ],
+    description: `This plugin was made for the editor Obsidian and allows the user of the plugin to automatically
+                format the predefined symbols to a more prettier version.`,
+  },
+  {
     title: 'Hotel Room Booking Chatbot',
     link: 'https://github.com/FlorianWoelki/hotel-room-booking-chatbot',
     linkTitle: 'github.com/FlorianWoelki/hotel-room-booking-chatbot',
