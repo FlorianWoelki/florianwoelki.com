@@ -63,7 +63,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <CountUpBubble
             link="https://www.youtube.com/c/CodemitFloW"
             title="YouTube Views"
-            amount={300000}
+            amount={500000}
             color="green"
           />
           <CountUpBubble
