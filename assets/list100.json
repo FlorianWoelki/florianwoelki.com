@@ -96,10 +96,6 @@
     "done": false
   },
   {
-    "name": "Create at least 10 paid courses",
-    "done": false
-  },
-  {
     "name": "Take a hot-air balloon ride",
     "done": false
   },
@@ -122,5 +118,13 @@
   {
     "name": "Fall in love",
     "done": true
+  },
+  {
+    "name": "Work in the medical sector",
+    "done": false
+  },
+  {
+    "name": "Build a custom voice assistant in 42 days",
+    "done": false
   }
 ]
