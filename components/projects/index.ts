@@ -57,6 +57,23 @@ export const TechnologyTag = {
 
 export default [
   {
+    title: 'todover',
+    link: 'https://github.com/FlorianWoelki/todover',
+    linkTitle: 'github.com/FlorianWoelki/todover',
+    tags: [
+      TypeTag.Frontend,
+      TypeTag.Backend,
+      TechnologyTag.Node,
+      ProgrammingLanguageTag.TypeScript,
+      ProgrammingLanguageTag.JavaScript,
+      TechnologyTag.Docker,
+      TechnologyTag.PostgreSQL,
+      TechnologyTag.Vue,
+    ],
+    description: `A fullstack open-source todo application that allows to rearrange and structure your todos
+                in a weekly planner.`,
+  },
+  {
     title: 'Obsidian Symbols Prettifier',
     link: 'https://github.com/FlorianWoelki/obsidian-symbols-prettifier',
     linkTitle: 'github.com/FlorianWoelki/obsidian-symbols-prettifier',
