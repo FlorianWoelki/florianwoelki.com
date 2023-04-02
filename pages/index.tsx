@@ -54,7 +54,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             <span>
               Fullstack Softwareengineer with special interest
               <br />
-              in AI, Blockchain, and data
+              in Machine Learning, Golang, and Rust
             </span>
           </h2>
         </div>
