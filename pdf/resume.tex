@@ -57,6 +57,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcolumntype{y}[1]{>{\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcommand{\resumeExperience}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular}{y{185pt}y{165pt}y{181pt}}
+      \textbf{#1} &
+      \centering\textbf{#3} &
+      \hspace*{\fill}\textit{#4} #2 \\
+    \end{tabular}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -106,9 +116,9 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeExperience
+      {Web Team Lead}{2022 - today}
       {Codary}{Berlin, Germany}
-      {Web Team Lead and Fullstack Softwarearchitect}{2022 - today}
       \resumeItemListStart
         \item
           {Led the web team building a more scalable and maintainable web architecture using technologies like \textbf{Google Cloud}, \textbf{React}, and \textbf{Next}, resulting in an increase of the bundle size by over 30\%.}
@@ -122,9 +132,9 @@
       \resumeItemListEnd
       
 
-    \resumeSubheading
-      {Deutsche Telekom}{Berlin, Germany}
+    \resumeExperience
       {Fullstack Softwarearchitect}{2017 - 2022}
+      {Deutsche Telekom}{Berlin, Germany}
       \resumeItemListStart
         \item
           {Designed and developed a frontend and backend microservice architecture with \textbf{TypeScript}, \textbf{Java}, \textbf{Hibernate}, \textbf{Vue}, \textbf{Lit}, and \textbf{SQL} for a client's migration from a monolith application.}
@@ -140,9 +150,9 @@
           \vspace{-4pt}
       \resumeItemListEnd
       
-    \resumeSubheading
-      {Company Consulting Team}{Berlin, Germany}
+    \resumeExperience
       {IT Consultant}{2019 - 2021}
+      {Company Consulting Team}{Berlin, Germany}
       \resumeItemListStart
         \item
           {Engineering owner of an inhouse HR and polling tool that increased the productivity of other teams and the interactivity in meetings using \textbf{Vue}, \textbf{TypeScript}, and \textbf{Node}.}
