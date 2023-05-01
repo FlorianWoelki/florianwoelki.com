@@ -35,7 +35,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -45,7 +45,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2}
   }
 }
 
@@ -59,12 +59,12 @@
 
 \newcolumntype{y}[1]{>{\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcommand{\resumeExperience}[4]{
-  \vspace{-1pt}\item
+  \vspace{1pt}\item
     \begin{tabular}{y{185pt}y{165pt}y{181pt}}
       \textbf{#1} &
       \centering\textbf{#3} &
       \hspace*{\fill}\textit{#4} #2 \\
-    \end{tabular}\vspace{-5pt}
+    \end{tabular}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -72,16 +72,10 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -122,15 +116,14 @@
       \resumeItemListStart
         \item
           {Led the web team building a more scalable and maintainable web architecture using technologies like \textbf{Google Cloud}, \textbf{React}, and \textbf{Next}, resulting in an increase of the bundle size by over 30\%.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Led the development of a scalable interactive web coding IDE using \textbf{Go}, \textbf{React}, \textbf{Next}, and \textbf{Google Cloud} resulting in an overall increase of customer retention.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Continuous Integration/Deployment pipeline integration, load/stress testing, unit/integration/e2e testing}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
       \resumeItemListEnd
-      
 
     \resumeExperience
       {Fullstack Softwarearchitect}{2017 - 2022}
@@ -138,16 +131,16 @@
       \resumeItemListStart
         \item
           {Designed and developed a frontend and backend microservice architecture with \textbf{TypeScript}, \textbf{Java}, \textbf{Hibernate}, \textbf{Vue}, \textbf{Lit}, and \textbf{SQL} for a client's migration from a monolith application.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Built a real-time situational awareness dashboard with efficient event and KPI calculation using \textbf{Java}, \textbf{SpringBoot}, \textbf{Scala}, \textbf{Angular}, and \textbf{TypeScript}, improving decision-making in critical situations.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Spearheaded the full-stack development with \textbf{Java}, \textbf{SpringBoot}, \textbf{Scala}, and \textbf{Angular} of a real-time indoor asset tracking service, leveraging cutting-edge technologies such as UWB, LTE, and BLE.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Designed and developed an android app with \textbf{Kotlin} and \textbf{SQL} that pairs a Bluetooth Low Energy Beacon with a QR-Code which had a significant contribution to the overall team productivity.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
       \resumeItemListEnd
       
     \resumeExperience
@@ -156,13 +149,12 @@
       \resumeItemListStart
         \item
           {Engineering owner of an inhouse HR and polling tool that increased the productivity of other teams and the interactivity in meetings using \textbf{Vue}, \textbf{TypeScript}, and \textbf{Node}.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Designed and developed a highly effective landing page with \textbf{React} and \textbf{TypeScript} for a real estate company, resulting in a 30\% increase in leads.}
-          \vspace{-4pt}
+          \vspace{-3.5pt}
         \item
           {Utilizing \textbf{Python} and \textbf{SQL} to merge and analyze multiple data sources for a data science project, resulting in valuable insights and actionable recommendations for the client.}
-          \vspace{-4pt}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -173,6 +165,7 @@
     \resumeSubheading
       {Master of Science in Artificial Intelligence}{Remote, Germany}
       {IU International University / London South Bank University}{2021 - 2024}
+      \vspace{-10pt}
     \resumeSubheading
       {Bachelor of Science in Computer Science}{Leipzig, Germany}
       {Dual Study on HfTL and Deutsche Telekom}{2017 - 2020}
@@ -185,35 +178,35 @@
     \resumeSubItem{\href{https://github.com/FlorianWoelki/todover}{Todover}}
       {A fully functional weekly planer web application for easier managing your tasks and deadlines.
       \textit{(Vue, TypeScript, Node.js, Postgres, Prisma, GraphQL)}}
+      \vspace{-5pt}
     \resumeSubItem{\href{https://github.com/FlorianWoelki/insta-clone}{Insta-Clone}}
       {Scalable instagram clone powered by microservices.
       \textit{(React, TypeScript, Go, gRPC)}}
+      \vspace{-5pt}
     \resumeSubItem{\href{https://github.com/FlorianWoelki/kira}{Kira}}
       {Kira is a fully functional remote docker based sandbox code execution engine written in Go.
       \textit{(Go, Docker)}}
+      \vspace{-5pt}
     \resumeSubItem{\href{https://github.com/FlorianWoelki/vue-cirrus}{Vue Cirrus}}
       {Open Source Vue component library for the Cirrus CSS framework.
       \textit{(Vue, JavaScript, CSS)}}
+      \vspace{-5pt}
     \resumeSubItem{\href{https://github.com/daycademy/fake-graph}{Fake Graph}}
       {A fake GraphQL server for practicing using GraphQL.
       \textit{(GraphQL, TypeScript, TypeORM)}}
   \resumeSubHeadingListEnd
 
 
-%--------CERTIFICIATIONS, TALKS, AND AWARDS------------
-% \section{Certifications, Talks, and Awards}
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{STARTHACK Hackathon}
-%       {Won the first price on a challenge. The final product was an interactive map where residents of Switzerland could post infrastructure improvements.}
-%     \resumeSubItem{\href{https://florianwoelki-dlr-slides.vercel.app/}{Talk: Applications of GPT-3}}
-%       {Invited by DLR to give a keynote presentation regarding the applications in software development of the language model GPT-3.}
-%     \resumeSubItem{\href{https://youtu.be/cZ--7TzyzfM}{Talk: What does the future of artificial intelligence look like?}}
-%       {ClubHouse conversation about the future of artificial intelligence.}
-%     \resumeSubItem{\href{https://youtu.be/m9kapfxwYOA}{Talk: What is artificial intelligence?}}
-%       {Twenty minute talk about what artificial intelligence is and is not.}
-%     \resumeSubItem{\href{https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/data-engineering.pdf}{Udacity Data Engineering}}
-%       {Design data models, build data warehouses, data lakes, and automate data pipelines.}
-%     \resumeSubItem{\href{https://github.com/FlorianWoelki/portfolio/blob/master/src/assets/certificates/intro-self-driving-cars.pdf}{Udacity Intro Self-Driving Cars}}
-%       {Fundamentals of self-driving cars, Python, apply C++, and computer vision.}
-%   \resumeSubHeadingListEnd
+%--------OTHERS------------
+\section{Others}
+  \resumeSubHeadingListStart
+    \resumeSubItem{STARTHACK Hackathon}
+      {Won the first price on a challenge for developing an interactive map where residents of Switzerland could post infrastructure improvements and vote on them.}
+      \vspace{-5pt}
+    \resumeSubItem{\href{https://florianwoelki-dlr-slides.vercel.app/}{Talk: Applications of GPT-3}}
+      {Invited by DLR to give a keynote presentation regarding the applications in software development of the language model GPT-3.}
+      \vspace{-5pt}
+    \resumeSubItem{\href{https://youtu.be/m9kapfxwYOA}{Talk: What is artificial intelligence?}}
+      {Twenty minute talk about what artificial intelligence is and is not.}
+  \resumeSubHeadingListEnd
 \end{document}
