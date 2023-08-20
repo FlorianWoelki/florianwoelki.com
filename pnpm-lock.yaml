@@ -30,8 +30,8 @@ dependencies:
     specifier: 17.0.2
     version: 17.0.2(react@17.0.2)
   react-simple-maps:
-    specifier: ^2.3.0
-    version: 2.3.0(prop-types@15.8.1)(react-dom@17.0.2)(react@17.0.2)
+    specifier: ^3.0.0
+    version: 3.0.0(prop-types@15.8.1)(react-dom@17.0.2)(react@17.0.2)
 
 devDependencies:
   '@commitlint/cli':
@@ -4795,12 +4795,12 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  /react-simple-maps@2.3.0(prop-types@15.8.1)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-IZVeiPSRZKwD6I/2NvXpQ2uENYGDGZp8DvZjkapcxuJ/LQHTfl+Byb+KNgY7s+iatRA2ad8LnZ3AgqcjziCCsw==}
+  /react-simple-maps@3.0.0(prop-types@15.8.1)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-vKNFrvpPG8Vyfdjnz5Ne1N56rZlDfHXv5THNXOVZMqbX1rWZA48zQuYT03mx6PAKanqarJu/PDLgshIZAfHHqw==}
     peerDependencies:
       prop-types: ^15.7.2
-      react: ^16.8.0 || 17.x
-      react-dom: ^16.8.0 || 17.x
+      react: ^16.8.0 || 17.x || 18.x
+      react-dom: ^16.8.0 || 17.x || 18.x
     dependencies:
       d3-geo: 2.0.2
       d3-selection: 2.0.0
