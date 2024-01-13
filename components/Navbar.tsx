@@ -18,10 +18,6 @@ const Navbar: NextPage = () => {
   const items: NavbarItem[] = [
     { title: 'Home', link: '/' },
     { title: 'Blog', link: '/blog', extraChecks: ['/blog/[slug]'] },
-    {
-      title: 'Resume',
-      link: 'https://github.com/FlorianWoelki/florianwoelki.com/raw/main/pdf/resume.pdf',
-    },
     { title: 'Projects', link: '/projects' },
     { title: 'List 100', link: '/list100' },
   ];
