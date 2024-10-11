@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import list100 from '../assets/list100.json';
-import MapChart from '../components/MapChart';
 
 const List100Page: NextPage = (): JSX.Element => {
   return (
@@ -11,7 +10,7 @@ const List100Page: NextPage = (): JSX.Element => {
 
       <p className="mt-10">
         Things I want to do before I die.{' '}
-        <i>(Progress as of February 18, 2022)</i>
+        <i>(Progress as of October 11, 2024)</i>
       </p>
 
       <ul className="mt-6 grid grid-cols-1 space-y-1 sm:grid-cols-2 sm:gap-4 sm:space-y-0">
@@ -52,16 +51,6 @@ const List100Page: NextPage = (): JSX.Element => {
             ))}
         </div>
       </ul>
-
-      <h2 className="mt-12 text-4xl font-bold tracking-tight">
-        Countries I have visited
-      </h2>
-
-      <p className="mt-10">
-        Countries I have visited. <i>(Progress as of April 30, 2021)</i>
-      </p>
-
-      <MapChart></MapChart>
     </div>
   );
 };

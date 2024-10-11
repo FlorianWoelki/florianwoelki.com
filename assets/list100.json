@@ -1,7 +1,7 @@
 [
   {
     "name": "Successful YouTube channel (min 10k)",
-    "done": false
+    "done": true
   },
   {
     "name": "Work in London",
@@ -72,15 +72,11 @@
     "done": false
   },
   {
-    "name": "Speak at TED",
-    "done": false
-  },
-  {
     "name": "Create my own programming language",
     "done": false
   },
   {
-    "name": "Get to 1d in Go",
+    "name": "Have a 2000 Elo chess rating",
     "done": false
   },
   {
@@ -124,7 +120,7 @@
     "done": false
   },
   {
-    "name": "Build a custom voice assistant in 42 days",
+    "name": "Build a custom AI life coach",
     "done": false
   }
 ]
