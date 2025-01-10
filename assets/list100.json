@@ -73,7 +73,7 @@
   },
   {
     "name": "Create my own programming language",
-    "done": false
+    "done": true
   },
   {
     "name": "Have a 2000 Elo chess rating",
@@ -121,6 +121,10 @@
   },
   {
     "name": "Build a custom AI life coach",
+    "done": false
+  },
+  {
+    "name": "Get into competitive programming",
     "done": false
   }
 ]
