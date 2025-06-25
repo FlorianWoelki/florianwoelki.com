@@ -1,6 +1,8 @@
 import { NextPage } from 'next';
 import list100 from '../assets/list100.json';
 
+import type { JSX } from "react";
+
 const List100Page: NextPage = (): JSX.Element => {
   return (
     <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">

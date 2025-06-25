@@ -5,7 +5,7 @@ import { GetStaticProps, NextPage } from 'next';
 import { sortByDate } from '../../utils';
 import BlogArticle from '../../components/blog/BlogArticle';
 import { BlogArticleData } from '../../components/blog/BlogArticleData';
-import { useState } from 'react';
+import { useState, type JSX } from 'react';
 import Tag from '../../components/Tag';
 
 interface BlogProps {

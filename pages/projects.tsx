@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, type JSX } from 'react';
 import projects, {
   ProgrammingLanguageTag,
   TechnologyTag,
@@ -82,7 +82,6 @@ const ProjectsPage: NextPage = (): JSX.Element => {
           </li>
         ))}
       </ul>
-
       <ul className="mt-10 space-y-10 divide-y divide-gray-200 border-t border-gray-200">
         {filteredProjects.map((project, index) => (
           <li key={index} className="pt-10">
@@ -104,13 +103,14 @@ const ProjectsPage: NextPage = (): JSX.Element => {
                   </div>
                 </div>
                 <div className="text-base font-medium">
-                  <Link href={project.link} passHref>
-                    <a
-                      target="_blank"
-                      className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700"
-                    >
-                      <span>{project.linkTitle}</span>
-                    </a>
+                  <Link
+                    href={project.link}
+                    passHref
+                    target="_blank"
+                    className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700">
+
+                    <span>{project.linkTitle}</span>
+
                   </Link>
                 </div>
               </div>

@@ -4,6 +4,8 @@ import { BlogArticleData } from './BlogArticleData';
 import ChevronRightIcon from '../../icons/chevron-right.svg';
 import Tag from '../Tag';
 
+import type { JSX } from "react";
+
 export const getReadingTime = (content: string): number => {
   const wpm = 225;
   const words = content.trim().split(/\s+/).length;
@@ -62,8 +64,8 @@ const BlogArticle: NextPage<BlogArticleProps> = ({
       <div className="space-y-5 xl:col-span-3">
         <div className="space-y-6">
           <h2 className="text-2xl font-bold tracking-tight">
-            <Link href={`/blog/${post.slug}`} passHref>
-              <a className="text-gray-900">{post.frontmatter.title}</a>
+            <Link href={`/blog/${post.slug}`} passHref className="text-gray-900">
+              {post.frontmatter.title}
             </Link>
           </h2>
           <div className="max-w-none text-base text-gray-500">
@@ -74,11 +76,14 @@ const BlogArticle: NextPage<BlogArticleProps> = ({
         <TagList className="flex xl:hidden" post={post} {...rest} />
 
         <div className="text-base font-medium">
-          <Link href={`/blog/${post.slug}`} passHref>
-            <a className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700">
-              <span>Read more</span>
-              <ChevronRightIcon className="h-4 w-4"></ChevronRightIcon>
-            </a>
+          <Link
+            href={`/blog/${post.slug}`}
+            passHref
+            className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700">
+
+            <span>Read more</span>
+            <ChevronRightIcon className="h-4 w-4"></ChevronRightIcon>
+
           </Link>
         </div>
       </div>

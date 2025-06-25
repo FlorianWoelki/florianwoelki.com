@@ -1,6 +1,8 @@
 import { NextPage } from 'next';
 import { classes } from '../../utils';
 
+import type { JSX } from "react";
+
 export type TalkColor = 'green' | 'blue' | 'yellow';
 
 interface TalkProps {

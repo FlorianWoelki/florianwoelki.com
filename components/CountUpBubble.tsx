@@ -3,6 +3,8 @@ import Link from 'next/link';
 import CountUp from 'react-countup';
 import { classes } from '../utils';
 
+import type { JSX } from "react";
+
 type CountUpBubbleColor = 'green' | 'purple' | 'blue';
 
 interface CountUpBubbleProps {

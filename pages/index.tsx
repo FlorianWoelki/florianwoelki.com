@@ -80,8 +80,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           />
         </div>
       </div>
-
-      <div>
+      {/* <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">Latest Blogs</h3>
         <div className="flex flex-col gap-10 mb-6 lg:flex-row">
           {latestThreeBlogs.map((post, index) => (
@@ -92,14 +91,16 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             ></LatestBlogArticle>
           ))}
         </div>
-        <Link href="/blog" passHref>
-          <a className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
-            <span>To all blog articles</span>
-            <ChevronRightIcon className="w-4 h-4" />
-          </a>
-        </Link>
-      </div>
+        <Link
+          href="/blog"
+          passHref
+          className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
 
+          <span>To all blog articles</span>
+          <ChevronRightIcon className="w-4 h-4" />
+
+        </Link>
+      </div> */}
       <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">Latest Videos</h3>
         {latestVideos.length === 0 ? (
@@ -114,19 +115,15 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             <Link
               href="https://youtube.com/channel/UC18qytfIhR9cNEjUcgGLl3A"
               passHref
+              className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500"
+              target="_blank"
             >
-              <a
-                className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500"
-                target="_blank"
-              >
-                <span>To all videos</span>
-                <ChevronRightIcon className="w-4 h-4" />
-              </a>
+              <span>To all videos</span>
+              <ChevronRightIcon className="w-4 h-4" />
             </Link>
           </>
         )}
       </div>
-
       <div>
         <h3 className="mb-6 text-3xl font-bold text-gray-900">My Talks</h3>
         <div className="flex flex-col gap-10 mb-6 lg:flex-row">

@@ -1,6 +1,8 @@
 import { NextPage } from 'next';
 import { classes } from '../utils';
 
+import type { JSX } from "react";
+
 interface TagProps {
   selected: boolean;
 }

@@ -14,10 +14,10 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.10.0",
     "marked": "^4.3.0",
-    "next": "^12.0.9",
-    "react": "17.0.2",
+    "next": "15.3.4",
+    "react": "19.1.0",
     "react-countup": "^6.5.3",
-    "react-dom": "17.0.2"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
@@ -25,10 +25,10 @@
     "@svgr/webpack": "^6.1.2",
     "@types/marked": "^4.3.2",
     "@types/node": "18.15.3",
-    "@types/react": "17.0.38",
+    "@types/react": "19.1.8",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
-    "eslint-config-next": "12.0.7",
+    "eslint-config-next": "15.3.4",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",

@@ -30,37 +30,37 @@ const LatestBlogArticle: NextPage<LatestBlogArticleProps> = ({
   );
 
   return (
-    <Link href={`/blog/${post.slug}`} passHref>
-      <a className={colorClasses}>
-        <div
-          className={`space-y-2 rounded-lg bg-white ${
-            color ? 'flex h-full flex-col justify-between p-6' : ''
-          }`}
-        >
-          <div className="flex flex-col space-y-2">
-            <h2 className="inline text-xl font-bold tracking-tight">
-              {post.frontmatter.title}
-            </h2>
-            <p className="text-gray-500">{post.frontmatter.excerpt}</p>
-          </div>
+    <Link href={`/blog/${post.slug}`} passHref className={colorClasses}>
 
-          <div className="space-y-2">
-            <ul className="flex">
-              {post.frontmatter.tags.map((tag) => (
-                <li key={tag}>
-                  <Tag selected={false}>{tag}</Tag>
-                </li>
-              ))}
-            </ul>
-            <div className="flex items-center justify-between text-sm text-gray-400">
-              <span>{post.frontmatter.date}</span>
-              <span>
-                {readingTime} {readingTime === 1 ? 'min' : 'mins'} read
-              </span>
-            </div>
+      <div
+        className={`space-y-2 rounded-lg bg-white ${
+          color ? 'flex h-full flex-col justify-between p-6' : ''
+        }`}
+      >
+        <div className="flex flex-col space-y-2">
+          <h2 className="inline text-xl font-bold tracking-tight">
+            {post.frontmatter.title}
+          </h2>
+          <p className="text-gray-500">{post.frontmatter.excerpt}</p>
+        </div>
+
+        <div className="space-y-2">
+          <ul className="flex">
+            {post.frontmatter.tags.map((tag) => (
+              <li key={tag}>
+                <Tag selected={false}>{tag}</Tag>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center justify-between text-sm text-gray-400">
+            <span>{post.frontmatter.date}</span>
+            <span>
+              {readingTime} {readingTime === 1 ? 'min' : 'mins'} read
+            </span>
           </div>
         </div>
-      </a>
+      </div>
+
     </Link>
   );
 };

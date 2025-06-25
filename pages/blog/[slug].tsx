@@ -56,21 +56,22 @@ const BlogPost: NextPage<BlogPostProps> = ({
 
   return (
     <div className="container mx-auto max-w-6xl break-words px-8 pt-8 pb-32 md:px-16 lg:pt-32">
-      <Link href="/blog" passHref>
-        <a className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
-          <ChevronLeftIcon className="h-4 w-4" />
-          <span>Go back</span>
-        </a>
+      <Link
+        href="/blog"
+        passHref
+        className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
+
+        <ChevronLeftIcon className="h-4 w-4" />
+        <span>Go back</span>
+
       </Link>
       <h1 className="mt-4 text-4xl font-bold tracking-tight">{title}</h1>
       <p className="mt-1 mb-16 text-gray-500">Posted on {date}</p>
-
       <div
         className={styles.markdown}
         style={darkStyle}
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       ></div>
-
       <div className="mt-24 grid divide-x rounded py-4 text-center shadow md:grid-cols-2">
         <div className="px-12 py-4">
           <p className="mb-4 uppercase tracking-wide text-gray-400">
@@ -78,8 +79,8 @@ const BlogPost: NextPage<BlogPostProps> = ({
           </p>
           {nextPost ? (
             <>
-              <Link href={`/blog/${nextPost.slug}`} passHref>
-                <a className="text-xl">{nextPost.frontmatter.title}</a>
+              <Link href={`/blog/${nextPost.slug}`} passHref className="text-xl">
+                {nextPost.frontmatter.title}
               </Link>
               <p className="mt-2 text-sm text-gray-700">
                 {nextPost.frontmatter.excerpt}
@@ -97,11 +98,11 @@ const BlogPost: NextPage<BlogPostProps> = ({
           </p>
           {previousPost ? (
             <>
-              <Link href={`/blog/${previousPost?.slug}`} passHref>
-                <a className="text-lg">
-                  {previousPost?.frontmatter.title ??
-                    'Seems like you have reached the end of the blog articles.'}
-                </a>
+              <Link href={`/blog/${previousPost?.slug}`} passHref className="text-lg">
+
+                {previousPost?.frontmatter.title ??
+                  'Seems like you have reached the end of the blog articles.'}
+
               </Link>
               <p className="text-sm text-gray-700">
                 {previousPost?.frontmatter.excerpt}

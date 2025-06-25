@@ -52,8 +52,8 @@ const Navbar: NextPage = () => {
                   : 'text-gray-500 hover:text-gray-400'
               }`}
             >
-              <Link href={item.link} passHref>
-                <a className="block">{item.title}</a>
+              <Link href={item.link} passHref className="block">
+                {item.title}
               </Link>
             </li>
           ))}
@@ -82,7 +82,6 @@ const Navbar: NextPage = () => {
           </li>
         </ul>
       </div>
-
       {/* Small screens list */}
       <Transition
         show={isMenuOpen}
@@ -105,8 +104,8 @@ const Navbar: NextPage = () => {
               }
               onClick={() => setMenuOpen(false)}
             >
-              <Link href={item.link} passHref>
-                <a className="block">{item.title}</a>
+              <Link href={item.link} passHref className="block">
+                {item.title}
               </Link>
             </li>
           ))}
