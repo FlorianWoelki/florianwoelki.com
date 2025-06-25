@@ -17,7 +17,7 @@ export const YouTubeVideo: React.FC<Props> = (props): JSX.Element => {
       href={props.data.link}
       target="_blank"
     >
-      <Image
+      <img
         alt={props.data.title}
         className="w-full bg-center bg-cover"
         src={props.data.thumbnail}
