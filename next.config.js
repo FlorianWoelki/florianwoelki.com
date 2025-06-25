@@ -11,4 +11,13 @@ module.exports = {
     });
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/llms.txt',
+        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        permanent: false,
+      },
+    ];
+  },
 };
