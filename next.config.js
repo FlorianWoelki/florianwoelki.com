@@ -15,7 +15,7 @@ module.exports = {
     return [
       {
         source: '/llms.txt',
-        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        destination: 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
         permanent: false,
       },
     ];
