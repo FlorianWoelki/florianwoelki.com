@@ -59,11 +59,10 @@ const BlogPost: NextPage<BlogPostProps> = ({
       <Link
         href="/blog"
         passHref
-        className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500">
-
+        className="inline-flex items-center space-x-1 text-gray-400 transition duration-100 ease-in-out hover:text-gray-500"
+      >
         <ChevronLeftIcon className="h-4 w-4" />
         <span>Go back</span>
-
       </Link>
       <h1 className="mt-4 text-4xl font-bold tracking-tight">{title}</h1>
       <p className="mt-1 mb-16 text-gray-500">Posted on {date}</p>
@@ -79,7 +78,11 @@ const BlogPost: NextPage<BlogPostProps> = ({
           </p>
           {nextPost ? (
             <>
-              <Link href={`/blog/${nextPost.slug}`} passHref className="text-xl">
+              <Link
+                href={`/blog/${nextPost.slug}`}
+                passHref
+                className="text-xl"
+              >
                 {nextPost.frontmatter.title}
               </Link>
               <p className="mt-2 text-sm text-gray-700">
@@ -98,11 +101,13 @@ const BlogPost: NextPage<BlogPostProps> = ({
           </p>
           {previousPost ? (
             <>
-              <Link href={`/blog/${previousPost?.slug}`} passHref className="text-lg">
-
+              <Link
+                href={`/blog/${previousPost?.slug}`}
+                passHref
+                className="text-lg"
+              >
                 {previousPost?.frontmatter.title ??
                   'Seems like you have reached the end of the blog articles.'}
-
               </Link>
               <p className="text-sm text-gray-700">
                 {previousPost?.frontmatter.excerpt}

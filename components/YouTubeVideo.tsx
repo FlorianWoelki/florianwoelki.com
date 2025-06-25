@@ -1,4 +1,5 @@
-import type { JSX } from "react";
+import Image from 'next/image';
+import type { JSX } from 'react';
 export interface YouTubeVideoData {
   link: string;
   thumbnail: string;
@@ -16,7 +17,11 @@ export const YouTubeVideo: React.FC<Props> = (props): JSX.Element => {
       href={props.data.link}
       target="_blank"
     >
-      <img className="w-full bg-center bg-cover" src={props.data.thumbnail} />
+      <Image
+        alt={props.data.title}
+        className="w-full bg-center bg-cover"
+        src={props.data.thumbnail}
+      />
       <div className="px-4 py-5 sm:p-6">
         <h4 className="font-bold text-gray-900">{props.data.title}</h4>
       </div>

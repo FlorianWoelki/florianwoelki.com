@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import list100 from '../assets/list100.json';
 
-import type { JSX } from "react";
+import type { JSX } from 'react';
 
 const List100Page: NextPage = (): JSX.Element => {
   return (

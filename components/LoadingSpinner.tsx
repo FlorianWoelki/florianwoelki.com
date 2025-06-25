@@ -1,6 +1,6 @@
 import { classes } from '../utils';
 
-import type { JSX } from "react";
+import type { JSX } from 'react';
 
 interface Props {
   loading: boolean;

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import type { JSX } from "react";
+import type { JSX } from 'react';
 
 const Footer: NextPage = (): JSX.Element => {
   return (

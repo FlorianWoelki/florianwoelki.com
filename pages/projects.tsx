@@ -89,7 +89,7 @@ const ProjectsPage: NextPage = (): JSX.Element => {
               <ul className="mt-4 flex flex-wrap xl:mt-0">
                 {project.tags.map((tag) => (
                   <li key={tag.toString()} onClick={() => setFilterTag(tag)}>
-                    <Tag selected={tag === filter}>{tag}</Tag>
+                    <Tag selected={tag === filter}>{tag as string}</Tag>
                   </li>
                 ))}
               </ul>
@@ -107,10 +107,9 @@ const ProjectsPage: NextPage = (): JSX.Element => {
                     href={project.link}
                     passHref
                     target="_blank"
-                    className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700">
-
+                    className="inline-flex items-center space-x-2 text-gray-900 transition duration-100 ease-in-out hover:text-gray-700"
+                  >
                     <span>{project.linkTitle}</span>
-
                   </Link>
                 </div>
               </div>

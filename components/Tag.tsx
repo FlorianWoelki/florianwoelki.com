@@ -1,13 +1,13 @@
-import { NextPage } from 'next';
 import { classes } from '../utils';
 
-import type { JSX } from "react";
+import type { JSX } from 'react';
 
 interface TagProps {
   selected: boolean;
+  children?: JSX.Element | string;
 }
 
-const Tag: NextPage<TagProps> = ({ selected, children }): JSX.Element => {
+const Tag: React.FC<TagProps> = ({ selected, children }): JSX.Element => {
   const tagClasses = classes(
     {
       'bg-blue-300 text-blue-800': selected,
