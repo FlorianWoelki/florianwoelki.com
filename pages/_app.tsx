@@ -3,8 +3,12 @@ import type { AppProps } from 'next/app';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const hideLayout = router.pathname === '/imprint';
+
   return (
     <div className="antialiased">
       <Head>
@@ -32,10 +36,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
 
-      <Navbar />
+      {!hideLayout && <Navbar />}
       <Component {...pageProps} />
-
-      <Footer />
+      {!hideLayout && <Footer />}
     </div>
   );
 }
