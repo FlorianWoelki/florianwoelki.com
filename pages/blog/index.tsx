@@ -7,6 +7,7 @@ import BlogArticle from '../../components/blog/BlogArticle';
 import { BlogArticleData } from '../../components/blog/BlogArticleData';
 import { useState, type JSX } from 'react';
 import Tag from '../../components/Tag';
+import Head from 'next/head';
 
 interface BlogProps {
   posts: BlogArticleData[];
@@ -33,29 +34,35 @@ const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
       : posts;
 
   return (
-    <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
-      <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
-      <p className="mt-6 mb-1 text-sm text-gray-500">Filter by tags:</p>
-      <ul className="flex flex-wrap">
-        {tags.map((tag, index) => (
-          <li key={index} onClick={() => setFilterTag(tag)}>
-            <Tag selected={tag === filter}>{tag}</Tag>
-          </li>
-        ))}
-      </ul>
+    <>
+      <Head>
+        <title>Blog | Florian Woelki</title>
+      </Head>
 
-      <ul className="mt-10 space-y-10 divide-y divide-gray-200 border-t border-gray-200">
-        {filteredBlogArticles().map((post, index) => (
-          <li key={index} className="pt-10">
-            <BlogArticle
-              post={post}
-              onClickTag={(tag) => setFilterTag(tag)}
-              selectedTag={filter}
-            ></BlogArticle>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
+        <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
+        <p className="mt-6 mb-1 text-sm text-gray-500">Filter by tags:</p>
+        <ul className="flex flex-wrap">
+          {tags.map((tag, index) => (
+            <li key={index} onClick={() => setFilterTag(tag)}>
+              <Tag selected={tag === filter}>{tag}</Tag>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="mt-10 space-y-10 divide-y divide-gray-200 border-t border-gray-200">
+          {filteredBlogArticles().map((post, index) => (
+            <li key={index} className="pt-10">
+              <BlogArticle
+                post={post}
+                onClickTag={(tag) => setFilterTag(tag)}
+                selectedTag={filter}
+              ></BlogArticle>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 
