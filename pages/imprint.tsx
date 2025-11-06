@@ -17,6 +17,7 @@ const Imprint: NextPage = () => {
           <p>c/o Online-Impressum.de #4758</p>
           <p>Europaring 90</p>
           <p>53757 Sankt Augustin</p>
+          <p>Germany</p>
           <br />
           <p>Contact email: florian1woelki@gmail.com</p>
           <p>Phone: +4915158364185</p>
