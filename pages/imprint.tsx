@@ -11,7 +11,9 @@ const Imprint: NextPage = () => {
       <div className="container max-w-6xl px-8 py-16 mx-auto break-words md:px-16">
         <h1 className="mb-6 text-4xl font-bold text-gray-900">Imprint</h1>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold text-gray-900">Contact</h2>
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
+          Contact / Responsible for content
+        </h2>
         <div>
           <p>Florian Woelki</p>
           <p>c/o Online-Impressum.de #4758</p>
@@ -25,7 +27,18 @@ const Imprint: NextPage = () => {
           <p>Business ID: DE350515153</p>
         </div>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold text-gray-900">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
+          Editorial responsibility
+        </h2>
+        <div>
+          <p>Florian Woelki</p>
+          <p>c/o Online-Impressum.de #4758</p>
+          <p>Europaring 90</p>
+          <p>53757 Sankt Augustin</p>
+          <p>Germany</p>
+        </div>
+
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
           Responsible Regulatory and Supervisory Authority:
         </h2>
         <div>
@@ -33,7 +46,7 @@ const Imprint: NextPage = () => {
           <p>Headquarters: Germany</p>
         </div>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold text-gray-900">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
           Liability for Content
         </h2>
         <p>
@@ -49,7 +62,7 @@ const Imprint: NextPage = () => {
           remove this content immediately.
         </p>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold text-gray-900">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
           Liability for Links
         </h2>
         <p>
@@ -69,7 +82,7 @@ const Imprint: NextPage = () => {
           immediately.
         </p>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold text-gray-900">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
           Copyrights
         </h2>
         <p>
@@ -89,6 +102,19 @@ const Imprint: NextPage = () => {
           nevertheless become aware of a copyright infringement, please inform
           us accordingly. Such content will then be removed immediately.
         </p>
+
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
+          Online dispute resolution
+        </h2>
+        <div>
+          Online dispute resolution pursuant to Art. 14 (1) ODR Regulation: The
+          European Commission provides a platform for online dispute resolution
+          (ODR), which can be found at{' '}
+          <a className="underline" href="https://ec.europa.eu/consumers/odr/">
+            https://ec.europa.eu/consumers/odr/
+          </a>
+          .
+        </div>
       </div>
     </>
   );
