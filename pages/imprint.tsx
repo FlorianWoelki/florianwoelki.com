@@ -24,7 +24,7 @@ const Imprint: NextPage = () => {
           <p>Contact email: florian1woelki@gmail.com</p>
           <p>Phone: +4915158364185</p>
           <p>TAX ID (USt-IdNr): DE350515153</p>
-          <p>Business ID: DE350515153</p>
+          <p>Country of establishment: Germany</p>
         </div>
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
@@ -39,11 +39,14 @@ const Imprint: NextPage = () => {
         </div>
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
-          Responsible Regulatory and Supervisory Authority:
+          Regulatory Authority
         </h2>
         <div>
-          <p>Medienanstalt Berlin-Brandenburg</p>
-          <p>Headquarters: Germany</p>
+          <p>Responsible regulatory authority pursuant to § 5 (1) No. 8 DDG:</p>
+          <p>Medienanstalt Berlin-Brandenburg (mabb)</p>
+          <p>Kleine Präsidentenstraße 1</p>
+          <p>10178 Berlin</p>
+          <p>Germany</p>
         </div>
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
@@ -51,8 +54,8 @@ const Imprint: NextPage = () => {
         </h2>
         <p>
           As a service provider, we are responsible for our own content on these
-          pages in accordance with Section 7(1) of the German Telemedia Act
-          (TMG) under general laws. However, according to Sections 8 to 10 TMG,
+          pages in accordance with Section 7(1) of the Digitale-Dienste-Gesetz
+          (DDG) under general laws. However, according to Sections 8 to 10 DDG,
           as a service provider we are not obligated to monitor transmitted or
           stored third-party information or to investigate circumstances that
           indicate illegal activity. Legal obligations to remove or block the
@@ -110,7 +113,12 @@ const Imprint: NextPage = () => {
           Online dispute resolution pursuant to Art. 14 (1) ODR Regulation: The
           European Commission provides a platform for online dispute resolution
           (ODR), which can be found at{' '}
-          <a className="underline" href="https://ec.europa.eu/consumers/odr/">
+          <a
+            className="underline"
+            href="https://ec.europa.eu/consumers/odr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://ec.europa.eu/consumers/odr/
           </a>
           .
