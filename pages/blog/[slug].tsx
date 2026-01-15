@@ -1,7 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { marked } from 'marked';
+import { Marked } from 'marked';
+import { markedHighlight } from 'marked-highlight';
+import hljs from 'highlight.js';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 
@@ -25,33 +27,24 @@ const BlogPost: NextPage<BlogPostProps> = ({
   previousPost,
   nextPost,
 }) => {
-  marked.setOptions({
-    renderer: new marked.Renderer(),
-    highlight: (code, lang) => {
-      const hljs = require('highlight.js');
-      const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-      return hljs.highlight(code, { language }).value;
-    },
-    langPrefix: 'hljs language-',
-    pedantic: false,
-    gfm: true,
-    breaks: false,
-    sanitize: false,
-    smartLists: true,
-    smartypants: false,
-    xhtml: false,
-  });
+  const marked = new Marked(
+    markedHighlight({
+      emptyLangClass: 'hljs',
+      langPrefix: 'hljs language-',
+      highlight(code, lang) {
+        const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+        return hljs.highlight(code, { language }).value;
+      },
+    }),
+  );
   marked.use({
     renderer: {
-      image(
-        this: any,
-        href: string | null,
-        _: string | null,
-        text: string,
-      ): string {
+      image({ href, text }) {
         return `<div class="flex flex-col mt-2"><img src="${href}" alt="${text}" class="mx-auto"><p class="text-gray-400 italic text-sm mx-auto">${text}</p></div>`;
       },
     },
+    gfm: true,
+    breaks: false,
   });
 
   return (
@@ -69,7 +62,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
       <div
         className={styles.markdown}
         style={darkStyle}
-        dangerouslySetInnerHTML={{ __html: marked(content) }}
+        dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
       ></div>
       <div className="mt-24 grid divide-x rounded py-4 text-center shadow md:grid-cols-2">
         <div className="px-12 py-4">
