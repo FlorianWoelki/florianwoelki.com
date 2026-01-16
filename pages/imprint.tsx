@@ -23,7 +23,7 @@ const Imprint: NextPage = () => {
           <br />
           <p>Contact email: florian1woelki@gmail.com</p>
           <p>Phone: +4915158364185</p>
-          <p>TAX ID (USt-IdNr): DE350515153</p>
+          <p>TAX ID (Umsatzsteuer-Identifikationsnummer): DE350515153</p>
           <p>Country of establishment: Germany</p>
         </div>
 
