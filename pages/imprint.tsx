@@ -123,6 +123,16 @@ const Imprint: NextPage = () => {
           </a>
           .
         </div>
+
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
+          Consumer Dispute Resolution
+        </h2>
+        <p>
+          Consumer dispute resolution pursuant to § 36 VSBG (German Consumer
+          Dispute Settlement Act): I am neither obligated nor willing to
+          participate in dispute resolution proceedings before a consumer
+          arbitration board.
+        </p>
       </div>
     </>
   );
