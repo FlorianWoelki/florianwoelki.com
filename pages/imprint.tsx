@@ -8,7 +8,7 @@ const Imprint: NextPage = () => {
         <title>Imprint | Florian Woelki</title>
       </Head>
 
-      <div className="container max-w-6xl px-8 py-16 mx-auto break-words md:px-16">
+      <div className="container max-w-6xl px-8 py-16 mx-auto wrap-break-word md:px-16">
         <h1 className="mb-6 text-4xl font-bold text-gray-900">Imprint</h1>
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">

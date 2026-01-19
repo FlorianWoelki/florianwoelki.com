@@ -39,7 +39,7 @@ const Blog: NextPage<BlogProps> = ({ posts }): JSX.Element => {
         <title>Blog | Florian Woelki</title>
       </Head>
 
-      <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
+      <div className="container mx-auto max-w-6xl wrap-break-word px-8 pt-24 pb-32 md:px-16 lg:pt-32">
         <h1 className="mt-4 text-4xl font-bold tracking-tight">Blog</h1>
         <p className="mt-6 mb-1 text-sm text-gray-500">Filter by tags:</p>
         <ul className="flex flex-wrap">

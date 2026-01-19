@@ -1,5 +1,5 @@
-const colors = require('tailwindcss/colors');
-const plugin = require('tailwindcss/plugin');
+import colors from 'tailwindcss/colors';
+import plugin from 'tailwindcss/plugin';
 
 module.exports = {
   mode: 'jit',

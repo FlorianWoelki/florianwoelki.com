@@ -11,7 +11,7 @@ const List100Page: NextPage = (): JSX.Element => {
         <title>List 100 | Florian Woelki</title>
       </Head>
 
-      <div className="container mx-auto max-w-6xl break-words px-8 pt-24 pb-32 md:px-16 lg:pt-32">
+      <div className="container mx-auto max-w-6xl wrap-break-word px-8 pt-24 pb-32 md:px-16 lg:pt-32">
         <h2 className="mt-4 text-4xl font-bold tracking-tight">
           List 100 - Bucket List
         </h2>

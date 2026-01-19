@@ -46,7 +46,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   }, []);
 
   return (
-    <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-20 break-words md:px-16">
+    <div className="container max-w-6xl px-8 pb-32 mx-auto space-y-20 wrap-break-word md:px-16">
       <div className="space-y-12 text-center mt-28 lg:grid lg:grid-cols-2 lg:items-center lg:space-y-0 lg:text-left">
         <div className="space-y-2">
           <h1 className="text-5xl font-bold text-gray-900">Florian Woelki</h1>

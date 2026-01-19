@@ -48,7 +48,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
   });
 
   return (
-    <div className="container mx-auto max-w-6xl break-words px-8 pt-8 pb-32 md:px-16 lg:pt-32">
+    <div className="container mx-auto max-w-6xl wrap-break-word px-8 pt-8 pb-32 md:px-16 lg:pt-32">
       <Link
         href="/blog"
         passHref
