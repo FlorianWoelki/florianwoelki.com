@@ -4,18 +4,6 @@
     "done": true
   },
   {
-    "name": "Work in London",
-    "done": false
-  },
-  {
-    "name": "Work at Spotify",
-    "done": false
-  },
-  {
-    "name": "Work at DigitalOcean",
-    "done": false
-  },
-  {
     "name": "Countdown New Year's Eve at Times Square",
     "done": false
   },
@@ -41,10 +29,6 @@
   },
   {
     "name": "Drive a Nio",
-    "done": false
-  },
-  {
-    "name": "Get a Golden Retriever as a Dog",
     "done": false
   },
   {
@@ -109,7 +93,7 @@
   },
   {
     "name": "Eat Sushi in Japan",
-    "done": false
+    "done": true
   },
   {
     "name": "Fall in love",
